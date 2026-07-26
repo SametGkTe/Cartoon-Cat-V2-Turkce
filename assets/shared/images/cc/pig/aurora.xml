@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="aurora.png">
+	<!-- Created with Adobe Animate version 21.0.0.35450 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="boo0000" x="0" y="0" width="1280" height="720" pivotX="640" pivotY="360"/>
+	<SubTexture name="boo0001" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0002" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0003" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0004" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0005" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0006" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0007" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0008" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0009" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0010" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0011" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0012" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0013" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0014" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0015" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0016" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0017" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0018" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0019" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0020" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0021" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0022" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0023" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0024" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0025" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0026" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0027" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0028" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0029" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0030" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0031" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0032" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0033" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0034" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0035" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0036" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0037" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0038" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0039" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0040" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0041" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0042" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0043" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0044" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0045" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0046" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0047" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0048" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0049" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0050" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0051" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0052" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0053" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0054" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0055" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0056" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0057" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0058" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0059" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0060" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0061" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0062" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0063" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0064" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0065" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0066" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0067" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0068" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0069" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0070" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0071" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0072" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0073" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0074" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0075" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0076" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0077" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0078" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0079" x="2560" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0080" x="2560" y="0" width="1280" height="720"/>
+	<SubTexture name="boo0081" x="0" y="720" width="1280" height="720"/>
+	<SubTexture name="boo0082" x="0" y="720" width="1280" height="720"/>
+	<SubTexture name="boo0083" x="1280" y="720" width="1280" height="720"/>
+	<SubTexture name="boo0084" x="1280" y="720" width="1280" height="720"/>
+	<SubTexture name="ghoink gf burlandose0000" x="1280" y="0" width="1280" height="720" pivotX="640" pivotY="360"/>
+	<SubTexture name="ghoink gf burlandose0001" x="1280" y="0" width="1280" height="720"/>
+	<SubTexture name="ghoink gf burlandose0002" x="2560" y="0" width="1280" height="720"/>
+	<SubTexture name="ghoink gf burlandose0003" x="2560" y="0" width="1280" height="720"/>
+	<SubTexture name="ghoink gf burlandose0004" x="0" y="720" width="1280" height="720"/>
+	<SubTexture name="ghoink gf burlandose0005" x="0" y="720" width="1280" height="720"/>
+	<SubTexture name="ghoink gf burlandose0006" x="1280" y="720" width="1280" height="720"/>
+	<SubTexture name="ghoink gf burlandose0007" x="1280" y="720" width="1280" height="720"/>
+</TextureAtlas>

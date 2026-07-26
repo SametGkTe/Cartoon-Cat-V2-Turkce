@@ -1,0 +1,89 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"fps": 24,
+			"anim": "leftBlink",
+			"indices": [],
+			"name": "dance left blinking"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-7,
+				-9
+			],
+			"fps": 24,
+			"anim": "rightBlink",
+			"indices": [],
+			"name": "right blink"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"fps": 24,
+			"anim": "danceLeft-alt",
+			"indices": [],
+			"name": "left mirando hacia bf"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-7,
+				-9
+			],
+			"fps": 24,
+			"anim": "danceRight-alt",
+			"indices": [],
+			"name": "mirando hacia bf right"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "danceLeft",
+			"fps": 24,
+			"name": "gf dance left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-7,
+				-9
+			],
+			"anim": "danceRight",
+			"fps": 24,
+			"name": "normal gf dance right",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/leovincible/leovincible_gf",
+	"position": [
+		138,
+		167
+	],
+	"healthicon": "gf",
+	"flip_x": false,
+	"healthbar_colors": [
+		165,
+		0,
+		17
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1.25
+}

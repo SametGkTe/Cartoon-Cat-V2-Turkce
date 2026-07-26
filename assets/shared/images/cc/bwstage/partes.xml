@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="partes.png">
+	<SubTexture name="partes0000" x="0" y="232" width="498" height="232" frameX="0" frameY="0" frameWidth="498" frameHeight="232"/>
+	<SubTexture name="partes0001" x="498" y="0" width="498" height="232" frameX="0" frameY="0" frameWidth="498" frameHeight="232"/>
+	<SubTexture name="partes0002" x="498" y="232" width="498" height="223" frameX="0" frameY="-9" frameWidth="498" frameHeight="232"/>
+	<SubTexture name="partes0003" x="0" y="0" width="498" height="232" frameX="0" frameY="0" frameWidth="498" frameHeight="232"/>
+</TextureAtlas>

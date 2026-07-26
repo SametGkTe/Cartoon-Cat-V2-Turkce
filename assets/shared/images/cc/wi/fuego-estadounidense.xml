@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="fuego-estadounidense.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="fuego0000" x="770" y="0" width="770" height="255" frameX="1" frameY="-178" frameWidth="768" frameHeight="432"/>
+	<SubTexture name="fuego0001" x="0" y="0" width="770" height="260" frameX="1" frameY="-173" frameWidth="768" frameHeight="432"/>
+	<SubTexture name="fuego0002" x="0" y="260" width="770" height="258" frameX="1" frameY="-175" frameWidth="768" frameHeight="432"/>
+	<SubTexture name="fuego0003" x="770" y="255" width="770" height="249" frameX="1" frameY="-184" frameWidth="768" frameHeight="432"/>
+</TextureAtlas>

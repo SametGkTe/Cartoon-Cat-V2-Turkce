@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="Fetid King-1.png"><SubTexture name="Fetid King Menu Idle0000" x="0" y="0" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="Fetid King Menu Idle0001" x="1924" y="0" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="Fetid King Menu Idle0002" x="3848" y="0" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="Fetid King Menu Idle0003" x="5772" y="0" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="Fetid King Menu Idle0004" x="0" y="1084" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="Fetid King Menu Idle0005" x="1924" y="1084" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="Fetid King Menu Idle0006" x="3848" y="1084" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="Fetid King Menu Idle0007" x="5772" y="1084" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="Fetid King Menu Idle0008" x="0" y="2168" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="Fetid King Menu Idle0009" x="1924" y="2168" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="Fetid King Menu Idle0010" x="3848" y="2168" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="Fetid King Menu Idle0011" x="5772" y="2168" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="Fetid King Menu Idle0012" x="0" y="3252" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="Fetid King Menu Idle0013" x="1924" y="3252" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="Fetid King Menu Idle0014" x="3848" y="3252" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="Fetid King Menu Idle0015" x="5772" y="3252" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="Fetid King Menu Idle0016" x="0" y="4336" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="Fetid King Menu Idle0017" x="1924" y="4336" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="Fetid King Menu Idle0018" x="3848" y="4336" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="Fetid King Menu Idle0019" x="5772" y="4336" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+</TextureAtlas>

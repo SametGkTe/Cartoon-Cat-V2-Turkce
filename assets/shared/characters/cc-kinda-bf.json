@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				-120
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "Idle"
+		},
+		{
+			"offsets": [
+				29,
+				-142
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Sing Left"
+		},
+		{
+			"offsets": [
+				-50,
+				-208
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Sing Down"
+		},
+		{
+			"offsets": [
+				-176,
+				-128
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "Sing Right"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-80,
+				-75
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Sing Up",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/imperfect_cartoon_bf",
+	"position": [
+		-320,
+		200
+	],
+	"healthicon": "cc-kinda-bf",
+	"flip_x": false,
+	"healthbar_colors": [
+		32,
+		43,
+		47
+	],
+	"camera_position": [
+		120,
+		200
+	],
+	"sing_duration": 6,
+	"scale": 0.65
+}

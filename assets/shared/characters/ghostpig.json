@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				-131
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "Pig Idle"
+		},
+		{
+			"offsets": [
+				102,
+				-213
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Pig Left"
+		},
+		{
+			"offsets": [
+				142,
+				-264
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "Pig Right"
+		},
+		{
+			"offsets": [
+				-10,
+				-226
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Pig Down"
+		},
+		{
+			"offsets": [
+				-22,
+				51
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "Pig Up"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/GhostPig_Assets",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "ghostpig",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		174,
+		174
+	],
+	"camera_position": [
+		0,
+		80
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

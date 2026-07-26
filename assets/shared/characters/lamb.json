@@ -1,0 +1,89 @@
+{
+	"animations": [
+		{
+			"loop": true,
+			"offsets": [
+				-418,
+				20
+			],
+			"anim": "idle",
+			"fps": 12,
+			"name": "The_Lamb Idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-415,
+				30
+			],
+			"anim": "singDOWN",
+			"fps": 12,
+			"name": "The_Lamb Down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-426,
+				29
+			],
+			"anim": "singUP",
+			"fps": 12,
+			"name": "The_Lamb Up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-425,
+				23
+			],
+			"anim": "singLEFT",
+			"fps": 12,
+			"name": "The_Lamb Left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-424,
+				24
+			],
+			"anim": "singRIGHT",
+			"fps": 12,
+			"name": "The_Lamb Right",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-418,
+				20
+			],
+			"indices": [],
+			"fps": 23,
+			"anim": "shine",
+			"loop": false,
+			"name": "The_Lamb Attack"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/The_Lamb",
+	"position": [
+		-158,
+		104
+	],
+	"healthicon": "lamb",
+	"flip_x": false,
+	"healthbar_colors": [
+		134,
+		63,
+		61
+	],
+	"camera_position": [
+		278,
+		-183
+	],
+	"sing_duration": 4,
+	"scale": 1.75
+}

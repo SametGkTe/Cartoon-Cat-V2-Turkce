@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="auto.png">
+	<SubTexture name="auto fondo0000" x="511" y="0" width="514" height="447" frameX="-220" frameY="-12" frameWidth="768" frameHeight="515"/>
+	<SubTexture name="auto fondo0001" x="0" y="0" width="511" height="452" frameX="-220" frameY="-5" frameWidth="768" frameHeight="515"/>
+	<SubTexture name="auto fondo0002" x="1025" y="413" width="515" height="423" frameX="-220" frameY="-31" frameWidth="768" frameHeight="515"/>
+	<SubTexture name="auto fondo0003" x="548" y="860" width="535" height="399" frameX="-210" frameY="-56" frameWidth="768" frameHeight="515"/>
+	<SubTexture name="auto fondo0004" x="0" y="452" width="547" height="408" frameX="-202" frameY="-49" frameWidth="768" frameHeight="515"/>
+	<SubTexture name="auto fondo0005" x="1025" y="0" width="538" height="413" frameX="-208" frameY="-37" frameWidth="768" frameHeight="515"/>
+	<SubTexture name="auto fondo0006" x="0" y="860" width="548" height="404" frameX="-213" frameY="-47" frameWidth="768" frameHeight="515"/>
+</TextureAtlas>

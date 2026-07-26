@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				36,
+				4
+			],
+			"fps": 30,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "left"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				3,
+				-10
+			],
+			"fps": 30,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "down"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				4,
+				14
+			],
+			"fps": 30,
+			"anim": "singUP",
+			"indices": [],
+			"name": "up"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-16,
+				-2
+			],
+			"fps": 30,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "right"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/luna_sprites_for_mechanic",
+	"position": [
+		150,
+		177
+	],
+	"healthicon": "lh",
+	"flip_x": false,
+	"healthbar_colors": [
+		78,
+		60,
+		56
+	],
+	"camera_position": [
+		69,
+		-36
+	],
+	"sing_duration": 3.6,
+	"scale": 2
+}

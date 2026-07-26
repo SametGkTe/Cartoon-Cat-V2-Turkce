@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="static + redacted.png">
+	<SubTexture name="estatica pal fondo0000" x="0" y="294" width="520" height="299" frameX="-30" frameY="-8" frameWidth="616" frameHeight="358"/>
+	<SubTexture name="estatica pal fondo0001" x="539" y="294" width="527" height="294" frameX="-29" frameY="-15" frameWidth="616" frameHeight="358"/>
+	<SubTexture name="estatica pal fondo0002" x="0" y="0" width="539" height="294" frameX="-11" frameY="-13" frameWidth="616" frameHeight="358"/>
+	<SubTexture name="estatica pal fondo0003" x="539" y="0" width="527" height="294" frameX="-29" frameY="-15" frameWidth="616" frameHeight="358"/>
+</TextureAtlas>

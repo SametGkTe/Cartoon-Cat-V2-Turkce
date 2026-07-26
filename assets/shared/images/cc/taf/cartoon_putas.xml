@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="cartoon_putas.png">
+	<SubTexture name="bg putas10000" x="767" y="1019" width="254" height="264" frameX="-27" frameY="-23" frameWidth="707" frameHeight="443"/>
+	<SubTexture name="bg putas10001" x="0" y="1019" width="512" height="284" frameX="-16" frameY="-20" frameWidth="707" frameHeight="443"/>
+	<SubTexture name="bg putas10002" x="512" y="1019" width="255" height="284" frameX="-15" frameY="-14" frameWidth="707" frameHeight="443"/>
+	<SubTexture name="bg putas10003" x="279" y="1303" width="253" height="289" frameX="-9" frameY="-9" frameWidth="707" frameHeight="443"/>
+	<SubTexture name="bg putas10004" x="0" y="1303" width="279" height="438" frameX="-8" frameY="-1" frameWidth="707" frameHeight="443"/>
+	<SubTexture name="bg putas10005" x="1021" y="1019" width="254" height="264" frameX="-9" frameY="-16" frameWidth="707" frameHeight="443"/>
+	<SubTexture name="bg putas20006" x="0" y="0" width="902" height="368" frameX="-4" frameY="-11" frameWidth="913" frameHeight="383"/>
+	<SubTexture name="bg putas20007" x="905" y="368" width="904" height="321" frameX="-3" frameY="-10" frameWidth="913" frameHeight="383"/>
+	<SubTexture name="bg putas20008" x="0" y="368" width="905" height="326" frameX="-3" frameY="-9" frameWidth="913" frameHeight="383"/>
+	<SubTexture name="bg putas20009" x="0" y="694" width="906" height="325" frameX="-2" frameY="-6" frameWidth="913" frameHeight="383"/>
+	<SubTexture name="bg putas20010" x="902" y="0" width="908" height="328" frameX="-1" frameY="-3" frameWidth="913" frameHeight="383"/>
+	<SubTexture name="bg putas20011" x="906" y="694" width="904" height="321" frameX="-3" frameY="-15" frameWidth="913" frameHeight="383"/>
+</TextureAtlas>

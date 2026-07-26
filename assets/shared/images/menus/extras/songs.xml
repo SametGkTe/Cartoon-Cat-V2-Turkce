@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="songs.png">
+	<!-- Created with Adobe Animate version 22.0.5.191 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="songs0000" x="0" y="0" width="533" height="160" frameX="0" frameY="0" frameWidth="535" frameHeight="166"/>
+	<SubTexture name="songs0001" x="0" y="0" width="533" height="160" frameX="0" frameY="0" frameWidth="535" frameHeight="166"/>
+	<SubTexture name="songs0002" x="0" y="160" width="535" height="162" frameX="0" frameY="0" frameWidth="535" frameHeight="166"/>
+	<SubTexture name="songs0003" x="0" y="160" width="535" height="162" frameX="0" frameY="0" frameWidth="535" frameHeight="166"/>
+	<SubTexture name="songs0004" x="0" y="322" width="534" height="162" frameX="0" frameY="0" frameWidth="535" frameHeight="166"/>
+	<SubTexture name="songs0005" x="0" y="322" width="534" height="162" frameX="0" frameY="0" frameWidth="535" frameHeight="166"/>
+	<SubTexture name="songs0006" x="0" y="484" width="533" height="166" frameX="0" frameY="0" frameWidth="535" frameHeight="166"/>
+	<SubTexture name="songs0007" x="0" y="484" width="533" height="166" frameX="0" frameY="0" frameWidth="535" frameHeight="166"/>
+</TextureAtlas>

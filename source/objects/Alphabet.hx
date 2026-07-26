@@ -25,7 +25,7 @@ class Alphabet extends FlxSpriteGroup
 	public var rows:Int = 0;
 
 	public var distancePerItem:FlxPoint = new FlxPoint(20, 120);
-	public var startPosition:FlxPoint = new FlxPoint(0, 0); //for the calculations
+	public var startPosition:FlxPoint = new FlxPoint(0, 0);
 
 	public function new(x:Float, y:Float, text:String = "", ?bold:Bool = true)
 	{
@@ -194,14 +194,21 @@ class Alphabet extends FlxSpriteGroup
 		rows = 0;
 		for (character in newText.split(''))
 		{
-			
 			if(character != '\n')
 			{
 				var spaceChar:Bool = (character == " " || (bold && character == "_"));
 				if (spaceChar) consecutiveSpaces++;
 
-				var isAlphabet:Bool = AlphaCharacter.isTypeAlphabet(character.toLowerCase());
-				if (AlphaCharacter.allLetters.exists(character.toLowerCase()) && (!bold || !spaceChar))
+				// Türkçe güvenli küçük harf dönüşümü
+				var safeToLower:String = switch(character)
+				{
+					case 'İ': 'İ'; // İ'yi olduğu gibi bırak
+					case 'I': 'ı'; // Türkçe: büyük I -> ı
+					default: character.toLowerCase();
+				}
+
+				var isAlphabet:Bool = AlphaCharacter.isTypeAlphabet(safeToLower);
+				if (AlphaCharacter.allLetters.exists(safeToLower) && (!bold || !spaceChar))
 				{
 					if (consecutiveSpaces > 0)
 					{
@@ -254,12 +261,6 @@ class Alphabet extends FlxSpriteGroup
 // ALPHABET LETTERS, SYMBOLS AND NUMBERS //
 ///////////////////////////////////////////
 
-/*enum LetterType
-{
-	ALPHABET;
-	NUMBER_OR_SYMBOL;
-}*/
-
 typedef Letter = {
 	?anim:Null<String>,
 	?offsets:Array<Float>,
@@ -268,34 +269,36 @@ typedef Letter = {
 
 class AlphaCharacter extends FlxSprite
 {
-	//public static var alphabet:String = "abcdefghijklmnopqrstuvwxyz";
-	//public static var numbers:String = "1234567890";
-	//public static var symbols:String = "|~#$%()*+-:;<=>@[]^_.,'!?";
-
 	public var image(default, set):String;
 
 	public static var allLetters:Map<String, Null<Letter>> = [
-		//alphabet
+		// İngilizce alfabe
 		'a'  => null, 'b'  => null, 'c'  => null, 'd'  => null, 'e'  => null, 'f'  => null,
 		'g'  => null, 'h'  => null, 'i'  => null, 'j'  => null, 'k'  => null, 'l'  => null,
 		'm'  => null, 'n'  => null, 'o'  => null, 'p'  => null, 'q'  => null, 'r'  => null,
 		's'  => null, 't'  => null, 'u'  => null, 'v'  => null, 'w'  => null, 'x'  => null,
 		'y'  => null, 'z'  => null,
 
-		//additional alphabet
+		// Ek alfabe karakterleri
 		'á'  => null, 'é'  => null, 'í'  => null, 'ó'  => null, 'ú'  => null,
 		'à'  => null, 'è'  => null, 'ì'  => null, 'ò'  => null, 'ù'  => null,
 		'â'  => null, 'ê'  => null, 'î'  => null, 'ô'  => null, 'û'  => null,
 		'ã'  => null, 'ë'  => null, 'ï'  => null, 'õ'  => null, 'ü'  => null,
 		'ä'  => null, 'ö'  => null, 'å'  => null, 'ø'  => null, 'æ'  => null,
-		'ñ'  => null, 'ç'  => {offsetsBold: [0, -11]}, 'š'  => null, 'ž'  => null, 'ý'  => null, 'ÿ'  => null,
-		'ß'  => null,
-		
-		//numbers
+		'ñ'  => null, 'ç'  => {offsetsBold: [0, -11]}, 'š' => null, 'ž' => null,
+		'ý'  => null, 'ÿ'  => null, 'ß'  => null,
+
+		// Türkçe karakterler
+		'ğ'  => null,
+		'ş'  => {offsetsBold: [0, -13]},
+		'ı'  => null,
+		'İ'  => null,
+
+		// Sayılar
 		'0'  => null, '1'  => null, '2'  => null, '3'  => null, '4'  => null,
 		'5'  => null, '6'  => null, '7'  => null, '8'  => null, '9'  => null,
 
-		//symbols
+		// Semboller
 		'&'  => {offsetsBold: [0, 2]},
 		'('  => {offsetsBold: [0, 0]},
 		')'  => {offsetsBold: [0, 0]},
@@ -309,7 +312,7 @@ class AlphaCharacter extends FlxSprite
 		'\'' => {anim: 'apostrophe', offsets: [0, 32], offsetsBold: [0, 40]},
 		'"'  => {anim: 'quote', offsets: [0, 32], offsetsBold: [0, 40]},
 		'!'  => {anim: 'exclamation'},
-		'?'  => {anim: 'question'}, //also used for "unknown"
+		'?'  => {anim: 'question'},
 		'.'  => {anim: 'period'},
 		'❝'  => {anim: 'start quote', offsets: [0, 24], offsetsBold: [0, 40]},
 		'❞'  => {anim: 'end quote', offsets: [0, 24], offsetsBold: [0, 40]},
@@ -327,7 +330,7 @@ class AlphaCharacter extends FlxSprite
 		'|'  => null,
 		'~'  => {offsets: [0, 16], offsetsBold: [0, 20]},
 
-		//additional symbols
+		// Ek semboller
 		'¡'  => {anim: 'inverted exclamation', offsets: [0, -20], offsetsBold: [0, -20]},
 		'¿'  => {anim: 'inverted question', offsets: [0, -20], offsetsBold: [0, -20]},
 		'{'  => null,
@@ -336,12 +339,13 @@ class AlphaCharacter extends FlxSprite
 	];
 
 	var parent:Alphabet;
-	public var alignOffset:Float = 0; //Don't change this
+	public var alignOffset:Float = 0;
 	public var letterOffset:Array<Float> = [0, 0];
 
 	public var row:Int = 0;
 	public var rowWidth:Float = 0;
 	public var character:String = '?';
+
 	public function new()
 	{
 		super(x, y);
@@ -367,7 +371,15 @@ class AlphaCharacter extends FlxSprite
 		{
 			this.character = character;
 			curLetter = null;
-			var lowercase:String = this.character.toLowerCase();
+
+			// Türkçe güvenli küçük harf dönüşümü
+			var lowercase:String = switch(character)
+			{
+				case 'İ': 'İ'; // İ'yi olduğu gibi bırak
+				case 'I': 'ı'; // Türkçe: büyük I -> ı
+				default: character.toLowerCase();
+			}
+
 			if(allLetters.exists(lowercase)) curLetter = allLetters.get(lowercase);
 			else curLetter = allLetters.get('?');
 
@@ -376,10 +388,14 @@ class AlphaCharacter extends FlxSprite
 			{
 				if(isTypeAlphabet(lowercase))
 				{
-					if(lowercase != this.character)
-						suffix = ' uppercase';
-					else
-						suffix = ' lowercase';
+					// Türkçe büyük harf kontrolü
+					var isUpper:Bool = switch(character)
+					{
+						case 'Ğ', 'Ş', 'İ': true;
+						case 'I': false; // Türkçe I -> ı (küçük)
+						default: lowercase != character;
+					}
+					suffix = isUpper ? ' uppercase' : ' lowercase';
 				}
 				else suffix = ' normal';
 			}
@@ -402,19 +418,23 @@ class AlphaCharacter extends FlxSprite
 		updateHitbox();
 	}
 
-	public static function isTypeAlphabet(c:String) // thanks kade
+	public static function isTypeAlphabet(c:String)
 	{
 		var ascii = StringTools.fastCodeAt(c, 0);
-		return (ascii >= 65 && ascii <= 90)
-			|| (ascii >= 97 && ascii <= 122)
-			|| (ascii >= 192 && ascii <= 214)
-			|| (ascii >= 216 && ascii <= 246)
-			|| (ascii >= 248 && ascii <= 255);
+		return (ascii >= 65 && ascii <= 90)      // A-Z
+			|| (ascii >= 97 && ascii <= 122)     // a-z
+			|| (ascii >= 192 && ascii <= 214)    // À-Ö
+			|| (ascii >= 216 && ascii <= 246)    // Ø-ö
+			|| (ascii >= 248 && ascii <= 255)    // ø-ÿ
+			|| ascii == 286 || ascii == 287      // Ğ, ğ
+			|| ascii == 350 || ascii == 351      // Ş, ş
+			|| ascii == 304 || ascii == 305      // İ, ı
+			|| ascii == 199 || ascii == 231;     // Ç, ç
 	}
 
 	private function set_image(name:String)
 	{
-		if(frames == null) //first setup
+		if(frames == null)
 		{
 			image = name;
 			frames = Paths.getSparrowAtlas(name);
@@ -436,7 +456,6 @@ class AlphaCharacter extends FlxSprite
 		{
 			animation.addByPrefix(lastAnim, lastAnim, 24);
 			animation.play(lastAnim, true);
-			
 			updateHitbox();
 		}
 		return name;

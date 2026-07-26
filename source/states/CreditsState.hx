@@ -38,12 +38,33 @@ class CreditsState extends MusicBeatState
 		for (mod in Mods.parseList().enabled) pushModCreditsToList(mod);
 		#end
 
+
 		var defaultList:Array<Array<String>> = [ //Name - Icon name - Description - Link - BG Color
-			['Mobile Porting Team'],
-			['mcagabe19',			'lily',				'Head Porter of Psych Engine Mobile',						'https://www.youtube.com/@mcagabe19',	'FFE7C0'],
-			['Karim Akra',			'karim',			'Assistant Porter/Helper #1 of Psych Engine Mobile',		'https://youtube.com/@Karim0690',		'FFB4F0'],
-			['Moxie',				'moxie',			'Helper #2 of Psych Engine Mobile',							'https://twitter.com/moxie_specalist',	'F592C4'],
-			[''],
+			['New Rigel Records'],
+			['Parlogy',				'cc',			'Cartoon Cat / Michael / New Rigel Records Kurucusu',						 'https://www.tiktok.com/@prlyg_9001',		'474543'],
+			['Hasan Bey',				'rigel',			'Boyfriend / New Rigel Records Kurucusu',						 'https://www.tiktok.com/@hasanbey5656',		'D1CBC7'],
+			['Shizuka',				'luna',			'Luna Henderson',						 'https://www.tiktok.com/@shizu_xa',		'94613D'],
+			['Minalin',				'gf',			'Girlfriend',						 'https://www.tiktok.com/@minalin_s',		'D11547'],
+			['Haktan',				'siren',			'Siren Kafa (Erkek), 911 Operatör, Daniel, Upsidedown Man',						 'https://www.tiktok.com/@hasanbey5656',		'8F2234'],
+			['Balc',				'lemon',			'Lemon Demon',						 'https://www.tiktok.com/@balc_tr',		'B9C722'],
+			['EminDub',				'equ',			'Cartoon Dog, Long Hair, Sahne Editörü',						 'https://www.tiktok.com/@meetwith_emin',		'858A84'],
+			['Tuana',				'siren',			'Siren Kafa (Kadın)',						 'https://www.tiktok.com/@hasanbey5656',		'8F2234'],
+			['Programcılar'],
+			['SametGkTe',				'gkte',			'Tüm Oyun, Engine, Menüler vb.',						 'https://www.tiktok.com/@sametgkte',		'26C21B'],
+			['Çeviriler'],
+			['Nexus',				'nexus',			'Bazı çeviriler',						 'https://www.tiktok.com/@skynexus0.03',		'14967B'],
+			['Temsilciler'],
+			['Serdar',				'rigel',			'Temsilci',						 'https://www.tiktok.com/@skynexus0.03',		'C2BDB8'],
+			['Batuhan',				'rigel',			'Temsilci',						 'https://www.tiktok.com/@skynexus0.03',		'C2BDB8'],
+			['Burak',				'rigel',			'Temsilci',						 'https://www.tiktok.com/@skynexus0.03',		'C2BDB8'],
+			['Mete',				'rigel',			'Temsilci',						 'https://www.tiktok.com/@skynexus0.03',		'C2BDB8'],
+			['Şeyma',				'rigel',			'Temsilci',						 'https://www.tiktok.com/@skynexus0.03',		'C2BDB8'],
+			['Psych Engine Türkiye'],
+			['SametGkTe',				'gkte',			'Psych Engine Türkiye Yapımcısı',						 'https://www.tiktok.com/@sametgkte',		'26C21B'],
+			['Temsilciler'],
+			['XQZ64',				'tabi',			'Psych Engine Türkiye Temsilcisi',						 'https://www.tiktok.com/@xqz_64',		'C2BDB8'],
+			['Nexus',				'nexus',			'Bazı çeviriler',						 'https://www.tiktok.com/@skynexus0.03',		'14967B'],
+			
 			['Psych Engine Team'],
 			['Shadow Mario',		'shadowmario',		'Main Programmer and Head of Psych Engine',					 'https://ko-fi.com/shadowmario',		'444444'],
 			['Riveren',				'riveren',			'Main Artist/Animator of Psych Engine',						 'https://twitter.com/riverennn',		'14967B'],
@@ -132,9 +153,6 @@ class CreditsState extends MusicBeatState
 		bg.color = CoolUtil.colorFromString(creditsStuff[curSelected][4]);
 		intendedColor = bg.color;
 		changeSelection();
-
-		addTouchPad("UP_DOWN", "A_B");
-
 		super.create();
 	}
 

@@ -26,8 +26,6 @@ class ResetScoreSubState extends MusicBeatSubstate
 		this.difficulty = difficulty;
 		this.week = week;
 
-                controls.isInSubstate = true;
-
 		super();
 
 		var name:String = song;
@@ -71,10 +69,6 @@ class ResetScoreSubState extends MusicBeatSubstate
 		noText.screenCenter(X);
 		noText.x += 200;
 		add(noText);
-
-		addTouchPad("LEFT_RIGHT", "A_B");
-		addTouchPadCamera();
-
 		updateOptions();
 	}
 
@@ -97,7 +91,6 @@ class ResetScoreSubState extends MusicBeatSubstate
 		if(controls.BACK) {
 			FlxG.sound.play(Paths.sound('cancelMenu'), 1);
 			close();
-			controls.isInSubstate = false;
 		} else if(controls.ACCEPT) {
 			if(onYes) {
 				if(week == -1) {
@@ -107,12 +100,7 @@ class ResetScoreSubState extends MusicBeatSubstate
 				}
 			}
 			FlxG.sound.play(Paths.sound('cancelMenu'), 1);
-                        controls.isInSubstate = false;
 			close();
-		}
-		if (touchPad == null){ //sometimes it dosent add the tpad, hopefully this fixes it
-		addTouchPad("LEFT_RIGHT", "A_B");
-		addTouchPadCamera();
 		}
 		super.update(elapsed);
 	}

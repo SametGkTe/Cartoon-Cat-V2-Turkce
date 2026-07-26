@@ -1,67 +1,63 @@
 package options;
 
-import lime.ui.Haptic;
-
 class GameplaySettingsSubState extends BaseOptionsMenu
 {
 	public function new()
 	{
-		title = 'Gameplay Settings';
-		rpcTitle = 'Gameplay Settings Menu'; //for Discord Rich Presence
+		title = 'Oynanış Ayarları';
+		rpcTitle = 'Oynanış Ayarları Menüsü';
 
-		//I'd suggest using "Downscroll" as an example for making your own option since it is the simplest here
-		var option:Option = new Option('Downscroll', //Name
-			'If checked, notes go Down instead of Up, simple enough.', //Description
-			'downScroll', //Save data variable name
-			'bool'); //Variable type
-		addOption(option);
-
-		var option:Option = new Option('Middlescroll',
-			'If checked, your notes get centered.',
-			'middleScroll',
+		var option:Option = new Option('Aşağı Oklar',
+			'Açıksa notalar yukarı yerine aşağı akar, bu kadar basit.',
+			'downScroll',
 			'bool');
 		addOption(option);
 
-		var option:Option = new Option('Opponent Notes',
-			'If unchecked, opponent notes get hidden.',
+		var option:Option = new Option('Orta Oklar',
+			'Açıksa notaların ortaya hizalanır.',
+			'middleScroll',
+			'bool');
+		addOption(option);
+		
+		var option:Option = new Option('Oyun Sesi',
+			'Oyunun genel ses seviyesini ayarlar. (0-100)',
+			'gameVolume',
+			'int');
+		option.displayFormat = '%v%';
+		option.scrollSpeed = 50;
+		option.minValue = 0;
+		option.maxValue = 100;
+		option.changeValue = 5;
+		addOption(option);
+		option.onChange = onChangeGameVolume;
+
+		var option:Option = new Option('Rakip Notaları',
+			'Kapalıysa rakibin notaları gizlenir.',
 			'opponentStrums',
 			'bool');
 		addOption(option);
 
-		var option:Option = new Option('Ghost Tapping',
-			"If checked, you won't get misses from pressing keys\nwhile there are no notes able to be hit.",
+		var option:Option = new Option('Hayalet Basış',
+			'Açıksa, vurulabilecek nota yokken tuşlara basman\nkaçırma sayılmaz.',
 			'ghostTapping',
 			'bool');
 		addOption(option);
-		
-		var option:Option = new Option('Auto Pause',
-			"If checked, the game automatically pauses if the screen isn't on focus.",
+
+		var option:Option = new Option('Otomatik Duraklatma',
+			'Açıksa, oyun penceresi odakta değilken oyun otomatik olarak duraklatılır.',
 			'autoPause',
 			'bool');
 		addOption(option);
 		option.onChange = onChangeAutoPause;
 
-		var option:Option = new Option('Pop Up Score',
-			"If unchecked, hitting notes won't make \"sick\", \"good\".. and combo popups (Useful for low end " + Main.platform + ").",
-			'popUpRating',
-			'bool');
-		addOption(option);
-
-		var option:Option = new Option('Disable Reset Button',
-			"If checked, pressing Reset won't do anything.",
+		var option:Option = new Option('Sıfırlama Tuşunu Devre Dışı Bırak',
+			'Açıksa, Sıfırla tuşuna basmak hiçbir şey yapmaz.',
 			'noReset',
 			'bool');
 		addOption(option);
 
-		var option:Option = new Option('Game Over Vibration',
-			"If checked, your device will vibrate at game over.",
-			'gameOverVibration',
-			'bool');
-		addOption(option);
-		option.onChange = onChangeVibration;
-
-		var option:Option = new Option('Hitsound Volume',
-			'Funny notes does \"Tick!\" when you hit them.',
+		var option:Option = new Option('Vuruş Sesi Seviyesi',
+			'Notalara vurduğunda "Tik!" diye bir ses çalar.',
 			'hitsoundVolume',
 			'percent');
 		addOption(option);
@@ -72,8 +68,8 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 		option.decimals = 1;
 		option.onChange = onChangeHitsoundVolume;
 
-		var option:Option = new Option('Rating Offset',
-			'Changes how late/early you have to hit for a "Sick!"\nHigher values mean you have to hit later.',
+		var option:Option = new Option('Derecelendirme Ayarı',
+			'Bir notanın "Sick!" sayılması için ne kadar erken/geç basman gerektiğini değiştirir.\nDaha yüksek değerler, daha geç basman gerektiği anlamına gelir.',
 			'ratingOffset',
 			'int');
 		option.displayFormat = '%vms';
@@ -82,8 +78,8 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 		option.maxValue = 30;
 		addOption(option);
 
-		var option:Option = new Option('Sick! Hit Window',
-			'Changes the amount of time you have\nfor hitting a "Sick!" in milliseconds.',
+		var option:Option = new Option('"Müq!" Vuruş Penceresi',
+			'Bir notayı "Sick!" olarak vurabilmen için sahip olduğun\nsüreyi milisaniye cinsinden değiştirir.',
 			'sickWindow',
 			'int');
 		option.displayFormat = '%vms';
@@ -92,8 +88,8 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 		option.maxValue = 45;
 		addOption(option);
 
-		var option:Option = new Option('Good Hit Window',
-			'Changes the amount of time you have\nfor hitting a "Good" in milliseconds.',
+		var option:Option = new Option('"iyi" Vuruş Penceresi',
+			'Bir notayı "Good" olarak vurabilmen için sahip olduğun\nsüreyi milisaniye cinsinden değiştirir.',
 			'goodWindow',
 			'int');
 		option.displayFormat = '%vms';
@@ -102,8 +98,8 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 		option.maxValue = 90;
 		addOption(option);
 
-		var option:Option = new Option('Bad Hit Window',
-			'Changes the amount of time you have\nfor hitting a "Bad" in milliseconds.',
+		var option:Option = new Option('"Kötü" Vuruş Penceresi',
+			'Bir notayı "Kötü" olarak vurabilmen için sahip olduğun\nsüreyi milisaniye cinsinden değiştirir.',
 			'badWindow',
 			'int');
 		option.displayFormat = '%vms';
@@ -112,8 +108,8 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 		option.maxValue = 135;
 		addOption(option);
 
-		var option:Option = new Option('Safe Frames',
-			'Changes how many frames you have for\nhitting a note earlier or late.',
+		var option:Option = new Option('Güvenli Kareler',
+			'Bir notaya erken ya da geç basmak için sahip olduğun\nzaman toleransını değiştirir.',
 			'safeFrames',
 			'float');
 		option.scrollSpeed = 5;
@@ -122,8 +118,8 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 		option.changeValue = 0.1;
 		addOption(option);
 
-		var option:Option = new Option('Sustains as One Note',
-			"If checked, Hold Notes can't be pressed if you miss,\nand count as a single Hit/Miss.\nUncheck this if you prefer the old Input System.",
+		var option:Option = new Option('Uzun Notaların Tek Sayılması',
+			'Açıksa, uzatmalı notaları kaçırdıysan tekrar basamazsın\nve tek bir İsabet/Kaçırma olarak sayılır.\nEski input sistemini tercih ediyorsan bunu kapat.',
 			'guitarHeroSustains',
 			'bool');
 		addOption(option);
@@ -131,17 +127,14 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 		super();
 	}
 
+	function onChangeGameVolume()
+	{
+		ClientPrefs.applyGameVolume();
+	}
+
 	function onChangeHitsoundVolume()
 		FlxG.sound.play(Paths.sound('hitsound'), ClientPrefs.data.hitsoundVolume);
 
 	function onChangeAutoPause()
 		FlxG.autoPause = ClientPrefs.data.autoPause;
-
-	function onChangeVibration()
-	{
-		if(ClientPrefs.data.gameOverVibration)
-		{
-			Haptic.vibrate(0, 500);
-		}
-	}
 }

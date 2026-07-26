@@ -38,7 +38,7 @@ class NoteOffsetState extends MusicBeatState
 	override public function create()
 	{
 		#if DISCORD_ALLOWED
-		DiscordClient.changePresence("Delay/Combo Offset Menu", null);
+		DiscordClient.changePresence("Gecikme/Kombo Ofseti Menüsü", null);
 		#end
 
 		// Cameras
@@ -115,7 +115,7 @@ class NoteOffsetState extends MusicBeatState
 		repositionCombo();
 
 		// Note delay stuff
-		beatText = new Alphabet(0, 0, 'Beat Hit!', true);
+		beatText = new Alphabet(0, 0, 'Ritim Vuruşu!', true);
 		beatText.setScale(0.6, 0.6);
 		beatText.x += 260;
 		beatText.alpha = 0;
@@ -177,8 +177,8 @@ class NoteOffsetState extends MusicBeatState
 	var onComboMenu:Bool = true;
 	var holdingObjectType:Null<Bool> = null;
 
-	var startMousePos:FlxPoint = FlxPoint.get();
-	var startComboOffset:FlxPoint = FlxPoint.get();
+	var startMousePos:FlxPoint = new FlxPoint();
+	var startComboOffset:FlxPoint = new FlxPoint();
 
 	override public function update(elapsed:Float)
 	{
@@ -346,7 +346,7 @@ class NoteOffsetState extends MusicBeatState
 				}
 			}
 
-			if(controls.RESET || touchPad.buttonC.justPressed)
+			if(controls.RESET)
 			{
 				for (i in 0...ClientPrefs.data.comboOffset.length)
 				{
@@ -359,13 +359,11 @@ class NoteOffsetState extends MusicBeatState
 		{
 			if(controls.UI_LEFT_P)
 			{
-				holdTime = 0;
 				barPercent = Math.max(delayMin, Math.min(ClientPrefs.data.noteOffset - 1, delayMax));
 				updateNoteDelay();
 			}
 			else if(controls.UI_RIGHT_P)
 			{
-				holdTime = 0;
 				barPercent = Math.max(delayMin, Math.min(ClientPrefs.data.noteOffset + 1, delayMax));
 				updateNoteDelay();
 			}
@@ -377,6 +375,8 @@ class NoteOffsetState extends MusicBeatState
 				if(controls.UI_LEFT) mult = -1;
 			}
 
+			if(controls.UI_LEFT_R || controls.UI_RIGHT_R) holdTime = 0;
+
 			if(holdTime > 0.5)
 			{
 				barPercent += 100 * addNum * elapsed * mult;
@@ -384,7 +384,7 @@ class NoteOffsetState extends MusicBeatState
 				updateNoteDelay();
 			}
 
-			if(controls.RESET || touchPad.buttonC.justPressed)
+			if(controls.RESET)
 			{
 				holdTime = 0;
 				barPercent = 0;
@@ -499,9 +499,9 @@ class NoteOffsetState extends MusicBeatState
 		{
 			switch(i)
 			{
-				case 0: dumbTexts.members[i].text = 'Rating Offset:';
+				case 0: dumbTexts.members[i].text = 'Derecelendirme Ayarı:';
 				case 1: dumbTexts.members[i].text = '[' + ClientPrefs.data.comboOffset[0] + ', ' + ClientPrefs.data.comboOffset[1] + ']';
-				case 2: dumbTexts.members[i].text = 'Numbers Offset:';
+				case 2: dumbTexts.members[i].text = 'Sayı Ayarı:';
 				case 3: dumbTexts.members[i].text = '[' + ClientPrefs.data.comboOffset[2] + ', ' + ClientPrefs.data.comboOffset[3] + ']';
 			}
 		}
@@ -510,7 +510,7 @@ class NoteOffsetState extends MusicBeatState
 	function updateNoteDelay()
 	{
 		ClientPrefs.data.noteOffset = Math.round(barPercent);
-		timeTxt.text = 'Current offset: ' + Math.floor(barPercent) + ' ms';
+		timeTxt.text = 'Mevcut Derecelendirme: ' + Math.floor(barPercent) + ' ms';
 	}
 
 	function updateMode()
@@ -523,9 +523,6 @@ class NoteOffsetState extends MusicBeatState
 		timeTxt.visible = !onComboMenu;
 		beatText.visible = !onComboMenu;
 
-		addTouchPad(onComboMenu ? "NONE" : "LEFT_RIGHT", "A_B_C");
-		addTouchPadCamera();
-
 		controllerPointer.visible = false;
 		FlxG.mouse.visible = false;
 		if(onComboMenu)
@@ -534,16 +531,17 @@ class NoteOffsetState extends MusicBeatState
 			controllerPointer.visible = controls.controllerMode;
 		}
 
-		final buttonAccept:String = (controls.mobileC) ? 'A' : (!controls.controllerMode) ? 'Accept' : 'Start';
-
 		var str:String;
 		var str2:String;
 		if(onComboMenu)
-			str = 'Combo Offset';
+			str = 'Kombo Ayarı';
 		else
-			str = 'Note/Beat Delay';
+			str = 'Nota Ayarı';
 
-		str2 = '(Press $buttonAccept to Switch)';
+		if(!controls.controllerMode)
+			str2 = '(Değiştirmek için Onayla\'ya basın)';
+		else
+			str2 = '(Değiştirmek için Start\'a basın)';
 
 		changeModeText.text = '< ${str.toUpperCase()} ${str2.toUpperCase()} >';
 	}

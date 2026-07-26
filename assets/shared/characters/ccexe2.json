@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				-151
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "i"
+		},
+		{
+			"offsets": [
+				185,
+				-154
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "l"
+		},
+		{
+			"offsets": [
+				75,
+				-148
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "d"
+		},
+		{
+			"offsets": [
+				61,
+				-148
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "r"
+		},
+		{
+			"offsets": [
+				-37,
+				-100
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "u"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/cartoonexe_assets",
+	"position": [
+		150,
+		50
+	],
+	"healthicon": "cartoonexe",
+	"flip_x": false,
+	"healthbar_colors": [
+		254,
+		0,
+		0
+	],
+	"camera_position": [
+		-20,
+		-150
+	],
+	"sing_duration": 4,
+	"scale": 1.9
+}

@@ -1,0 +1,10 @@
+{
+	"directory": "",
+	"deathReason": "wi",
+	"defaultZoom": 0.5,
+	"isPixelStage": false,
+
+	"boyfriend": [750, 130],
+	"girlfriend": [500, 250],
+	"opponent": [100, 100]
+}

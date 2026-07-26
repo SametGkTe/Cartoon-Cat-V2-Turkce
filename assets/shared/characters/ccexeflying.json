@@ -1,0 +1,133 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				-655,
+				20
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "cartoon cat.exe flying Idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-653,
+				9
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "cartoon cat.exe flying Down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-645,
+				13
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "cartoon cat.exe flying Up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-651,
+				16
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "cartoon cat.exe flying Left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-653,
+				18
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "cartoon cat.exe flying Right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-601,
+				50
+			],
+			"anim": "laugh",
+			"fps": 24,
+			"name": "cartoon cat.exe flying Laugh",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-603,
+				50
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN-alt",
+			"indices": [],
+			"name": "cartoon cat.exe flying Laugh"
+		},
+		{
+			"offsets": [
+				-601,
+				50
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP-alt",
+			"indices": [],
+			"name": "cartoon cat.exe flying Laugh"
+		},
+		{
+			"offsets": [
+				-601,
+				50
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT-alt",
+			"indices": [],
+			"name": "cartoon cat.exe flying Laugh"
+		},
+		{
+			"offsets": [
+				-601,
+				50
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT-alt",
+			"indices": [],
+			"name": "cartoon cat.exe flying Laugh"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/cartoon_cat.exe_flying",
+	"position": [
+		-245,
+		268
+	],
+	"healthicon": "cartoonexe",
+	"flip_x": false,
+	"healthbar_colors": [
+		254,
+		0,
+		0
+	],
+	"camera_position": [
+		270,
+		-135
+	],
+	"sing_duration": 4,
+	"scale": 2.5
+}

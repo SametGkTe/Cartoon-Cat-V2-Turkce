@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="static.png">
+	<!-- Created with Adobe Animate version 21.0.0.35450 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="static lol0000" x="0" y="0" width="570" height="424" pivotX="14" pivotY="12"/>
+	<SubTexture name="static lol0001" x="570" y="0" width="570" height="424"/>
+	<SubTexture name="static lol0002" x="1140" y="0" width="570" height="424"/>
+	<SubTexture name="static lol0003" x="0" y="424" width="570" height="424"/>
+	<SubTexture name="static lol0004" x="570" y="424" width="570" height="424"/>
+	<SubTexture name="static lol0005" x="1140" y="424" width="570" height="424"/>
+	<SubTexture name="static lol0006" x="0" y="848" width="570" height="424"/>
+	<SubTexture name="static lol0007" x="570" y="848" width="570" height="424"/>
+	<SubTexture name="static lol0008" x="1140" y="848" width="570" height="424"/>
+	<SubTexture name="static lol0009" x="0" y="1272" width="570" height="424"/>
+</TextureAtlas>

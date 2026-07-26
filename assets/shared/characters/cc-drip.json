@@ -1,0 +1,232 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				7,
+				39
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "BF NOTE LEFT MISS"
+		},
+		{
+			"offsets": [
+				-15,
+				-19
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "BF NOTE DOWN MISS"
+		},
+		{
+			"offsets": [
+				-36,
+				27
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "BF NOTE UP MISS"
+		},
+		{
+			"offsets": [
+				-44,
+				22
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "BF NOTE RIGHT MISS"
+		},
+		{
+			"offsets": [
+				-3,
+				5
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "hey",
+			"indices": [],
+			"name": "BF HEY"
+		},
+		{
+			"offsets": [
+				15,
+				18
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "hurt",
+			"indices": [],
+			"name": "BF hit"
+		},
+		{
+			"offsets": [
+				-4,
+				0
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "scared",
+			"indices": [],
+			"name": "BF idle shaking"
+		},
+		{
+			"offsets": [
+				16,
+				20
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "redacted",
+			"indices": [],
+			"name": "REDACTED"
+		},
+		{
+			"offsets": [
+				37,
+				11
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "firstDeath",
+			"indices": [],
+			"name": "BF dies"
+		},
+		{
+			"offsets": [
+				37,
+				5
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "deathLoop",
+			"indices": [],
+			"name": "BF Dead Loop"
+		},
+		{
+			"offsets": [
+				37,
+				69
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "deathConfirm",
+			"indices": [],
+			"name": "BF Dead confirm"
+		},
+		{
+			"offsets": [
+				-10,
+				-16
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "dodge",
+			"indices": [],
+			"name": "boyfriend dodge"
+		},
+		{
+			"offsets": [
+				294,
+				267
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "attack",
+			"indices": [],
+			"name": "boyfriend attack"
+		},
+		{
+			"offsets": [
+				-40,
+				-40
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "pre-attack",
+			"indices": [],
+			"name": "bf pre attack"
+		},
+		{
+			"loop": true,
+			"offsets": [
+				25,
+				280
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "cartoon drip assets idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				5,
+				281
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "cartoon drip assets left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				21,
+				281
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "cartoon drip assets down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				21,
+				281
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "cartoon drip assets up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				32,
+				281
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "cartoon drip assets right",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/cartoon_drip_assets",
+	"position": [
+		0,
+		350
+	],
+	"healthicon": "cc",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		255,
+		255
+	],
+	"camera_position": [
+		0,
+		-130
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

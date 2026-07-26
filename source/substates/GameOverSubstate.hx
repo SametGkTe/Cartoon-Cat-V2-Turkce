@@ -9,8 +9,6 @@ import flixel.FlxSubState;
 import states.StoryMenuState;
 import states.FreeplayState;
 
-import lime.ui.Haptic;
-
 class GameOverSubstate extends MusicBeatSubstate
 {
 	public var boyfriend:Character;
@@ -49,9 +47,6 @@ class GameOverSubstate extends MusicBeatSubstate
 	{
 		instance = this;
 
-		if (ClientPrefs.data.gameOverVibration)
-			Haptic.vibrate(0, 500);
-
 		Conductor.songPosition = 0;
 
 		boyfriend = new Character(PlayState.instance.boyfriend.getScreenPosition().x, PlayState.instance.boyfriend.getScreenPosition().y, characterName, true);
@@ -72,9 +67,6 @@ class GameOverSubstate extends MusicBeatSubstate
 		
 		PlayState.instance.setOnScripts('inGameOver', true);
 		PlayState.instance.callOnScripts('onGameOverStart', []);
-
-		addTouchPad("NONE", "A_B");
-		addTouchPadCamera();
 
 		super.create();
 	}

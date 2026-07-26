@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="menu_freeplaw.png">
+	<!-- Created with Adobe Animate version 21.0.0.35450 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="freeplaw bruh0000" x="0" y="0" width="368" height="105" pivotX="0" pivotY="0"/>
+	<SubTexture name="freeplaw bruh0001" x="0" y="105" width="367" height="105" frameX="0" frameY="0" frameWidth="368" frameHeight="105"/>
+	<SubTexture name="freeplaw accept0000" x="0" y="210" width="410" height="127" pivotX="0" pivotY="0" frameX="0" frameY="0" frameWidth="410" frameHeight="132"/>
+	<SubTexture name="freeplaw accept0001" x="0" y="337" width="410" height="130" frameX="0" frameY="-2" frameWidth="410" frameHeight="132"/>
+</TextureAtlas>

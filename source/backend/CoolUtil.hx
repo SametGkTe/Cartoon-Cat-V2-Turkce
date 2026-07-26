@@ -63,20 +63,6 @@ class CoolUtil
 		return newValue / tempMult;
 	}
 
-	#if (android || linux)
-	public static function sortAlphabetically(list:Array<String>):Array<String> {
-		if (list == null) return [];
-
-		list.sort((a, b) -> {
-			var upperA = a.toUpperCase();
-			var upperB = b.toUpperCase();
-			
-			return upperA < upperB ? -1 : upperA > upperB ? 1 : 0;
-		});
-		return list;
-	}
-	#end
-
 	inline public static function dominantColor(sprite:flixel.FlxSprite):Int
 	{
 		var countByColor:Map<Int, Int> = [];
@@ -170,14 +156,5 @@ class CoolUtil
 			default:
 				text.borderStyle = NONE;
 		}
-	}
-
-	public static function showPopUp(message:String, title:String):Void
-	{
-		/*#if android
-		AndroidTools.showAlertDialog(title, message, {name: "OK", func: null}, null);
-		#else*/
-		FlxG.stage.window.alert(message, title);
-		//#end
 	}
 }

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Fire.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="Fire Idle0000" x="513" y="0" width="513" height="157" frameX="0" frameY="-76" frameWidth="513" frameHeight="289"/>
+	<SubTexture name="Fire Idle0001" x="513" y="483" width="513" height="148" frameX="0" frameY="-83" frameWidth="513" frameHeight="289"/>
+	<SubTexture name="Fire Idle0002" x="0" y="483" width="513" height="155" frameX="0" frameY="-74" frameWidth="513" frameHeight="289"/>
+	<SubTexture name="Fire Idle0003" x="513" y="157" width="513" height="156" frameX="0" frameY="-74" frameWidth="513" frameHeight="289"/>
+	<SubTexture name="Fire Idle0004" x="513" y="313" width="513" height="155" frameX="0" frameY="-75" frameWidth="513" frameHeight="289"/>
+	<SubTexture name="Fire Idle0005" x="0" y="326" width="513" height="157" frameX="0" frameY="-73" frameWidth="513" frameHeight="289"/>
+	<SubTexture name="Fire Idle0006" x="0" y="0" width="513" height="168" frameX="0" frameY="-63" frameWidth="513" frameHeight="289"/>
+	<SubTexture name="Fire Idle0007" x="0" y="168" width="513" height="158" frameX="0" frameY="-72" frameWidth="513" frameHeight="289"/>
+</TextureAtlas>

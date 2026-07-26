@@ -17,37 +17,35 @@ class ControlsSubState extends MusicBeatSubstate
 
 	//Show on gamepad - Display name - Save file key - Rebind display name
 	var options:Array<Dynamic> = [
-		[true, 'NOTES'],
-		[true, 'Left', 'note_left', 'Note Left'],
-		[true, 'Down', 'note_down', 'Note Down'],
-		[true, 'Up', 'note_up', 'Note Up'],
-		[true, 'Right', 'note_right', 'Note Right'],
+		[true, 'NOTALAR'],
+		[true, 'Sol', 'note_left', 'Sol Nota'],
+		[true, 'Aşağı', 'note_down', 'Aşağı Nota'],
+		[true, 'Yukarı', 'note_up', 'Yukarı Nota'],
+		[true, 'Sağ', 'note_right', 'Sağ Nota'],
 		[true],
-		[true, 'UI'],
-		[true, 'Left', 'ui_left', 'UI Left'],
-		[true, 'Down', 'ui_down', 'UI Down'],
-		[true, 'Up', 'ui_up', 'UI Up'],
-		[true, 'Right', 'ui_right', 'UI Right'],
+		[true, 'ARAYÜZ'],
+		[true, 'Sol', 'ui_left', 'Arayüz Sol'],
+		[true, 'Aşağı', 'ui_down', 'Arayüz Aşağı'],
+		[true, 'Yukarı', 'ui_up', 'Arayüz Yukarı'],
+		[true, 'Sağ', 'ui_right', 'Arayüz Sağ'],
 		[true],
-		[true, 'Reset', 'reset', 'Reset'],
-		[true, 'Accept', 'accept', 'Accept'],
-		[true, 'Back', 'back', 'Back'],
-		[true, 'Pause', 'pause', 'Pause'],
+		[true, 'Sıfırla', 'reset', 'Sıfırla'],
+		[true, 'Onayla', 'accept', 'Onayla'],
+		[true, 'Geri', 'back', 'Geri'],
+		[true, 'Duraklat', 'pause', 'Duraklat'],
 		[false],
-		[false, 'VOLUME'],
-		[false, 'Mute', 'volume_mute', 'Volume Mute'],
-		[false, 'Up', 'volume_up', 'Volume Up'],
-		[false, 'Down', 'volume_down', 'Volume Down'],
+		[false, 'SES'],
+		[false, 'Sessize Al', 'volume_mute', 'Sesi Kapat'],
+		[false, 'Sesi Arttır', 'volume_up', 'Sesi Arttır'],
+		[false, 'Sesi Düşür', 'volume_down', 'Sesi Düşür'],
 		[false],
-		[false, 'DEBUG'],
-		[false, 'Key 1', 'debug_1', 'Debug Key #1'],
-		[false, 'Key 2', 'debug_2', 'Debug Key #2'],
-		[false, 'WINDOW'],
-		[false, 'Fullscreen', 'fullscreen', 'Fullscreen Toggel']
+		[false, 'HATA AYIKLAMA'],
+		[false, 'Tuş 1', 'debug_1', 'Hata Ayıklama Tuşu #1'],
+		[false, 'Tuş 2', 'debug_2', 'Hata Ayıklama Tuşu #2']
 	];
 	var curOptions:Array<Int>;
 	var curOptionsValid:Array<Int>;
-	static var defaultKey:String = 'Reset to Default Keys';
+	static var defaultKey:String = 'Varsayılan Tuşlara Sıfırla';
 
 	var bg:FlxSprite;
 	var grpDisplay:FlxTypedGroup<Alphabet>;
@@ -64,12 +62,10 @@ class ControlsSubState extends MusicBeatSubstate
 	
 	public function new()
 	{
-                controls.isInSubstate = true;
-
 		super();
 
 		#if DISCORD_ALLOWED
-		DiscordClient.changePresence("Controls Menu", null);
+		DiscordClient.changePresence("Kontroller Menüsü", null);
 		#end
 
 		options.push([true]);
@@ -112,8 +108,6 @@ class ControlsSubState extends MusicBeatSubstate
 		text.alignment = CENTERED;
 		text.setScale(0.4);
 		add(text);
-
-		addTouchPad("LEFT_FULL", "A_B_C");
 
 		createTexts();
 	}
@@ -281,22 +275,20 @@ class ControlsSubState extends MusicBeatSubstate
 
 		if(!binding)
 		{
-			if(controls.BACK || FlxG.gamepads.anyJustPressed(B))
+			if(FlxG.keys.justPressed.ESCAPE || FlxG.gamepads.anyJustPressed(B))
 			{
-				ClientPrefs.saveSettings();
-                                controls.isInSubstate = false;
 				close();
 				return;
 			}
 			if(FlxG.keys.justPressed.CONTROL || FlxG.gamepads.anyJustPressed(LEFT_SHOULDER) || FlxG.gamepads.anyJustPressed(RIGHT_SHOULDER)) swapMode();
 
-			if(controls.UI_LEFT_P || controls.UI_RIGHT_P || FlxG.gamepads.anyJustPressed(DPAD_LEFT) || FlxG.gamepads.anyJustPressed(DPAD_RIGHT) ||
+			if(FlxG.keys.justPressed.LEFT || FlxG.keys.justPressed.RIGHT || FlxG.gamepads.anyJustPressed(DPAD_LEFT) || FlxG.gamepads.anyJustPressed(DPAD_RIGHT) ||
 				FlxG.gamepads.anyJustPressed(LEFT_STICK_DIGITAL_LEFT) || FlxG.gamepads.anyJustPressed(LEFT_STICK_DIGITAL_RIGHT)) updateAlt(true);
 
-			if(controls.UI_UP_P || FlxG.gamepads.anyJustPressed(DPAD_UP) || FlxG.gamepads.anyJustPressed(LEFT_STICK_DIGITAL_UP)) updateText(-1);
-			else if(controls.UI_DOWN_P || FlxG.gamepads.anyJustPressed(DPAD_DOWN) || FlxG.gamepads.anyJustPressed(LEFT_STICK_DIGITAL_DOWN)) updateText(1);
+			if(FlxG.keys.justPressed.UP || FlxG.gamepads.anyJustPressed(DPAD_UP) || FlxG.gamepads.anyJustPressed(LEFT_STICK_DIGITAL_UP)) updateText(-1);
+			else if(FlxG.keys.justPressed.DOWN || FlxG.gamepads.anyJustPressed(DPAD_DOWN) || FlxG.gamepads.anyJustPressed(LEFT_STICK_DIGITAL_DOWN)) updateText(1);
 
-			if(controls.ACCEPT || FlxG.gamepads.anyJustPressed(START) || FlxG.gamepads.anyJustPressed(A))
+			if(FlxG.keys.justPressed.ENTER || FlxG.gamepads.anyJustPressed(START) || FlxG.gamepads.anyJustPressed(A))
 			{
 				if(options[curOptions[curSelected]][1] != defaultKey)
 				{
@@ -307,18 +299,11 @@ class ControlsSubState extends MusicBeatSubstate
 					FlxTween.tween(bindingBlack, {alpha: 0.6}, 0.35, {ease: FlxEase.linear});
 					add(bindingBlack);
 
-					bindingText = new Alphabet(FlxG.width / 2, 160, "Rebinding " + options[curOptions[curSelected]][3], false);
+					bindingText = new Alphabet(FlxG.width / 2, 160, "Yeniden Atama: " + options[curOptions[curSelected]][3], false);
 					bindingText.alignment = CENTERED;
 					add(bindingText);
-
-					var funnyText:String;
-
-					if (controls.mobileC)
-						funnyText = "Hold B to Cancel\nHold C to Delete";
-					else
-						funnyText = "Hold ESC to Cancel\nHold Backspace to Delete";
-
-					bindingText2 = new Alphabet(FlxG.width / 2, 340, funnyText, true);
+					
+					bindingText2 = new Alphabet(FlxG.width / 2, 340, "İptal etmek için ESC basılı tutun\nSilmek için Backspace basılı tutun", true);
 					bindingText2.alignment = CENTERED;
 					add(bindingText2);
 
@@ -344,7 +329,7 @@ class ControlsSubState extends MusicBeatSubstate
 		{
 			var altNum:Int = curAlt ? 1 : 0;
 			var curOption:Array<Dynamic> = options[curOptions[curSelected]];
-			if(touchPad.buttonB.pressed || controls.BACK || FlxG.gamepads.anyPressed(B))
+			if(FlxG.keys.pressed.ESCAPE || FlxG.gamepads.anyPressed(B))
 			{
 				holdingEsc += elapsed;
 				if(holdingEsc > 0.5)
@@ -353,7 +338,7 @@ class ControlsSubState extends MusicBeatSubstate
 					closeBinding();
 				}
 			}
-			else if (touchPad.buttonC.pressed || FlxG.keys.pressed.BACKSPACE || FlxG.gamepads.anyPressed(BACK))
+			else if (FlxG.keys.pressed.BACKSPACE || FlxG.gamepads.anyPressed(BACK))
 			{
 				holdingEsc += elapsed;
 				if(holdingEsc > 0.5)

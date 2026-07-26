@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="las_cristales.png">
+	<SubTexture name="amatista0000" x="654" y="743" width="124" height="171" frameX="-16" frameY="-4" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="amatista0001" x="1205" y="877" width="124" height="172" frameX="-15" frameY="-3" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="amatista0002" x="530" y="743" width="124" height="172" frameX="-15" frameY="-3" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="amatista0003" x="252" y="917" width="123" height="173" frameX="-12" frameY="-2" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="amatista0004" x="375" y="917" width="123" height="173" frameX="-12" frameY="-2" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="amatista0005" x="405" y="743" width="125" height="173" frameX="-9" frameY="-2" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="amatista0006" x="0" y="917" width="126" height="175" frameX="-7" frameY="-1" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="amatista0007" x="126" y="917" width="126" height="175" frameX="-7" frameY="-1" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="amatista0008" x="126" y="917" width="126" height="175" frameX="-7" frameY="-1" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="amatista0009" x="1071" y="699" width="127" height="176" frameX="-6" frameY="0" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="amatista0010" x="1071" y="699" width="127" height="176" frameX="-6" frameY="0" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="amatista0011" x="1071" y="699" width="127" height="176" frameX="-6" frameY="0" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="amatista0012" x="1071" y="523" width="129" height="176" frameX="-4" frameY="0" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="amatista0013" x="1071" y="523" width="129" height="176" frameX="-4" frameY="0" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="amatista0014" x="663" y="437" width="135" height="174" frameX="0" frameY="-2" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="amatista0015" x="0" y="743" width="135" height="174" frameX="0" frameY="-2" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="amatista0016" x="135" y="743" width="135" height="173" frameX="-1" frameY="-3" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="amatista0017" x="270" y="743" width="135" height="173" frameX="-1" frameY="-3" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="amatista0018" x="1071" y="174" width="133" height="174" frameX="-2" frameY="-2" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="amatista0019" x="1071" y="0" width="134" height="174" frameX="-2" frameY="-2" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="amatista0020" x="1071" y="348" width="131" height="175" frameX="-3" frameY="-1" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="amatista0021" x="1205" y="0" width="124" height="176" frameX="-9" frameY="0" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="amatista0022" x="1205" y="176" width="124" height="176" frameX="-9" frameY="0" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="amatista0023" x="1205" y="176" width="124" height="176" frameX="-9" frameY="0" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="amatista0024" x="1205" y="352" width="123" height="175" frameX="-11" frameY="-1" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="amatista0025" x="1205" y="702" width="123" height="175" frameX="-11" frameY="-1" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="amatista0026" x="1205" y="702" width="123" height="175" frameX="-11" frameY="-1" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="amatista0027" x="1205" y="527" width="123" height="175" frameX="-13" frameY="-1" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="amatista0028" x="1205" y="527" width="123" height="175" frameX="-13" frameY="-1" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="animacion comiendo0000" x="871" y="917" width="125" height="164" frameX="0" frameY="-4" frameWidth="125" frameHeight="168"/>
+	<SubTexture name="animacion comiendo0001" x="746" y="917" width="125" height="164" frameX="0" frameY="-4" frameWidth="125" frameHeight="168"/>
+	<SubTexture name="animacion comiendo0002" x="902" y="743" width="124" height="167" frameX="-1" frameY="-1" frameWidth="125" frameHeight="168"/>
+	<SubTexture name="animacion comiendo0003" x="902" y="743" width="124" height="167" frameX="-1" frameY="-1" frameWidth="125" frameHeight="168"/>
+	<SubTexture name="animacion comiendo0004" x="622" y="917" width="124" height="167" frameX="-1" frameY="-1" frameWidth="125" frameHeight="168"/>
+	<SubTexture name="animacion comiendo0005" x="622" y="917" width="124" height="167" frameX="-1" frameY="-1" frameWidth="125" frameHeight="168"/>
+	<SubTexture name="animacion comiendo0006" x="498" y="917" width="124" height="167" frameX="-1" frameY="-1" frameWidth="125" frameHeight="168"/>
+	<SubTexture name="animacion comiendo0007" x="498" y="917" width="124" height="167" frameX="-1" frameY="-1" frameWidth="125" frameHeight="168"/>
+	<SubTexture name="animacion comiendo0008" x="498" y="917" width="124" height="167" frameX="-1" frameY="-1" frameWidth="125" frameHeight="168"/>
+	<SubTexture name="animacion comiendo0009" x="778" y="743" width="124" height="168" frameX="-1" frameY="0" frameWidth="125" frameHeight="168"/>
+	<SubTexture name="animacion comiendo0010" x="778" y="743" width="124" height="168" frameX="-1" frameY="0" frameWidth="125" frameHeight="168"/>
+	<SubTexture name="carne0000" x="0" y="0" width="209" height="437" frameX="0" frameY="0" frameWidth="209" frameHeight="437"/>
+	<SubTexture name="carne0001" x="0" y="0" width="209" height="437" frameX="0" frameY="0" frameWidth="209" frameHeight="437"/>
+	<SubTexture name="carne0002" x="418" y="0" width="209" height="437" frameX="0" frameY="0" frameWidth="209" frameHeight="437"/>
+	<SubTexture name="carne0003" x="418" y="0" width="209" height="437" frameX="0" frameY="0" frameWidth="209" frameHeight="437"/>
+	<SubTexture name="carne0004" x="209" y="0" width="209" height="437" frameX="0" frameY="0" frameWidth="209" frameHeight="437"/>
+	<SubTexture name="carne0005" x="209" y="0" width="209" height="437" frameX="0" frameY="0" frameWidth="209" frameHeight="437"/>
+	<SubTexture name="perla0000" x="627" y="0" width="227" height="302" frameX="0" frameY="-4" frameWidth="227" frameHeight="306"/>
+	<SubTexture name="perla0001" x="627" y="0" width="227" height="302" frameX="0" frameY="-4" frameWidth="227" frameHeight="306"/>
+	<SubTexture name="perla0002" x="854" y="305" width="215" height="306" frameX="-9" frameY="0" frameWidth="227" frameHeight="306"/>
+	<SubTexture name="perla0003" x="854" y="305" width="215" height="306" frameX="-9" frameY="0" frameWidth="227" frameHeight="306"/>
+	<SubTexture name="perla0004" x="854" y="0" width="217" height="305" frameX="-8" frameY="-1" frameWidth="227" frameHeight="306"/>
+	<SubTexture name="perla0005" x="854" y="0" width="217" height="305" frameX="-8" frameY="-1" frameWidth="227" frameHeight="306"/>
+	<SubTexture name="perla0006" x="442" y="437" width="221" height="305" frameX="-5" frameY="-1" frameWidth="227" frameHeight="306"/>
+	<SubTexture name="perla0007" x="442" y="437" width="221" height="305" frameX="-5" frameY="-1" frameWidth="227" frameHeight="306"/>
+	<SubTexture name="perla0008" x="0" y="437" width="221" height="306" frameX="-5" frameY="0" frameWidth="227" frameHeight="306"/>
+	<SubTexture name="perla0009" x="0" y="437" width="221" height="306" frameX="-5" frameY="0" frameWidth="227" frameHeight="306"/>
+	<SubTexture name="perla0010" x="221" y="437" width="221" height="306" frameX="-5" frameY="0" frameWidth="227" frameHeight="306"/>
+	<SubTexture name="perla0011" x="221" y="437" width="221" height="306" frameX="-5" frameY="0" frameWidth="227" frameHeight="306"/>
+	<SubTexture name="perla0012" x="221" y="437" width="221" height="306" frameX="-5" frameY="0" frameWidth="227" frameHeight="306"/>
+	<SubTexture name="perla0013" x="221" y="437" width="221" height="306" frameX="-5" frameY="0" frameWidth="227" frameHeight="306"/>
+</TextureAtlas>

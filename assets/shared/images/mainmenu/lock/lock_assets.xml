@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="lock_assets.png">
+	<!-- Created with Adobe Animate version 22.0.5.191 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="lock_idle0000" x="3" y="3" width="347" height="579"/>
+	<SubTexture name="lock_open0000" x="353" y="3" width="337" height="674" frameX="-6" frameY="0" frameWidth="347" frameHeight="674"/>
+	<SubTexture name="lock_open0001" x="353" y="3" width="337" height="674" frameX="-6" frameY="0" frameWidth="347" frameHeight="674"/>
+	<SubTexture name="lock_open0002" x="693" y="3" width="347" height="626" frameX="0" frameY="-44" frameWidth="347" frameHeight="674"/>
+	<SubTexture name="lock_open0003" x="693" y="3" width="347" height="626" frameX="0" frameY="-44" frameWidth="347" frameHeight="674"/>
+	<SubTexture name="lock_open0004" x="1043" y="3" width="347" height="621" frameX="0" frameY="-49" frameWidth="347" frameHeight="674"/>
+	<SubTexture name="lock_open0005" x="1043" y="3" width="347" height="621" frameX="0" frameY="-49" frameWidth="347" frameHeight="674"/>
+</TextureAtlas>

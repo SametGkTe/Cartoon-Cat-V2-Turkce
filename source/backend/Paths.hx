@@ -32,7 +32,7 @@ class Paths
 			dumpExclusions.push(key);
 	}
 
-	public static var dumpExclusions:Array<String> = ['assets/shared/music/freakyMenu.$SOUND_EXT', 'assets/shared/mobile/touchpad/bg.png'];
+	public static var dumpExclusions:Array<String> = ['assets/shared/music/freakyMenu.$SOUND_EXT'];
 	/// haya I love you for the base cache dump I took to the max
 	public static function clearUnusedMemory() {
 		// clear non local assets in the tracked assets list
@@ -57,9 +57,6 @@ class Paths
 
 		// run the garbage collector for good measure lmfao
 		System.gc();
-		#if cpp
-		cpp.NativeGc.run(true);
-		#end
 	}
 
 	// define the locally tracked assets
@@ -111,8 +108,6 @@ class Paths
 			if(FileSystem.exists(modded)) return modded;
 		}
 		#end
-		if(library == "mobile")
-			return getSharedPath('mobile/$file');
 
 		if (library != null)
 			return getLibraryPath(file, library);
@@ -253,7 +248,7 @@ class Paths
 			if(retVal != null) return retVal;
 		}
 
-		trace('oh no its returning null NOOOO ($file)');
+		trace('Dosya Bulunamadi ($file)');
 		return null;
 	}
 
@@ -336,20 +331,12 @@ class Paths
 			for(mod in Mods.getGlobalMods())
 				if (FileSystem.exists(mods('$mod/$key')))
 					return true;
-				#if (android || linux)
-				else if (FileSystem.exists(findFile('$mod/$key')))
-					return true;
-				#end
 
 			if (FileSystem.exists(mods(Mods.currentModDirectory + '/' + key)) || FileSystem.exists(mods(key)))
 				return true;
 			
 			if (FileSystem.exists(mods('$key')))
 				return true;
-			#if (android || linux)
-			else if (FileSystem.exists(findFile(key)))
-				return true;
-			#end
 		}
 		#end
 
@@ -482,7 +469,7 @@ class Paths
 
 	#if MODS_ALLOWED
 	inline static public function mods(key:String = '') {
-		return  #if mobile Sys.getCwd() + #end 'mods/' + key;
+		return 'mods/' + key;
 	}
 
 	inline static public function modsFont(key:String) {
@@ -534,85 +521,18 @@ class Paths
 	static public function modFolders(key:String) {
 		if(Mods.currentModDirectory != null && Mods.currentModDirectory.length > 0) {
 			var fileToCheck:String = mods(Mods.currentModDirectory + '/' + key);
-			if(FileSystem.exists(fileToCheck))
+			if(FileSystem.exists(fileToCheck)) {
 				return fileToCheck;
-				#if (android || linux)
-				else
-				{
-					var newPath:String = findFile(key);
-					if (newPath != null)
-						return newPath;
-				}
-				#end
+			}
 		}
 
 		for(mod in Mods.getGlobalMods()){
 			var fileToCheck:String = mods(mod + '/' + key);
 			if(FileSystem.exists(fileToCheck))
 				return fileToCheck;
-			#if (android || linux)
-			else
-			{
-				var newPath:String = findFile(key);
-				if (newPath != null)
-					return newPath;
-			}
-			#end
-			
 		}
-		return #if mobile Sys.getCwd() + #end 'mods/' + key;
+		return 'mods/' + key;
 	}
-
-	#if (android || linux)
-	static function findFile(key:String):String {
-		var targetParts:Array<String> = key.replace('\\', '/').split('/');
-		if (targetParts.length == 0) return null;
-
-		var baseDir:String = targetParts.shift();
-		var searchDirs:Array<String> = [
-			mods(Mods.currentModDirectory + '/' + baseDir),
-			mods(baseDir)
-		];
-
-		for (part in targetParts) {
-			if (part == '') continue;
-
-			var nextDir:String = findNodeInDirs(searchDirs, part);
-			if (nextDir == null) {
-				return null;
-			}
-
-			searchDirs = [nextDir];
-		}
-
-		return searchDirs[0];
-	}
-
-	static function findNodeInDirs(dirs:Array<String>, key:String):String {
-		for (dir in dirs) {
-			var node:String = findNode(dir, key);
-			if (node != null) {
-				return dir + '/' + node;
-			}
-		}
-		return null;
-	}
-
-	static function findNode(dir:String, key:String):String {
-		try {
-			var allFiles:Array<String> = Paths.readDirectory(dir);
-			var fileMap:Map<String, String> = new Map();
-
-			for (file in allFiles) {
-				fileMap.set(file.toLowerCase(), file);
-			}
-
-			return fileMap.get(key.toLowerCase());
-		} catch (e:Dynamic) {
-			return null;
-		}
-	}
-	#end
 	#end
 
 	#if flxanimate
@@ -697,25 +617,4 @@ class Paths
 		return null;
 	}*/
 	#end
-
-	public static function readDirectory(directory:String):Array<String>
-	{
-		#if MODS_ALLOWED
-		return FileSystem.readDirectory(directory);
-		#else
-		var dirs:Array<String> = [];
-		for(dir in Assets.list().filter(folder -> folder.startsWith(directory)))
-		{
-			@:privateAccess
-			for(library in lime.utils.Assets.libraries.keys())
-			{
-				if(library != 'default' && Assets.exists('$library:$dir') && (!dirs.contains('$library:$dir') || !dirs.contains(dir)))
-					dirs.push('$library:$dir');
-				else if(Assets.exists(dir) && !dirs.contains(dir))
-					dirs.push(dir);
-			}
-		}
-		return dirs.map(dir -> dir.substr(dir.lastIndexOf("/") + 1));
-		#end
-	}
 }

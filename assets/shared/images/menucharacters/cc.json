@@ -1,0 +1,11 @@
+{
+	"idle_anim": "cc",
+	"confirm_anim": "cc",
+	"position": [
+		210,
+		70
+	],
+	"scale": 1.6,
+	"flipX": false,
+	"image": "cc"
+}

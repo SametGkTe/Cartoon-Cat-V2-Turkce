@@ -6,15 +6,14 @@ import objects.Alphabet;
 
 class VisualsUISubState extends BaseOptionsMenu
 {
-	public static var pauseMusics:Array<String> = ['None', 'Breakfast', 'Tea Time'];
 	var noteOptionID:Int = -1;
 	var notes:FlxTypedGroup<StrumNote>;
 	var notesTween:Array<FlxTween> = [];
 	var noteY:Float = 90;
 	public function new()
 	{
-		title = 'Visuals and UI';
-		rpcTitle = 'Visuals & UI Settings Menu'; //for Discord Rich Presence
+		title = 'Görünüş & Arayüz';
+		rpcTitle = 'Görünüş & Arayüz Ayarları Menüsü'; //for Discord Rich Presence
 
 		// for note skins
 		notes = new FlxTypedGroup<StrumNote>();
@@ -36,8 +35,8 @@ class VisualsUISubState extends BaseOptionsMenu
 				ClientPrefs.data.noteSkin = ClientPrefs.defaultData.noteSkin; //Reset to default if saved noteskin couldnt be found
 
 			noteSkins.insert(0, ClientPrefs.defaultData.noteSkin); //Default skin always comes first
-			var option:Option = new Option('Note Skins:',
-				"Select your prefered Note skin.",
+			var option:Option = new Option('Nota Görünümleri:',
+				"Tercih ettiğiniz Nota görünümünü seçin.",
 				'noteSkin',
 				'string',
 				noteSkins);
@@ -53,16 +52,16 @@ class VisualsUISubState extends BaseOptionsMenu
 				ClientPrefs.data.splashSkin = ClientPrefs.defaultData.splashSkin; //Reset to default if saved splashskin couldnt be found
 
 			noteSplashes.insert(0, ClientPrefs.defaultData.splashSkin); //Default skin always comes first
-			var option:Option = new Option('Note Splashes:',
-				"Select your prefered Note Splash variation or turn it off.",
+			var option:Option = new Option('Nota Efektleri:',
+				"Tercih ettiğiniz Nota Efekti varyasyonunu seçin veya kapatın.",
 				'splashSkin',
 				'string',
 				noteSplashes);
 			addOption(option);
 		}
 
-		var option:Option = new Option('Note Splash Opacity',
-			'How much transparent should the Note Splashes be.',
+		var option:Option = new Option('Nota Efekti Şeffaflığı',
+			'Nota Efektlerinin ne kadar şeffaf olacağını ayarlar.',
 			'splashAlpha',
 			'percent');
 		option.scrollSpeed = 1.6;
@@ -72,39 +71,39 @@ class VisualsUISubState extends BaseOptionsMenu
 		option.decimals = 1;
 		addOption(option);
 
-		var option:Option = new Option('Hide HUD',
-			'If checked, hides most HUD elements.',
+		var option:Option = new Option('Arayüzü Gizle',
+			'Aktif Edilirse, çoğu arayüz öğesini gizler.',
 			'hideHud',
 			'bool');
 		addOption(option);
 		
-		var option:Option = new Option('Time Bar:',
-			"What should the Time Bar display?",
+		var option:Option = new Option('Zaman Çubuğu:',
+			"Zaman Çubuğu neyi göstermeli?",
 			'timeBarType',
 			'string',
 			['Time Left', 'Time Elapsed', 'Song Name', 'Disabled']);
 		addOption(option);
 
-		var option:Option = new Option('Flashing Lights',
-			"Uncheck this if you're sensitive to flashing lights!",
+		var option:Option = new Option('Yanıp Sönen Işıklar',
+			"Yanıp sönen ışıklara duyarlıysanız, bunu aktif etmeyin!",
 			'flashing',
 			'bool');
 		addOption(option);
 
-		var option:Option = new Option('Camera Zooms',
-			"If unchecked, the camera won't zoom in on a beat hit.",
+		var option:Option = new Option('Kamera Yakınlaşması',
+			"Aktif Edilmediğinde, kamera vuruşlarda yakınlaşmaz.",
 			'camZooms',
 			'bool');
 		addOption(option);
 
-		var option:Option = new Option('Score Text Zoom on Hit',
-			"If unchecked, disables the Score text zooming\neverytime you hit a note.",
+		var option:Option = new Option('Skor Metni Yakınlaşması',
+			"Aktif Edilmediğinde, her nota vurduğunuzda\nSkor metninin yakınlaşmasını kapatır.",
 			'scoreZoom',
 			'bool');
 		addOption(option);
 
-		var option:Option = new Option('Health Bar Opacity',
-			'How much transparent should the health bar and icons be.',
+		var option:Option = new Option('Can Barı Opaklığı',
+			'Can çubuğunun ve ikonların ne kadar şeffaf olacağını ayarlar.',
 			'healthBarAlpha',
 			'percent');
 		option.scrollSpeed = 1.6;
@@ -113,49 +112,42 @@ class VisualsUISubState extends BaseOptionsMenu
 		option.changeValue = 0.1;
 		option.decimals = 1;
 		addOption(option);
-
-		var option:Option = new Option('FPS Counter',
-			'If unchecked, hides FPS Counter.',
+		
+		#if !mobile
+		var option:Option = new Option('FPS Sayacı',
+			'Aktif Edilmediğinde, Sol üstteki FPS Sayacını gizler.',
 			'showFPS',
 			'bool');
 		addOption(option);
 		option.onChange = onChangeFPSCounter;
-
-		#if sys
-		var option:Option = new Option('VSync',
-			'If checked, Enables VSync fixing any screen tearing at the cost of capping the FPS to screen refresh rate.\n(Must restart the game to have an effect)',
-			'vsync',
-			'bool');
-		option.onChange = onChangeVSync;
-		addOption(option);
 		#end
 		
-		var option:Option = new Option('Pause Screen Song:',
-			"What song do you prefer for the Pause Screen?",
+		var option:Option = new Option('Duraklatma Ekranı Müziği:',
+			"Duraklatma Ekranı için hangi müziği tercih edersiniz?",
 			'pauseMusic',
 			'string',
-			pauseMusics);
+			['None', 'Breakfast', 'Tea Time']);
 		addOption(option);
 		option.onChange = onChangePauseMusic;
 		
 		#if CHECK_FOR_UPDATES
-		var option:Option = new Option('Check for Updates',
-			'On Release builds, turn this on to check for updates when you start the game.',
+		var option:Option = new Option('Güncellemeleri Kontrol Et',
+			'Aktif Edilirse, oyunu başlattığınızda güncellemeleri kontrol eder.',
 			'checkForUpdates',
 			'bool');
 		addOption(option);
 		#end
 
 		#if DISCORD_ALLOWED
-		var option:Option = new Option('Discord Rich Presence',
-			"Uncheck this to prevent accidental leaks, it will hide the Application from your \"Playing\" box on Discord",
+		var option:Option = new Option('Discord Durumu',
+			"Aktif Edilmediğinde olası sızıntıları önler ve uygulamayı Discord'daki \"Oynuyor\" kısmından gizler.",
 			'discordRPC',
 			'bool');
 		addOption(option);
 		#end
 
-		var option:Option = new Option('Combo Stacking',
-			"If unchecked, Ratings and Combo won't stack, saving on System Memory and making them easier to read",
+		var option:Option = new Option('Kombo Birimi',
+			"Aktif Edilmediğinde, Derecelendirmeler ve Kombolar üst üste binmez, sistem belleğinden tasarruf sağlar ve okunmalarını kolaylaştırır.",
 			'comboStacking',
 			'bool');
 		addOption(option);
@@ -184,7 +176,7 @@ class VisualsUISubState extends BaseOptionsMenu
 	var changedMusic:Bool = false;
 	function onChangePauseMusic()
 	{
-		if(ClientPrefs.data.pauseMusic == 'None')
+		if(ClientPrefs.data.pauseMusic == 'Yok')
 			FlxG.sound.music.volume = 0;
 		else
 			FlxG.sound.playMusic(Paths.music(Paths.formatToSongPath(ClientPrefs.data.pauseMusic)));
@@ -218,19 +210,11 @@ class VisualsUISubState extends BaseOptionsMenu
 		super.destroy();
 	}
 
+	#if !mobile
 	function onChangeFPSCounter()
 	{
 		if(Main.fpsVar != null)
 			Main.fpsVar.visible = ClientPrefs.data.showFPS;
-	}
-
-	#if sys
-	function onChangeVSync()
-	{
-		var file:String = StorageUtil.rootDir + "vsync.txt";
-		if(FileSystem.exists(file))
-			FileSystem.deleteFile(file);
-		File.saveContent(file, Std.string(ClientPrefs.data.vsync));
 	}
 	#end
 }

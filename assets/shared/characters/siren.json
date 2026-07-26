@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				525,
+				510
+			],
+			"anim": "idle",
+			"fps": 8,
+			"name": "idle",
+			"indices": []
+		},
+		{
+			"offsets": [
+				587,
+				452
+			],
+			"loop": false,
+			"fps": 14,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "left"
+		},
+		{
+			"offsets": [
+				765,
+				341
+			],
+			"loop": false,
+			"fps": 14,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "down"
+		},
+		{
+			"offsets": [
+				688,
+				502
+			],
+			"loop": false,
+			"fps": 14,
+			"anim": "singUP",
+			"indices": [],
+			"name": "up"
+		},
+		{
+			"offsets": [
+				675,
+				338
+			],
+			"loop": false,
+			"fps": 14,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "right"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/el_cabeza_de_sirena",
+	"position": [
+		616,
+		470
+	],
+	"healthicon": "sh",
+	"flip_x": false,
+	"healthbar_colors": [
+		134,
+		79,
+		78
+	],
+	"camera_position": [
+		-780,
+		-460
+	],
+	"sing_duration": 3.6,
+	"scale": 1.5
+}

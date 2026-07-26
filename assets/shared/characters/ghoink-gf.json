@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-5,
+				0
+			],
+			"indices": [],
+			"fps": 12,
+			"anim": "idle",
+			"loop": false,
+			"name": "ghoink gf idle"
+		},
+		{
+			"offsets": [
+				-35,
+				-26
+			],
+			"indices": [],
+			"fps": 12,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "left gf0"
+		},
+		{
+			"offsets": [
+				20,
+				-95
+			],
+			"indices": [],
+			"fps": 12,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "down0"
+		},
+		{
+			"offsets": [
+				0,
+				24
+			],
+			"indices": [],
+			"fps": 12,
+			"anim": "singUP",
+			"loop": false,
+			"name": "up gf0"
+		},
+		{
+			"offsets": [
+				102,
+				-37
+			],
+			"indices": [],
+			"fps": 12,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "right gf0"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/ghoink_gf",
+	"position": [
+		0,
+		230
+	],
+	"healthicon": "gf_ghoink",
+	"flip_x": false,
+	"healthbar_colors": [
+		250,
+		240,
+		201
+	],
+	"camera_position": [
+		-260,
+		20
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

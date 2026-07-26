@@ -10,7 +10,7 @@ class DiscordClient
 	public static var isInitialized:Bool = false;
 	private static final _defaultID:String = "863222024192262205";
 	public static var clientID(default, set):String = _defaultID;
-	private static var presence:DiscordRichPresence = #if (hxdiscord_rpc > "1.2.4") new DiscordRichPresence(); #else DiscordRichPresence.create(); #end
+	private static var presence:DiscordRichPresence = DiscordRichPresence.create();
 
 	public static function check()
 	{
@@ -54,11 +54,11 @@ class DiscordClient
 
 	public static function initialize()
 	{
-		var discordHandlers:DiscordEventHandlers = #if (hxdiscord_rpc > "1.2.4") new DiscordEventHandlers(); #else DiscordEventHandlers.create(); #end
+		var discordHandlers:DiscordEventHandlers = DiscordEventHandlers.create();
 		discordHandlers.ready = cpp.Function.fromStaticFunction(onReady);
 		discordHandlers.disconnected = cpp.Function.fromStaticFunction(onDisconnected);
 		discordHandlers.errored = cpp.Function.fromStaticFunction(onError);
-		Discord.Initialize(clientID, cpp.RawPointer.addressOf(discordHandlers), #if (hxdiscord_rpc > "1.2.4") false #else 1 #end, null);
+		Discord.Initialize(clientID, cpp.RawPointer.addressOf(discordHandlers), 1, null);
 
 		if(!isInitialized) trace("Discord Client initialized");
 
@@ -118,7 +118,7 @@ class DiscordClient
 		return newID;
 	}
 
-	#if (MODS_ALLOWED && DISCORD_ALLOWED)
+	#if MODS_ALLOWED
 	public static function loadModRPC()
 	{
 		var pack:Dynamic = Mods.getPack();

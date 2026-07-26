@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="putas-del-bg.png">
+	<SubTexture name="decide0000" x="159" y="457" width="158" height="250" frameX="-3" frameY="-1" frameWidth="161" frameHeight="251"/>
+	<SubTexture name="decide0001" x="317" y="457" width="156" height="250" frameX="-4" frameY="-1" frameWidth="161" frameHeight="251"/>
+	<SubTexture name="decide0002" x="0" y="457" width="159" height="251" frameX="-1" frameY="0" frameWidth="161" frameHeight="251"/>
+	<SubTexture name="decide0003" x="0" y="206" width="161" height="251" frameX="0" frameY="0" frameWidth="161" frameHeight="251"/>
+	<SubTexture name="perro0000" x="360" y="206" width="230" height="166" frameX="0" frameY="-4" frameWidth="235" frameHeight="172"/>
+	<SubTexture name="perro0001" x="473" y="457" width="229" height="166" frameX="-1" frameY="-4" frameWidth="235" frameHeight="172"/>
+	<SubTexture name="perro0002" x="790" y="0" width="222" height="167" frameX="-1" frameY="-3" frameWidth="235" frameHeight="172"/>
+	<SubTexture name="perro0003" x="790" y="167" width="220" height="168" frameX="-2" frameY="-2" frameWidth="235" frameHeight="172"/>
+	<SubTexture name="perro0004" x="790" y="335" width="219" height="168" frameX="-2" frameY="-2" frameWidth="235" frameHeight="172"/>
+	<SubTexture name="tipa0000" x="740" y="708" width="117" height="185" frameX="0" frameY="0" frameWidth="117" frameHeight="185"/>
+	<SubTexture name="tipa0001" x="857" y="708" width="117" height="185" frameX="0" frameY="0" frameWidth="117" frameHeight="185"/>
+	<SubTexture name="tipa0002" x="506" y="708" width="117" height="185" frameX="0" frameY="0" frameWidth="117" frameHeight="185"/>
+	<SubTexture name="tipa0003" x="623" y="708" width="117" height="185" frameX="0" frameY="0" frameWidth="117" frameHeight="185"/>
+	<SubTexture name="luna0000" x="161" y="206" width="199" height="203" frameX="0" frameY="-6" frameWidth="202" frameHeight="209"/>
+	<SubTexture name="luna0001" x="592" y="0" width="198" height="204" frameX="0" frameY="-5" frameWidth="202" frameHeight="209"/>
+	<SubTexture name="luna0002" x="0" y="0" width="198" height="206" frameX="-1" frameY="-3" frameWidth="202" frameHeight="209"/>
+	<SubTexture name="luna0003" x="395" y="0" width="197" height="206" frameX="-3" frameY="-3" frameWidth="202" frameHeight="209"/>
+	<SubTexture name="luna0004" x="592" y="204" width="196" height="206" frameX="-4" frameY="-3" frameWidth="202" frameHeight="209"/>
+	<SubTexture name="luna0005" x="198" y="0" width="197" height="206" frameX="-4" frameY="-3" frameWidth="202" frameHeight="209"/>
+	<SubTexture name="melody0000" x="382" y="708" width="124" height="197" frameX="-10" frameY="-2" frameWidth="134" frameHeight="199"/>
+	<SubTexture name="melody0001" x="258" y="708" width="124" height="198" frameX="-9" frameY="-1" frameWidth="134" frameHeight="199"/>
+	<SubTexture name="melody0002" x="0" y="708" width="129" height="199" frameX="-2" frameY="0" frameWidth="134" frameHeight="199"/>
+	<SubTexture name="melody0003" x="790" y="503" width="130" height="199" frameX="0" frameY="0" frameWidth="134" frameHeight="199"/>
+	<SubTexture name="melody0004" x="129" y="708" width="129" height="199" frameX="0" frameY="0" frameWidth="134" frameHeight="199"/>
+</TextureAtlas>

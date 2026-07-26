@@ -120,7 +120,7 @@ class CharacterEditorState extends MusicBeatState
 		animsTxtGroup.cameras = [camHUD];
 		add(animsTxtGroup);
 
-		var tipText:FlxText = new FlxText(FlxG.width - 300, FlxG.height - 24, 300, 'Press ${(controls.mobileC) ? 'F' : 'F1'} for Help', 16);
+		var tipText:FlxText = new FlxText(FlxG.width - 300, FlxG.height - 24, 300, "Press F1 for Help", 16);
 		tipText.cameras = [camHUD];
 		tipText.setFormat(null, 16, FlxColor.WHITE, RIGHT, OUTLINE_FAST, FlxColor.BLACK);
 		tipText.borderColor = FlxColor.BLACK;
@@ -155,9 +155,6 @@ class CharacterEditorState extends MusicBeatState
 		updateHealthBar();
 		character.finishAnimation();
 
-		addTouchPad("LEFT_FULL", "CHARACTER_EDITOR");
-		addTouchPadCamera();
-
 		if(ClientPrefs.data.cacheOnGPU) Paths.clearUnusedMemory();
 
 		super.create();
@@ -165,40 +162,25 @@ class CharacterEditorState extends MusicBeatState
 
 	function addHelpScreen()
 	{
-		var str:String;
-		if (controls.mobileC)
-			str = "CAMERA
-			\nX/Y - Camera Zoom In/Out
-			\nZ - Reset Camera Zoom
-			\n
-			\nCHARACTER
-			\nA - Reset Current Offset
-			\nV/D - Previous/Next Animation
-			\nArrow Buttons - Move Offset
-			\n
-			\nOTHER
-			\nS - Toggle Silhouettes
-			\nHold C - Move Offsets 10x faster and Camera 4x faster";
-		else
-			str = "CAMERA
-			\nE/Q - Camera Zoom In/Out
-			\nJ/K/L/I - Move Camera
-			\nR - Reset Camera Zoom
-			\n
-			\nCHARACTER
-			\nCtrl + R - Reset Current Offset
-			\nCtrl + C - Copy Current Offset
-			\nCtrl + V - Paste Copied Offset on Current Animation
-			\nCtrl + Z - Undo Last Paste or Reset
-			\nW/S - Previous/Next Animation
-			\nSpace - Replay Animation
-			\nArrow Keys/Mouse & Right Click - Move Offset
-			\nA/D - Frame Advance (Back/Forward)
-			\n
-			\nOTHER
-			\nF12 - Toggle Silhouettes
-			\nHold Shift - Move Offsets 10x faster and Camera 4x faster
-			\nHold Control - Move camera 4x slower";
+		var str:String = "CAMERA
+		\nE/Q - Camera Zoom In/Out
+		\nJ/K/L/I - Move Camera
+		\nR - Reset Camera Zoom
+		\n
+		\nCHARACTER
+		\nCtrl + R - Reset Current Offset
+		\nCtrl + C - Copy Current Offset
+		\nCtrl + V - Paste Copied Offset on Current Animation
+		\nCtrl + Z - Undo Last Paste or Reset
+		\nW/S - Previous/Next Animation
+		\nSpace - Replay Animation
+		\nArrow Keys/Mouse & Right Click - Move Offset
+		\nA/D - Frame Advance (Back/Forward)
+		\n
+		\nOTHER
+		\nF12 - Toggle Silhouettes
+		\nHold Shift - Move Offsets 10x faster and Camera 4x faster
+		\nHold Control - Move camera 4x slower";
 
 		helpBg = new FlxSprite().makeGraphic(1, 1, FlxColor.BLACK);
 		helpBg.scale.set(FlxG.width, FlxG.height);
@@ -859,7 +841,6 @@ class CharacterEditorState extends MusicBeatState
 	var holdingFrameTime:Float = 0;
 	var holdingFrameElapsed:Float = 0;
 	var undoOffsets:Array<Float> = null;
-	var cameraPosition:Array<Float> = [0, 0];
 	override function update(elapsed:Float)
 	{
 		super.update(elapsed);
@@ -887,28 +868,13 @@ class CharacterEditorState extends MusicBeatState
 		if (FlxG.keys.pressed.L) FlxG.camera.scroll.x += elapsed * 500 * shiftMult * ctrlMult;
 		if (FlxG.keys.pressed.I) FlxG.camera.scroll.y -= elapsed * 500 * shiftMult * ctrlMult;
 
-		if (controls.mobileC)
-		{
-			var mouse = FlxG.mouse.getScreenPosition(); // using FlxG.mouse cuz FlxTouch suck
-			if (FlxG.mouse.justPressed && !FlxG.mouse.overlaps(UI_characterbox))
-			{
-				cameraPosition[0] = FlxG.camera.scroll.x + mouse.x;
-				cameraPosition[1] = FlxG.camera.scroll.y + mouse.y;
-			}
-			else if (FlxG.mouse.pressed && !FlxG.mouse.overlaps(UI_characterbox))
-			{
-				FlxG.camera.scroll.x = cameraPosition[0] - mouse.x;
-				FlxG.camera.scroll.y = cameraPosition[1] - mouse.y;
-			}
-		}
-
 		var lastZoom = FlxG.camera.zoom;
-		if(FlxG.keys.justPressed.R && !FlxG.keys.pressed.CONTROL || touchPad.buttonZ.justPressed) FlxG.camera.zoom = 1;
-		else if ((FlxG.keys.pressed.E || touchPad.buttonX.pressed) && FlxG.camera.zoom < 3) {
+		if(FlxG.keys.justPressed.R && !FlxG.keys.pressed.CONTROL) FlxG.camera.zoom = 1;
+		else if (FlxG.keys.pressed.E && FlxG.camera.zoom < 3) {
 			FlxG.camera.zoom += elapsed * FlxG.camera.zoom * shiftMult * ctrlMult;
 			if(FlxG.camera.zoom > 3) FlxG.camera.zoom = 3;
 		}
-		else if ((FlxG.keys.pressed.Q || touchPad.buttonY.pressed) && FlxG.camera.zoom > 0.1) {
+		else if (FlxG.keys.pressed.Q && FlxG.camera.zoom > 0.1) {
 			FlxG.camera.zoom -= elapsed * FlxG.camera.zoom * shiftMult * ctrlMult;
 			if(FlxG.camera.zoom < 0.1) FlxG.camera.zoom = 0.1;
 		}
@@ -919,8 +885,8 @@ class CharacterEditorState extends MusicBeatState
 		var changedAnim:Bool = false;
 		if(anims.length > 1)
 		{
-			if((FlxG.keys.justPressed.W  || touchPad.buttonV.justPressed) && (changedAnim = true)) curAnim--;
-			else if((FlxG.keys.justPressed.S || touchPad.buttonD.justPressed) && (changedAnim = true)) curAnim++;
+			if(FlxG.keys.justPressed.W && (changedAnim = true)) curAnim--;
+			else if(FlxG.keys.justPressed.S && (changedAnim = true)) curAnim++;
 
 			if(changedAnim)
 			{
@@ -932,36 +898,8 @@ class CharacterEditorState extends MusicBeatState
 		}
 
 		var changedOffset = false;
-		var moveKeysP;
-		var moveKeys;
-		if (controls.mobileC)
-		{
-			moveKeysP = [
-				touchPad.buttonLeft.justPressed,
-				touchPad.buttonRight.justPressed,
-				touchPad.buttonUp.justPressed,
-				touchPad.buttonDown.justPressed
-			];
-			moveKeys = [
-				touchPad.buttonLeft.pressed,
-				touchPad.buttonRight.pressed,
-				touchPad.buttonUp.pressed,
-				touchPad.buttonDown.pressed
-			];
-		} else {
-			moveKeysP = [
-				FlxG.keys.justPressed.LEFT,
-				FlxG.keys.justPressed.RIGHT,
-				FlxG.keys.justPressed.UP,
-				FlxG.keys.justPressed.DOWN
-			];
-			moveKeys = [
-				FlxG.keys.pressed.LEFT,
-				FlxG.keys.pressed.RIGHT,
-				FlxG.keys.pressed.UP,
-				FlxG.keys.pressed.DOWN
-			];
-		}
+		var moveKeysP = [FlxG.keys.justPressed.LEFT, FlxG.keys.justPressed.RIGHT, FlxG.keys.justPressed.UP, FlxG.keys.justPressed.DOWN];
+		var moveKeys = [FlxG.keys.pressed.LEFT, FlxG.keys.pressed.RIGHT, FlxG.keys.pressed.UP, FlxG.keys.pressed.DOWN];
 		if(moveKeysP.contains(true))
 		{
 			character.offset.x += ((moveKeysP[0] ? 1 : 0) - (moveKeysP[1] ? 1 : 0)) * shiftMultBig;
@@ -1020,13 +958,6 @@ class CharacterEditorState extends MusicBeatState
 				character.offset.y = undoOffsets[1];
 				changedOffset = true;
 			}
-		}
-		if (touchPad.buttonA.justPressed)
-		{
-			undoOffsets = [character.offset.x, character.offset.y];
-			character.offset.x = copiedOffset[0];
-			character.offset.y = copiedOffset[1];
-			changedOffset = true;
 		}
 
 		var anim = anims[curAnim];
@@ -1090,22 +1021,15 @@ class CharacterEditorState extends MusicBeatState
 		frameAdvanceText.color = clr;
 
 		// OTHER CONTROLS
-		if(FlxG.keys.justPressed.F12 || touchPad.buttonS.justPressed)
+		if(FlxG.keys.justPressed.F12)
 			silhouettes.visible = !silhouettes.visible;
 
-		if((FlxG.keys.justPressed.F1 || touchPad.buttonF.justPressed)|| (helpBg.visible && FlxG.keys.justPressed.ESCAPE))
+		if(FlxG.keys.justPressed.F1 || (helpBg.visible && FlxG.keys.justPressed.ESCAPE))
 		{
-			if (controls.mobileC)
-			{
-				touchPad.forEachAlive(function(button:TouchButton){
-					if(button.tag != 'F')
-						button.visible = !button.visible;
-				});
-			}
 			helpBg.visible = !helpBg.visible;
 			helpTexts.visible = helpBg.visible;
 		}
-		else if(FlxG.keys.justPressed.ESCAPE || touchPad.buttonB.justPressed)
+		else if(FlxG.keys.justPressed.ESCAPE)
 		{
 			FlxG.mouse.visible = false;
 			if(!_goToPlayState)
@@ -1276,7 +1200,7 @@ class CharacterEditorState extends MusicBeatState
 		characterList = Mods.mergeAllTextsNamed('data/characterList.txt', Paths.getSharedPath());
 		var foldersToCheck:Array<String> = Mods.directoriesWithFile(Paths.getSharedPath(), 'characters/');
 		for (folder in foldersToCheck)
-			for (file in Paths.readDirectory(folder))
+			for (file in FileSystem.readDirectory(folder))
 				if(file.toLowerCase().endsWith('.json'))
 				{
 					var charToCheck:String = file.substr(0, file.length - 5);
@@ -1358,15 +1282,11 @@ class CharacterEditorState extends MusicBeatState
 
 		if (data.length > 0)
 		{
-			#if mobile
-			StorageUtil.saveContent('$_char.json', data);
-			#else
 			_file = new FileReference();
 			_file.addEventListener(#if desktop Event.SELECT #else Event.COMPLETE #end, onSaveComplete);
 			_file.addEventListener(Event.CANCEL, onSaveCancel);
 			_file.addEventListener(IOErrorEvent.IO_ERROR, onSaveError);
 			_file.save(data, '$_char.json');
-			#end
 		}
 	}
 }

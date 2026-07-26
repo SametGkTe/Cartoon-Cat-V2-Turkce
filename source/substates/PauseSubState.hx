@@ -17,7 +17,7 @@ class PauseSubState extends MusicBeatSubstate
 	var grpMenuShit:FlxTypedGroup<Alphabet>;
 
 	var menuItems:Array<String> = [];
-	var menuItemsOG:Array<String> = ['Resume', 'Restart Song', 'Chart Editor', 'Change Difficulty', 'Options', 'Exit to menu'];
+	var menuItemsOG:Array<String> = ['Devam Et', 'Yeniden Başlat', 'Zorluğu Değiştir', 'Ayarlar', 'Menüye Dön'];
 	var difficultyChoices = [];
 	var curSelected:Int = 0;
 
@@ -34,21 +34,21 @@ class PauseSubState extends MusicBeatSubstate
 
 	override function create()
 	{
-		if(Difficulty.list.length < 2) menuItemsOG.remove('Change Difficulty'); //No need to change difficulty if there is only one!
+		if(Difficulty.list.length < 2) menuItemsOG.remove('Zorluğu Değiştir'); //No need to change difficulty if there is only one!
 
 		if(PlayState.chartingMode)
 		{
-			menuItemsOG.insert(2, 'Leave Charting Mode');
+			menuItemsOG.insert(2, 'Chart Düzenleme Modundan Çık');
 			
 			var num:Int = 0;
 			if(!PlayState.instance.startingSong)
 			{
 				num = 1;
-				menuItemsOG.insert(3, 'Skip Time');
+				menuItemsOG.insert(3, 'Zamanı Atla');
 			}
-			menuItemsOG.insert(3 + num, 'End Song');
-			menuItemsOG.insert(4 + num, 'Toggle Practice Mode');
-			menuItemsOG.insert(5 + num, 'Toggle Botplay');
+			menuItemsOG.insert(3 + num, 'Şarkıyı Bitir');
+			menuItemsOG.insert(4 + num, 'Alıştırma Modunu Aç/Kapat');
+			menuItemsOG.insert(5 + num, 'Bot Oynanışını Aç/Kapat');
 		}
 		menuItems = menuItemsOG;
 
@@ -56,7 +56,7 @@ class PauseSubState extends MusicBeatSubstate
 			var diff:String = Difficulty.getString(i);
 			difficultyChoices.push(diff);
 		}
-		difficultyChoices.push('BACK');
+		difficultyChoices.push('GERİ');
 
 
 		pauseMusic = new FlxSound();
@@ -90,13 +90,13 @@ class PauseSubState extends MusicBeatSubstate
 		levelDifficulty.updateHitbox();
 		add(levelDifficulty);
 
-		var blueballedTxt:FlxText = new FlxText(20, 15 + 64, 0, "Blueballed: " + PlayState.deathCounter, 32);
+		var blueballedTxt:FlxText = new FlxText(20, 15 + 64, 0, "Ölüm Sayısı: " + PlayState.deathCounter, 32);
 		blueballedTxt.scrollFactor.set();
 		blueballedTxt.setFormat(Paths.font('vcr.ttf'), 32);
 		blueballedTxt.updateHitbox();
 		add(blueballedTxt);
 
-		practiceText = new FlxText(20, 15 + 101, 0, "PRACTICE MODE", 32);
+		practiceText = new FlxText(20, 15 + 101, 0, "ALIŞTIRMA MODU", 32);
 		practiceText.scrollFactor.set();
 		practiceText.setFormat(Paths.font('vcr.ttf'), 32);
 		practiceText.x = FlxG.width - (practiceText.width + 20);
@@ -104,7 +104,7 @@ class PauseSubState extends MusicBeatSubstate
 		practiceText.visible = PlayState.instance.practiceMode;
 		add(practiceText);
 
-		var chartingText:FlxText = new FlxText(20, 15 + 101, 0, "CHARTING MODE", 32);
+		var chartingText:FlxText = new FlxText(20, 15 + 101, 0, "CHART DÜZENLEME MODU", 32);
 		chartingText.scrollFactor.set();
 		chartingText.setFormat(Paths.font('vcr.ttf'), 32);
 		chartingText.x = FlxG.width - (chartingText.width + 20);
@@ -145,9 +145,6 @@ class PauseSubState extends MusicBeatSubstate
 		regenMenu();
 		cameras = [FlxG.cameras.list[FlxG.cameras.list.length - 1]];
 
-		addTouchPad(PlayState.chartingMode ? "LEFT_FULL" : "UP_DOWN", "A");
-		addTouchPadCamera();
-
 		super.create();
 	}
 	
@@ -155,7 +152,7 @@ class PauseSubState extends MusicBeatSubstate
 	{
 		var formattedSongName:String = (songName != null ? Paths.formatToSongPath(songName) : '');
 		var formattedPauseMusic:String = Paths.formatToSongPath(ClientPrefs.data.pauseMusic);
-		if(formattedSongName == 'none' || (formattedSongName != 'none' && formattedPauseMusic == 'none')) return null;
+		if(formattedSongName == 'none' || (formattedSongName != 'none' && ClientPrefs.data.pauseMusic == 'Yok')) return null;
 
 		return (formattedSongName != '') ? formattedSongName : formattedPauseMusic;
 	}
@@ -189,7 +186,7 @@ class PauseSubState extends MusicBeatSubstate
 		var daSelected:String = menuItems[curSelected];
 		switch (daSelected)
 		{
-			case 'Skip Time':
+			case 'Zamanı Atla':
 				if (controls.UI_LEFT_P)
 				{
 					FlxG.sound.play(Paths.sound('scrollMenu'), 0.4);
@@ -238,8 +235,8 @@ class PauseSubState extends MusicBeatSubstate
 					trace('ERROR! $e');
 
 					var errorStr:String = e.toString();
-					if(errorStr.startsWith('[file_contents,assets/data/')) errorStr = 'Missing file: ' + errorStr.substring(27, errorStr.length-1); //Missing chart
-					missingText.text = 'ERROR WHILE LOADING CHART:\n$errorStr';
+					if(errorStr.startsWith('[file_contents,assets/data/')) errorStr = 'Eksik dosya: ' + errorStr.substring(27, errorStr.length-1); //Missing chart
+					missingText.text = 'CHART YÜKLENİRKEN HATA OLUŞTU:\n$errorStr';
 					missingText.screenCenter(Y);
 					missingText.visible = true;
 					missingTextBG.visible = true;
@@ -256,24 +253,22 @@ class PauseSubState extends MusicBeatSubstate
 
 			switch (daSelected)
 			{
-				case "Resume":
+				case "Devam Et":
 					close();
-				case 'Change Difficulty':
+				case 'Zorluğu Değiştir':
 					menuItems = difficultyChoices;
 					deleteSkipTimeText();
 					regenMenu();
-				case 'Toggle Practice Mode':
+				case 'Alıştırma Modunu Aç/Kapat':
 					PlayState.instance.practiceMode = !PlayState.instance.practiceMode;
 					PlayState.changedDifficulty = true;
 					practiceText.visible = PlayState.instance.practiceMode;
-				case "Restart Song":
+				case "Yeniden Başlat":
 					restartSong();
-				case 'Chart Editor':
-					PlayState.instance.openChartEditor();
-				case "Leave Charting Mode":
+				case "Chart Düzenleme Modundan Çık":
 					restartSong();
 					PlayState.chartingMode = false;
-				case 'Skip Time':
+				case 'Zamanı Atla':
 					if(curTime < Conductor.songPosition)
 					{
 						PlayState.startOnTime = curTime;
@@ -288,29 +283,29 @@ class PauseSubState extends MusicBeatSubstate
 						}
 						close();
 					}
-				case 'End Song':
+				case 'Şarkıyı Bitir':
 					close();
 					PlayState.instance.notes.clear();
 					PlayState.instance.unspawnNotes = [];
 					PlayState.instance.finishSong(true);
-				case 'Toggle Botplay':
+				case 'Bot Oynanışını Aç/Kapat':
 					PlayState.instance.cpuControlled = !PlayState.instance.cpuControlled;
 					PlayState.changedDifficulty = true;
 					PlayState.instance.botplayTxt.visible = PlayState.instance.cpuControlled;
 					PlayState.instance.botplayTxt.alpha = 1;
 					PlayState.instance.botplaySine = 0;
-				case 'Options':
+				case 'Ayarlar':
 					PlayState.instance.paused = true; // For lua
 					PlayState.instance.vocals.volume = 0;
 					MusicBeatState.switchState(new OptionsState());
-					if(ClientPrefs.data.pauseMusic != 'None')
+					if(ClientPrefs.data.pauseMusic != 'Yok')
 					{
 						FlxG.sound.playMusic(Paths.music(Paths.formatToSongPath(ClientPrefs.data.pauseMusic)), pauseMusic.volume);
 						FlxTween.tween(FlxG.sound.music, {volume: 1}, 0.8);
 						FlxG.sound.music.time = pauseMusic.time;
 					}
 					OptionsState.onPlayState = true;
-				case "Exit to menu":
+				case "Menüye Dön":
 					#if DISCORD_ALLOWED DiscordClient.resetClientID(); #end
 					PlayState.deathCounter = 0;
 					PlayState.seenCutscene = false;
@@ -326,25 +321,6 @@ class PauseSubState extends MusicBeatSubstate
 					PlayState.chartingMode = false;
 					FlxG.camera.followLerp = 0;
 			}
-		}
-
-		if (touchPad == null) //sometimes it dosent add the tpad, hopefully this fixes it
-		{
-			if (PlayState.chartingMode)
-			{
-				addTouchPad("LEFT_FULL", "A");
-				touchPad.buttonLeft.color = 0xFFC24B99;
-				touchPad.buttonDown.color = 0xFF00FFFF;
-				touchPad.buttonUp.color = 0xFF12FA05;
-				touchPad.buttonRight.color = 0xFFF9393F; 
-			}
-			else
-			{
-				addTouchPad("UP_DOWN", "A");
-				touchPad.buttonDown.color = 0xFF00FFFF;
-				touchPad.buttonUp.color = 0xFF12FA05;
-			}
-			addTouchPadCamera();
 		}
 	}
 
@@ -432,7 +408,7 @@ class PauseSubState extends MusicBeatSubstate
 			item.targetY = i;
 			grpMenuShit.add(item);
 
-			if(menuItems[i] == 'Skip Time')
+			if(menuItems[i] == 'Zamanı Atla')
 			{
 				skipTimeText = new FlxText(0, 0, 0, '', 64);
 				skipTimeText.setFormat(Paths.font("vcr.ttf"), 64, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);

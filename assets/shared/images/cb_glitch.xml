@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="cb_glitch.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="cb0000" x="1536" y="864" width="768" height="432" frameX="0" frameY="0" frameWidth="768" frameHeight="432"/>
+	<SubTexture name="cb0001" x="768" y="864" width="768" height="432" frameX="0" frameY="0" frameWidth="768" frameHeight="432"/>
+	<SubTexture name="cb0002" x="0" y="0" width="768" height="432" frameX="0" frameY="0" frameWidth="768" frameHeight="432"/>
+	<SubTexture name="cb0003" x="1536" y="0" width="768" height="432" frameX="0" frameY="0" frameWidth="768" frameHeight="432"/>
+	<SubTexture name="cb0004" x="768" y="0" width="768" height="432" frameX="0" frameY="0" frameWidth="768" frameHeight="432"/>
+	<SubTexture name="cb0005" x="0" y="432" width="768" height="432" frameX="0" frameY="0" frameWidth="768" frameHeight="432"/>
+	<SubTexture name="cb0006" x="0" y="1296" width="768" height="432" frameX="0" frameY="0" frameWidth="768" frameHeight="432"/>
+	<SubTexture name="cb0007" x="768" y="1296" width="768" height="432" frameX="0" frameY="0" frameWidth="768" frameHeight="432"/>
+	<SubTexture name="cb0008" x="1536" y="432" width="768" height="432" frameX="0" frameY="0" frameWidth="768" frameHeight="432"/>
+	<SubTexture name="cb0009" x="768" y="432" width="768" height="432" frameX="0" frameY="0" frameWidth="768" frameHeight="432"/>
+	<SubTexture name="cb0010" x="1536" y="1296" width="768" height="432" frameX="0" frameY="0" frameWidth="768" frameHeight="432"/>
+	<SubTexture name="cb0011" x="0" y="864" width="768" height="432" frameX="0" frameY="0" frameWidth="768" frameHeight="432"/>
+</TextureAtlas>

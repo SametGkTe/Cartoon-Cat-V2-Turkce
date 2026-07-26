@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="menuCartoonCat_back.png">
+	<!-- Created with Adobe Animate version 22.0.5.191 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="cc_back0000" x="3" y="3" width="414" height="692" frameX="0" frameY="-1" frameWidth="425" frameHeight="695"/>
+	<SubTexture name="cc_back0001" x="3" y="3" width="414" height="692" frameX="0" frameY="-1" frameWidth="425" frameHeight="695"/>
+	<SubTexture name="cc_back0002" x="420" y="3" width="414" height="692" frameX="0" frameY="-1" frameWidth="425" frameHeight="695"/>
+	<SubTexture name="cc_back0003" x="420" y="3" width="414" height="692" frameX="0" frameY="-1" frameWidth="425" frameHeight="695"/>
+	<SubTexture name="cc_back0004" x="837" y="3" width="415" height="692" frameX="0" frameY="-1" frameWidth="425" frameHeight="695"/>
+	<SubTexture name="cc_back0005" x="837" y="3" width="415" height="692" frameX="0" frameY="-1" frameWidth="425" frameHeight="695"/>
+	<SubTexture name="cc_back0006" x="1255" y="3" width="415" height="693" frameX="0" frameY="-1" frameWidth="425" frameHeight="695"/>
+	<SubTexture name="cc_back0007" x="1255" y="3" width="415" height="693" frameX="0" frameY="-1" frameWidth="425" frameHeight="695"/>
+	<SubTexture name="cc_back0008" x="1673" y="3" width="416" height="693" frameX="0" frameY="-1" frameWidth="425" frameHeight="695"/>
+	<SubTexture name="cc_back0009" x="1673" y="3" width="416" height="693" frameX="0" frameY="-1" frameWidth="425" frameHeight="695"/>
+	<SubTexture name="cc_back0010" x="2092" y="3" width="417" height="694" frameX="0" frameY="-1" frameWidth="425" frameHeight="695"/>
+	<SubTexture name="cc_back0011" x="2092" y="3" width="417" height="694" frameX="0" frameY="-1" frameWidth="425" frameHeight="695"/>
+	<SubTexture name="cc_back0012" x="2512" y="3" width="419" height="694" frameX="0" frameY="-1" frameWidth="425" frameHeight="695"/>
+	<SubTexture name="cc_back0013" x="2934" y="3" width="419" height="693" frameX="0" frameY="-1" frameWidth="425" frameHeight="695"/>
+	<SubTexture name="cc_back0014" x="3356" y="3" width="421" height="693" frameX="0" frameY="-1" frameWidth="425" frameHeight="695"/>
+	<SubTexture name="cc_back0015" x="3" y="700" width="421" height="693" frameX="0" frameY="-1" frameWidth="425" frameHeight="695"/>
+	<SubTexture name="cc_back0016" x="427" y="700" width="423" height="693" frameX="0" frameY="-1" frameWidth="425" frameHeight="695"/>
+	<SubTexture name="cc_back0017" x="853" y="700" width="423" height="693" frameX="0" frameY="-1" frameWidth="425" frameHeight="695"/>
+	<SubTexture name="cc_back0018" x="1279" y="700" width="424" height="694" frameX="0" frameY="0" frameWidth="425" frameHeight="695"/>
+	<SubTexture name="cc_back0019" x="1706" y="700" width="424" height="694" frameX="0" frameY="0" frameWidth="425" frameHeight="695"/>
+	<SubTexture name="cc_back0020" x="2133" y="700" width="425" height="694" frameX="0" frameY="0" frameWidth="425" frameHeight="695"/>
+	<SubTexture name="cc_back0021" x="2561" y="700" width="425" height="694" frameX="0" frameY="0" frameWidth="425" frameHeight="695"/>
+	<SubTexture name="cc_back0022" x="2989" y="700" width="425" height="694" frameX="0" frameY="0" frameWidth="425" frameHeight="695"/>
+	<SubTexture name="cc_back0023" x="3417" y="700" width="425" height="694" frameX="0" frameY="0" frameWidth="425" frameHeight="695"/>
+	<SubTexture name="cc_back0024" x="3417" y="700" width="425" height="694" frameX="0" frameY="0" frameWidth="425" frameHeight="695"/>
+	<SubTexture name="cc_back0025" x="3" y="1397" width="423" height="693" frameX="0" frameY="-1" frameWidth="425" frameHeight="695"/>
+	<SubTexture name="cc_back0026" x="3" y="1397" width="423" height="693" frameX="0" frameY="-1" frameWidth="425" frameHeight="695"/>
+	<SubTexture name="cc_back0027" x="429" y="1397" width="421" height="692" frameX="0" frameY="-1" frameWidth="425" frameHeight="695"/>
+	<SubTexture name="cc_back0028" x="429" y="1397" width="421" height="692" frameX="0" frameY="-1" frameWidth="425" frameHeight="695"/>
+	<SubTexture name="cc_back0029" x="853" y="1397" width="419" height="692" frameX="0" frameY="-1" frameWidth="425" frameHeight="695"/>
+	<SubTexture name="cc_back0030" x="853" y="1397" width="419" height="692" frameX="0" frameY="-1" frameWidth="425" frameHeight="695"/>
+	<SubTexture name="cc_back0031" x="1275" y="1397" width="418" height="692" frameX="0" frameY="-1" frameWidth="425" frameHeight="695"/>
+	<SubTexture name="cc_back0032" x="1275" y="1397" width="418" height="692" frameX="0" frameY="-1" frameWidth="425" frameHeight="695"/>
+	<SubTexture name="cc_back0033" x="1696" y="1397" width="417" height="692" frameX="0" frameY="-1" frameWidth="425" frameHeight="695"/>
+	<SubTexture name="cc_back0034" x="1696" y="1397" width="417" height="692" frameX="0" frameY="-1" frameWidth="425" frameHeight="695"/>
+	<SubTexture name="cc_back0035" x="2116" y="1397" width="416" height="692" frameX="0" frameY="-1" frameWidth="425" frameHeight="695"/>
+	<SubTexture name="cc_back0036" x="2116" y="1397" width="416" height="692" frameX="0" frameY="-1" frameWidth="425" frameHeight="695"/>
+	<SubTexture name="cc_back0037" x="2535" y="1397" width="415" height="692" frameX="0" frameY="-1" frameWidth="425" frameHeight="695"/>
+	<SubTexture name="cc_back0038" x="3" y="3" width="414" height="692" frameX="0" frameY="-1" frameWidth="425" frameHeight="695"/>
+</TextureAtlas>

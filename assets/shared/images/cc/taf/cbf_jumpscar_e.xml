@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="cbf_jumpscar_e.png">
+	<SubTexture name="so scary0000" x="2197" y="1815" width="239" height="101" frameX="-3" frameY="-362" frameWidth="632" frameHeight="810"/>
+	<SubTexture name="so scary0001" x="2197" y="0" width="434" height="340" frameX="0" frameY="-212" frameWidth="632" frameHeight="810"/>
+	<SubTexture name="so scary0002" x="2197" y="0" width="434" height="340" frameX="0" frameY="-212" frameWidth="632" frameHeight="810"/>
+	<SubTexture name="so scary0003" x="0" y="870" width="427" height="408" frameX="-63" frameY="-91" frameWidth="632" frameHeight="810"/>
+	<SubTexture name="so scary0004" x="0" y="1278" width="394" height="403" frameX="-127" frameY="-60" frameWidth="632" frameHeight="810"/>
+	<SubTexture name="so scary0005" x="0" y="1278" width="394" height="403" frameX="-127" frameY="-60" frameWidth="632" frameHeight="810"/>
+	<SubTexture name="so scary0006" x="892" y="870" width="434" height="360" frameX="-171" frameY="-44" frameWidth="632" frameHeight="810"/>
+	<SubTexture name="so scary0007" x="0" y="381" width="438" height="489" frameX="-167" frameY="-44" frameWidth="632" frameHeight="810"/>
+	<SubTexture name="so scary0008" x="1341" y="787" width="376" height="429" frameX="-230" frameY="0" frameWidth="632" frameHeight="810"/>
+	<SubTexture name="so scary0009" x="1341" y="354" width="376" height="433" frameX="-230" frameY="0" frameWidth="632" frameHeight="810"/>
+	<SubTexture name="so scary0010" x="1803" y="386" width="391" height="384" frameX="-232" frameY="-23" frameWidth="632" frameHeight="810"/>
+	<SubTexture name="so scary0011" x="1803" y="0" width="394" height="386" frameX="-230" frameY="-22" frameWidth="632" frameHeight="810"/>
+	<SubTexture name="so scary0012" x="2197" y="340" width="395" height="371" frameX="-228" frameY="-34" frameWidth="632" frameHeight="810"/>
+	<SubTexture name="so scary0013" x="395" y="1681" width="395" height="384" frameX="-228" frameY="-33" frameWidth="632" frameHeight="810"/>
+	<SubTexture name="so scary0014" x="394" y="1278" width="395" height="390" frameX="-232" frameY="-29" frameWidth="632" frameHeight="810"/>
+	<SubTexture name="so scary0015" x="1186" y="1681" width="395" height="381" frameX="-232" frameY="-29" frameWidth="632" frameHeight="810"/>
+	<SubTexture name="so scary0016" x="566" y="507" width="379" height="355" frameX="-238" frameY="-28" frameWidth="632" frameHeight="810"/>
+	<SubTexture name="so scary0017" x="1184" y="1278" width="395" height="389" frameX="-234" frameY="-28" frameWidth="632" frameHeight="810"/>
+	<SubTexture name="so scary0018" x="2197" y="1453" width="384" height="362" frameX="-237" frameY="-28" frameWidth="632" frameHeight="810"/>
+	<SubTexture name="so scary0019" x="0" y="1681" width="395" height="385" frameX="-235" frameY="-27" frameWidth="632" frameHeight="810"/>
+	<SubTexture name="so scary0020" x="790" y="1681" width="396" height="381" frameX="-235" frameY="-28" frameWidth="632" frameHeight="810"/>
+	<SubTexture name="so scary0021" x="566" y="0" width="394" height="507" frameX="-235" frameY="-27" frameWidth="632" frameHeight="810"/>
+	<SubTexture name="so scary0022" x="960" y="506" width="381" height="357" frameX="-238" frameY="-28" frameWidth="632" frameHeight="810"/>
+	<SubTexture name="so scary0023" x="789" y="1278" width="395" height="389" frameX="-236" frameY="-27" frameWidth="632" frameHeight="810"/>
+	<SubTexture name="so scary0024" x="1803" y="1155" width="384" height="362" frameX="-237" frameY="-32" frameWidth="632" frameHeight="810"/>
+	<SubTexture name="so scary0025" x="960" y="0" width="381" height="506" frameX="-237" frameY="-31" frameWidth="632" frameHeight="810"/>
+	<SubTexture name="so scary0026" x="1803" y="1155" width="384" height="362" frameX="-237" frameY="-32" frameWidth="632" frameHeight="810"/>
+	<SubTexture name="so scary0027" x="2197" y="1081" width="383" height="372" frameX="-224" frameY="-51" frameWidth="632" frameHeight="810"/>
+	<SubTexture name="so scary0028" x="1803" y="770" width="385" height="385" frameX="-224" frameY="-50" frameWidth="632" frameHeight="810"/>
+	<SubTexture name="so scary0029" x="427" y="870" width="465" height="360" frameX="-151" frameY="-87" frameWidth="632" frameHeight="810"/>
+	<SubTexture name="so scary0030" x="1341" y="0" width="462" height="354" frameX="-151" frameY="-84" frameWidth="632" frameHeight="810"/>
+	<SubTexture name="so scary0031" x="0" y="0" width="566" height="381" frameX="-21" frameY="-128" frameWidth="632" frameHeight="810"/>
+	<SubTexture name="so scary0032" x="1581" y="1681" width="399" height="373" frameX="-6" frameY="-369" frameWidth="632" frameHeight="810"/>
+	<SubTexture name="so scary0033" x="2197" y="711" width="394" height="370" frameX="-6" frameY="-367" frameWidth="632" frameHeight="810"/>
+</TextureAtlas>

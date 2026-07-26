@@ -1,0 +1,8 @@
+{
+	"confirm_anim": "tv",
+	"idle_anim": "tv",
+	"position": [506, 79],
+	"scale": 1.05,
+	"image": "tvchar",
+	"flipX": false
+}

@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="Luna_bg_2.png"><SubTexture name="Luna_bg_2 Idle0000" x="0" y="0" width="1924" height="1924" frameX="0" frameY="0" frameWidth="1924" frameHeight="1924" />
+<SubTexture name="Luna_bg_2 Idle0001" x="1924" y="0" width="1924" height="1924" frameX="0" frameY="0" frameWidth="1924" frameHeight="1924" />
+<SubTexture name="Luna_bg_2 Idle0002" x="0" y="1924" width="1924" height="1924" frameX="0" frameY="0" frameWidth="1924" frameHeight="1924" />
+<SubTexture name="Luna_bg_2 Idle0003" x="1924" y="1924" width="1924" height="1924" frameX="0" frameY="0" frameWidth="1924" frameHeight="1924" />
+<SubTexture name="Luna_bg_2 Idle0004" x="0" y="3848" width="1924" height="1924" frameX="0" frameY="0" frameWidth="1924" frameHeight="1924" />
+<SubTexture name="Luna_bg_2 Idle0005" x="1924" y="3848" width="1924" height="1924" frameX="0" frameY="0" frameWidth="1924" frameHeight="1924" />
+</TextureAtlas>

@@ -1,0 +1,105 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				124,
+				16
+			],
+			"loop": false,
+			"anim": "singLEFT",
+			"fps": 30,
+			"name": "left pose",
+			"indices": []
+		},
+		{
+			"offsets": [
+				10,
+				-70
+			],
+			"loop": false,
+			"anim": "singDOWN",
+			"fps": 30,
+			"name": "down pose",
+			"indices": []
+		},
+		{
+			"offsets": [
+				114,
+				18
+			],
+			"loop": false,
+			"anim": "singUP",
+			"fps": 30,
+			"name": "up pose",
+			"indices": []
+		},
+		{
+			"offsets": [
+				0,
+				7
+			],
+			"loop": false,
+			"anim": "singRIGHT",
+			"fps": 30,
+			"name": "right pose",
+			"indices": []
+		},
+		{
+			"offsets": [
+				104,
+				45
+			],
+			"loop": false,
+			"anim": "mid song anim",
+			"fps": 24,
+			"name": "mid song animation",
+			"indices": []
+		},
+		{
+			"offsets": [
+				104,
+				45
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "mid song anim loop",
+			"indices": [
+				30,
+				31,
+				32,
+				33
+			],
+			"name": "mid song animation"
+		},
+		{
+			"loop": true,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "idle ",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/Luna_Henderson_Remastered",
+	"position": [
+		130,
+		219
+	],
+	"healthicon": "lh",
+	"flip_x": false,
+	"healthbar_colors": [
+		78,
+		60,
+		56
+	],
+	"camera_position": [
+		100,
+		-49
+	],
+	"sing_duration": 3.6,
+	"scale": 2
+}

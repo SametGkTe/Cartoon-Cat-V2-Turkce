@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="MEAT_NOTE_assets.png">
+	<SubTexture name="blue0000" x="0" y="178" width="157" height="169" frameX="0" frameY="-4" frameWidth="157" frameHeight="182"/>
+	<SubTexture name="hold piece0000" x="207" y="178" width="50" height="44" frameX="0" frameY="0" frameWidth="50" frameHeight="44"/>
+	<SubTexture name="purple0000" x="0" y="0" width="167" height="178" frameX="0" frameY="-2" frameWidth="167" frameHeight="185"/>
+	<SubTexture name="meat hold end0000" x="157" y="178" width="50" height="64" frameX="0" frameY="0" frameWidth="50" frameHeight="64"/>
+	<SubTexture name="red0000" x="333" y="0" width="158" height="170" frameX="0" frameY="-3" frameWidth="158" frameHeight="179"/>
+	<SubTexture name="green0000" x="167" y="0" width="166" height="171" frameX="0" frameY="-1" frameWidth="166" frameHeight="178"/>
+</TextureAtlas>

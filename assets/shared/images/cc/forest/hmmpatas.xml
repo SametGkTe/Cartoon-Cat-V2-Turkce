@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="hmmpatas.png">
+	<SubTexture name="caminando xd0000" x="1027" y="0" width="315" height="403" frameX="-19" frameY="-15" frameWidth="365" frameHeight="423"/>
+	<SubTexture name="caminando xd0001" x="361" y="0" width="355" height="410" frameX="0" frameY="-8" frameWidth="365" frameHeight="423"/>
+	<SubTexture name="caminando xd0002" x="0" y="0" width="361" height="411" frameX="-3" frameY="-8" frameWidth="365" frameHeight="423"/>
+	<SubTexture name="caminando xd0003" x="1027" y="403" width="268" height="411" frameX="-49" frameY="-8" frameWidth="365" frameHeight="423"/>
+	<SubTexture name="caminando xd0004" x="223" y="827" width="176" height="412" frameX="-94" frameY="-8" frameWidth="365" frameHeight="423"/>
+	<SubTexture name="caminando xd0005" x="0" y="1239" width="123" height="413" frameX="-115" frameY="-8" frameWidth="365" frameHeight="423"/>
+	<SubTexture name="caminando xd0006" x="1558" y="0" width="125" height="414" frameX="-104" frameY="-6" frameWidth="365" frameHeight="423"/>
+	<SubTexture name="caminando xd0007" x="1342" y="414" width="179" height="415" frameX="-74" frameY="-5" frameWidth="365" frameHeight="423"/>
+	<SubTexture name="caminando xd0008" x="716" y="414" width="258" height="413" frameX="-36" frameY="-7" frameWidth="365" frameHeight="423"/>
+	<SubTexture name="caminando xd0009" x="332" y="411" width="310" height="416" frameX="-14" frameY="-4" frameWidth="365" frameHeight="423"/>
+	<SubTexture name="caminando xd0010" x="0" y="411" width="332" height="416" frameX="-7" frameY="-4" frameWidth="365" frameHeight="423"/>
+	<SubTexture name="caminando xd0011" x="716" y="0" width="311" height="414" frameX="-6" frameY="-4" frameWidth="365" frameHeight="423"/>
+	<SubTexture name="caminando xd0012" x="0" y="827" width="223" height="412" frameX="-39" frameY="-7" frameWidth="365" frameHeight="423"/>
+	<SubTexture name="caminando xd0013" x="1558" y="414" width="124" height="413" frameX="-95" frameY="-3" frameWidth="365" frameHeight="423"/>
+	<SubTexture name="caminando xd0014" x="1342" y="0" width="216" height="414" frameX="-60" frameY="-1" frameWidth="365" frameHeight="423"/>
+</TextureAtlas>

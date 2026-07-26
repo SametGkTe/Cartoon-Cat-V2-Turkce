@@ -43,8 +43,6 @@ import flixel.input.gamepad.FlxGamepadInputID;
 
 import haxe.Json;
 
-import mobile.psychlua.Functions;
-
 class FunkinLua {
 	public var lua:State = null;
 	public var camTarget:FlxCamera;
@@ -1511,8 +1509,6 @@ class FunkinLua {
 		CustomSubstate.implement(this);
 		ShaderFunctions.implement(this);
 		DeprecatedFunctions.implement(this);
-		MobileFunctions.implement(this);
-		#if android AndroidFunctions.implement(this); #end
 
 		try{
 			var isString:Bool = !FileSystem.exists(scriptName);
@@ -1525,8 +1521,8 @@ class FunkinLua {
 			var resultStr:String = Lua.tostring(lua, result);
 			if(resultStr != null && result != 0) {
 				trace(resultStr);
-				#if (windows || mobile || js || wasm)
-				CoolUtil.showPopUp(resultStr, 'Error on lua script!');
+				#if windows
+				lime.app.Application.current.window.alert(resultStr, 'Error on lua script!');
 				#else
 				luaTrace('$scriptName\n$resultStr', true, false, FlxColor.RED);
 				#end
@@ -1704,7 +1700,8 @@ class FunkinLua {
 	#if (MODS_ALLOWED && !flash && sys)
 	public var runtimeShaders:Map<String, Array<String>> = new Map<String, Array<String>>();
 	#end
-	public function initLuaShader(name:String)
+
+	public function initLuaShader(name:String, ?glslVersion:Int = 120)
 	{
 		if(!ClientPrefs.data.shaders) return false;
 

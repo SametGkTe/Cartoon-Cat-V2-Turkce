@@ -121,18 +121,10 @@ class AchievementsMenuState extends MusicBeatState
 		add(nameText);
 		
 		_changeSelection();
-
-		addTouchPad("LEFT_FULL", "B_C");
-
 		super.create();
 		
 		FlxG.camera.follow(camFollow, null, 9);
 		FlxG.camera.scroll.y = -FlxG.height;
-	}
-
-	override function closeSubState() {
-		super.closeSubState();
-		addTouchPad("LEFT_FULL", "B_C");
 	}
 
 	function makeAchievement(achievement:String, data:Achievement, unlocked:Bool, mod:String = null)
@@ -206,9 +198,8 @@ class AchievementsMenuState extends MusicBeatState
 				}
 			}
 			
-			if(MusicBeatState.getState().touchPad.buttonC.justPressed || controls.RESET && (options[curSelected].unlocked || options[curSelected].curProgress > 0))
+			if(controls.RESET && (options[curSelected].unlocked || options[curSelected].curProgress > 0))
 			{
-				removeTouchPad();
 				openSubState(new ResetAchievementSubstate());
 			}
 		}
@@ -268,8 +259,6 @@ class ResetAchievementSubstate extends MusicBeatSubstate
 
 	public function new()
 	{
-                controls.isInSubstate = true;
-
 		super();
 
 		var bg:FlxSprite = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
@@ -302,8 +291,6 @@ class ResetAchievementSubstate extends MusicBeatSubstate
 		noText.scrollFactor.set();
 		add(noText);
 		updateOptions();
-
-		addTouchPad("LEFT_RIGHT", "A");
 	}
 
 	override function update(elapsed:Float)
@@ -311,7 +298,6 @@ class ResetAchievementSubstate extends MusicBeatSubstate
 		if(controls.BACK)
 		{
 			close();
-                        controls.isInSubstate = false;
 			FlxG.sound.play(Paths.sound('cancelMenu'));
 			return;
 		}
@@ -352,7 +338,6 @@ class ResetAchievementSubstate extends MusicBeatSubstate
 
 				FlxG.sound.play(Paths.sound('cancelMenu'));
 			}
-                        controls.isInSubstate = false;
 			close();
 			return;
 		}

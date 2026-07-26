@@ -96,7 +96,6 @@ class HScript extends SScript
 		set('Countdown', backend.BaseStage.Countdown);
 		set('PlayState', PlayState);
 		set('Paths', Paths);
-		set('StorageUtil', StorageUtil);
 		set('Conductor', Conductor);
 		set('ClientPrefs', ClientPrefs);
 		#if ACHIEVEMENTS_ALLOWED
@@ -296,56 +295,13 @@ class HScript extends SScript
 		set('insert', FlxG.state.insert);
 		set('remove', FlxG.state.remove);
 
-                if(PlayState.instance == FlxG.state)
+		if(PlayState.instance == FlxG.state)
 		{
 			set('addBehindGF', PlayState.instance.addBehindGF);
 			set('addBehindDad', PlayState.instance.addBehindDad);
 			set('addBehindBF', PlayState.instance.addBehindBF);
 			setSpecialObject(PlayState.instance, false, PlayState.instance.instancesExclude);
 		}
-
-                #if LUA_ALLOWED
-		set("addTouchPad", (DPadMode:String, ActionMode:String) -> {
-			PlayState.instance.makeLuaTouchPad(DPadMode, ActionMode);
-			PlayState.instance.addLuaTouchPad();
-		  });
-  
-		set("removeTouchPad", () -> {
-			PlayState.instance.removeLuaTouchPad();
-		});
-  
-		set("addTouchPadCamera", () -> {
-			if(PlayState.instance.luaTouchPad == null){
-				FunkinLua.luaTrace('addTouchPadCamera: TPAD does not exist.');
-				return;
-			}
-			PlayState.instance.addLuaTouchPadCamera();
-		});
-  
-		set("touchPadJustPressed", function(button:Dynamic):Bool {
-			if(PlayState.instance.luaTouchPad == null){
-			  //FunkinLua.luaTrace('touchPadJustPressed: TPAD does not exist.');
-			  return false;
-			}
-		  return PlayState.instance.luaTouchPadJustPressed(button);
-		});
-  
-		set("touchPadPressed", function(button:Dynamic):Bool {
-			if(PlayState.instance.luaTouchPad == null){
-				//FunkinLua.luaTrace('touchPadPressed: TPAD does not exist.');
-				return false;
-			}
-			return PlayState.instance.luaTouchPadPressed(button);
-		});
-  
-		set("touchPadJustReleased", function(button:Dynamic):Bool {
-			if(PlayState.instance.luaTouchPad == null){
-				//FunkinLua.luaTrace('touchPadJustReleased: TPAD does not exist.');
-				return false;
-			}
-			return PlayState.instance.luaTouchPadJustReleased(button);
-		});
-                #end
 
 		if(varsToBring != null) {
 			for (key in Reflect.fields(varsToBring)) {
