@@ -33,7 +33,8 @@ Oyunun Ayarlar Menüsü
 Oyun içi Şarkılar
 
 
-## YAPIMCILAR
+## ![Rigel](docs/img/rigel.png) Yapımcılar
+
 <table align="center">
   <tr>
     <td align="center" width="220">
@@ -170,8 +171,7 @@ Oyun içi Şarkılar
   </tr>
 </table>
 
-### Psych Engine Türkiye
-
+## ![pet](docs/img/pet.png) Psych Engine Türkiye
 <table align="center">
   <tr>
     <td align="center" width="260">
