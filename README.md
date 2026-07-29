@@ -1,26 +1,223 @@
-# Friday Night Funkin' - Psych Engine Mobile
+<h1 align="center">CARTOON CAT V2 TÜRKÇE!</h1>
 
-Engine originally used on [Mind Games Mod](https://gamebanana.com/mods/301107), intended to be a fix for the vanilla version's many issues while keeping the casual play aspect of it. Also aiming to be an easier alternative to newbie coders.
+<p align="center">
+  <img src="docs/img/logo.png" alt="LOGO">
+</p>
 
-## Customization:
+<p align="center">
+  Bu Engine, <a href="https://gamebanana.com/mods/332876">Cartoon Cat V2 Modu</a> için hazırlanmış Türkçe çeviri ve dublaj sürümüdür.
+</p>
 
-if you wish to disable things like *Lua Scripts* or *Video Cutscenes*, you can read over to `Project.xml`
+<p align="center">
+  Dublajlar:
+  <img src="docs/img/rigel.png" alt="New Rigel Records" height="20">
+  <a href="https://www.tiktok.com/@nrr_offical8">New Rigel Records</a>
+  <br>
+  Engine:
+  <img src="docs/img/pet.png" alt="Psych Engine Türkiye" height="20">
+  <a href="https://samedcan1234.github.io/Psych-Engine-Ultra-Android/">PSYCH ENGINE TÜRKİYE</a>
+</p>
 
-inside `Project.xml`, you will find several variables to customize Psych Engine to your liking
+## Menüler:
 
-to start you off, disabling Videos should be simple, simply Delete the line `"VIDEOS_ALLOWED"` or comment it out by wrapping the line in XML-like comments, like this `<!-- YOUR_LINE_HERE -->`
+![mainmenu](docs/img/mainmenu.png)
+Oyunun Ana Menüsü
 
-same goes for *Lua Scripts*, comment out or delete the line with `LUA_ALLOWED`, this and other customization options are all available within the `Project.xml` file
+![freeplay](docs/img/freeplay.png)
+Oyunun Serbest Oyun Menüsü
 
-## Mobile Credits:
-* Lily - Head Porter and linc_luajit-rewriten.
-* Karim - Second Porter.
-* Moxie - Helper.
+![options](docs/img/options.png)
+Oyunun Ayarlar Menüsü
 
-### Mobile Special Thanks
-* MAJigsaw77 - Author of old mobile controls, new storage stuff and FlxRuntimeShader.
-* FutureDorito - iOS Helper.
-* Sector - Touch Pad Artist.
+![game](docs/img/game.png)
+Oyun içi Şarkılar
+
+
+## YAPIMCILAR
+<table align="center">
+  <tr>
+    <td align="center" width="220">
+      <a href="https://www.tiktok.com/@prlyg_9001">
+        <img src="docs/img/credits/cc.png" width="90" alt="Parlogy">
+      </a><br>
+      <strong>Parlogy</strong><br>
+      <sub>Cartoon Cat / Michael / New Rigel Records Kurucusu</sub>
+    </td>
+    <td align="center" width="220">
+      <a href="https://www.tiktok.com/@hasanbey5656">
+        <img src="docs/img/credits/rigel.png" width="90" alt="Hasan Bey">
+      </a><br>
+      <strong>Hasan Bey</strong><br>
+      <sub>Boyfriend / New Rigel Records Kurucusu</sub>
+    </td>
+    <td align="center" width="220">
+      <a href="https://www.tiktok.com/@shizu_xa">
+        <img src="docs/img/credits/luna.png" width="90" alt="Shizuka">
+      </a><br>
+      <strong>Shizuka</strong><br>
+      <sub>Luna Henderson</sub>
+    </td>
+    <td align="center" width="220">
+      <a href="https://www.tiktok.com/@minalin_s">
+        <img src="docs/img/credits/gf.png" width="90" alt="Minalin">
+      </a><br>
+      <strong>Minalin</strong><br>
+      <sub>Girlfriend</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="220">
+      <a href="https://www.tiktok.com/@hasanbey5656">
+        <img src="docs/img/credits/siren.png" width="90" alt="Haktan">
+      </a><br>
+      <strong>Haktan</strong><br>
+      <sub>Siren Kafa (Erkek), 911 Operatör, Daniel, Upsidedown Man</sub>
+    </td>
+    <td align="center" width="220">
+      <a href="https://www.tiktok.com/@balc_tr">
+        <img src="docs/img/credits/lemon.png" width="90" alt="Balc">
+      </a><br>
+      <strong>Balc</strong><br>
+      <sub>Lemon Demon</sub>
+    </td>
+    <td align="center" width="220">
+      <a href="https://www.tiktok.com/@meetwith_emin">
+        <img src="docs/img/credits/equ.png" width="90" alt="EminDub">
+      </a><br>
+      <strong>EminDub</strong><br>
+      <sub>Cartoon Dog, Long Hair, Sahne Editörü</sub>
+    </td>
+    <td align="center" width="220">
+      <a href="https://www.tiktok.com/@hasanbey5656">
+        <img src="docs/img/credits/siren.png" width="90" alt="Tuana">
+      </a><br>
+      <strong>Tuana</strong><br>
+      <sub>Siren Kafa (Kadın)</sub>
+    </td>
+  </tr>
+</table>
+
+### Programcılar
+
+<table align="center">
+  <tr>
+    <td align="center" width="260">
+      <a href="https://www.tiktok.com/@sametgkte">
+        <img src="docs/img/credits/gkte.png" width="90" alt="SametGkTe">
+      </a><br>
+      <strong>SametGkTe</strong><br>
+      <sub>Tüm Oyun, Engine, Menüler vb.</sub>
+    </td>
+  </tr>
+</table>
+
+### Çeviriler
+
+<table align="center">
+  <tr>
+    <td align="center" width="260">
+      <a href="https://www.tiktok.com/@skynexus0.03">
+        <img src="docs/img/credits/nexus.png" width="90" alt="Nexus">
+      </a><br>
+      <strong>Nexus</strong><br>
+      <sub>Bazı çeviriler</sub>
+    </td>
+  </tr>
+</table>
+
+### Temsilciler
+
+<table align="center">
+  <tr>
+    <td align="center" width="200">
+      <a href="https://www.tiktok.com/@skynexus0.03">
+        <img src="docs/img/credits/rigel.png" width="90" alt="Serdar">
+      </a><br>
+      <strong>Serdar</strong><br>
+      <sub>Temsilci</sub>
+    </td>
+    <td align="center" width="200">
+      <a href="https://www.tiktok.com/@skynexus0.03">
+        <img src="docs/img/credits/rigel.png" width="90" alt="Batuhan">
+      </a><br>
+      <strong>Batuhan</strong><br>
+      <sub>Temsilci</sub>
+    </td>
+    <td align="center" width="200">
+      <a href="https://www.tiktok.com/@skynexus0.03">
+        <img src="docs/img/credits/rigel.png" width="90" alt="Burak">
+      </a><br>
+      <strong>Burak</strong><br>
+      <sub>Temsilci</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="200">
+      <a href="https://www.tiktok.com/@skynexus0.03">
+        <img src="docs/img/credits/rigel.png" width="90" alt="Mete">
+      </a><br>
+      <strong>Mete</strong><br>
+      <sub>Temsilci</sub>
+    </td>
+    <td align="center" width="200">
+      <a href="https://www.tiktok.com/@skynexus0.03">
+        <img src="docs/img/credits/rigel.png" width="90" alt="Şeyma">
+      </a><br>
+      <strong>Şeyma</strong><br>
+      <sub>Temsilci</sub>
+    </td>
+    <td align="center" width="200"></td>
+  </tr>
+</table>
+
+### Psych Engine Türkiye
+
+<table align="center">
+  <tr>
+    <td align="center" width="260">
+      <a href="https://www.tiktok.com/@sametgkte">
+        <img src="docs/img/credits/gkte.png" width="90" alt="SametGkTe">
+      </a><br>
+      <strong>SametGkTe</strong><br>
+      <sub>Psych Engine Türkiye Yapımcısı</sub>
+    </td>
+  </tr>
+</table>
+
+### Psych Engine Türkiye Temsilcileri
+
+<table align="center">
+  <tr>
+    <td align="center" width="220">
+      <a href="https://www.tiktok.com/@xqz_64">
+        <img src="docs/img/credits/tabi.png" width="90" alt="XQZ64">
+      </a><br>
+      <strong>XQZ64</strong><br>
+      <sub>Psych Engine Türkiye Temsilcisi</sub>
+    </td>
+    <td align="center" width="220">
+      <a href="https://www.tiktok.com/@skynexus0.03">
+        <img src="docs/img/credits/nexus.png" width="90" alt="Nexus">
+      </a><br>
+      <strong>Nexus</strong><br>
+      <sub>Psych Engine Türkiye Temsilcisi</sub>
+    </td>
+    <td align="center" width="220">
+      <a href="https://www.tiktok.com/@skynexus0.03">
+        <img src="docs/img/credits/syran.png" width="90" alt="Syran">
+      </a><br>
+      <strong>Syran</strong><br>
+      <sub>Psych Engine Türkiye Temsilcisi</sub>
+    </td>
+    <td align="center" width="220">
+      <a href="https://www.tiktok.com/@skynexus0.03">
+        <img src="docs/img/credits/goku.png" width="90" alt="Ahmet Tanelan">
+      </a><br>
+      <strong>Ahmet Tanelan</strong><br>
+      <sub>Psych Engine Türkiye Temsilcisi</sub>
+    </td>
+  </tr>
+</table>
 
 ## Psych Credits:
 * Shadow Mario - Programmer
@@ -37,78 +234,3 @@ same goes for *Lua Scripts*, comment out or delete the line with `LUA_ALLOWED`, 
 * Smokey - Sprite Atlas Support
 * Nebula the Zorua - some Lua reworks
 * superpowers04 - LUA JIT Fork
-_____________________________________
-
-# Features
-
-## Attractive animated dialogue boxes:
-
-![](https://user-images.githubusercontent.com/44785097/127706669-71cd5cdb-5c2a-4ecc-871b-98a276ae8070.gif)
-
-
-## Mod Support
-* Probably one of the main points of this engine, you can code in .lua files outside of the source code, making your own weeks without even messing with the source!
-* Comes with a Mod Organizing/Disabling Menu.
-
-
-## Atleast one change to every week:
-### Week 1:
-  * New Dad Left sing sprite
-  * Unused stage lights are now used
-  * Dad Battle has a spotlight effect for the breakdown
-### Week 2:
-  * Both BF and Skid & Pump does "Hey!" animations
-  * Thunders does a quick light flash and zooms the camera in slightly
-  * Added a quick transition/cutscene to Monster
-### Week 3:
-  * BF does "Hey!" during Philly Nice
-  * Blammed has a cool new colors flash during that sick part of the song
-### Week 4:
-  * Better hair physics for Mom/Boyfriend (Maybe even slightly better than Week 7's :eyes:)
-  * Henchmen die during all songs. Yeah :(
-### Week 5:
-  * Bottom Boppers and GF does "Hey!" animations during Cocoa and Eggnog
-  * On Winter Horrorland, GF bops her head slower in some parts of the song.
-### Week 6:
-  * On Thorns, the HUD is hidden during the cutscene
-  * Also there's the Background girls being spooky during the "Hey!" parts of the Instrumental
-
-## Cool new Chart Editor changes and countless bug fixes
-![](https://github.com/ShadowMario/FNF-PsychEngine/blob/main/docs/img/chart.png?raw=true)
-* You can now chart "Event" notes, which are bookmarks that trigger specific actions that usually were hardcoded on the vanilla version of the game.
-* Your song's BPM can now have decimal values
-* You can manually adjust a Note's strum time if you're really going for milisecond precision
-* You can change a note's type on the Editor, it comes with five example types:
-  * Alt Animation: Forces an alt animation to play, useful for songs like Ugh/Stress
-  * Hey: Forces a "Hey" animation instead of the base Sing animation, if Boyfriend hits this note, Girlfriend will do a "Hey!" too.
-  * Hurt Notes: If Boyfriend hits this note, he plays a miss animation and loses some health.
-  * GF Sing: Rather than the character hitting the note and singing, Girlfriend sings instead.
-  * No Animation: Character just hits the note, no animation plays.
-
-## Multiple editors to assist you in making your own Mod
-![Screenshot_3](https://user-images.githubusercontent.com/44785097/144629914-1fe55999-2f18-4cc1-bc70-afe616d74ae5.png)
-* Working both for Source code modding and Downloaded builds!
-
-## Story mode menu rework:
-![](https://i.imgur.com/UB2EKpV.png)
-* Added a different BG to every song (less Tutorial)
-* All menu characters are now in individual spritesheets, makes modding it easier.
-
-## Credits menu
-![Screenshot_1](https://user-images.githubusercontent.com/44785097/144632635-f263fb22-b879-4d6b-96d6-865e9562b907.png)
-* You can add a head icon, name, description and a Redirect link for when the player presses Enter while the item is currently selected.
-
-## Awards/Achievements
-* The engine comes with 16 example achievements that you can mess with and learn how it works (Check Achievements.hx and search for "checkForAchievement" on PlayState.hx)
-
-## Options menu:
-* You can change Note colors, Delay and Combo Offset, Controls and Preferences there.
- * On Preferences you can toggle Downscroll, Middlescroll, Anti-Aliasing, Framerate, Low Quality, Note Splashes, Flashing Lights, etc.
-
-## Other gameplay features:
-* When the enemy hits a note, their strum note also glows.
-* Lag doesn't impact the camera movement and player icon scaling anymore.
-* Some stuff based on Week 7's changes has been put in (Background colors on Freeplay, Note splashes)
-* You can reset your Score on Freeplay/Story Mode by pressing Reset button.
-* You can listen to a song or adjust Scroll Speed/Damage taken/etc. on Freeplay by pressing Space.
-* You can enable "Combo Stacking" in Gameplay Options. This causes the combo sprites to just be one sprite with an animation rather than sprites spawning each note hit.
