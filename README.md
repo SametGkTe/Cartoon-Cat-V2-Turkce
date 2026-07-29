@@ -46,9 +46,9 @@ Oyun içi Şarkılar
     </td>
     <td align="center" width="220">
       <a href="https://www.tiktok.com/@hasanbey5656">
-        <img src="docs/img/credits/bf.png" width="90" alt="HasanBey">
+        <img src="docs/img/credits/bf.png" width="90" alt="Hasan Bey">
       </a><br>
-      <strong>Hasan Bey</strong><br>
+      <strong>HasanBey</strong><br>
       <sub>Boyfriend / New Rigel Records Kurucusu</sub>
     </td>
     <td align="center" width="220">
