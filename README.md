@@ -45,7 +45,7 @@ Oyun içi Şarkılar
     </td>
     <td align="center" width="220">
       <a href="https://www.tiktok.com/@hasanbey5656">
-        <img src="docs/img/credits/rigel.png" width="90" alt="Hasan Bey">
+        <img src="docs/img/credits/bf.png" width="90" alt="HasanBey">
       </a><br>
       <strong>Hasan Bey</strong><br>
       <sub>Boyfriend / New Rigel Records Kurucusu</sub>
@@ -204,7 +204,7 @@ Oyun içi Şarkılar
     </td>
     <td align="center" width="220">
       <a href="https://www.tiktok.com/@skynexus0.03">
-        <img src="docs/img/credits/syran.png" width="90" alt="Syran">
+        <img src="docs/img/credits/soulbf.png" width="90" alt="Syran">
       </a><br>
       <strong>Syran</strong><br>
       <sub>Psych Engine Türkiye Temsilcisi</sub>
