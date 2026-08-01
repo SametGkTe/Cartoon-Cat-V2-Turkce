@@ -20,7 +20,7 @@ on:
         type: string
 
 env:
-  HAXE_VERSION: 4.3.2
+  HAXE_VERSION: 4.2.5
   PROJECT_NAME: PsychEngine
 
 jobs:
@@ -29,16 +29,25 @@ jobs:
     runs-on: ${{ inputs.os }}
     steps:
       - name: Checkout
-        uses: actions/checkout@main
+        uses: actions/checkout@v4
 
       - name: Setup Haxe
-        uses: krdlab/setup-haxe@master
+        uses: HaxeFoundation/setup-haxe@v1
         with:
           haxe-version: ${{ env.HAXE_VERSION }}
 
       - name: Install libVLC
         if: inputs.name == 'Linux'
-        run: sudo apt install libvlc-dev libvlccore-dev
+        run: sudo apt update && sudo apt install -y libvlc-dev libvlccore-dev
+
+      - name: Select dependency file
+        shell: bash
+        run: |
+          if [[ "${{ inputs.name }}" == "Android" || "${{ inputs.name }}" == "iOS" ]]; then
+            cp hmm-mobile.json hmm.json
+          else
+            cp hmm-desktop.json hmm.json
+          fi
 
       - name: Install Libraries
         run: |
@@ -65,7 +74,7 @@ jobs:
           zip -r ${{ env.PROJECT_NAME }}.ipa Payload
 
       - name: Upload Artifact
-        uses: actions/upload-artifact@main
+        uses: actions/upload-artifact@v4
         with:
           name: ${{ inputs.artifactName }}
           path: ${{ inputs.artifactPath }}

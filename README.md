@@ -92,7 +92,7 @@ Oyun içi Şarkılar
       <a href="https://www.tiktok.com/@hasanbey5656">
         <img src="docs/img/credits/siren.png" width="90" alt="Tuana">
       </a><br>
-      <strong>Tuana</strong><br>
+      <strong>Defne</strong><br>
       <sub>Siren Kafa (Kadın)</sub>
     </td>
   </tr>
