@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Jordan_sprites.png">
+	<SubTexture name="leov bf down instancia 0000" x="1174" y="0" width="260" height="278" frameX="0" frameY="-9" frameWidth="260" frameHeight="287"/>
+	<SubTexture name="leov bf down instancia 0001" x="1174" y="278" width="251" height="285" frameX="-6" frameY="-2" frameWidth="260" frameHeight="287"/>
+	<SubTexture name="leov bf down instancia 0002" x="248" y="1036" width="247" height="287" frameX="-8" frameY="0" frameWidth="260" frameHeight="287"/>
+	<SubTexture name="leov bf down red eyes instancia 0000" x="834" y="674" width="260" height="278" frameX="0" frameY="-9" frameWidth="260" frameHeight="287"/>
+	<SubTexture name="leov bf down red eyes instancia 0001" x="1174" y="563" width="251" height="285" frameX="-6" frameY="-2" frameWidth="260" frameHeight="287"/>
+	<SubTexture name="leov bf down red eyes instancia 0002" x="0" y="1036" width="248" height="287" frameX="-8" frameY="0" frameWidth="260" frameHeight="287"/>
+	<SubTexture name="leov bf idle instancia 0000" x="0" y="1323" width="198" height="335" frameX="-1" frameY="-4" frameWidth="199" frameHeight="339"/>
+	<SubTexture name="leov bf idle instancia 0001" x="1434" y="676" width="199" height="337" frameX="0" frameY="-2" frameWidth="199" frameHeight="339"/>
+	<SubTexture name="leov bf idle instancia 0002" x="1835" y="0" width="195" height="339" frameX="-4" frameY="0" frameWidth="199" frameHeight="339"/>
+	<SubTexture name="leov bf idle instancia 0003" x="0" y="1658" width="193" height="339" frameX="-5" frameY="0" frameWidth="199" frameHeight="339"/>
+	<SubTexture name="leov bf idle instancia 0004" x="1835" y="1017" width="195" height="339" frameX="-3" frameY="0" frameWidth="199" frameHeight="339"/>
+	<SubTexture name="leov bf idle red eyes instancia 0000" x="1636" y="676" width="198" height="335" frameX="-1" frameY="-4" frameWidth="199" frameHeight="339"/>
+	<SubTexture name="leov bf idle red eyes instancia 0001" x="1636" y="0" width="199" height="337" frameX="0" frameY="-2" frameWidth="199" frameHeight="339"/>
+	<SubTexture name="leov bf idle red eyes instancia 0002" x="1835" y="678" width="195" height="339" frameX="-4" frameY="0" frameWidth="199" frameHeight="339"/>
+	<SubTexture name="leov bf idle red eyes instancia 0003" x="193" y="1658" width="193" height="339" frameX="-5" frameY="0" frameWidth="199" frameHeight="339"/>
+	<SubTexture name="leov bf idle red eyes instancia 0004" x="1835" y="339" width="195" height="339" frameX="-3" frameY="0" frameWidth="199" frameHeight="339"/>
+	<SubTexture name="leov bf idle red eyes instancia 0005" x="1636" y="337" width="196" height="339" frameX="-2" frameY="0" frameWidth="199" frameHeight="339"/>
+	<SubTexture name="leov bf left instancia 0000" x="489" y="337" width="241" height="337" frameX="0" frameY="0" frameWidth="258" frameHeight="337"/>
+	<SubTexture name="leov bf left instancia 0001" x="502" y="0" width="248" height="337" frameX="-4" frameY="0" frameWidth="258" frameHeight="337"/>
+	<SubTexture name="leov bf left instancia 0002" x="251" y="0" width="251" height="337" frameX="-7" frameY="0" frameWidth="258" frameHeight="337"/>
+	<SubTexture name="leov bf left red eyes instancia 0000" x="248" y="337" width="241" height="337" frameX="0" frameY="0" frameWidth="258" frameHeight="337"/>
+	<SubTexture name="leov bf left red eyes instancia 0001" x="0" y="337" width="248" height="337" frameX="-4" frameY="0" frameWidth="258" frameHeight="337"/>
+	<SubTexture name="leov bf left red eyes instancia 0002" x="0" y="0" width="251" height="337" frameX="-7" frameY="0" frameWidth="258" frameHeight="337"/>
+	<SubTexture name="leov bf rightt instancia 0000" x="1434" y="0" width="202" height="338" frameX="-1" frameY="0" frameWidth="203" frameHeight="338"/>
+	<SubTexture name="leov bf rightt instancia 0001" x="386" y="1658" width="192" height="338" frameX="0" frameY="0" frameWidth="203" frameHeight="338"/>
+	<SubTexture name="leov bf rightt instancia 0002" x="770" y="1658" width="189" height="337" frameX="0" frameY="-1" frameWidth="203" frameHeight="338"/>
+	<SubTexture name="leov bf rightt red eyes instancia 0000" x="1434" y="338" width="202" height="338" frameX="-1" frameY="0" frameWidth="203" frameHeight="338"/>
+	<SubTexture name="leov bf rightt red eyes instancia 0001" x="578" y="1658" width="192" height="338" frameX="0" frameY="0" frameWidth="203" frameHeight="338"/>
+	<SubTexture name="leov bf rightt red eyes instancia 0002" x="959" y="1658" width="189" height="337" frameX="0" frameY="-1" frameWidth="203" frameHeight="338"/>
+	<SubTexture name="leov bf up instancia 0000" x="206" y="674" width="206" height="362" frameX="-8" frameY="0" frameWidth="214" frameHeight="362"/>
+	<SubTexture name="leov bf up instancia 0001" x="750" y="0" width="212" height="355" frameX="-1" frameY="-7" frameWidth="214" frameHeight="362"/>
+	<SubTexture name="leov bf up instancia 0002" x="623" y="674" width="211" height="353" frameX="0" frameY="-9" frameWidth="214" frameHeight="362"/>
+	<SubTexture name="leov bf up red eyes instancia 0000" x="0" y="674" width="206" height="362" frameX="-8" frameY="0" frameWidth="214" frameHeight="362"/>
+	<SubTexture name="leov bf up red eyes instancia 0001" x="962" y="0" width="212" height="355" frameX="-1" frameY="-7" frameWidth="214" frameHeight="362"/>
+	<SubTexture name="leov bf up red eyes instancia 0002" x="412" y="674" width="211" height="353" frameX="0" frameY="-9" frameWidth="214" frameHeight="362"/>
+</TextureAtlas>

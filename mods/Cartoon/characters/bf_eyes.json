@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-5,
+				0
+			],
+			"indices": [],
+			"fps": 12,
+			"anim": "idle",
+			"loop": false,
+			"name": "leov bf idle red eyes instancia "
+		},
+		{
+			"offsets": [
+				17,
+				-3
+			],
+			"indices": [],
+			"fps": 12,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "leov bf left red eyes instancia "
+		},
+		{
+			"offsets": [
+				22,
+				-65
+			],
+			"indices": [],
+			"fps": 12,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "leov bf down red eyes instancia "
+		},
+		{
+			"offsets": [
+				-32,
+				27
+			],
+			"indices": [],
+			"fps": 12,
+			"anim": "singUP",
+			"loop": false,
+			"name": "leov bf up red eyes instancia "
+		},
+		{
+			"offsets": [
+				-48,
+				-3
+			],
+			"indices": [],
+			"fps": 12,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "leov bf rightt red eyes instancia "
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/leovincible/Jordan_sprites",
+	"position": [
+		196,
+		316
+	],
+	"healthicon": "jordan",
+	"flip_x": true,
+	"healthbar_colors": [
+		49,
+		176,
+		209
+	],
+	"camera_position": [
+		226,
+		-46
+	],
+	"sing_duration": 4,
+	"scale": 1.25
+}

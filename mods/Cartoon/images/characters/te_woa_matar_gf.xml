@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="te_woa_matar_gf.png">
+	<SubTexture name="te woa matar0000" x="407" y="392" width="134" height="195" frameX="0" frameY="-1" frameWidth="137" frameHeight="196"/>
+	<SubTexture name="te woa matar0001" x="683" y="0" width="133" height="196" frameX="0" frameY="0" frameWidth="137" frameHeight="196"/>
+	<SubTexture name="te woa matar0002" x="272" y="392" width="135" height="196" frameX="0" frameY="0" frameWidth="137" frameHeight="196"/>
+	<SubTexture name="te woa matar0003" x="274" y="0" width="137" height="195" frameX="0" frameY="-1" frameWidth="137" frameHeight="196"/>
+	<SubTexture name="te woa matar0004" x="0" y="0" width="137" height="196" frameX="0" frameY="0" frameWidth="137" frameHeight="196"/>
+	<SubTexture name="te woa matar0005" x="137" y="0" width="137" height="196" frameX="0" frameY="0" frameWidth="137" frameHeight="196"/>
+	<SubTexture name="te woa matar0006" x="411" y="0" width="136" height="196" frameX="-1" frameY="0" frameWidth="137" frameHeight="196"/>
+	<SubTexture name="te woa matar0007" x="136" y="392" width="136" height="196" frameX="-1" frameY="0" frameWidth="137" frameHeight="196"/>
+	<SubTexture name="te woa matar0008" x="136" y="196" width="136" height="196" frameX="-1" frameY="0" frameWidth="137" frameHeight="196"/>
+	<SubTexture name="te woa matar0009" x="272" y="196" width="136" height="196" frameX="-1" frameY="0" frameWidth="137" frameHeight="196"/>
+	<SubTexture name="te woa matar0010" x="411" y="196" width="136" height="196" frameX="-1" frameY="0" frameWidth="137" frameHeight="196"/>
+	<SubTexture name="te woa matar0011" x="547" y="0" width="136" height="196" frameX="-1" frameY="0" frameWidth="137" frameHeight="196"/>
+	<SubTexture name="te woa matar0012" x="547" y="196" width="136" height="196" frameX="-1" frameY="0" frameWidth="137" frameHeight="196"/>
+	<SubTexture name="te woa matar0013" x="0" y="196" width="136" height="196" frameX="-1" frameY="0" frameWidth="137" frameHeight="196"/>
+	<SubTexture name="te woa matar0014" x="136" y="196" width="136" height="196" frameX="-1" frameY="0" frameWidth="137" frameHeight="196"/>
+	<SubTexture name="te woa matar0015" x="272" y="196" width="136" height="196" frameX="-1" frameY="0" frameWidth="137" frameHeight="196"/>
+	<SubTexture name="te woa matar0016" x="0" y="392" width="136" height="196" frameX="-1" frameY="0" frameWidth="137" frameHeight="196"/>
+</TextureAtlas>

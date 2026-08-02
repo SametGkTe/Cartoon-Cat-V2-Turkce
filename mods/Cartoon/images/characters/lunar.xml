@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="lunar.png">
+	<SubTexture name="luna down0000" x="1001" y="0" width="250" height="328" frameX="0" frameY="0" frameWidth="250" frameHeight="328"/>
+	<SubTexture name="luna down0001" x="486" y="688" width="246" height="328" frameX="-4" frameY="0" frameWidth="250" frameHeight="328"/>
+	<SubTexture name="luna idle0000" x="753" y="0" width="248" height="333" frameX="-2" frameY="-3" frameWidth="250" frameHeight="336"/>
+	<SubTexture name="luna idle0001" x="503" y="0" width="250" height="335" frameX="0" frameY="-1" frameWidth="250" frameHeight="336"/>
+	<SubTexture name="luna idle0002" x="753" y="333" width="243" height="336" frameX="-7" frameY="0" frameWidth="250" frameHeight="336"/>
+	<SubTexture name="luna idle0003" x="243" y="688" width="243" height="335" frameX="-7" frameY="-1" frameWidth="250" frameHeight="336"/>
+	<SubTexture name="luna idle0004" x="0" y="688" width="243" height="336" frameX="-7" frameY="0" frameWidth="250" frameHeight="336"/>
+	<SubTexture name="luna left0000" x="254" y="337" width="244" height="339" frameX="0" frameY="0" frameWidth="246" frameHeight="339"/>
+	<SubTexture name="luna left0001" x="1001" y="328" width="242" height="338" frameX="-4" frameY="-1" frameWidth="246" frameHeight="339"/>
+	<SubTexture name="luna right0000" x="0" y="0" width="254" height="338" frameX="-1" frameY="0" frameWidth="255" frameHeight="338"/>
+	<SubTexture name="luna right0001" x="254" y="0" width="249" height="337" frameX="0" frameY="-1" frameWidth="255" frameHeight="338"/>
+	<SubTexture name="luna up0000" x="0" y="338" width="242" height="350" frameX="0" frameY="0" frameWidth="242" frameHeight="350"/>
+	<SubTexture name="luna up0001" x="503" y="335" width="242" height="346" frameX="0" frameY="-4" frameWidth="242" frameHeight="350"/>
+</TextureAtlas>

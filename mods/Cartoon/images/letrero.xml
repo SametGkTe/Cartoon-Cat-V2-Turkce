@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="letrero.png">
+	<SubTexture name="intro0000" x="0" y="306" width="284" height="144" frameX="1" frameY="-3" frameWidth="512" frameHeight="163"/>
+	<SubTexture name="intro0001" x="284" y="306" width="284" height="144" frameX="-14" frameY="-3" frameWidth="512" frameHeight="163"/>
+	<SubTexture name="intro0002" x="348" y="0" width="285" height="144" frameX="-45" frameY="-3" frameWidth="512" frameHeight="163"/>
+	<SubTexture name="intro0003" x="348" y="144" width="285" height="144" frameX="-138" frameY="-3" frameWidth="512" frameHeight="163"/>
+	<SubTexture name="intro0004" x="0" y="0" width="348" height="159" frameX="-165" frameY="-5" frameWidth="512" frameHeight="163"/>
+	<SubTexture name="intro0005" x="0" y="159" width="298" height="147" frameX="-209" frameY="-5" frameWidth="512" frameHeight="163"/>
+	<SubTexture name="intro0006" x="633" y="144" width="278" height="144" frameX="-214" frameY="1" frameWidth="512" frameHeight="163"/>
+	<SubTexture name="intro0007" x="0" y="450" width="280" height="145" frameX="-214" frameY="-1" frameWidth="512" frameHeight="163"/>
+	<SubTexture name="intro0008" x="633" y="0" width="279" height="144" frameX="-214" frameY="-1" frameWidth="512" frameHeight="163"/>
+</TextureAtlas>

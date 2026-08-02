@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				110,
+				-61
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "HD left"
+		},
+		{
+			"offsets": [
+				43,
+				-160
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "HD down"
+		},
+		{
+			"offsets": [
+				-6,
+				46
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "HD up"
+		},
+		{
+			"offsets": [
+				47,
+				-155
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "HD right"
+		},
+		{
+			"offsets": [
+				0,
+				20
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "HD idle"
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/lev_cc_cursed_phase_1",
+	"position": [
+		170,
+		167
+	],
+	"healthicon": "leocc",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		0,
+		0
+	],
+	"camera_position": [
+		-203,
+		5
+	],
+	"sing_duration": 6.1,
+	"scale": 4.3
+}

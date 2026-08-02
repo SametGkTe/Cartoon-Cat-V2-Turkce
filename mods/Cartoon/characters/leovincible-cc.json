@@ -1,0 +1,100 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				131,
+				-73
+			],
+			"loop": false,
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "left",
+			"indices": []
+		},
+		{
+			"offsets": [
+				43,
+				-182
+			],
+			"loop": false,
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "down",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-6,
+				25
+			],
+			"loop": false,
+			"anim": "singUP",
+			"fps": 24,
+			"name": "up",
+			"indices": []
+		},
+		{
+			"offsets": [
+				67,
+				-178
+			],
+			"loop": false,
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "right",
+			"indices": []
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"anim": "idle",
+			"fps": 24,
+			"name": "idle",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-71,
+				37
+			],
+			"loop": false,
+			"anim": "laugh",
+			"fps": 24,
+			"name": "laugh",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-94,
+				40
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP-alt",
+			"indices": [],
+			"name": "laugh"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/leovincible/leovincible_cc",
+	"position": [
+		193,
+		172
+	],
+	"healthicon": "leocc",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		0,
+		0
+	],
+	"camera_position": [
+		-135,
+		65
+	],
+	"sing_duration": 6.1,
+	"scale": 3.62
+}

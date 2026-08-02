@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				126,
+				20
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "bflipa idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				117,
+				5
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "bflipa left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				123,
+				14
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "bflipa down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				122,
+				15
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "bflipa up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				78,
+				6
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "bflipa right",
+			"indices": []
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/bflipa",
+	"position": [
+		-340,
+		231
+	],
+	"healthicon": "flipabf",
+	"flip_x": true,
+	"healthbar_colors": [
+		0,
+		115,
+		255
+	],
+	"camera_position": [
+		270,
+		-180
+	],
+	"sing_duration": 4,
+	"scale": 2
+}

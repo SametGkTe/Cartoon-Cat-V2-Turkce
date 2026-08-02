@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="ghost_pig_v2.png">
+	<SubTexture name="down pose0000" x="1418" y="1632" width="249" height="263" frameX="-36" frameY="-32" frameWidth="308" frameHeight="302"/>
+	<SubTexture name="down pose0001" x="2255" y="1653" width="231" height="271" frameX="-45" frameY="-19" frameWidth="308" frameHeight="302"/>
+	<SubTexture name="down pose0002" x="1783" y="1327" width="236" height="273" frameX="-43" frameY="-9" frameWidth="308" frameHeight="302"/>
+	<SubTexture name="down pose0003" x="1543" y="999" width="239" height="268" frameX="-41" frameY="-11" frameWidth="308" frameHeight="302"/>
+	<SubTexture name="down pose0004" x="675" y="1963" width="237" height="268" frameX="-42" frameY="-12" frameWidth="308" frameHeight="302"/>
+	<SubTexture name="down pose0005" x="1303" y="999" width="237" height="268" frameX="-42" frameY="-12" frameWidth="308" frameHeight="302"/>
+	<SubTexture name="down pose0006" x="811" y="664" width="263" height="268" frameX="-42" frameY="-12" frameWidth="308" frameHeight="302"/>
+	<SubTexture name="I have the body of a pig0000" x="472" y="1632" width="235" height="329" frameX="-11" frameY="-5" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0001" x="472" y="1632" width="235" height="329" frameX="-11" frameY="-5" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0002" x="943" y="1632" width="238" height="324" frameX="-6" frameY="-10" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0003" x="943" y="1632" width="238" height="324" frameX="-6" frameY="-10" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0004" x="2255" y="660" width="232" height="327" frameX="-5" frameY="-6" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0005" x="2255" y="660" width="232" height="327" frameX="-5" frameY="-6" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0006" x="0" y="1632" width="236" height="331" frameX="-2" frameY="-2" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0007" x="0" y="1632" width="236" height="331" frameX="-2" frameY="-2" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0008" x="1543" y="0" width="240" height="333" frameX="0" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0009" x="1543" y="0" width="240" height="333" frameX="0" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0010" x="225" y="1963" width="225" height="333" frameX="-15" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0011" x="225" y="1963" width="225" height="333" frameX="-15" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0012" x="2021" y="666" width="234" height="333" frameX="-6" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0013" x="2021" y="666" width="234" height="333" frameX="-6" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0014" x="1783" y="332" width="238" height="332" frameX="-2" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0015" x="1783" y="332" width="238" height="332" frameX="-2" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0016" x="717" y="1299" width="239" height="332" frameX="-1" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0017" x="717" y="1299" width="239" height="332" frameX="-1" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0018" x="1303" y="666" width="240" height="333" frameX="0" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0019" x="1303" y="666" width="240" height="333" frameX="0" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0020" x="0" y="1963" width="225" height="333" frameX="-15" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0021" x="0" y="1963" width="225" height="333" frameX="-15" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0022" x="2021" y="999" width="234" height="333" frameX="-6" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0023" x="2021" y="999" width="234" height="333" frameX="-6" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0024" x="1783" y="664" width="238" height="332" frameX="-2" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0025" x="1783" y="664" width="238" height="332" frameX="-2" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0026" x="956" y="1299" width="239" height="332" frameX="-1" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0027" x="956" y="1299" width="239" height="332" frameX="-1" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0028" x="1303" y="666" width="240" height="333" frameX="0" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0029" x="1303" y="666" width="240" height="333" frameX="0" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0030" x="0" y="1963" width="225" height="333" frameX="-15" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0031" x="0" y="1963" width="225" height="333" frameX="-15" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0032" x="2021" y="333" width="234" height="333" frameX="-6" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0033" x="2021" y="0" width="234" height="333" frameX="-6" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0034" x="1783" y="664" width="238" height="332" frameX="-2" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0035" x="1783" y="0" width="238" height="332" frameX="-2" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0036" x="956" y="1299" width="239" height="332" frameX="-1" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0037" x="478" y="1299" width="239" height="332" frameX="-1" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0038" x="1303" y="333" width="240" height="333" frameX="0" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0039" x="1543" y="666" width="240" height="333" frameX="0" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0040" x="2255" y="1320" width="225" height="333" frameX="-15" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0041" x="450" y="1963" width="225" height="333" frameX="-15" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0042" x="2021" y="666" width="234" height="333" frameX="-6" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0043" x="2021" y="1332" width="234" height="333" frameX="-6" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0044" x="1195" y="1299" width="238" height="332" frameX="-2" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0045" x="1433" y="1299" width="238" height="332" frameX="-2" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0046" x="239" y="1299" width="239" height="332" frameX="-1" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0047" x="239" y="1299" width="239" height="332" frameX="-1" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0048" x="1543" y="333" width="240" height="333" frameX="0" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0049" x="1543" y="333" width="240" height="333" frameX="0" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0050" x="0" y="1963" width="225" height="333" frameX="-15" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0051" x="2255" y="987" width="225" height="333" frameX="-15" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0052" x="2255" y="0" width="234" height="333" frameX="-6" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0053" x="2255" y="0" width="234" height="333" frameX="-6" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0054" x="1783" y="332" width="238" height="332" frameX="-2" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0055" x="1783" y="332" width="238" height="332" frameX="-2" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0056" x="717" y="1299" width="239" height="332" frameX="-1" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0057" x="717" y="1299" width="239" height="332" frameX="-1" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0058" x="1303" y="0" width="240" height="333" frameX="0" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0059" x="1303" y="0" width="240" height="333" frameX="0" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0060" x="2255" y="987" width="225" height="333" frameX="-15" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0061" x="2255" y="987" width="225" height="333" frameX="-15" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0062" x="2255" y="0" width="234" height="333" frameX="-6" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0063" x="2255" y="0" width="234" height="333" frameX="-6" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0064" x="1783" y="332" width="238" height="332" frameX="-2" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0065" x="1783" y="332" width="238" height="332" frameX="-2" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0066" x="717" y="1299" width="239" height="332" frameX="-1" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0067" x="717" y="1299" width="239" height="332" frameX="-1" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0068" x="1303" y="0" width="240" height="333" frameX="0" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="I have the body of a pig0069" x="1303" y="0" width="240" height="333" frameX="0" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="idle0000" x="472" y="1632" width="235" height="329" frameX="-11" frameY="-5" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="idle0001" x="472" y="1632" width="235" height="329" frameX="-11" frameY="-5" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="idle0002" x="1181" y="1632" width="237" height="324" frameX="-6" frameY="-10" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="idle0003" x="1181" y="1632" width="237" height="324" frameX="-6" frameY="-10" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="idle0004" x="2255" y="333" width="232" height="327" frameX="-5" frameY="-6" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="idle0005" x="2255" y="333" width="232" height="327" frameX="-5" frameY="-6" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="idle0006" x="1783" y="996" width="236" height="331" frameX="-2" frameY="-2" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="idle0007" x="1783" y="996" width="236" height="331" frameX="-2" frameY="-2" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="idle0008" x="0" y="1299" width="239" height="333" frameX="0" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="idle0009" x="0" y="1299" width="239" height="333" frameX="0" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="idle0010" x="2255" y="987" width="225" height="333" frameX="-15" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="idle0011" x="2255" y="987" width="225" height="333" frameX="-15" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="idle0012" x="2255" y="0" width="234" height="333" frameX="-6" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="idle0013" x="2255" y="0" width="234" height="333" frameX="-6" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="idle0014" x="1783" y="332" width="238" height="332" frameX="-2" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="idle0015" x="1783" y="332" width="238" height="332" frameX="-2" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="idle0016" x="717" y="1299" width="239" height="332" frameX="-1" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="idle0017" x="717" y="1299" width="239" height="332" frameX="-1" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="idle0018" x="1303" y="0" width="240" height="333" frameX="0" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="idle0019" x="1303" y="0" width="240" height="333" frameX="0" frameY="0" frameWidth="246" frameHeight="334"/>
+	<SubTexture name="left pose0000" x="0" y="664" width="293" height="316" frameX="0" frameY="-23" frameWidth="293" frameHeight="359"/>
+	<SubTexture name="left pose0001" x="0" y="980" width="279" height="319" frameX="-6" frameY="-24" frameWidth="293" frameHeight="359"/>
+	<SubTexture name="left pose0002" x="279" y="980" width="276" height="319" frameX="-11" frameY="-23" frameWidth="293" frameHeight="359"/>
+	<SubTexture name="left pose0003" x="555" y="980" width="274" height="318" frameX="-17" frameY="-24" frameWidth="293" frameHeight="359"/>
+	<SubTexture name="left pose0004" x="829" y="980" width="259" height="318" frameX="-17" frameY="-24" frameWidth="293" frameHeight="359"/>
+	<SubTexture name="left pose0005" x="2489" y="1570" width="179" height="318" frameX="-96" frameY="-24" frameWidth="293" frameHeight="359"/>
+	<SubTexture name="left pose0006" x="2489" y="1888" width="179" height="318" frameX="-96" frameY="-24" frameWidth="293" frameHeight="359"/>
+	<SubTexture name="left pose0007" x="2489" y="1252" width="179" height="318" frameX="-96" frameY="-24" frameWidth="293" frameHeight="359"/>
+	<SubTexture name="right pose0000" x="293" y="664" width="267" height="310" frameX="-103" frameY="-20" frameWidth="396" frameHeight="346"/>
+	<SubTexture name="right pose0001" x="560" y="664" width="251" height="309" frameX="-94" frameY="-21" frameWidth="396" frameHeight="346"/>
+	<SubTexture name="right pose0002" x="707" y="1632" width="236" height="327" frameX="-96" frameY="-2" frameWidth="396" frameHeight="346"/>
+	<SubTexture name="right pose0003" x="236" y="1632" width="236" height="329" frameX="-88" frameY="0" frameWidth="396" frameHeight="346"/>
+	<SubTexture name="right pose0004" x="2489" y="0" width="191" height="325" frameX="-87" frameY="-4" frameWidth="396" frameHeight="346"/>
+	<SubTexture name="right pose0005" x="2489" y="325" width="189" height="313" frameX="-89" frameY="-16" frameWidth="396" frameHeight="346"/>
+	<SubTexture name="right pose0006" x="2489" y="638" width="189" height="307" frameX="-89" frameY="-22" frameWidth="396" frameHeight="346"/>
+	<SubTexture name="right pose0007" x="2489" y="945" width="189" height="307" frameX="-89" frameY="-22" frameWidth="396" frameHeight="346"/>
+	<SubTexture name="up pose0000" x="0" y="0" width="325" height="340" frameX="-53" frameY="-34" frameWidth="421" frameHeight="423"/>
+	<SubTexture name="up pose0001" x="652" y="0" width="326" height="330" frameX="-50" frameY="-59" frameWidth="421" frameHeight="423"/>
+	<SubTexture name="up pose0002" x="325" y="0" width="327" height="329" frameX="-47" frameY="-65" frameWidth="421" frameHeight="423"/>
+	<SubTexture name="up pose0003" x="978" y="0" width="325" height="324" frameX="-48" frameY="-72" frameWidth="421" frameHeight="423"/>
+	<SubTexture name="up pose0004" x="325" y="340" width="325" height="324" frameX="-48" frameY="-72" frameWidth="421" frameHeight="423"/>
+	<SubTexture name="up pose0005" x="978" y="324" width="325" height="324" frameX="-48" frameY="-72" frameWidth="421" frameHeight="423"/>
+	<SubTexture name="up pose0006" x="650" y="340" width="325" height="324" frameX="-48" frameY="-72" frameWidth="421" frameHeight="423"/>
+	<SubTexture name="up pose0007" x="0" y="340" width="325" height="324" frameX="-48" frameY="-72" frameWidth="421" frameHeight="423"/>
+</TextureAtlas>

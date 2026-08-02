@@ -15,10 +15,10 @@ class GameplayChangersSubstate extends MusicBeatSubstate
 
 	function getOptions()
 	{
-		var goption:GameplayOption = new GameplayOption('Scroll Type', 'scrolltype', 'string', 'multiplicative', ["multiplicative", "constant"]);
+		var goption:GameplayOption = new GameplayOption('Ok Hızı Türü', 'scrolltype', 'string', 'multiplicative', ["multiplicative", "constant"]);
 		optionsArray.push(goption);
 
-		var option:GameplayOption = new GameplayOption('Scroll Speed', 'scrollspeed', 'float', 1);
+		var option:GameplayOption = new GameplayOption('Ok Hızı', 'scrollspeed', 'float', 1);
 		option.scrollSpeed = 2.0;
 		option.minValue = 0.35;
 		option.changeValue = 0.05;
@@ -36,7 +36,7 @@ class GameplayChangersSubstate extends MusicBeatSubstate
 		optionsArray.push(option);
 
 		#if FLX_PITCH
-		var option:GameplayOption = new GameplayOption('Playback Rate', 'songspeed', 'float', 1);
+		var option:GameplayOption = new GameplayOption('Şarkı Hızı', 'songspeed', 'float', 1);
 		option.scrollSpeed = 1;
 		option.minValue = 0.5;
 		option.maxValue = 3.0;
@@ -46,7 +46,7 @@ class GameplayChangersSubstate extends MusicBeatSubstate
 		optionsArray.push(option);
 		#end
 
-		var option:GameplayOption = new GameplayOption('Health Gain Multiplier', 'healthgain', 'float', 1);
+		var option:GameplayOption = new GameplayOption('Can Kazanma Çarpanı', 'healthgain', 'float', 1);
 		option.scrollSpeed = 2.5;
 		option.minValue = 0;
 		option.maxValue = 5;
@@ -54,7 +54,7 @@ class GameplayChangersSubstate extends MusicBeatSubstate
 		option.displayFormat = '%vX';
 		optionsArray.push(option);
 
-		var option:GameplayOption = new GameplayOption('Health Loss Multiplier', 'healthloss', 'float', 1);
+		var option:GameplayOption = new GameplayOption('Can Kaybetme Çarpanı', 'healthloss', 'float', 1);
 		option.scrollSpeed = 2.5;
 		option.minValue = 0.5;
 		option.maxValue = 5;
@@ -62,9 +62,9 @@ class GameplayChangersSubstate extends MusicBeatSubstate
 		option.displayFormat = '%vX';
 		optionsArray.push(option);
 
-		optionsArray.push(new GameplayOption('Instakill on Miss', 'instakill', 'bool', false));
-		optionsArray.push(new GameplayOption('Practice Mode', 'practice', 'bool', false));
-		optionsArray.push(new GameplayOption('Botplay', 'botplay', 'bool', false));
+		optionsArray.push(new GameplayOption('Iskada Ani Ölüm', 'instakill', 'bool', false));
+		optionsArray.push(new GameplayOption('Alıştırma Modu', 'practice', 'bool', false));
+		optionsArray.push(new GameplayOption('Bot Oynayışı', 'botplay', 'bool', false));
 	}
 
 	public function getOptionByName(name:String)
@@ -211,9 +211,9 @@ class GameplayChangersSubstate extends MusicBeatSubstate
 									curOption.curOption = num;
 									curOption.setValue(curOption.options[num]); //lol
 									
-									if (curOption.name == "Scroll Type")
+									if (curOption.name == "Kaydırma Türü")
 									{
-										var oOption:GameplayOption = getOptionByName("Scroll Speed");
+										var oOption:GameplayOption = getOptionByName("Kaydırma Hızı");
 										if (oOption != null)
 										{
 											if (curOption.getValue() == "constant")
@@ -275,7 +275,7 @@ class GameplayChangersSubstate extends MusicBeatSubstate
 						updateTextFrom(leOption);
 					}
 
-					if(leOption.name == 'Scroll Speed')
+					if(leOption.name == 'Kaydırma Hızı')
 					{
 						leOption.displayFormat = "%vX";
 						leOption.maxValue = 3;
@@ -374,7 +374,7 @@ class GameplayOption
 	public var decimals:Int = 1; //Only used in float/percent type
 
 	public var displayFormat:String = '%v'; //How String/Float/Percent/Int values are shown, %v = Current value, %d = Default value
-	public var name:String = 'Unknown';
+	public var name:String = 'Bilinmiyor';
 
 	public function new(name:String, variable:String, type:String = 'bool', defaultValue:Dynamic = 'null variable value', ?options:Array<String> = null)
 	{

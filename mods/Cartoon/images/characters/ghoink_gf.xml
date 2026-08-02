@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="ghoink_gf.png">
+	<SubTexture name="down0000" x="940" y="1031" width="357" height="414" frameX="-1" frameY="-14" frameWidth="374" frameHeight="428"/>
+	<SubTexture name="down0001" x="705" y="491" width="374" height="427" frameX="0" frameY="0" frameWidth="374" frameHeight="428"/>
+	<SubTexture name="ghoink gf idle0000" x="626" y="1031" width="314" height="508" frameX="-4" frameY="-7" frameWidth="318" frameHeight="516"/>
+	<SubTexture name="ghoink gf idle0001" x="314" y="1031" width="312" height="513" frameX="0" frameY="-3" frameWidth="318" frameHeight="516"/>
+	<SubTexture name="ghoink gf idle0002" x="0" y="1031" width="314" height="514" frameX="-1" frameY="-2" frameWidth="318" frameHeight="516"/>
+	<SubTexture name="ghoink gf idle0003" x="1468" y="516" width="314" height="515" frameX="-2" frameY="-1" frameWidth="318" frameHeight="516"/>
+	<SubTexture name="ghoink gf idle0004" x="1468" y="0" width="315" height="516" frameX="-2" frameY="0" frameWidth="318" frameHeight="516"/>
+	<SubTexture name="ghoink gf idle0005" x="1145" y="515" width="316" height="516" frameX="-1" frameY="0" frameWidth="318" frameHeight="516"/>
+	<SubTexture name="left gf0000" x="0" y="0" width="387" height="491" frameX="0" frameY="0" frameWidth="388" frameHeight="491"/>
+	<SubTexture name="left gf0001" x="771" y="0" width="374" height="489" frameX="-14" frameY="-1" frameWidth="388" frameHeight="491"/>
+	<SubTexture name="right gf0000" x="387" y="0" width="384" height="478" frameX="-1" frameY="-1" frameWidth="385" frameHeight="480"/>
+	<SubTexture name="right gf0001" x="335" y="491" width="370" height="480" frameX="0" frameY="0" frameWidth="385" frameHeight="480"/>
+	<SubTexture name="up gf0000" x="0" y="491" width="335" height="540" frameX="0" frameY="0" frameWidth="335" frameHeight="541"/>
+	<SubTexture name="up gf0001" x="1145" y="0" width="323" height="515" frameX="-11" frameY="-26" frameWidth="335" frameHeight="541"/>
+</TextureAtlas>

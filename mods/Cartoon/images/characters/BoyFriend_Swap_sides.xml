@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="BoyFriend_Swap_sides.png">
+	<SubTexture name="BF idle dance instancia0000" x="372" y="411" width="185" height="199" frameX="1" frameY="-9" frameWidth="185" frameHeight="207"/>
+	<SubTexture name="BF idle dance instancia0001" x="186" y="411" width="186" height="199" frameX="1" frameY="-9" frameWidth="185" frameHeight="207"/>
+	<SubTexture name="BF idle dance instancia0002" x="581" y="209" width="185" height="202" frameX="0" frameY="-6" frameWidth="185" frameHeight="207"/>
+	<SubTexture name="BF idle dance instancia0003" x="0" y="411" width="186" height="208" frameX="0" frameY="0" frameWidth="185" frameHeight="207"/>
+	<SubTexture name="BF idle dance instancia0004" x="581" y="0" width="186" height="209" frameX="0" frameY="1" frameWidth="185" frameHeight="207"/>
+	<SubTexture name="BF NOTE DOWN instancia0000" x="393" y="223" width="181" height="181" frameX="1" frameY="-1" frameWidth="179" frameHeight="181"/>
+	<SubTexture name="BF NOTE DOWN instancia0001" x="206" y="225" width="179" height="183" frameX="-1" frameY="1" frameWidth="179" frameHeight="181"/>
+	<SubTexture name="BF NOTE LEFT instancia0000" x="767" y="0" width="171" height="205" frameX="1" frameY="1" frameWidth="170" frameHeight="203"/>
+	<SubTexture name="BF NOTE LEFT instancia0001" x="767" y="205" width="170" height="204" frameX="-1" frameY="0" frameWidth="170" frameHeight="203"/>
+	<SubTexture name="BF NOTE RIGHT instancia0000" x="0" y="0" width="206" height="205" frameX="1" frameY="0" frameWidth="204" frameHeight="204"/>
+	<SubTexture name="BF NOTE RIGHT instancia0001" x="0" y="205" width="205" height="206" frameX="1" frameY="1" frameWidth="204" frameHeight="204"/>
+	<SubTexture name="BF NOTE UP instancia 0000" x="206" y="0" width="187" height="225" frameX="0" frameY="1" frameWidth="186" frameHeight="223"/>
+	<SubTexture name="BF NOTE UP instancia 0001" x="393" y="0" width="188" height="223" frameX="1" frameY="-1" frameWidth="186" frameHeight="223"/>
+</TextureAtlas>

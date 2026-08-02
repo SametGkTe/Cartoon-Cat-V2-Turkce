@@ -1,0 +1,50 @@
+{
+	"storyName": "",
+	"difficulties": "Easy, Normal, Hard",
+	"hideFreeplay": false,
+	"weekBackground": "cabeza_de_poronga",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"weekBefore": "1WeekCC",
+	"startUnlocked": false,
+	"weekCharacters": [
+		"cabeza_de_poronga",
+		"",
+		""
+	],
+	"songs": [
+		[
+			"Turnaround",
+			"faced",
+			[
+				255,
+				255,
+				255
+			]
+		],
+		[
+			"HideOut",
+			"lh",
+			[
+				255,
+				255,
+				255
+			]
+		],
+		[
+			"Silver Edge",
+			"sh",
+			[
+				255,
+				255,
+				255
+			]
+		]
+	],
+	"hideStoryMode": false,
+	"hiddenUntilUnlocked": true,
+	"weekName": "3LunaWeek"
+}

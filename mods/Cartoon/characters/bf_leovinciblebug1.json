@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				-5,
+				0
+			],
+			"anim": "idle",
+			"fps": 12,
+			"name": "leov bf idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				22,
+				-65
+			],
+			"anim": "singDOWN",
+			"fps": 12,
+			"name": "leov bf down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-32,
+				27
+			],
+			"anim": "singUP",
+			"fps": 12,
+			"name": "leov bf up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-47,
+				-2
+			],
+			"anim": "singRIGHT",
+			"fps": 12,
+			"name": "leov bf rightt",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				24,
+				-3
+			],
+			"anim": "singLEFT",
+			"fps": 12,
+			"name": "leov bf left",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/leov_bfoldd",
+	"position": [
+		191,
+		306
+	],
+	"healthicon": "jordan",
+	"flip_x": true,
+	"healthbar_colors": [
+		49,
+		176,
+		209
+	],
+	"camera_position": [
+		130,
+		75
+	],
+	"sing_duration": 4,
+	"scale": 1.68
+}

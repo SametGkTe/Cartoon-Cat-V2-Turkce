@@ -1,0 +1,131 @@
+{
+	"storyName": "",
+	"difficulties": "Hard",
+	"hideFreeplay": false,
+	"weekBackground": "",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"weekBefore": "4bart",
+	"startUnlocked": false,
+	"weekCharacters": [
+		"dad",
+		"bf",
+		"gf"
+	],
+	"songs": [
+		[
+			"Cartoon-Jam",
+			"cc-spinel",
+			[
+				255,
+				255,
+				255
+			]
+		],
+		[
+			"Ghoink",
+			"ghostpig",
+			[
+				255,
+				255,
+				255
+			]
+		],
+		[
+			"Patron Saint",
+			"lamb",
+			[
+				255,
+				255,
+				255
+			]
+		],
+		[
+			"Hidden Truths",
+			"bww",
+			[
+				255,
+				255,
+				255
+			]
+		],
+		[
+			"Evil Eye",
+			"leocc",
+			[
+				255,
+				255,
+				255
+			]
+		],
+		[
+			"Cursed Cat",
+			"cartoonexe",
+			[
+				0,
+				0,
+				0
+			]
+		],
+		[
+			"Sana Mi Dolor",
+			"waaaa",
+			[
+				255,
+				255,
+				255
+			]
+		],
+		[
+			"Evileyeoldjson",
+			"black",
+			[
+				255,
+				255,
+				255
+			]
+		],
+		[
+			"Muscipula",
+			"cheese",
+			[
+				255,
+				255,
+				255
+			]
+		],
+		[
+			"Distant Alarm",
+			"weepinggod",
+			[
+				255,
+				255,
+				255
+			]
+		],
+		[
+			"Addiction",
+			"cc-zd",
+			[
+				255,
+				255,
+				255
+			]
+		],
+		[
+			"Trapped Mouse",
+			"cc",
+			[
+				255,
+				255,
+				255
+			]
+		]
+	],
+	"hideStoryMode": true,
+	"weekName": "",
+	"hiddenUntilUnlocked": false
+}

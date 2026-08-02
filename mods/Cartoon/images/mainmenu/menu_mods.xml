@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="menu_mods.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="mods basic0000" x="0" y="231" width="382" height="93" frameX="291" frameY="1" frameWidth="617" frameHeight="124"/>
+	<SubTexture name="mods basic0001" x="0" y="324" width="382" height="93" frameX="291" frameY="1" frameWidth="617" frameHeight="124"/>
+	<SubTexture name="mods white0000" x="0" y="116" width="429" height="115" frameX="291" frameY="1" frameWidth="617" frameHeight="124"/>
+	<SubTexture name="mods white0001" x="0" y="0" width="429" height="116" frameX="291" frameY="1" frameWidth="617" frameHeight="124"/>
+</TextureAtlas>

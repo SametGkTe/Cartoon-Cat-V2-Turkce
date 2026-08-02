@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="patas.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="patas0000" x="0" y="0" width="159" height="67" frameX="-376" frameY="-277" frameWidth="642" frameHeight="362"/>
+	<SubTexture name="patas0001" x="0" y="130" width="62" height="85" frameX="-423" frameY="-266" frameWidth="642" frameHeight="362"/>
+	<SubTexture name="patas0002" x="159" y="0" width="105" height="74" frameX="-404" frameY="-269" frameWidth="642" frameHeight="362"/>
+	<SubTexture name="patas0003" x="0" y="67" width="148" height="63" frameX="-382" frameY="-275" frameWidth="642" frameHeight="362"/>
+	<SubTexture name="patas0004" x="159" y="0" width="105" height="74" frameX="-404" frameY="-269" frameWidth="642" frameHeight="362"/>
+	<SubTexture name="patas0005" x="0" y="130" width="62" height="85" frameX="-423" frameY="-266" frameWidth="642" frameHeight="362"/>
+</TextureAtlas>

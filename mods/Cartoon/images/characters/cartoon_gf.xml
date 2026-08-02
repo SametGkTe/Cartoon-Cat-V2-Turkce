@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="cartoon_gf.png">
+	<SubTexture name="cdgf0000" x="1621" y="343" width="387" height="343" frameX="-4" frameY="1" frameWidth="424" frameHeight="357"/>
+	<SubTexture name="cdgf0001" x="2009" y="0" width="383" height="343" frameX="-4" frameY="1" frameWidth="424" frameHeight="357"/>
+	<SubTexture name="cdgf0002" x="1621" y="0" width="388" height="343" frameX="1" frameY="1" frameWidth="424" frameHeight="357"/>
+	<SubTexture name="cdgf0003" x="2009" y="343" width="382" height="342" frameX="1" frameY="-3" frameWidth="424" frameHeight="357"/>
+	<SubTexture name="cdgf0004" x="2009" y="685" width="383" height="340" frameX="1" frameY="-10" frameWidth="424" frameHeight="357"/>
+	<SubTexture name="cdgf0005" x="779" y="1371" width="386" height="340" frameX="1" frameY="-10" frameWidth="424" frameHeight="357"/>
+	<SubTexture name="cdgf0006" x="389" y="1371" width="390" height="340" frameX="1" frameY="-10" frameWidth="424" frameHeight="357"/>
+	<SubTexture name="cdgf0007" x="1165" y="1371" width="384" height="340" frameX="-5" frameY="-10" frameWidth="424" frameHeight="357"/>
+	<SubTexture name="cdgf0008" x="1549" y="1371" width="384" height="340" frameX="-5" frameY="-10" frameWidth="424" frameHeight="357"/>
+	<SubTexture name="cdgf0009" x="0" y="1371" width="389" height="341" frameX="-5" frameY="-13" frameWidth="424" frameHeight="357"/>
+	<SubTexture name="cdgf0010" x="1621" y="686" width="387" height="341" frameX="-7" frameY="-13" frameWidth="424" frameHeight="357"/>
+	<SubTexture name="cdgf0011" x="1621" y="1027" width="387" height="341" frameX="-7" frameY="-13" frameWidth="424" frameHeight="357"/>
+	<SubTexture name="cdgf0012" x="1223" y="686" width="398" height="340" frameX="-7" frameY="-17" frameWidth="424" frameHeight="357"/>
+	<SubTexture name="cdgf0013" x="1181" y="1029" width="395" height="340" frameX="-10" frameY="-17" frameWidth="424" frameHeight="357"/>
+	<SubTexture name="cdgf0014" x="786" y="1029" width="395" height="340" frameX="-10" frameY="-17" frameWidth="424" frameHeight="357"/>
+	<SubTexture name="cdgf0015" x="0" y="1029" width="393" height="342" frameX="-18" frameY="-16" frameWidth="424" frameHeight="357"/>
+	<SubTexture name="cdgf0016" x="393" y="1029" width="393" height="342" frameX="-18" frameY="-16" frameWidth="424" frameHeight="357"/>
+	<SubTexture name="cdgf0017" x="801" y="686" width="399" height="343" frameX="-22" frameY="-14" frameWidth="424" frameHeight="357"/>
+	<SubTexture name="cdgf0018" x="402" y="686" width="399" height="343" frameX="-22" frameY="-14" frameWidth="424" frameHeight="357"/>
+	<SubTexture name="cdgf0019" x="408" y="343" width="407" height="343" frameX="-18" frameY="-12" frameWidth="424" frameHeight="357"/>
+	<SubTexture name="cdgf0020" x="816" y="0" width="407" height="343" frameX="-18" frameY="-12" frameWidth="424" frameHeight="357"/>
+	<SubTexture name="cdgf0021" x="0" y="343" width="408" height="343" frameX="-17" frameY="-12" frameWidth="424" frameHeight="357"/>
+	<SubTexture name="cdgf0022" x="0" y="0" width="408" height="343" frameX="-13" frameY="-6" frameWidth="424" frameHeight="357"/>
+	<SubTexture name="cdgf0023" x="408" y="0" width="408" height="343" frameX="-13" frameY="-6" frameWidth="424" frameHeight="357"/>
+	<SubTexture name="cdgf0024" x="0" y="0" width="408" height="343" frameX="-13" frameY="-6" frameWidth="424" frameHeight="357"/>
+	<SubTexture name="cdgf0025" x="816" y="343" width="402" height="343" frameX="-13" frameY="-2" frameWidth="424" frameHeight="357"/>
+	<SubTexture name="cdgf0026" x="0" y="686" width="402" height="343" frameX="-13" frameY="-2" frameWidth="424" frameHeight="357"/>
+	<SubTexture name="cdgf0027" x="816" y="343" width="402" height="343" frameX="-13" frameY="-2" frameWidth="424" frameHeight="357"/>
+	<SubTexture name="cdgf0028" x="1223" y="0" width="398" height="343" frameX="-13" frameY="-2" frameWidth="424" frameHeight="357"/>
+	<SubTexture name="cdgf0029" x="1223" y="343" width="398" height="343" frameX="-13" frameY="-2" frameWidth="424" frameHeight="357"/>
+</TextureAtlas>

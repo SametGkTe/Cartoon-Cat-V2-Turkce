@@ -9,6 +9,8 @@ import states.editors.MasterEditorMenu;
 import options.OptionsState;
 import backend.Highscore;
 import backend.Song;
+import states.GalleryState;
+import backend.WeekData;
 
 #if VIDEOS_ALLOWED
 #if (hxCodec >= "3.0.0") import hxcodec.flixel.FlxVideo as VideoHandler;
@@ -36,14 +38,14 @@ class MainMenuState extends MusicBeatState
 		'credits',
 		'options'
 	];
-	
-	// Her menü için görünen isim ve renk
+
 	var menuLabels:Array<{text:String, color:FlxColor}> = [
-		{text: 'HİKAYE MODU', color: FlxColor.fromRGB(255, 100, 100)},      // Açık Kırmızı
-		{text: 'SERBEST OYUN', color: FlxColor.fromRGB(255, 255, 150)},    // Hafif Sarı
-		{text: 'EKSTRA', color: FlxColor.fromRGB(100, 255, 150)},       // Açık Yeşil
-		{text: 'YAPIMCILAR', color: FlxColor.fromRGB(255, 165, 0)},        // Turuncu
-		{text: 'AYARLAR', color: FlxColor.fromRGB(255, 255, 150)}          // Hafif Sarı
+		// MENÜ YAZILARI
+		{text: 'HİKAYE MODU', color: FlxColor.fromRGB(255, 100, 100)},
+		{text: 'SERBEST OYUN', color: FlxColor.fromRGB(255, 255, 150)},
+		{text: 'GALERİ', color: FlxColor.fromRGB(100, 255, 150)},
+		{text: 'YAPIMCILAR', color: FlxColor.fromRGB(255, 165, 0)},
+		{text: 'AYARLAR', color: FlxColor.fromRGB(255, 255, 150)}
 	];
 
 	var camFollow:FlxObject;
@@ -51,7 +53,6 @@ class MainMenuState extends MusicBeatState
 	var bgLayers:FlxTypedGroup<FlxSprite>;
 	var currentTheme:String = '';
 
-	// Codes system
 	var codesGroup:FlxSpriteGroup;
 	var codesPanel:FlxSprite;
 	var codesDarkBG:FlxSprite;
@@ -64,10 +65,29 @@ class MainMenuState extends MusicBeatState
 	var codesPanelOpenY:Float = 0;
 	var playingSecretVideo:Bool = false;
 
+	var aboutButton:FlxSprite;
+	/* var freeplayLocked:Bool = true; */
+	/* var lockWarningText:FlxText; */
+	/* var lockWarningTimer:FlxTimer; */
+
 	static var secretCodes:Array<{code:String, song:String, diff:Int}> = [
-		{code: '1234', song: 'cartoon-jam', diff: 2},
-		{code: '6666', song: 'siren-head', diff: 1},
-		{code: '0000', song: 'secret-song', diff: 2}
+		{code: '0504', song: 'secr', diff: 1},
+		{code: '4124', song: 'thats-all-folks', diff: 1},
+		{code: '5361', song: 'reruns', diff: 1},
+		{code: '7342', song: 'fright-fest', diff: 1},
+	];
+
+	static var videoCodes:Array<{code:String, video:String}> = [
+		{code: '3131', video: 'hmm/ders'},
+		{code: '3169', video: 'hmm/kodlama'},
+		{code: '5688', video: 'hmm/emineditnerde'},
+		{code: '6899', video: 'hmm/betaemin'},
+		{code: '1263', video: 'hmm/parlogyminayizorbaliyor4k'},
+		{code: '3142', video: 'hmm/askperisi'},
+		{code: '0000', video: 'hmm/thats-odd'},
+		{code: '1590', video: 'hmm/hasanxparlogyforever'},
+		{code: '5412', video: 'hmm/hasancano'},
+		{code: '8342', video: 'hmm/ishowshizuka'},
 	];
 
 	override function create()
@@ -77,8 +97,11 @@ class MainMenuState extends MusicBeatState
 		#end
 		Mods.loadTopMod();
 
+		WeekData.reloadWeekFiles(false);
+		Difficulty.resetList();
+
 		#if DISCORD_ALLOWED
-		DiscordClient.changePresence("In the Menus", null);
+		DiscordClient.changePresence("Ana Menüde", null);
 		#end
 
 		transIn = FlxTransitionableState.defaultTransIn;
@@ -86,7 +109,6 @@ class MainMenuState extends MusicBeatState
 
 		persistentUpdate = persistentDraw = true;
 
-		// ===== CUSTOM BG =====
 		bgLayers = new FlxTypedGroup<FlxSprite>();
 		loadRandomTheme();
 		add(bgLayers);
@@ -94,22 +116,23 @@ class MainMenuState extends MusicBeatState
 		camFollow = new FlxObject(0, 0, 1, 1);
 		add(camFollow);
 
-		// ===== MENU ITEMS (TEXT) =====
 		menuItems = new FlxTypedGroup<FlxText>();
 		add(menuItems);
 
 		for (i in 0...optionShit.length)
 		{
-			var offset:Float = 150 - (Math.max(optionShit.length, 4) - 4) * 80;
-			var yPos:Float = (i * 140) + offset;
-			
-			var menuItem:FlxText = new FlxText(80, yPos, 0, menuLabels[i].text, 120);
+			var offset:Float = 50 - (Math.max(optionShit.length, 4) - 4) * 80;
+			var yPos:Float = (i * 140) + offset + 5;
+
+			var menuItem:FlxText = new FlxText(80, yPos, 0, "\n" + menuLabels[i].text, 120);
 			menuItem.setFormat(Paths.font("murderer.ttf"), 130, menuLabels[i].color, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 			menuItem.borderSize = 3;
 			menuItem.antialiasing = ClientPrefs.data.antialiasing;
 			menuItem.scrollFactor.set(0, (optionShit.length < 6) ? 0 : (optionShit.length - 4) * 0.135);
 			menuItem.ID = i;
-			
+
+			menuItem.y -= menuItem.height * 0.4;
+
 			menuItems.add(menuItem);
 		}
 
@@ -117,17 +140,34 @@ class MainMenuState extends MusicBeatState
 		psychVer.scrollFactor.set();
 		psychVer.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(psychVer);
-		
+
 		var fnfVer:FlxText = new FlxText(12, FlxG.height - 24, 0, "Friday Night Funkin' v" + Application.current.meta.get('version'), 12);
 		fnfVer.scrollFactor.set();
 		fnfVer.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(fnfVer);
 
+		aboutButton = new FlxSprite().loadGraphic(Paths.image('other/about', 'shared'));
+		aboutButton.antialiasing = ClientPrefs.data.antialiasing;
+		aboutButton.scrollFactor.set();
+		aboutButton.x = FlxG.width - aboutButton.width - 10;
+		aboutButton.y = 10;
+		add(aboutButton);
+
+		/* freeplayLocked = !StoryMenuState.weekCompleted.exists('3LunaWeek') || !StoryMenuState.weekCompleted.get('3LunaWeek'); */
+		/*
+		lockWarningText = new FlxText(0, FlxG.height - 60, FlxG.width, '', 24);
+		lockWarningText.setFormat(Paths.font("vcr.ttf"), 24, FlxColor.RED, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		lockWarningText.borderSize = 2;
+		lockWarningText.scrollFactor.set();
+		lockWarningText.alpha = 0;
+		lockWarningText.visible = false;
+		add(lockWarningText);
+		*/
+
 		changeItem();
 
-		// ===== CODES SYSTEM =====
 		initCodesPanel();
-		
+
 		FlxG.mouse.visible = true;
 
 		#if ACHIEVEMENTS_ALLOWED
@@ -392,21 +432,22 @@ class MainMenuState extends MusicBeatState
 
 	function checkCode():Void
 	{
-		if (currentCode == '6561')
+		for (entry in videoCodes)
 		{
-			FlxG.sound.play(Paths.sound('confirmMenu'));
-
-			currentCode = '';
-			updateCodeDisplay();
-
-			closeCodesPanel();
-
-			new flixel.util.FlxTimer().start(0.55, function(tmr:flixel.util.FlxTimer)
+			if (currentCode == entry.code)
 			{
-				startVideo('hmm/betaemin');
-			});
+				FlxG.sound.play(Paths.sound('confirmMenu'));
+				currentCode = '';
+				updateCodeDisplay();
+				closeCodesPanel();
 
-			return;
+				new flixel.util.FlxTimer().start(0.55, function(tmr:flixel.util.FlxTimer)
+				{
+					startVideo(entry.video);
+				});
+
+				return;
+			}
 		}
 
 		var found:Bool = false;
@@ -431,25 +472,29 @@ class MainMenuState extends MusicBeatState
 
 				new flixel.util.FlxTimer().start(0.8, function(tmr:flixel.util.FlxTimer)
 				{
-					var songLowercase:String = entry.song.toLowerCase();
-					var poop:String = Highscore.formatSong(songLowercase, entry.diff);
+					var loaded:Bool = loadSecretSong(entry.song, entry.diff);
 
-					try
+					if (loaded)
 					{
-						PlayState.SONG = Song.loadFromJson(poop, songLowercase);
 						PlayState.isStoryMode = false;
 						PlayState.storyDifficulty = entry.diff;
 						PlayState.storyWeek = 0;
+
+						if (FlxG.sound.music != null)
+							FlxG.sound.music.stop();
+
 						LoadingState.loadAndSwitchState(new PlayState());
 					}
-					catch (e:Dynamic)
+					else
 					{
-						trace('Error loading song: ' + entry.song);
-						FlxG.sound.play(Paths.sound('scrollMenu'));
+						trace('Şarkı yüklenemedi: ' + entry.song);
+						FlxG.sound.play(Paths.sound('locked'));
 						currentCode = '';
 						updateCodeDisplay();
 						codesPanel.animation.play('idle');
 						codesPanel.offset.y = 0;
+						codesTweening = false;
+						closeCodesPanel();
 					}
 				});
 
@@ -463,6 +508,61 @@ class MainMenuState extends MusicBeatState
 			currentCode = '';
 			updateCodeDisplay();
 		}
+	}
+
+	function loadSecretSong(songName:String, diff:Int):Bool
+	{
+		var songLowercase:String = Paths.formatToSongPath(songName);
+		var jsonsToTry:Array<String> = [];
+
+		Difficulty.resetList();
+
+		var diffSuffix:String = null;
+		if (Difficulty.list != null && diff >= 0 && diff < Difficulty.list.length)
+		{
+			diffSuffix = Difficulty.getFilePath(diff);
+		}
+
+		if (diffSuffix != null && diffSuffix.length > 0)
+			jsonsToTry.push(songLowercase + diffSuffix);
+
+		switch (diff)
+		{
+			case 0:
+				jsonsToTry.push(songLowercase + '-easy');
+				jsonsToTry.push(songLowercase);
+			case 1:
+				jsonsToTry.push(songLowercase);
+				jsonsToTry.push(songLowercase + '-normal');
+			case 2:
+				jsonsToTry.push(songLowercase + '-hard');
+				jsonsToTry.push(songLowercase);
+			default:
+				jsonsToTry.push(songLowercase);
+		}
+
+		var finalList:Array<String> = [];
+		for (jsonName in jsonsToTry)
+		{
+			if (jsonName != null && finalList.indexOf(jsonName) == -1)
+				finalList.push(jsonName);
+		}
+
+		for (jsonName in finalList)
+		{
+			try
+			{
+				trace('Şarkı yükleniyor: ' + jsonName + ' klasör: ' + songLowercase);
+				PlayState.SONG = Song.loadFromJson(jsonName, songLowercase);
+				return true;
+			}
+			catch (e:Dynamic)
+			{
+				trace('Denenen JSON başarısız: ' + jsonName + ' | ' + e);
+			}
+		}
+
+		return false;
 	}
 
 	function loadRandomTheme():Void
@@ -649,7 +749,7 @@ class MainMenuState extends MusicBeatState
 			if (FreeplayState.vocals != null)
 				FreeplayState.vocals.volume += 0.5 * elapsed;
 		}
-		
+
 		if (playingSecretVideo)
 		{
 			super.update(elapsed);
@@ -657,6 +757,7 @@ class MainMenuState extends MusicBeatState
 		}
 
 		handleCodesInput();
+		handleAboutButton();
 
 		if (!selectedSomethin && !codesOpen && !codesTweening)
 		{
@@ -678,6 +779,15 @@ class MainMenuState extends MusicBeatState
 				if (selectedSomethin)
 					return;
 
+				/*
+				if (optionShit[curSelected] == 'freeplay' && freeplayLocked)
+				{
+					FlxG.sound.play(Paths.sound('locked'));
+					showLockWarning();
+					return;
+				}
+				*/
+
 				selectedSomethin = true;
 				FlxG.sound.play(Paths.sound('confirmMenu'));
 
@@ -692,7 +802,7 @@ class MainMenuState extends MusicBeatState
 							MusicBeatState.switchState(new FreeplayState());
 
 						case 'extras':
-							MusicBeatState.switchState(new FreeplayState());
+							MusicBeatState.switchState(new GalleryState());
 
 						case 'credits':
 							MusicBeatState.switchState(new CreditsState());
@@ -709,18 +819,20 @@ class MainMenuState extends MusicBeatState
 					}
 				});
 
+				/*
 				for (i in 0...menuItems.members.length)
 				{
-					if (i == curSelected)
-						continue;
-					FlxTween.tween(menuItems.members[i], {alpha: 0}, 0.4, {
-						ease: FlxEase.quadOut,
-						onComplete: function(twn:FlxTween)
-						{
-							menuItems.members[i].kill();
-						}
-					});
+					if (optionShit[i] == 'freeplay' && freeplayLocked && i != curSelected)
+					{
+						menuItems.members[i].alpha = 0.3;
+					}
 				}
+
+				if (optionShit[curSelected] == 'freeplay' && freeplayLocked)
+				{
+					menuItems.members[curSelected].alpha = 0.5;
+				}
+				*/
 			}
 
 			#if desktop
@@ -734,7 +846,55 @@ class MainMenuState extends MusicBeatState
 
 		super.update(elapsed);
 	}
-	
+
+	/*
+	function showLockWarning():Void
+	{
+		lockWarningText.text = "İLK ÖNCE 1. HAFTAYI BİTİRMEN GEREKİYOR";
+		lockWarningText.visible = true;
+		lockWarningText.alpha = 1;
+
+		if (lockWarningTimer != null)
+		{
+			lockWarningTimer.cancel();
+			lockWarningTimer = null;
+		}
+
+		lockWarningTimer = new FlxTimer().start(3, function(tmr:FlxTimer)
+		{
+			FlxTween.tween(lockWarningText, {alpha: 0}, 0.5, {
+				ease: FlxEase.quadOut,
+				onComplete: function(twn:FlxTween)
+				{
+					lockWarningText.visible = false;
+				}
+			});
+		});
+	}
+	*/
+
+	function handleAboutButton():Void
+	{
+		if (selectedSomethin || codesOpen || codesTweening)
+			return;
+
+		if (FlxG.mouse.justPressed)
+		{
+			var mouseX:Float = FlxG.mouse.getScreenPosition().x;
+			var mouseY:Float = FlxG.mouse.getScreenPosition().y;
+
+			if (mouseX >= aboutButton.x
+				&& mouseX <= aboutButton.x + aboutButton.width
+				&& mouseY >= aboutButton.y
+				&& mouseY <= aboutButton.y + aboutButton.height)
+			{
+				selectedSomethin = true;
+				FlxG.sound.play(Paths.sound('confirmMenu'));
+				MusicBeatState.switchState(new AboutState());
+			}
+		}
+	}
+
 	public function startVideo(name:String):Void
 	{
 		#if VIDEOS_ALLOWED
@@ -789,7 +949,7 @@ class MainMenuState extends MusicBeatState
 		return;
 		#end
 	}
-	
+
 	function onSecretVideoFinished():Void
 	{
 		playingSecretVideo = false;
@@ -805,8 +965,7 @@ class MainMenuState extends MusicBeatState
 	function changeItem(huh:Int = 0)
 	{
 		FlxG.sound.play(Paths.sound('scrollMenu'));
-		
-		// Eski seçimi normal yap
+
 		menuItems.members[curSelected].alpha = 0.6;
 		menuItems.members[curSelected].scale.set(1, 1);
 
@@ -817,7 +976,6 @@ class MainMenuState extends MusicBeatState
 		if (curSelected < 0)
 			curSelected = menuItems.length - 1;
 
-		// Yeni seçimi vurgula
 		menuItems.members[curSelected].alpha = 1;
 		menuItems.members[curSelected].scale.set(1.2, 1.2);
 

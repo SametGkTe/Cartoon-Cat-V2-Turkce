@@ -1,0 +1,89 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				15,
+				41
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "dialogue",
+			"indices": [],
+			"name": "mid animation"
+		},
+		{
+			"offsets": [
+				-129,
+				-172
+			],
+			"loop": false,
+			"fps": 12,
+			"anim": "idle",
+			"indices": [],
+			"name": "idlinside"
+		},
+		{
+			"offsets": [
+				-129,
+				-172
+			],
+			"loop": false,
+			"fps": 12,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "lefinsid"
+		},
+		{
+			"offsets": [
+				-129,
+				-172
+			],
+			"loop": false,
+			"fps": 12,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "righinsid"
+		},
+		{
+			"offsets": [
+				-129,
+				-172
+			],
+			"loop": false,
+			"fps": 12,
+			"anim": "singUP",
+			"indices": [],
+			"name": "uinsid"
+		},
+		{
+			"offsets": [
+				-129,
+				-172
+			],
+			"loop": false,
+			"fps": 12,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "dowinsid"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/fetid_king_v2",
+	"position": [
+		367,
+		261
+	],
+	"healthicon": "fk",
+	"flip_x": false,
+	"healthbar_colors": [
+		173,
+		150,
+		134
+	],
+	"camera_position": [
+		-300,
+		105
+	],
+	"sing_duration": 4,
+	"scale": 2
+}

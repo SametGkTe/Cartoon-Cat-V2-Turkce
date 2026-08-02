@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="como_tan_muchacho.png">
+	<SubTexture name="rrgg pene0000" x="0" y="0" width="619" height="569" frameX="-3" frameY="-54" frameWidth="625" frameHeight="625"/>
+	<SubTexture name="rrgg pene0001" x="618" y="569" width="618" height="567" frameX="-5" frameY="-56" frameWidth="625" frameHeight="625"/>
+	<SubTexture name="rrgg pene0002" x="0" y="569" width="618" height="568" frameX="-4" frameY="-54" frameWidth="625" frameHeight="625"/>
+	<SubTexture name="rrgg pene0003" x="619" y="0" width="619" height="569" frameX="-2" frameY="-55" frameWidth="625" frameHeight="625"/>
+	<SubTexture name="rrgg pene0004" x="1238" y="566" width="619" height="564" frameX="-1" frameY="-58" frameWidth="625" frameHeight="625"/>
+	<SubTexture name="rrgg pene0005" x="1238" y="0" width="619" height="566" frameX="-3" frameY="-57" frameWidth="625" frameHeight="625"/>
+</TextureAtlas>

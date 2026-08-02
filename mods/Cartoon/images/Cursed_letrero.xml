@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Cursed_letrero.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="hola0000" x="522" y="151" width="4" height="4" frameX="0" frameY="0" frameWidth="514" frameHeight="164"/>
+	<SubTexture name="hola0001" x="504" y="151" width="18" height="43" frameX="0" frameY="-47" frameWidth="514" frameHeight="164"/>
+	<SubTexture name="hola0002" x="441" y="151" width="63" height="64" frameX="0" frameY="-20" frameWidth="514" frameHeight="164"/>
+	<SubTexture name="hola0003" x="441" y="0" width="148" height="151" frameX="0" frameY="-7" frameWidth="514" frameHeight="164"/>
+	<SubTexture name="hola0004" x="0" y="290" width="185" height="147" frameX="0" frameY="-9" frameWidth="514" frameHeight="164"/>
+	<SubTexture name="hola0005" x="0" y="145" width="220" height="145" frameX="0" frameY="-5" frameWidth="514" frameHeight="164"/>
+	<SubTexture name="hola0006" x="0" y="0" width="221" height="145" frameX="0" frameY="-3" frameWidth="514" frameHeight="164"/>
+	<SubTexture name="hola0007" x="0" y="0" width="221" height="145" frameX="0" frameY="-3" frameWidth="514" frameHeight="164"/>
+	<SubTexture name="hola0008" x="220" y="145" width="220" height="145" frameX="0" frameY="-5" frameWidth="514" frameHeight="164"/>
+	<SubTexture name="hola0009" x="220" y="145" width="220" height="145" frameX="0" frameY="-5" frameWidth="514" frameHeight="164"/>
+	<SubTexture name="hola0010" x="221" y="0" width="220" height="145" frameX="0" frameY="-5" frameWidth="514" frameHeight="164"/>
+	<SubTexture name="hola0011" x="221" y="0" width="220" height="145" frameX="0" frameY="-5" frameWidth="514" frameHeight="164"/>
+	<SubTexture name="hola0012" x="221" y="0" width="220" height="145" frameX="0" frameY="-5" frameWidth="514" frameHeight="164"/>
+	<SubTexture name="hola0013" x="221" y="0" width="220" height="145" frameX="0" frameY="-5" frameWidth="514" frameHeight="164"/>
+	<SubTexture name="hola0014" x="221" y="0" width="220" height="145" frameX="0" frameY="-5" frameWidth="514" frameHeight="164"/>
+	<SubTexture name="hola0015" x="221" y="0" width="220" height="145" frameX="0" frameY="-5" frameWidth="514" frameHeight="164"/>
+	<SubTexture name="hola0016" x="221" y="0" width="220" height="145" frameX="0" frameY="-5" frameWidth="514" frameHeight="164"/>
+	<SubTexture name="hola0017" x="221" y="0" width="220" height="145" frameX="0" frameY="-5" frameWidth="514" frameHeight="164"/>
+	<SubTexture name="hola0018" x="221" y="0" width="220" height="145" frameX="0" frameY="-5" frameWidth="514" frameHeight="164"/>
+	<SubTexture name="hola0019" x="221" y="0" width="220" height="145" frameX="0" frameY="-5" frameWidth="514" frameHeight="164"/>
+	<SubTexture name="hola0020" x="221" y="0" width="220" height="145" frameX="0" frameY="-5" frameWidth="514" frameHeight="164"/>
+	<SubTexture name="hola0021" x="221" y="0" width="220" height="145" frameX="0" frameY="-5" frameWidth="514" frameHeight="164"/>
+	<SubTexture name="hola0022" x="221" y="0" width="220" height="145" frameX="0" frameY="-5" frameWidth="514" frameHeight="164"/>
+	<SubTexture name="hola0023" x="221" y="0" width="220" height="145" frameX="0" frameY="-5" frameWidth="514" frameHeight="164"/>
+	<SubTexture name="hola0024" x="221" y="0" width="220" height="145" frameX="0" frameY="-5" frameWidth="514" frameHeight="164"/>
+	<SubTexture name="hola0025" x="221" y="0" width="220" height="145" frameX="0" frameY="-5" frameWidth="514" frameHeight="164"/>
+	<SubTexture name="hola0026" x="0" y="0" width="221" height="145" frameX="0" frameY="-3" frameWidth="514" frameHeight="164"/>
+	<SubTexture name="hola0027" x="0" y="0" width="221" height="145" frameX="0" frameY="-3" frameWidth="514" frameHeight="164"/>
+	<SubTexture name="hola0028" x="0" y="145" width="220" height="145" frameX="0" frameY="-5" frameWidth="514" frameHeight="164"/>
+	<SubTexture name="hola0029" x="0" y="290" width="185" height="147" frameX="0" frameY="-9" frameWidth="514" frameHeight="164"/>
+	<SubTexture name="hola0030" x="0" y="290" width="185" height="147" frameX="0" frameY="-9" frameWidth="514" frameHeight="164"/>
+	<SubTexture name="hola0031" x="441" y="0" width="148" height="151" frameX="0" frameY="-7" frameWidth="514" frameHeight="164"/>
+	<SubTexture name="hola0032" x="441" y="151" width="63" height="64" frameX="0" frameY="-20" frameWidth="514" frameHeight="164"/>
+	<SubTexture name="hola0033" x="504" y="151" width="18" height="43" frameX="0" frameY="-47" frameWidth="514" frameHeight="164"/>
+	<SubTexture name="hola0034" x="522" y="151" width="4" height="4" frameX="0" frameY="0" frameWidth="514" frameHeight="164"/>
+</TextureAtlas>

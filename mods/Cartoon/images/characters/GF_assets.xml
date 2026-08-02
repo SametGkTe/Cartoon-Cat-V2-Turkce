@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="GF.png">
+<SubTexture name="GF Dancing Beat0000" x="1263" y="381" width="420" height="380" frameX="-9" frameY="-24" frameWidth="440" frameHeight="410" />
+<SubTexture name="GF Dancing Beat0001" x="0" y="1153" width="423" height="380" frameX="-8" frameY="-24" frameWidth="440" frameHeight="410" />
+<SubTexture name="GF Dancing Beat0002" x="423" y="1153" width="423" height="379" frameX="-7" frameY="-25" frameWidth="440" frameHeight="410" />
+<SubTexture name="GF Dancing Beat0003" x="846" y="1153" width="421" height="379" frameX="-8" frameY="-25" frameWidth="440" frameHeight="410" />
+<SubTexture name="GF Dancing Beat0004" x="841" y="770" width="420" height="381" frameX="-8" frameY="-23" frameWidth="440" frameHeight="410" />
+<SubTexture name="GF Dancing Beat0005" x="1263" y="0" width="420" height="381" frameX="-9" frameY="-23" frameWidth="440" frameHeight="410" />
+<SubTexture name="GF Dancing Beat0006" x="0" y="387" width="420" height="383" frameX="-9" frameY="-21" frameWidth="440" frameHeight="410" />
+<SubTexture name="GF Dancing Beat0007" x="840" y="0" width="423" height="383" frameX="-7" frameY="-21" frameWidth="440" frameHeight="410" />
+<SubTexture name="GF Dancing Beat0008" x="840" y="383" width="423" height="383" frameX="-7" frameY="-21" frameWidth="440" frameHeight="410" />
+<SubTexture name="GF Dancing Beat0009" x="420" y="387" width="420" height="383" frameX="-8" frameY="-21" frameWidth="440" frameHeight="410" />
+<SubTexture name="GF Dancing Beat0010" x="0" y="770" width="421" height="383" frameX="-8" frameY="-20" frameWidth="440" frameHeight="410" />
+<SubTexture name="GF Dancing Beat0011" x="421" y="770" width="420" height="383" frameX="-8" frameY="-21" frameWidth="440" frameHeight="410" />
+<SubTexture name="GF Dancing Beat0012" x="420" y="0" width="420" height="384" frameX="-8" frameY="-20" frameWidth="440" frameHeight="410" />
+<SubTexture name="GF Dancing Beat0013" x="0" y="0" width="420" height="387" frameX="-9" frameY="-17" frameWidth="440" frameHeight="410" />
+</TextureAtlas>

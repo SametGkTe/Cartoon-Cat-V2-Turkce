@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="BoyFriend_lamb_mechanic_Assets.png">
+	<SubTexture name="BF HEY!! instancia 0000" x="495" y="0" width="159" height="167" frameX="0" frameY="0" frameWidth="166" frameHeight="168"/>
+	<SubTexture name="BF HEY!! instancia 0001" x="166" y="0" width="166" height="165" frameX="0" frameY="-3" frameWidth="166" frameHeight="168"/>
+	<SubTexture name="BF HEY!! instancia 0002" x="0" y="0" width="166" height="166" frameX="0" frameY="-2" frameWidth="166" frameHeight="168"/>
+	<SubTexture name="BF idle dance instancia 0000" x="654" y="0" width="163" height="157" frameX="0" frameY="-8" frameWidth="164" frameHeight="165"/>
+	<SubTexture name="BF idle dance instancia 0001" x="459" y="331" width="163" height="158" frameX="0" frameY="-7" frameWidth="164" frameHeight="165"/>
+	<SubTexture name="BF idle dance instancia 0002" x="297" y="331" width="162" height="160" frameX="-1" frameY="-5" frameWidth="164" frameHeight="165"/>
+	<SubTexture name="BF idle dance instancia 0003" x="0" y="166" width="164" height="165" frameX="0" frameY="0" frameWidth="164" frameHeight="165"/>
+	<SubTexture name="BF idle dance instancia 0004" x="164" y="166" width="164" height="165" frameX="0" frameY="0" frameWidth="164" frameHeight="165"/>
+	<SubTexture name="BF NOTE DOWN instancia 0000" x="0" y="509" width="150" height="143" frameX="0" frameY="-1" frameWidth="150" frameHeight="144"/>
+	<SubTexture name="BF NOTE DOWN instancia 0001" x="495" y="167" width="150" height="144" frameX="0" frameY="0" frameWidth="150" frameHeight="144"/>
+	<SubTexture name="BF NOTE LEFT instancia 0000" x="654" y="157" width="153" height="162" frameX="0" frameY="0" frameWidth="153" frameHeight="162"/>
+	<SubTexture name="BF NOTE LEFT instancia 0001" x="654" y="319" width="149" height="162" frameX="-4" frameY="0" frameWidth="153" frameHeight="162"/>
+	<SubTexture name="BF NOTE RIGHT instancia 0000" x="332" y="163" width="163" height="163" frameX="0" frameY="0" frameWidth="163" frameHeight="163"/>
+	<SubTexture name="BF NOTE RIGHT instancia 0001" x="332" y="0" width="163" height="163" frameX="0" frameY="0" frameWidth="163" frameHeight="163"/>
+	<SubTexture name="BF NOTE UP instancia 0000" x="0" y="331" width="148" height="178" frameX="-1" frameY="0" frameWidth="149" frameHeight="178"/>
+	<SubTexture name="BF NOTE UP instancia 0001" x="148" y="331" width="149" height="176" frameX="0" frameY="-2" frameWidth="149" frameHeight="178"/>
+</TextureAtlas>

@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="angry_luna.png">
+	<SubTexture name="Down pose0000" x="664" y="1208" width="134" height="245" frameX="-2" frameY="-3" frameWidth="136" frameHeight="248"/>
+	<SubTexture name="Down pose0001" x="664" y="1208" width="134" height="245" frameX="-2" frameY="-3" frameWidth="136" frameHeight="248"/>
+	<SubTexture name="Down pose0002" x="753" y="721" width="134" height="241" frameX="0" frameY="-7" frameWidth="136" frameHeight="248"/>
+	<SubTexture name="Down pose0003" x="753" y="721" width="134" height="241" frameX="0" frameY="-7" frameWidth="136" frameHeight="248"/>
+	<SubTexture name="Down pose0004" x="322" y="480" width="132" height="240" frameX="-1" frameY="-8" frameWidth="136" frameHeight="248"/>
+	<SubTexture name="Down pose0005" x="322" y="480" width="132" height="240" frameX="-1" frameY="-8" frameWidth="136" frameHeight="248"/>
+	<SubTexture name="Down pose0006" x="543" y="964" width="133" height="241" frameX="-1" frameY="-7" frameWidth="136" frameHeight="248"/>
+	<SubTexture name="Down pose0007" x="676" y="964" width="133" height="241" frameX="-1" frameY="-7" frameWidth="136" frameHeight="248"/>
+	<SubTexture name="Down pose0008" x="144" y="964" width="133" height="241" frameX="-1" frameY="-7" frameWidth="136" frameHeight="248"/>
+	<SubTexture name="Down pose0009" x="277" y="964" width="133" height="241" frameX="-1" frameY="-7" frameWidth="136" frameHeight="248"/>
+	<SubTexture name="Down pose0010" x="410" y="964" width="133" height="241" frameX="-1" frameY="-7" frameWidth="136" frameHeight="248"/>
+	<SubTexture name="Down pose0011" x="125" y="1721" width="125" height="247" frameX="-9" frameY="-1" frameWidth="136" frameHeight="248"/>
+	<SubTexture name="Down pose0012" x="125" y="1721" width="125" height="247" frameX="-9" frameY="-1" frameWidth="136" frameHeight="248"/>
+	<SubTexture name="Down pose0013" x="0" y="1721" width="125" height="248" frameX="-11" frameY="0" frameWidth="136" frameHeight="248"/>
+	<SubTexture name="Down pose0014" x="0" y="1721" width="125" height="248" frameX="-11" frameY="0" frameWidth="136" frameHeight="248"/>
+	<SubTexture name="idle 0000" x="2053" y="0" width="122" height="249" frameX="0" frameY="-4" frameWidth="124" frameHeight="253"/>
+	<SubTexture name="idle 0001" x="2053" y="249" width="122" height="249" frameX="0" frameY="-4" frameWidth="124" frameHeight="253"/>
+	<SubTexture name="idle 0002" x="1800" y="744" width="124" height="253" frameX="0" frameY="0" frameWidth="124" frameHeight="253"/>
+	<SubTexture name="idle 0003" x="1930" y="0" width="123" height="253" frameX="0" frameY="0" frameWidth="124" frameHeight="253"/>
+	<SubTexture name="idle 0004" x="1930" y="758" width="123" height="252" frameX="-1" frameY="-1" frameWidth="124" frameHeight="253"/>
+	<SubTexture name="idle 0005" x="1930" y="506" width="123" height="252" frameX="-1" frameY="-1" frameWidth="124" frameHeight="253"/>
+	<SubTexture name="idle 0006" x="1930" y="253" width="123" height="253" frameX="-1" frameY="0" frameWidth="124" frameHeight="253"/>
+	<SubTexture name="idle 0007" x="1800" y="1243" width="123" height="253" frameX="-1" frameY="0" frameWidth="124" frameHeight="253"/>
+	<SubTexture name="idle 0008" x="1545" y="519" width="123" height="253" frameX="-1" frameY="0" frameWidth="124" frameHeight="253"/>
+	<SubTexture name="idle 0009" x="1545" y="266" width="123" height="253" frameX="-1" frameY="0" frameWidth="124" frameHeight="253"/>
+	<SubTexture name="idle 0010" x="1545" y="772" width="123" height="253" frameX="-1" frameY="0" frameWidth="124" frameHeight="253"/>
+	<SubTexture name="idle 0011" x="1545" y="1025" width="123" height="253" frameX="-1" frameY="0" frameWidth="124" frameHeight="253"/>
+	<SubTexture name="idle 0012" x="1930" y="1261" width="123" height="251" frameX="-1" frameY="-2" frameWidth="124" frameHeight="253"/>
+	<SubTexture name="idle 0013" x="1930" y="1010" width="123" height="251" frameX="-1" frameY="-2" frameWidth="124" frameHeight="253"/>
+	<SubTexture name="ay que rico0000" x="1800" y="997" width="127" height="246" frameX="-11" frameY="-20" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0001" x="1800" y="997" width="127" height="246" frameX="-11" frameY="-20" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0002" x="1269" y="486" width="140" height="245" frameX="-2" frameY="-21" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0003" x="1269" y="486" width="140" height="245" frameX="-2" frameY="-21" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0004" x="1269" y="0" width="143" height="245" frameX="0" frameY="-21" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0005" x="1269" y="0" width="143" height="245" frameX="0" frameY="-21" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0006" x="1125" y="488" width="144" height="244" frameX="0" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0007" x="1125" y="488" width="144" height="244" frameX="0" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0008" x="979" y="244" width="144" height="244" frameX="0" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0009" x="979" y="244" width="144" height="244" frameX="0" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0010" x="979" y="488" width="144" height="244" frameX="0" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0011" x="979" y="488" width="144" height="244" frameX="0" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0012" x="0" y="964" width="144" height="244" frameX="0" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0013" x="0" y="964" width="144" height="244" frameX="0" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0014" x="1125" y="244" width="144" height="244" frameX="0" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0015" x="1125" y="244" width="144" height="244" frameX="0" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0016" x="1125" y="0" width="144" height="244" frameX="0" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0017" x="1125" y="0" width="144" height="244" frameX="0" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0018" x="798" y="1208" width="131" height="245" frameX="-8" frameY="-21" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0019" x="798" y="1208" width="131" height="245" frameX="-8" frameY="-21" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0020" x="1024" y="1464" width="129" height="255" frameX="-18" frameY="-11" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0021" x="1024" y="1464" width="129" height="255" frameX="-18" frameY="-11" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0022" x="896" y="1464" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0023" x="896" y="1464" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0024" x="768" y="1464" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0025" x="768" y="1464" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0026" x="1672" y="1029" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0027" x="1672" y="1029" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0028" x="128" y="1464" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0029" x="128" y="1464" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0030" x="384" y="1464" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0031" x="384" y="1464" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0032" x="128" y="1464" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0033" x="0" y="1464" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0034" x="1672" y="258" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0035" x="512" y="1464" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0036" x="640" y="1464" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0037" x="1672" y="772" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0038" x="256" y="1464" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0039" x="256" y="1464" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0040" x="1672" y="772" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0041" x="1672" y="772" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0042" x="256" y="1464" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0043" x="256" y="1464" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0044" x="1672" y="772" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0045" x="1672" y="772" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0046" x="256" y="1464" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0047" x="256" y="1464" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0048" x="1672" y="772" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0049" x="1672" y="772" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0050" x="256" y="1464" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0051" x="256" y="1464" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0052" x="1672" y="772" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0053" x="1672" y="772" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0054" x="256" y="1464" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0055" x="256" y="1464" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0056" x="1672" y="772" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0057" x="1672" y="772" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0058" x="256" y="1464" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0059" x="256" y="1464" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0060" x="1672" y="772" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0061" x="1672" y="772" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0062" x="256" y="1464" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0063" x="256" y="1464" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0064" x="1672" y="772" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0065" x="1672" y="772" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0066" x="256" y="1464" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0067" x="256" y="1464" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0068" x="1672" y="772" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0069" x="1672" y="772" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0070" x="256" y="1464" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0071" x="256" y="1464" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0072" x="1672" y="772" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0073" x="1672" y="772" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0074" x="256" y="1464" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0075" x="256" y="1464" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0076" x="1672" y="772" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0077" x="1672" y="772" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0078" x="256" y="1464" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0079" x="256" y="1464" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0080" x="1672" y="772" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0081" x="1672" y="772" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0082" x="256" y="1464" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0083" x="256" y="1464" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0084" x="1672" y="772" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0085" x="1672" y="772" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0086" x="256" y="1464" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0087" x="256" y="1464" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0088" x="1672" y="772" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0089" x="1672" y="772" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0090" x="256" y="1464" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0091" x="256" y="1464" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0092" x="1672" y="772" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0093" x="1672" y="772" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0094" x="256" y="1464" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0095" x="256" y="1464" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0096" x="1672" y="772" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0097" x="1672" y="772" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0098" x="256" y="1464" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0099" x="256" y="1464" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0100" x="1672" y="772" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0101" x="1672" y="772" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0102" x="256" y="1464" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0103" x="256" y="1464" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0104" x="1672" y="772" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0105" x="1672" y="772" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0106" x="256" y="1464" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0107" x="1800" y="0" width="130" height="248" frameX="-17" frameY="-18" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0108" x="1800" y="0" width="130" height="248" frameX="-17" frameY="-18" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0109" x="1545" y="0" width="127" height="266" frameX="-20" frameY="0" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0110" x="1545" y="0" width="127" height="266" frameX="-20" frameY="0" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0111" x="1672" y="0" width="128" height="258" frameX="-19" frameY="-8" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0112" x="1672" y="0" width="128" height="258" frameX="-19" frameY="-8" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0113" x="1672" y="515" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0114" x="1672" y="515" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0115" x="1672" y="515" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0116" x="1672" y="515" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0117" x="1672" y="515" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0118" x="1672" y="515" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0119" x="1672" y="515" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0120" x="1672" y="515" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0121" x="1672" y="515" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0122" x="1672" y="515" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0123" x="1672" y="515" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0124" x="1672" y="515" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0125" x="1672" y="515" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0126" x="1672" y="515" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0127" x="1672" y="515" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0128" x="1672" y="515" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0129" x="1672" y="515" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0130" x="1672" y="515" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0131" x="1672" y="515" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0132" x="1672" y="515" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0133" x="1672" y="515" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0134" x="1672" y="515" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0135" x="1672" y="515" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0136" x="1672" y="515" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0137" x="1672" y="515" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0138" x="1672" y="515" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0139" x="1672" y="515" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0140" x="1672" y="515" width="128" height="257" frameX="-19" frameY="-9" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0141" x="1800" y="248" width="126" height="252" frameX="-18" frameY="-14" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0142" x="1800" y="248" width="126" height="252" frameX="-18" frameY="-14" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0143" x="929" y="1208" width="125" height="245" frameX="-17" frameY="-21" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0144" x="929" y="1208" width="125" height="245" frameX="-17" frameY="-21" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0145" x="1665" y="1464" width="125" height="243" frameX="-16" frameY="-23" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0146" x="374" y="1721" width="124" height="244" frameX="-17" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0147" x="1054" y="1208" width="125" height="244" frameX="-16" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0148" x="1415" y="1464" width="125" height="243" frameX="-16" frameY="-23" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0149" x="1540" y="1464" width="125" height="243" frameX="-16" frameY="-23" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0150" x="250" y="1721" width="124" height="244" frameX="-17" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0151" x="1179" y="1208" width="125" height="244" frameX="-16" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0152" x="1304" y="1208" width="125" height="243" frameX="-16" frameY="-23" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0153" x="1540" y="1464" width="125" height="243" frameX="-16" frameY="-23" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0154" x="250" y="1721" width="124" height="244" frameX="-17" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0155" x="1179" y="1208" width="125" height="244" frameX="-16" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0156" x="1304" y="1208" width="125" height="243" frameX="-16" frameY="-23" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0157" x="1540" y="1464" width="125" height="243" frameX="-16" frameY="-23" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0158" x="250" y="1721" width="124" height="244" frameX="-17" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0159" x="1179" y="1208" width="125" height="244" frameX="-16" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0160" x="1304" y="1208" width="125" height="243" frameX="-16" frameY="-23" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0161" x="1540" y="1464" width="125" height="243" frameX="-16" frameY="-23" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0162" x="250" y="1721" width="124" height="244" frameX="-17" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0163" x="1179" y="1208" width="125" height="244" frameX="-16" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0164" x="1304" y="1208" width="125" height="243" frameX="-16" frameY="-23" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0165" x="1540" y="1464" width="125" height="243" frameX="-16" frameY="-23" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0166" x="250" y="1721" width="124" height="244" frameX="-17" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0167" x="1540" y="1464" width="125" height="243" frameX="-16" frameY="-23" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0168" x="250" y="1721" width="124" height="244" frameX="-17" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0169" x="1179" y="1208" width="125" height="244" frameX="-16" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0170" x="1304" y="1208" width="125" height="243" frameX="-16" frameY="-23" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0171" x="1540" y="1464" width="125" height="243" frameX="-16" frameY="-23" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0172" x="250" y="1721" width="124" height="244" frameX="-17" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0173" x="1179" y="1208" width="125" height="244" frameX="-16" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0174" x="1304" y="1208" width="125" height="243" frameX="-16" frameY="-23" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0175" x="1540" y="1464" width="125" height="243" frameX="-16" frameY="-23" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0176" x="250" y="1721" width="124" height="244" frameX="-17" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0177" x="1179" y="1208" width="125" height="244" frameX="-16" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0178" x="1304" y="1208" width="125" height="243" frameX="-16" frameY="-23" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0179" x="1540" y="1464" width="125" height="243" frameX="-16" frameY="-23" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0180" x="250" y="1721" width="124" height="244" frameX="-17" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0181" x="1179" y="1208" width="125" height="244" frameX="-16" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0182" x="1304" y="1208" width="125" height="243" frameX="-16" frameY="-23" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0183" x="1540" y="1464" width="125" height="243" frameX="-16" frameY="-23" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0184" x="250" y="1721" width="124" height="244" frameX="-17" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0185" x="1179" y="1208" width="125" height="244" frameX="-16" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0186" x="1304" y="1208" width="125" height="243" frameX="-16" frameY="-23" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0187" x="1540" y="1464" width="125" height="243" frameX="-16" frameY="-23" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0188" x="250" y="1721" width="124" height="244" frameX="-17" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0189" x="250" y="1721" width="124" height="244" frameX="-17" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0190" x="1540" y="1464" width="125" height="243" frameX="-16" frameY="-23" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0191" x="250" y="1721" width="124" height="244" frameX="-17" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0192" x="1179" y="1208" width="125" height="244" frameX="-16" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0193" x="1304" y="1208" width="125" height="243" frameX="-16" frameY="-23" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0194" x="1540" y="1464" width="125" height="243" frameX="-16" frameY="-23" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0195" x="250" y="1721" width="124" height="244" frameX="-17" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0196" x="1179" y="1208" width="125" height="244" frameX="-16" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0197" x="1304" y="1208" width="125" height="243" frameX="-16" frameY="-23" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0198" x="1540" y="1464" width="125" height="243" frameX="-16" frameY="-23" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0199" x="250" y="1721" width="124" height="244" frameX="-17" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0200" x="1179" y="1208" width="125" height="244" frameX="-16" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0201" x="1304" y="1208" width="125" height="243" frameX="-16" frameY="-23" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0202" x="1540" y="1464" width="125" height="243" frameX="-16" frameY="-23" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0203" x="250" y="1721" width="124" height="244" frameX="-17" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0204" x="1179" y="1208" width="125" height="244" frameX="-16" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0205" x="1304" y="1208" width="125" height="243" frameX="-16" frameY="-23" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0206" x="1540" y="1464" width="125" height="243" frameX="-16" frameY="-23" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0207" x="250" y="1721" width="124" height="244" frameX="-17" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0208" x="1179" y="1208" width="125" height="244" frameX="-16" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0209" x="1304" y="1208" width="125" height="243" frameX="-16" frameY="-23" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0210" x="1540" y="1464" width="125" height="243" frameX="-16" frameY="-23" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0211" x="250" y="1721" width="124" height="244" frameX="-17" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0212" x="250" y="1721" width="124" height="244" frameX="-17" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0213" x="1540" y="1464" width="125" height="243" frameX="-16" frameY="-23" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0214" x="250" y="1721" width="124" height="244" frameX="-17" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0215" x="1179" y="1208" width="125" height="244" frameX="-16" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0216" x="1304" y="1208" width="125" height="243" frameX="-16" frameY="-23" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0217" x="1540" y="1464" width="125" height="243" frameX="-16" frameY="-23" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0218" x="250" y="1721" width="124" height="244" frameX="-17" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0219" x="1179" y="1208" width="125" height="244" frameX="-16" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0220" x="1304" y="1208" width="125" height="243" frameX="-16" frameY="-23" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0221" x="1540" y="1464" width="125" height="243" frameX="-16" frameY="-23" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0222" x="250" y="1721" width="124" height="244" frameX="-17" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0223" x="1179" y="1208" width="125" height="244" frameX="-16" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0224" x="1304" y="1208" width="125" height="243" frameX="-16" frameY="-23" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0225" x="1540" y="1464" width="125" height="243" frameX="-16" frameY="-23" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0226" x="250" y="1721" width="124" height="244" frameX="-17" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0227" x="1179" y="1208" width="125" height="244" frameX="-16" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0228" x="1304" y="1208" width="125" height="243" frameX="-16" frameY="-23" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0229" x="1540" y="1464" width="125" height="243" frameX="-16" frameY="-23" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0230" x="250" y="1721" width="124" height="244" frameX="-17" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0231" x="1179" y="1208" width="125" height="244" frameX="-16" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0232" x="1304" y="1208" width="125" height="243" frameX="-16" frameY="-23" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0233" x="1540" y="1464" width="125" height="243" frameX="-16" frameY="-23" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0234" x="250" y="1721" width="124" height="244" frameX="-17" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="ay que rico0235" x="250" y="1721" width="124" height="244" frameX="-17" frameY="-22" frameWidth="147" frameHeight="266"/>
+	<SubTexture name="left pose0000" x="979" y="0" width="146" height="244" frameX="-14" frameY="-2" frameWidth="169" frameHeight="246"/>
+	<SubTexture name="left pose0001" x="979" y="0" width="146" height="244" frameX="-14" frameY="-2" frameWidth="169" frameHeight="246"/>
+	<SubTexture name="left pose0002" x="819" y="243" width="158" height="243" frameX="-1" frameY="-3" frameWidth="169" frameHeight="246"/>
+	<SubTexture name="left pose0003" x="819" y="243" width="158" height="243" frameX="-1" frameY="-3" frameWidth="169" frameHeight="246"/>
+	<SubTexture name="left pose0004" x="819" y="0" width="160" height="243" frameX="0" frameY="-3" frameWidth="169" frameHeight="246"/>
+	<SubTexture name="left pose0005" x="819" y="0" width="160" height="243" frameX="0" frameY="-3" frameWidth="169" frameHeight="246"/>
+	<SubTexture name="left pose0006" x="0" y="721" width="154" height="243" frameX="-6" frameY="-3" frameWidth="169" frameHeight="246"/>
+	<SubTexture name="left pose0007" x="154" y="721" width="154" height="243" frameX="-6" frameY="-3" frameWidth="169" frameHeight="246"/>
+	<SubTexture name="left pose0008" x="308" y="721" width="149" height="243" frameX="-11" frameY="-3" frameWidth="169" frameHeight="246"/>
+	<SubTexture name="left pose0009" x="457" y="721" width="149" height="243" frameX="-11" frameY="-3" frameWidth="169" frameHeight="246"/>
+	<SubTexture name="left pose0010" x="606" y="721" width="147" height="243" frameX="-13" frameY="-3" frameWidth="169" frameHeight="246"/>
+	<SubTexture name="left pose0011" x="529" y="1208" width="135" height="246" frameX="-26" frameY="0" frameWidth="169" frameHeight="246"/>
+	<SubTexture name="left pose0012" x="529" y="1208" width="135" height="246" frameX="-26" frameY="0" frameWidth="169" frameHeight="246"/>
+	<SubTexture name="left pose0013" x="1283" y="1464" width="132" height="246" frameX="-37" frameY="0" frameWidth="169" frameHeight="246"/>
+	<SubTexture name="left pose0014" x="1283" y="1464" width="132" height="246" frameX="-37" frameY="0" frameWidth="169" frameHeight="246"/>
+	<SubTexture name="right pose l0000" x="163" y="480" width="159" height="240" frameX="-1" frameY="-3" frameWidth="169" frameHeight="244"/>
+	<SubTexture name="right pose l0001" x="163" y="480" width="159" height="240" frameX="-1" frameY="-3" frameWidth="169" frameHeight="244"/>
+	<SubTexture name="right pose l0002" x="0" y="0" width="167" height="238" frameX="-2" frameY="-5" frameWidth="169" frameHeight="244"/>
+	<SubTexture name="right pose l0003" x="0" y="0" width="167" height="238" frameX="-2" frameY="-5" frameWidth="169" frameHeight="244"/>
+	<SubTexture name="right pose l0004" x="167" y="0" width="163" height="242" frameX="-1" frameY="-1" frameWidth="169" frameHeight="244"/>
+	<SubTexture name="right pose l0005" x="167" y="0" width="163" height="242" frameX="-1" frameY="-1" frameWidth="169" frameHeight="244"/>
+	<SubTexture name="right pose l0006" x="0" y="238" width="163" height="242" frameX="-1" frameY="-1" frameWidth="169" frameHeight="244"/>
+	<SubTexture name="right pose l0007" x="330" y="0" width="163" height="242" frameX="-1" frameY="-1" frameWidth="169" frameHeight="244"/>
+	<SubTexture name="right pose l0008" x="0" y="480" width="163" height="241" frameX="-1" frameY="-2" frameWidth="169" frameHeight="244"/>
+	<SubTexture name="right pose l0009" x="493" y="0" width="163" height="241" frameX="-1" frameY="-2" frameWidth="169" frameHeight="244"/>
+	<SubTexture name="right pose l0010" x="656" y="0" width="163" height="241" frameX="-1" frameY="-2" frameWidth="169" frameHeight="244"/>
+	<SubTexture name="right pose l0011" x="1269" y="245" width="143" height="241" frameX="-1" frameY="-2" frameWidth="169" frameHeight="244"/>
+	<SubTexture name="right pose l0012" x="1269" y="245" width="143" height="241" frameX="-1" frameY="-2" frameWidth="169" frameHeight="244"/>
+	<SubTexture name="right pose l0013" x="1800" y="500" width="130" height="244" frameX="0" frameY="0" frameWidth="169" frameHeight="244"/>
+	<SubTexture name="right pose l0014" x="1800" y="500" width="130" height="244" frameX="0" frameY="0" frameWidth="169" frameHeight="244"/>
+	<SubTexture name="up pose l0000" x="133" y="1208" width="133" height="255" frameX="-1" frameY="-1" frameWidth="134" frameHeight="256"/>
+	<SubTexture name="up pose l0001" x="133" y="1208" width="133" height="255" frameX="-1" frameY="-1" frameWidth="134" frameHeight="256"/>
+	<SubTexture name="up pose l0002" x="266" y="1208" width="132" height="255" frameX="-2" frameY="-1" frameWidth="134" frameHeight="256"/>
+	<SubTexture name="up pose l0003" x="266" y="1208" width="132" height="255" frameX="-2" frameY="-1" frameWidth="134" frameHeight="256"/>
+	<SubTexture name="up pose l0004" x="0" y="1208" width="133" height="256" frameX="-1" frameY="0" frameWidth="134" frameHeight="256"/>
+	<SubTexture name="up pose l0005" x="0" y="1208" width="133" height="256" frameX="-1" frameY="0" frameWidth="134" frameHeight="256"/>
+	<SubTexture name="up pose l0006" x="1412" y="512" width="133" height="256" frameX="-1" frameY="0" frameWidth="134" frameHeight="256"/>
+	<SubTexture name="up pose l0007" x="1412" y="256" width="133" height="256" frameX="-1" frameY="0" frameWidth="134" frameHeight="256"/>
+	<SubTexture name="up pose l0008" x="1269" y="731" width="133" height="256" frameX="-1" frameY="0" frameWidth="134" frameHeight="256"/>
+	<SubTexture name="up pose l0009" x="1412" y="0" width="133" height="256" frameX="-1" frameY="0" frameWidth="134" frameHeight="256"/>
+	<SubTexture name="up pose l0010" x="1412" y="768" width="133" height="256" frameX="-1" frameY="0" frameWidth="134" frameHeight="256"/>
+	<SubTexture name="up pose l0011" x="398" y="1208" width="131" height="254" frameX="-1" frameY="-2" frameWidth="134" frameHeight="256"/>
+	<SubTexture name="up pose l0012" x="398" y="1208" width="131" height="254" frameX="-1" frameY="-2" frameWidth="134" frameHeight="256"/>
+	<SubTexture name="up pose l0013" x="1153" y="1464" width="130" height="252" frameX="0" frameY="-4" frameWidth="134" frameHeight="256"/>
+	<SubTexture name="up pose l0014" x="1153" y="1464" width="130" height="252" frameX="0" frameY="-4" frameWidth="134" frameHeight="256"/>
+</TextureAtlas>

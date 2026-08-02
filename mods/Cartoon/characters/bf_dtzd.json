@@ -1,0 +1,56 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "firstDeath",
+			"fps": 24,
+			"name": "1",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-565,
+				-347
+			],
+			"anim": "deathLoop",
+			"fps": 24,
+			"name": "3",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-565,
+				-347
+			],
+			"anim": "deathConfirm",
+			"fps": 24,
+			"name": "2",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/bf_dtzd",
+	"position": [
+		-340,
+		-20
+	],
+	"healthicon": "bf-zd",
+	"flip_x": true,
+	"healthbar_colors": [
+		49,
+		176,
+		209
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

@@ -3,11 +3,21 @@ package substates;
 import backend.WeekData;
 
 import objects.Character;
-import flixel.FlxObject;
-import flixel.FlxSubState;
 
 import states.StoryMenuState;
 import states.FreeplayState;
+
+import flixel.FlxG;
+import flixel.FlxObject;
+import flixel.FlxSprite;
+import flixel.math.FlxPoint;
+import flixel.FlxCamera.FlxCameraFollowStyle;
+import flixel.tweens.FlxTween;
+import flixel.tweens.FlxEase;
+import flixel.util.FlxTimer;
+import flixel.util.FlxColor;
+
+using StringTools;
 
 class GameOverSubstate extends MusicBeatSubstate
 {
@@ -23,9 +33,17 @@ class GameOverSubstate extends MusicBeatSubstate
 	public static var loopSoundName:String = 'gameOver';
 	public static var endSoundName:String = 'gameOverEnd';
 
+	// Lua ile değişecek mode
+	public static var songGameOverMode:String = 'meatbf';
+
 	public static var instance:GameOverSubstate;
 
-	public static function resetVariables() {
+	// Extra sprite'lar
+	var extraGameOverSprites:Array<FlxSprite> = [];
+	var customGameOverSprite:FlxSprite = null;
+
+	public static function resetVariables()
+	{
 		characterName = 'bf-dead';
 		deathSoundName = 'fnf_loss_sfx';
 		loopSoundName = 'gameOver';
@@ -43,6 +61,7 @@ class GameOverSubstate extends MusicBeatSubstate
 
 	var charX:Float = 0;
 	var charY:Float = 0;
+
 	override function create()
 	{
 		instance = this;
@@ -54,11 +73,16 @@ class GameOverSubstate extends MusicBeatSubstate
 		boyfriend.y += boyfriend.positionArray[1] - PlayState.instance.boyfriend.positionArray[1];
 		add(boyfriend);
 
-		FlxG.sound.play(Paths.sound(deathSoundName));
+		// Song'a özel game over sistemi
+		setupSongSpecificGameOver();
+
+		if(songGameOverMode.toLowerCase() != 'turnaround')
+			FlxG.sound.play(Paths.sound(deathSoundName));
 		FlxG.camera.scroll.set();
 		FlxG.camera.target = null;
 
-		boyfriend.playAnim('firstDeath');
+		if(songGameOverMode.toLowerCase() != 'turnaround')
+			boyfriend.playAnim('firstDeath');
 
 		camFollow = new FlxObject(0, 0, 1, 1);
 		camFollow.setPosition(boyfriend.getGraphicMidpoint().x + boyfriend.cameraPosition[0], boyfriend.getGraphicMidpoint().y + boyfriend.cameraPosition[1]);
@@ -69,6 +93,105 @@ class GameOverSubstate extends MusicBeatSubstate
 		PlayState.instance.callOnScripts('onGameOverStart', []);
 
 		super.create();
+	}
+
+	function addBehindBoyfriend(spr:FlxSprite)
+	{
+		spr.antialiasing = ClientPrefs.data.antialiasing;
+		insert(members.indexOf(boyfriend), spr);
+		extraGameOverSprites.push(spr);
+	}
+
+	function addReplacementSprite(spr:FlxSprite)
+	{
+		spr.antialiasing = ClientPrefs.data.antialiasing;
+		insert(members.indexOf(boyfriend) + 1, spr);
+		customGameOverSprite = spr;
+	}
+
+	function makeSpookyClone(offX:Float, offY:Float, flip:Bool)
+	{
+		var spr = new FlxSprite(boyfriend.x + offX, boyfriend.y + offY);
+		spr.frames = Paths.getSparrowAtlas('gameOver/spookyCC');
+		spr.animation.addByPrefix('dance', 'dancing furry', 24, true);
+		spr.animation.play('dance', true);
+		spr.flipX = flip;
+		spr.scale.set(0.65, 0.65);
+		spr.updateHitbox();
+		addBehindBoyfriend(spr);
+	}
+
+	function setupSongSpecificGameOver()
+	{
+		var mode:String = 'meatbf';
+		if(songGameOverMode != null && songGameOverMode.trim().length > 0)
+			mode = songGameOverMode.toLowerCase();
+
+		switch(mode)
+		{
+			case 'taf':
+				var taf = new FlxSprite(boyfriend.x - 300, boyfriend.y - 170);
+				taf.frames = Paths.getSparrowAtlas('gameOver/taf_cc_game_over');
+				taf.animation.addByPrefix('idle', 'taf cc game oveerr', 24, true);
+				taf.animation.play('idle', true);
+				taf.scale.set(1.25, 1.25);
+				taf.updateHitbox();
+				addBehindBoyfriend(taf);
+
+			case 'turnaround':
+				boyfriend.visible = false;
+
+				var turn = new FlxSprite(0, 0);
+				turn.loadGraphic(Paths.image('gameOver/turnaroundead'));
+				turn.setGraphicSize(FlxG.width, FlxG.height);
+				turn.updateHitbox();
+				turn.screenCenter();
+				turn.alpha = 0;
+				turn.scrollFactor.set(0, 0);
+				addReplacementSprite(turn);
+				FlxTween.tween(turn, {alpha: 1}, 0.5, {ease: FlxEase.quadOut});
+
+			case 'spooky':
+				// sol 3 (soldan sağa doğru)
+				makeSpookyClone(-760, 0, true);
+				makeSpookyClone(-520, 0, true);
+				makeSpookyClone(-300, 0, true);
+
+				// sağ 3 (soldan sağa doğru)
+				makeSpookyClone(260, 0, false);
+				makeSpookyClone(500, 0, false);
+				makeSpookyClone(740, 0, false);
+
+			case 'siren':
+				boyfriend.visible = false;
+
+				var siren = new FlxSprite(boyfriend.x - 100, boyfriend.y - 200);
+				siren.frames = Paths.getSparrowAtlas('gameOver/sh_kills_bf');
+				siren.animation.addByPrefix('start', 'start 1', 24, false);
+				siren.animation.addByPrefix('loop', 'loop 2', 24, true);
+				siren.animation.addByPrefix('end', 'end 2', 24, false);
+
+				siren.animation.finishCallback = function(animName:String)
+				{
+					if(animName == 'start')
+						siren.animation.play('loop', true);
+				};
+
+				siren.animation.play('start', true);
+				siren.scale.set(0.65, 0.65);
+				siren.updateHitbox();
+				addReplacementSprite(siren);
+
+			default:
+				// meatBF = diğer tüm şarkılar
+				boyfriend.visible = false;
+
+				var meat = new FlxSprite(boyfriend.x, boyfriend.y); // gerekirse offset ver
+				meat.frames = Paths.getSparrowAtlas('gameOver/meatBF');
+				meat.animation.addByPrefix('death', 'bf dies meat note', 24, false);
+				meat.animation.play('death', true);
+				addReplacementSprite(meat);
+		}
 	}
 
 	public var startedDeath:Bool = false;
@@ -110,7 +233,7 @@ class GameOverSubstate extends MusicBeatSubstate
 			{
 				if(boyfriend.animation.curAnim.curFrame >= 12 && !moveCamera)
 				{
-					FlxG.camera.follow(camFollow, LOCKON, 0.6);
+					FlxG.camera.follow(camFollow, FlxCameraFollowStyle.LOCKON, 0.6);
 					moveCamera = true;
 				}
 
@@ -148,7 +271,15 @@ class GameOverSubstate extends MusicBeatSubstate
 
 	function coolStartDeath(?volume:Float = 1):Void
 	{
-		FlxG.sound.playMusic(Paths.music(loopSoundName), volume);
+		var mode:String = songGameOverMode != null ? songGameOverMode.toLowerCase() : 'meatbf';
+
+		if(mode == 'turnaround')
+			return;
+
+		if(mode == 'siren')
+			FlxG.sound.playMusic(Paths.sound('gameOver/music/siren-head'), volume);
+		else
+			FlxG.sound.playMusic(Paths.music(loopSoundName), volume);
 	}
 
 	function endBullshit():Void
@@ -156,16 +287,52 @@ class GameOverSubstate extends MusicBeatSubstate
 		if (!isEnding)
 		{
 			isEnding = true;
-			boyfriend.playAnim('deathConfirm', true);
-			FlxG.sound.music.stop();
-			FlxG.sound.play(Paths.music(endSoundName));
-			new FlxTimer().start(0.7, function(tmr:FlxTimer)
+
+			var mode:String = songGameOverMode != null ? songGameOverMode.toLowerCase() : 'meatbf';
+
+			if(mode == 'siren' && customGameOverSprite != null)
 			{
-				FlxG.camera.fade(FlxColor.BLACK, 2, false, function()
+				customGameOverSprite.animation.play('end', true);
+			}
+
+			if(mode == 'turnaround')
+			{
+				// Ses yok, sadece fade-out
+				if(FlxG.sound.music != null)
+					FlxG.sound.music.stop();
+
+				if(customGameOverSprite != null)
 				{
-					MusicBeatState.resetState();
+					FlxTween.tween(customGameOverSprite, {alpha: 0}, 0.5, {ease: FlxEase.quadIn, onComplete: function(twn:FlxTween)
+					{
+						FlxG.camera.fade(FlxColor.BLACK, 0.3, false, function()
+						{
+							MusicBeatState.resetState();
+						});
+					}});
+				}
+				else
+				{
+					FlxG.camera.fade(FlxColor.BLACK, 0.5, false, function()
+					{
+						MusicBeatState.resetState();
+					});
+				}
+			}
+			else
+			{
+				boyfriend.playAnim('deathConfirm', true);
+				FlxG.sound.music.stop();
+				FlxG.sound.play(Paths.music(endSoundName));
+				new FlxTimer().start(0.7, function(tmr:FlxTimer)
+				{
+					FlxG.camera.fade(FlxColor.BLACK, 2, false, function()
+					{
+						MusicBeatState.resetState();
+					});
 				});
-			});
+			}
+
 			PlayState.instance.callOnScripts('onGameOverConfirm', [true]);
 		}
 	}
@@ -173,6 +340,12 @@ class GameOverSubstate extends MusicBeatSubstate
 	override function destroy()
 	{
 		instance = null;
+
+		// güvenlik için defaulta dön
+		songGameOverMode = 'meatbf';
+		customGameOverSprite = null;
+		extraGameOverSprites = [];
+
 		super.destroy();
 	}
 }

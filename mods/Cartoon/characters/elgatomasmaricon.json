@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "idle cc idk",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-19,
+				3
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "cc left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-12,
+				1
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "cc down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-18,
+				9
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "cc up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-12,
+				0
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "cc right",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/cc_marico",
+	"position": [
+		0,
+		-60
+	],
+	"healthicon": "waaaa",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		255,
+		255
+	],
+	"camera_position": [
+		50,
+		50
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

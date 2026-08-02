@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="menu_awards.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="awards basic0000" x="0" y="227" width="329" height="90" frameX="291" frameY="-1" frameWidth="617" frameHeight="124"/>
+	<SubTexture name="awards basic0001" x="381" y="0" width="329" height="90" frameX="291" frameY="1" frameWidth="617" frameHeight="124"/>
+	<SubTexture name="awards white0000" x="0" y="116" width="381" height="111" frameX="291" frameY="-2" frameWidth="617" frameHeight="124"/>
+	<SubTexture name="awards white0001" x="0" y="0" width="381" height="116" frameX="291" frameY="0" frameWidth="617" frameHeight="124"/>
+</TextureAtlas>

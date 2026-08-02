@@ -1,0 +1,4 @@
+Sets the camera position
+
+Value 1: bf/dad/gf
+Value 2: forced position (true/false)

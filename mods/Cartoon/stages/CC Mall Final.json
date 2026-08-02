@@ -1,0 +1,10 @@
+{
+	"directory": "",
+	"deathReason": "tafcc",
+	"defaultZoom": 2.0,
+	"isPixelStage": false,
+
+	"boyfriend": [710, 135],
+	"girlfriend": [470, 250],
+	"opponent": [60, 100]
+}

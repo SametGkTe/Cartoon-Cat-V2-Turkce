@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="bf_cc.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="down poses0000" x="0" y="932" width="186" height="145" frameX="-1" frameY="-16" frameWidth="188" frameHeight="161"/>
+	<SubTexture name="down poses0001" x="742" y="759" width="187" height="148" frameX="-1" frameY="-13" frameWidth="188" frameHeight="161"/>
+	<SubTexture name="down poses0002" x="555" y="759" width="187" height="149" frameX="-1" frameY="-12" frameWidth="188" frameHeight="161"/>
+	<SubTexture name="down poses0003" x="555" y="759" width="187" height="149" frameX="-1" frameY="-12" frameWidth="188" frameHeight="161"/>
+	<SubTexture name="down poses0004" x="555" y="759" width="187" height="149" frameX="-1" frameY="-12" frameWidth="188" frameHeight="161"/>
+	<SubTexture name="down poses0005" x="368" y="759" width="187" height="150" frameX="-1" frameY="-11" frameWidth="188" frameHeight="161"/>
+	<SubTexture name="down poses0006" x="182" y="759" width="186" height="153" frameX="-1" frameY="-8" frameWidth="188" frameHeight="161"/>
+	<SubTexture name="down poses0007" x="950" y="695" width="173" height="161" frameX="-9" frameY="0" frameWidth="188" frameHeight="161"/>
+	<SubTexture name="idle poses0000" x="950" y="0" width="179" height="175" frameX="0" frameY="-5" frameWidth="180" frameHeight="180"/>
+	<SubTexture name="idle poses0001" x="950" y="175" width="178" height="175" frameX="-1" frameY="-5" frameWidth="180" frameHeight="180"/>
+	<SubTexture name="idle poses0002" x="550" y="580" width="178" height="177" frameX="-2" frameY="-3" frameWidth="180" frameHeight="180"/>
+	<SubTexture name="idle poses0003" x="773" y="0" width="177" height="180" frameX="-2" frameY="0" frameWidth="180" frameHeight="180"/>
+	<SubTexture name="idle poses0004" x="773" y="180" width="176" height="180" frameX="-2" frameY="0" frameWidth="180" frameHeight="180"/>
+	<SubTexture name="idle poses0005" x="773" y="180" width="176" height="180" frameX="-2" frameY="0" frameWidth="180" frameHeight="180"/>
+	<SubTexture name="idle poses0006" x="773" y="180" width="176" height="180" frameX="-2" frameY="0" frameWidth="180" frameHeight="180"/>
+	<SubTexture name="idle poses0007" x="773" y="180" width="176" height="180" frameX="-2" frameY="0" frameWidth="180" frameHeight="180"/>
+	<SubTexture name="idle poses0008" x="773" y="180" width="176" height="180" frameX="-2" frameY="0" frameWidth="180" frameHeight="180"/>
+	<SubTexture name="idle poses0009" x="773" y="180" width="176" height="180" frameX="-2" frameY="0" frameWidth="180" frameHeight="180"/>
+	<SubTexture name="left poses0000" x="0" y="580" width="184" height="179" frameX="0" frameY="0" frameWidth="193" frameHeight="186"/>
+	<SubTexture name="left poses0001" x="398" y="195" width="184" height="179" frameX="-3" frameY="0" frameWidth="193" frameHeight="186"/>
+	<SubTexture name="left poses0002" x="184" y="580" width="183" height="178" frameX="-4" frameY="-1" frameWidth="193" frameHeight="186"/>
+	<SubTexture name="left poses0003" x="184" y="580" width="183" height="178" frameX="-4" frameY="-1" frameWidth="193" frameHeight="186"/>
+	<SubTexture name="left poses0004" x="184" y="580" width="183" height="178" frameX="-4" frameY="-1" frameWidth="193" frameHeight="186"/>
+	<SubTexture name="left poses0005" x="367" y="580" width="183" height="177" frameX="-6" frameY="-2" frameWidth="193" frameHeight="186"/>
+	<SubTexture name="left poses0006" x="950" y="350" width="174" height="174" frameX="-16" frameY="-7" frameWidth="193" frameHeight="186"/>
+	<SubTexture name="left poses0007" x="950" y="524" width="166" height="171" frameX="-27" frameY="-15" frameWidth="193" frameHeight="186"/>
+	<SubTexture name="right poses0000" x="0" y="397" width="189" height="183" frameX="-4" frameY="0" frameWidth="193" frameHeight="183"/>
+	<SubTexture name="right poses0001" x="189" y="397" width="189" height="182" frameX="-3" frameY="-1" frameWidth="193" frameHeight="183"/>
+	<SubTexture name="right poses0002" x="378" y="397" width="189" height="181" frameX="-3" frameY="-2" frameWidth="193" frameHeight="183"/>
+	<SubTexture name="right poses0003" x="584" y="181" width="189" height="181" frameX="-3" frameY="-2" frameWidth="193" frameHeight="183"/>
+	<SubTexture name="right poses0004" x="584" y="181" width="189" height="181" frameX="-3" frameY="-2" frameWidth="193" frameHeight="183"/>
+	<SubTexture name="right poses0005" x="584" y="0" width="189" height="181" frameX="-3" frameY="-2" frameWidth="193" frameHeight="183"/>
+	<SubTexture name="right poses0006" x="584" y="362" width="189" height="179" frameX="-1" frameY="-4" frameWidth="193" frameHeight="183"/>
+	<SubTexture name="right poses0007" x="0" y="759" width="182" height="173" frameX="0" frameY="-9" frameWidth="193" frameHeight="183"/>
+	<SubTexture name="up poses0000" x="0" y="0" width="199" height="200" frameX="0" frameY="0" frameWidth="199" frameHeight="200"/>
+	<SubTexture name="up poses0001" x="0" y="200" width="198" height="197" frameX="-1" frameY="-3" frameWidth="199" frameHeight="200"/>
+	<SubTexture name="up poses0002" x="199" y="0" width="199" height="197" frameX="0" frameY="-3" frameWidth="199" frameHeight="200"/>
+	<SubTexture name="up poses0003" x="199" y="0" width="199" height="197" frameX="0" frameY="-3" frameWidth="199" frameHeight="200"/>
+	<SubTexture name="up poses0004" x="199" y="0" width="199" height="197" frameX="0" frameY="-3" frameWidth="199" frameHeight="200"/>
+	<SubTexture name="up poses0005" x="198" y="200" width="198" height="196" frameX="0" frameY="-4" frameWidth="199" frameHeight="200"/>
+	<SubTexture name="up poses0006" x="398" y="0" width="186" height="195" frameX="-1" frameY="-5" frameWidth="199" frameHeight="200"/>
+	<SubTexture name="up poses0007" x="773" y="360" width="145" height="187" frameX="-1" frameY="-13" frameWidth="199" frameHeight="200"/>
+</TextureAtlas>

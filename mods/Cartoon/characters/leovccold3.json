@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				110,
+				-61
+			],
+			"indices": [],
+			"fps": 12,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "nigger left"
+		},
+		{
+			"offsets": [
+				43,
+				-160
+			],
+			"indices": [],
+			"fps": 12,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "nigger down"
+		},
+		{
+			"offsets": [
+				-6,
+				46
+			],
+			"indices": [],
+			"fps": 12,
+			"anim": "singUP",
+			"loop": false,
+			"name": "nigger up"
+		},
+		{
+			"offsets": [
+				47,
+				-155
+			],
+			"indices": [],
+			"fps": 12,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "nigger right"
+		},
+		{
+			"offsets": [
+				0,
+				20
+			],
+			"indices": [],
+			"fps": 12,
+			"anim": "idle",
+			"loop": false,
+			"name": "nigger idle"
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/lev_cc_cursed_phase_1",
+	"position": [
+		220,
+		200
+	],
+	"healthicon": "leocc",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		0,
+		0
+	],
+	"camera_position": [
+		-303,
+		-89
+	],
+	"sing_duration": 6.1,
+	"scale": 5
+}

@@ -1,0 +1,58 @@
+{
+	"storyName": "",
+	"difficulties": "",
+	"hideFreeplay": false,
+	"weekBackground": "cc",
+	"weekBefore": "tutorial",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"startUnlocked": true,
+	"hideStoryMode": false,
+	"songs": [
+		[
+			"Fright-Fest",
+			"cc",
+			[
+				255,
+				255,
+				255
+			]
+		],
+		[
+			"Reruns",
+			"cc",
+			[
+				255,
+				255,
+				255
+			]
+		],
+		[
+			"Equinophobia",
+			"hore",
+			[
+				157,
+				157,
+				157
+			]
+		],
+		[
+			"Thats-all-Folks",
+			"cc",
+			[
+				255,
+				255,
+				255
+			]
+		]
+	],
+	"weekCharacters": [
+		"cc",
+		"",
+		""
+	],
+	"weekName": "1WeekCC"
+}

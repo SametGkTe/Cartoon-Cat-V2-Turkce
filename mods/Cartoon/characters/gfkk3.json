@@ -1,0 +1,34 @@
+{
+	"animations": [
+		{
+			"loop": true,
+			"offsets": [
+				0,
+				-151
+			],
+			"anim": "idle",
+			"fps": 12,
+			"name": "idle",
+			"indices": []
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/gf_flipaclip_xdddd",
+	"position": [
+		275,
+		20
+	],
+	"healthicon": "cartoonexe",
+	"flip_x": false,
+	"healthbar_colors": [
+		254,
+		0,
+		-2147483648
+	],
+	"camera_position": [
+		-20,
+		-150
+	],
+	"sing_duration": 4,
+	"scale": 2
+}

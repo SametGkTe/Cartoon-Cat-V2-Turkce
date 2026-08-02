@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				156,
+				100
+			],
+			"anim": "idle",
+			"fps": 12,
+			"name": "aiidle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				209,
+				20
+			],
+			"anim": "singDOWN",
+			"fps": 12,
+			"name": "aidown",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				117,
+				108
+			],
+			"anim": "singUP",
+			"fps": 12,
+			"name": "aiup",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				149,
+				87
+			],
+			"anim": "singRIGHT",
+			"fps": 12,
+			"name": "airight",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				222,
+				79
+			],
+			"anim": "singLEFT",
+			"fps": 12,
+			"name": "aileft",
+			"indices": []
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/leov_bfoldd",
+	"position": [
+		395,
+		476
+	],
+	"healthicon": "jordan",
+	"flip_x": true,
+	"healthbar_colors": [
+		49,
+		176,
+		209
+	],
+	"camera_position": [
+		430,
+		-210
+	],
+	"sing_duration": 4,
+	"scale": 5.1
+}

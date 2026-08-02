@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="static1.png">
+	<SubTexture name="vine-boom0000" x="0" y="648" width="576" height="324" frameX="0" frameY="0" frameWidth="576" frameHeight="324"/>
+	<SubTexture name="vine-boom0001" x="576" y="972" width="576" height="324" frameX="0" frameY="0" frameWidth="576" frameHeight="324"/>
+	<SubTexture name="vine-boom0002" x="576" y="324" width="576" height="324" frameX="0" frameY="0" frameWidth="576" frameHeight="324"/>
+	<SubTexture name="vine-boom0003" x="576" y="1296" width="576" height="324" frameX="0" frameY="0" frameWidth="576" frameHeight="324"/>
+	<SubTexture name="vine-boom0004" x="576" y="1296" width="576" height="324" frameX="0" frameY="0" frameWidth="576" frameHeight="324"/>
+	<SubTexture name="vine-boom0005" x="1728" y="972" width="576" height="324" frameX="0" frameY="0" frameWidth="576" frameHeight="324"/>
+	<SubTexture name="vine-boom0006" x="0" y="972" width="576" height="324" frameX="0" frameY="0" frameWidth="576" frameHeight="324"/>
+	<SubTexture name="vine-boom0007" x="1152" y="648" width="576" height="324" frameX="0" frameY="0" frameWidth="576" frameHeight="324"/>
+	<SubTexture name="vine-boom0008" x="576" y="648" width="576" height="324" frameX="0" frameY="0" frameWidth="576" frameHeight="324"/>
+	<SubTexture name="vine-boom0009" x="576" y="0" width="576" height="324" frameX="0" frameY="0" frameWidth="576" frameHeight="324"/>
+	<SubTexture name="vine-boom0010" x="1152" y="972" width="576" height="324" frameX="0" frameY="0" frameWidth="576" frameHeight="324"/>
+	<SubTexture name="vine-boom0011" x="1152" y="324" width="576" height="324" frameX="0" frameY="0" frameWidth="576" frameHeight="324"/>
+	<SubTexture name="vine-boom0012" x="0" y="1296" width="576" height="324" frameX="0" frameY="0" frameWidth="576" frameHeight="324"/>
+	<SubTexture name="vine-boom0013" x="1728" y="648" width="576" height="324" frameX="0" frameY="0" frameWidth="576" frameHeight="324"/>
+	<SubTexture name="vine-boom0014" x="0" y="0" width="576" height="324" frameX="0" frameY="0" frameWidth="576" frameHeight="324"/>
+	<SubTexture name="vine-boom0015" x="1728" y="1296" width="576" height="324" frameX="0" frameY="0" frameWidth="576" frameHeight="324"/>
+	<SubTexture name="vine-boom0016" x="1728" y="324" width="576" height="324" frameX="0" frameY="0" frameWidth="576" frameHeight="324"/>
+	<SubTexture name="vine-boom0017" x="1152" y="1620" width="576" height="324" frameX="0" frameY="0" frameWidth="576" frameHeight="324"/>
+	<SubTexture name="vine-boom0018" x="1152" y="1296" width="576" height="324" frameX="0" frameY="0" frameWidth="576" frameHeight="324"/>
+	<SubTexture name="vine-boom0019" x="0" y="1620" width="576" height="324" frameX="0" frameY="0" frameWidth="576" frameHeight="324"/>
+	<SubTexture name="vine-boom0020" x="576" y="1620" width="576" height="324" frameX="0" frameY="0" frameWidth="576" frameHeight="324"/>
+	<SubTexture name="vine-boom0021" x="1152" y="0" width="576" height="324" frameX="0" frameY="0" frameWidth="576" frameHeight="324"/>
+	<SubTexture name="vine-boom0022" x="0" y="324" width="576" height="324" frameX="0" frameY="0" frameWidth="576" frameHeight="324"/>
+	<SubTexture name="vine-boom0023" x="1728" y="0" width="576" height="324" frameX="0" frameY="0" frameWidth="576" frameHeight="324"/>
+</TextureAtlas>

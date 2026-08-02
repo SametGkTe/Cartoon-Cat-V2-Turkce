@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="bflipa.png">
+	<SubTexture name="bflipa down0000" x="946" y="306" width="203" height="286" frameX="-440" frameY="-70" frameWidth="642" frameHeight="362"/>
+	<SubTexture name="bflipa down0001" x="0" y="673" width="195" height="293" frameX="-447" frameY="-67" frameWidth="642" frameHeight="362"/>
+	<SubTexture name="bflipa idle0000" x="738" y="306" width="205" height="309" frameX="-437" frameY="-50" frameWidth="642" frameHeight="362"/>
+	<SubTexture name="bflipa idle0001" x="516" y="0" width="222" height="329" frameX="-417" frameY="-30" frameWidth="642" frameHeight="362"/>
+	<SubTexture name="bflipa idle0002" x="0" y="350" width="212" height="323" frameX="-422" frameY="-35" frameWidth="642" frameHeight="362"/>
+	<SubTexture name="bflipa left0000" x="0" y="0" width="266" height="350" frameX="-376" frameY="-10" frameWidth="642" frameHeight="362"/>
+	<SubTexture name="bflipa left0001" x="266" y="0" width="250" height="325" frameX="-393" frameY="-38" frameWidth="642" frameHeight="362"/>
+	<SubTexture name="bflipa right0000" x="212" y="350" width="215" height="300" frameX="-427" frameY="-52" frameWidth="642" frameHeight="362"/>
+	<SubTexture name="bflipa right0001" x="427" y="350" width="193" height="298" frameX="-447" frameY="-56" frameWidth="642" frameHeight="362"/>
+	<SubTexture name="bflipa up0000" x="946" y="0" width="207" height="306" frameX="-436" frameY="-52" frameWidth="642" frameHeight="362"/>
+	<SubTexture name="bflipa up0001" x="738" y="0" width="208" height="306" frameX="-434" frameY="-52" frameWidth="642" frameHeight="362"/>
+</TextureAtlas>

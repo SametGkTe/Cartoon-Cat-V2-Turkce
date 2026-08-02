@@ -41,47 +41,35 @@ class StoryMenuState extends MusicBeatState
 
 	var loadedWeeks:Array<WeekData> = [];
 
-	// TV Elementleri
 	var storyTV:FlxSprite;
 	var tvStatic:FlxSprite;
 
-	// Mod sistemi (0 = week seçimi, 1 = difficulty seçimi)
 	var curMode:Int = 0;
 
-	// TV ekranının iç bölgesi
 	var tvInnerX:Float = 0;
 	var tvInnerY:Float = 0;
 	var tvInnerW:Float = 468;
 	var tvInnerH:Float = 372;
 
-	// ============ AYAR DEĞERLERİ - BUNLARI DEĞİŞTİR ============
+	var staticOffsetX:Float = 25;
+	var staticOffsetY:Float = -10;
+	var staticScaleX:Float = 0.97;
+	var staticScaleY:Float = 1.26;
 
-	// Static ayarları (tvInner'a göre offset)
-	var staticOffsetX:Float = 25;      // + sağa, - sola
-	var staticOffsetY:Float = -10;     // + aşağı, - yukarı
-	var staticScaleX:Float = 0.97;     // 1.0 = tvInnerW ile aynı
-	var staticScaleY:Float = 1.26;     // 1.0 = tvInnerH ile aynı
+	var charUseStaticSize:Bool = true;
+	var charBaseScale:Float = 2;
 
-	// Karakter genel ayarları
-	var charUseStaticSize:Bool = true; // true = static boyutunu baz al
-	var charBaseScale:Float = 1.0;     // tüm karakterleri topluca küçült/büyüt
+	var charSlot0:Float = 0.22;
+	var charSlot1:Float = 0.50;
+	var charSlot2:Float = 0.78;
 
-	// Karakter slot pozisyonları (static alanının yüzdesi)
-	var charSlot0:Float = 0.22;       // Sol karakter
-	var charSlot1:Float = 0.50;       // Orta karakter
-	var charSlot2:Float = 0.78;       // Sağ karakter
-
-	// Karakter başına ayrı offset [sol, orta, sağ]
 	var charPerOffsetX:Array<Float> = [0, 0, 0];
 	var charPerOffsetY:Array<Float> = [0, 0, 0];
 
-	// Karakter başına ayrı scale çarpanı [sol, orta, sağ]
 	var charScaleMul:Array<Float> = [1.0, 1.0, 1.0];
 
-	// Cool (difficulty) ayarları
-	var coolOffsetX:Float = -100;       // + sağa, - sola
-	var coolOffsetY:Float = -241;      // ekran ortasından yukarı offset
-	// ============================================================
+	var coolOffsetX:Float = -100;
+	var coolOffsetY:Float = -241;
 
 	override function create()
 	{
@@ -98,9 +86,6 @@ class StoryMenuState extends MusicBeatState
 		DiscordClient.changePresence("In the Menus", null);
 		#end
 
-		// =============================================
-		// KATMAN 1: STORY TV (ARKAPLAN ÇERÇEVE)
-		// =============================================
 		storyTV = new FlxSprite();
 		storyTV.loadGraphic(Paths.image('storymenu/storyTV'));
 		storyTV.antialiasing = ClientPrefs.data.antialiasing;
@@ -109,15 +94,11 @@ class StoryMenuState extends MusicBeatState
 		storyTV.screenCenter();
 		add(storyTV);
 
-		// TV ekranının iç bölgesini hesapla
 		tvInnerW = storyTV.width * 0.60;
 		tvInnerH = storyTV.height * 0.64;
 		tvInnerX = storyTV.x + (storyTV.width - tvInnerW) / 2;
 		tvInnerY = storyTV.y + (storyTV.height * 0.18);
 
-		// =============================================
-		// KATMAN 2: WEEK VERİLERİNİ YÜKLE
-		// =============================================
 		var num:Int = 0;
 		for (i in 0...WeekData.weeksList.length)
 		{
@@ -130,9 +111,6 @@ class StoryMenuState extends MusicBeatState
 			}
 		}
 
-		// =============================================
-		// KATMAN 3: MENU KARAKTERLERİ (TV İÇİNDE)
-		// =============================================
 		WeekData.setDirectoryFromWeek(loadedWeeks[0]);
 		var charArray:Array<String> = loadedWeeks[0].weekCharacters;
 
@@ -147,14 +125,12 @@ class StoryMenuState extends MusicBeatState
 
 		fitCharactersToTV();
 
-		// =============================================
-		// KATMAN 4: TV STATIC (KARAKTERLERİN ÜSTÜNDE)
-		// =============================================
 		tvStatic = new FlxSprite();
 		tvStatic.frames = Paths.getSparrowAtlas('storymenu/static');
 		tvStatic.animation.addByPrefix('idle', 'TV static', 24, true);
 		tvStatic.animation.play('idle');
 		tvStatic.antialiasing = ClientPrefs.data.antialiasing;
+		// Tv Static Efekti
 
 		var staticRect = getStaticRect();
 		tvStatic.setPosition(staticRect.x, staticRect.y);
@@ -163,9 +139,6 @@ class StoryMenuState extends MusicBeatState
 		tvStatic.alpha = 0.4;
 		add(tvStatic);
 
-		// =============================================
-		// KATMAN 5: TEXT'LER
-		// =============================================
 		scoreText = new FlxText(10, 10, 0, "HAFTA SKORU: 0", 36);
 		scoreText.setFormat("VCR OSD Mono", 32);
 		add(scoreText);
@@ -182,7 +155,6 @@ class StoryMenuState extends MusicBeatState
 		txtTracklist.y = storyTV.y + storyTV.height * 0.3;
 		add(txtTracklist);
 
-		// Mod göstergesi
 		var modeHint:FlxText = new FlxText(0, FlxG.height - 30, FlxG.width,
 			"SOL/SAĞ: Hafta Değiştir  |  Yukarı: Zorluk Değiştir  |  ENTER: Seç", 16);
 		modeHint.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, CENTER, OUTLINE, FlxColor.BLACK);
@@ -194,7 +166,6 @@ class StoryMenuState extends MusicBeatState
 
 		difficultySelectors = new FlxGroup();
 
-		// Sol ok
 		leftArrow = new FlxSprite();
 		leftArrow.antialiasing = ClientPrefs.data.antialiasing;
 		leftArrow.frames = coolAtlas;
@@ -203,13 +174,11 @@ class StoryMenuState extends MusicBeatState
 		leftArrow.visible = false;
 		difficultySelectors.add(leftArrow);
 
-		// Difficulty sprite
 		sprDifficulty = new FlxSprite();
 		sprDifficulty.antialiasing = ClientPrefs.data.antialiasing;
 		sprDifficulty.visible = false;
 		difficultySelectors.add(sprDifficulty);
 
-		// Sağ ok
 		rightArrow = new FlxSprite();
 		rightArrow.antialiasing = ClientPrefs.data.antialiasing;
 		rightArrow.frames = coolAtlas;
@@ -220,7 +189,6 @@ class StoryMenuState extends MusicBeatState
 
 		add(difficultySelectors);
 
-		// Lock sprite
 		lockSprite = new FlxSprite();
 		lockSprite.antialiasing = ClientPrefs.data.antialiasing;
 		lockSprite.frames = coolAtlas;
@@ -231,7 +199,6 @@ class StoryMenuState extends MusicBeatState
 
 		positionCoolElements();
 
-		// Difficulty başlat
 		Difficulty.resetList();
 		if (lastDifficultyName == '')
 		{
@@ -258,7 +225,6 @@ class StoryMenuState extends MusicBeatState
 	{
 		var staticRect = getStaticRect();
 
-		// Önce kaç karakter aktif say
 		var activeChars:Array<Int> = [];
 		for (i in 0...grpWeekCharacters.members.length)
 		{
@@ -272,26 +238,26 @@ class StoryMenuState extends MusicBeatState
 		var activeCount:Int = activeChars.length;
 		if (activeCount == 0) return;
 
-		// Aktif karakter sayısına göre anchor pozisyonları hesapla
+		var slots:Array<Float> = [charSlot0, charSlot1, charSlot2];
+
 		var anchorXs:Map<Int, Float> = new Map<Int, Float>();
 
 		if (activeCount == 1)
 		{
-			// Tek karakter: tam ortada
 			anchorXs.set(activeChars[0], staticRect.x + staticRect.w * 0.5);
 		}
 		else if (activeCount == 2)
 		{
-			// İki karakter: ortada eşit dağıt
 			anchorXs.set(activeChars[0], staticRect.x + staticRect.w * 0.33);
 			anchorXs.set(activeChars[1], staticRect.x + staticRect.w * 0.66);
 		}
 		else
 		{
-			// Üç karakter: eşit dağıt
-			anchorXs.set(activeChars[0], staticRect.x + staticRect.w * 0.20);
-			anchorXs.set(activeChars[1], staticRect.x + staticRect.w * 0.50);
-			anchorXs.set(activeChars[2], staticRect.x + staticRect.w * 0.80);
+			for (j in 0...activeChars.length)
+			{
+				var slotPos:Float = (j < slots.length) ? slots[j] : 0.5;
+				anchorXs.set(activeChars[j], staticRect.x + staticRect.w * slotPos);
+			}
 		}
 
 		for (i in 0...grpWeekCharacters.members.length)
@@ -306,40 +272,34 @@ class StoryMenuState extends MusicBeatState
 			}
 
 			char.visible = true;
+
+			char.scale.set(1, 1);
+			char.updateHitbox();
 			char.offset.set(0, 0);
 
 			var realW:Float = 100;
 			var realH:Float = 100;
 
-			if (char.frame != null)
+			if (char.frameWidth > 0 && char.frameHeight > 0)
+			{
+				realW = char.frameWidth;
+				realH = char.frameHeight;
+			}
+			else if (char.frame != null && char.frame.frame != null)
 			{
 				realW = char.frame.frame.width;
 				realH = char.frame.frame.height;
-			}
-			else
-			{
-				realW = char.width;
-				realH = char.height;
 			}
 
 			if (realW <= 0) realW = 100;
 			if (realH <= 0) realH = 100;
 
-			var finalScale:Float = 1;
+			var maxW:Float = staticRect.w / activeCount * 0.85;
+			var maxH:Float = staticRect.h * 0.85;
 
-			if (charUseStaticSize)
-			{
-				var scaleByW:Float = (staticRect.w / activeCount) / realW;
-				var scaleByH:Float = staticRect.h / realH;
-				finalScale = Math.min(scaleByW, scaleByH) * charBaseScale;
-			}
-			else
-			{
-				var slotWidth:Float = staticRect.w / 3;
-				var scaleByW:Float = slotWidth / realW;
-				var scaleByH:Float = staticRect.h / realH;
-				finalScale = Math.min(scaleByW, scaleByH) * charBaseScale;
-			}
+			var scaleByW:Float = maxW / realW;
+			var scaleByH:Float = maxH / realH;
+			var finalScale:Float = Math.min(scaleByW, scaleByH) * charBaseScale;
 
 			if (i < charScaleMul.length)
 				finalScale *= charScaleMul[i];
@@ -355,7 +315,8 @@ class StoryMenuState extends MusicBeatState
 			var offY:Float = (i < charPerOffsetY.length) ? charPerOffsetY[i] : 0;
 
 			char.x = posX - (visibleW / 2) + offX;
-			char.y = staticRect.y + staticRect.h - visibleH + offY;
+
+			char.y = staticRect.y + (staticRect.h / 2) - (visibleH / 2) + offY;
 		}
 	}
 

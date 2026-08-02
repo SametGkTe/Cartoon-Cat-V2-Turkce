@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Thats all folks CC.png">
+	<SubTexture name="down phase 3 lol0000" x="0" y="1163" width="265" height="216" frameX="-23" frameY="-2" frameWidth="289" frameHeight="220"/>
+	<SubTexture name="down phase 3 lol0001" x="250" y="1379" width="265" height="214" frameX="-25" frameY="-7" frameWidth="289" frameHeight="220"/>
+	<SubTexture name="down phase 3 lol0002" x="284" y="723" width="266" height="220" frameX="-24" frameY="0" frameWidth="289" frameHeight="220"/>
+	<SubTexture name="down phase 3 lol0003" x="0" y="944" width="265" height="219" frameX="-24" frameY="1" frameWidth="289" frameHeight="220"/>
+	<SubTexture name="down phase 3 lol0004" x="550" y="723" width="267" height="218" frameX="-23" frameY="1" frameWidth="289" frameHeight="220"/>
+	<SubTexture name="down phase 3 lol0005" x="817" y="723" width="274" height="211" frameX="-14" frameY="-1" frameWidth="289" frameHeight="220"/>
+	<SubTexture name="down phase 3 lol0006" x="265" y="1163" width="271" height="211" frameX="-10" frameY="-1" frameWidth="289" frameHeight="220"/>
+	<SubTexture name="down phase 3 lol0007" x="810" y="944" width="259" height="209" frameX="1" frameY="-3" frameWidth="289" frameHeight="220"/>
+	<SubTexture name="idle0000" x="0" y="1379" width="250" height="227" frameX="0" frameY="-1" frameWidth="249" frameHeight="227"/>
+	<SubTexture name="idle0001" x="1637" y="1120" width="249" height="226" frameX="1" frameY="-2" frameWidth="249" frameHeight="227"/>
+	<SubTexture name="idle0002" x="1892" y="0" width="248" height="225" frameX="1" frameY="-3" frameWidth="249" frameHeight="227"/>
+	<SubTexture name="idle0003" x="1892" y="675" width="247" height="224" frameX="1" frameY="-4" frameWidth="249" frameHeight="227"/>
+	<SubTexture name="idle0004" x="1892" y="899" width="247" height="224" frameX="1" frameY="-4" frameWidth="249" frameHeight="227"/>
+	<SubTexture name="idle0005" x="1892" y="450" width="247" height="225" frameX="1" frameY="-3" frameWidth="249" frameHeight="227"/>
+	<SubTexture name="idle0006" x="1892" y="225" width="247" height="225" frameX="1" frameY="-3" frameWidth="249" frameHeight="227"/>
+	<SubTexture name="idle0007" x="248" y="1606" width="248" height="226" frameX="1" frameY="-2" frameWidth="249" frameHeight="227"/>
+	<SubTexture name="idle0008" x="0" y="1606" width="248" height="226" frameX="1" frameY="-2" frameWidth="249" frameHeight="227"/>
+	<SubTexture name="idle0009" x="1637" y="449" width="249" height="227" frameX="1" frameY="-1" frameWidth="249" frameHeight="227"/>
+	<SubTexture name="idle0010" x="1637" y="222" width="249" height="227" frameX="1" frameY="-1" frameWidth="249" frameHeight="227"/>
+	<SubTexture name="idle0011" x="1380" y="909" width="249" height="228" frameX="1" frameY="0" frameWidth="249" frameHeight="227"/>
+	<SubTexture name="idle0012" x="1380" y="1137" width="249" height="228" frameX="1" frameY="0" frameWidth="249" frameHeight="227"/>
+	<SubTexture name="idle0013" x="1380" y="680" width="249" height="229" frameX="1" frameY="1" frameWidth="249" frameHeight="227"/>
+	<SubTexture name="idle0014" x="1380" y="222" width="249" height="229" frameX="1" frameY="1" frameWidth="249" frameHeight="227"/>
+	<SubTexture name="idle0015" x="1380" y="451" width="249" height="229" frameX="0" frameY="1" frameWidth="249" frameHeight="227"/>
+	<SubTexture name="left pose phase 3 lol0000" x="0" y="237" width="293" height="243" frameX="-9" frameY="1" frameWidth="330" frameHeight="241"/>
+	<SubTexture name="left pose phase 3 lol0001" x="0" y="480" width="286" height="243" frameX="-9" frameY="1" frameWidth="330" frameHeight="241"/>
+	<SubTexture name="left pose phase 3 lol0002" x="286" y="480" width="286" height="242" frameX="-9" frameY="1" frameWidth="330" frameHeight="241"/>
+	<SubTexture name="left pose phase 3 lol0003" x="601" y="0" width="289" height="243" frameX="-9" frameY="1" frameWidth="330" frameHeight="241"/>
+	<SubTexture name="left pose phase 3 lol0004" x="601" y="0" width="289" height="243" frameX="-9" frameY="1" frameWidth="330" frameHeight="241"/>
+	<SubTexture name="left pose phase 3 lol0005" x="308" y="0" width="293" height="243" frameX="-9" frameY="1" frameWidth="330" frameHeight="241"/>
+	<SubTexture name="left pose phase 3 lol0006" x="0" y="0" width="308" height="237" frameX="1" frameY="-5" frameWidth="330" frameHeight="241"/>
+	<SubTexture name="left pose phase 3 lol0007" x="308" y="243" width="281" height="224" frameX="-45" frameY="-18" frameWidth="330" frameHeight="241"/>
+	<SubTexture name="left pose phase 3 lol0008" x="601" y="243" width="284" height="224" frameX="-47" frameY="-18" frameWidth="330" frameHeight="241"/>
+	<SubTexture name="right pose phase 3 lol0000" x="496" y="1606" width="252" height="222" frameX="-74" frameY="-4" frameWidth="330" frameHeight="225"/>
+	<SubTexture name="right pose phase 3 lol0001" x="1380" y="0" width="257" height="222" frameX="-73" frameY="1" frameWidth="330" frameHeight="225"/>
+	<SubTexture name="right pose phase 3 lol0002" x="1637" y="0" width="255" height="222" frameX="-74" frameY="1" frameWidth="330" frameHeight="225"/>
+	<SubTexture name="right pose phase 3 lol0003" x="1637" y="898" width="254" height="222" frameX="-74" frameY="1" frameWidth="330" frameHeight="225"/>
+	<SubTexture name="right pose phase 3 lol0004" x="1637" y="676" width="254" height="222" frameX="-74" frameY="1" frameWidth="330" frameHeight="225"/>
+	<SubTexture name="right pose phase 3 lol0005" x="748" y="1606" width="254" height="217" frameX="-72" frameY="-4" frameWidth="330" frameHeight="225"/>
+	<SubTexture name="right pose phase 3 lol0006" x="515" y="1379" width="259" height="212" frameX="-59" frameY="-9" frameWidth="330" frameHeight="225"/>
+	<SubTexture name="right pose phase 3 lol0007" x="265" y="944" width="273" height="210" frameX="1" frameY="-12" frameWidth="330" frameHeight="225"/>
+	<SubTexture name="right pose phase 3 lol0008" x="538" y="944" width="272" height="210" frameX="-1" frameY="-12" frameWidth="330" frameHeight="225"/>
+	<SubTexture name="up pose phase 3 lol0000" x="1637" y="1346" width="235" height="239" frameX="-25" frameY="-25" frameWidth="284" frameHeight="263"/>
+	<SubTexture name="up pose phase 3 lol0001" x="890" y="0" width="245" height="265" frameX="-22" frameY="1" frameWidth="284" frameHeight="263"/>
+	<SubTexture name="up pose phase 3 lol0002" x="890" y="265" width="245" height="260" frameX="-22" frameY="-4" frameWidth="284" frameHeight="263"/>
+	<SubTexture name="up pose phase 3 lol0003" x="1135" y="254" width="245" height="254" frameX="-22" frameY="-10" frameWidth="284" frameHeight="263"/>
+	<SubTexture name="up pose phase 3 lol0004" x="1135" y="0" width="245" height="254" frameX="-22" frameY="-10" frameWidth="284" frameHeight="263"/>
+	<SubTexture name="up pose phase 3 lol0005" x="1135" y="508" width="242" height="242" frameX="-22" frameY="-22" frameWidth="284" frameHeight="263"/>
+	<SubTexture name="up pose phase 3 lol0006" x="572" y="480" width="285" height="242" frameX="1" frameY="-22" frameWidth="284" frameHeight="263"/>
+	<SubTexture name="up pose phase 3 lol0007" x="0" y="723" width="284" height="221" frameX="-1" frameY="-43" frameWidth="284" frameHeight="263"/>
+	<SubTexture name="up pose phase 3 lol0008" x="1069" y="944" width="262" height="193" frameX="-1" frameY="-71" frameWidth="284" frameHeight="263"/>
+	<SubTexture name="up pose phase 3 lol0009" x="536" y="1163" width="261" height="193" frameX="-1" frameY="-71" frameWidth="284" frameHeight="263"/>
+</TextureAtlas>

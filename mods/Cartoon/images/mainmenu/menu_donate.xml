@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="menu_donate.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="donate basic0000" x="0" y="217" width="319" height="91" frameX="288" frameY="2" frameWidth="617" frameHeight="124"/>
+	<SubTexture name="donate basic0001" x="364" y="0" width="319" height="89" frameX="288" frameY="1" frameWidth="617" frameHeight="124"/>
+	<SubTexture name="donate white0000" x="0" y="110" width="364" height="107" frameX="289" frameY="8" frameWidth="617" frameHeight="124"/>
+	<SubTexture name="donate white0001" x="0" y="0" width="364" height="110" frameX="290" frameY="4" frameWidth="617" frameHeight="124"/>
+</TextureAtlas>

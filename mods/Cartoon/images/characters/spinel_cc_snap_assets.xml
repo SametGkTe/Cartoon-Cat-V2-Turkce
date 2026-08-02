@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="spinel_cc_snap_assets.png">
+	<SubTexture name="snap idle0000" x="654" y="1675" width="299" height="418" frameX="-8" frameY="-22" frameWidth="307" frameHeight="440"/>
+	<SubTexture name="snap idle0001" x="891" y="2093" width="297" height="420" frameX="-7" frameY="-20" frameWidth="307" frameHeight="440"/>
+	<SubTexture name="snap idle0002" x="297" y="2093" width="297" height="421" frameX="-6" frameY="-19" frameWidth="307" frameHeight="440"/>
+	<SubTexture name="snap idle0003" x="2690" y="0" width="296" height="420" frameX="-6" frameY="-20" frameWidth="307" frameHeight="440"/>
+	<SubTexture name="snap idle0004" x="1485" y="2093" width="297" height="419" frameX="-5" frameY="-21" frameWidth="307" frameHeight="440"/>
+	<SubTexture name="snap0000" x="2375" y="840" width="304" height="419" frameX="-9" frameY="-22" frameWidth="442" frameHeight="441"/>
+	<SubTexture name="snap0001" x="865" y="420" width="421" height="412" frameX="-6" frameY="-29" frameWidth="442" frameHeight="441"/>
+	<SubTexture name="snap0002" x="865" y="420" width="421" height="412" frameX="-6" frameY="-29" frameWidth="442" frameHeight="441"/>
+	<SubTexture name="snap0003" x="841" y="835" width="417" height="412" frameX="-7" frameY="-29" frameWidth="442" frameHeight="441"/>
+	<SubTexture name="snap0004" x="430" y="419" width="431" height="412" frameX="-7" frameY="-29" frameWidth="442" frameHeight="441"/>
+	<SubTexture name="snap0005" x="0" y="419" width="430" height="416" frameX="-8" frameY="-25" frameWidth="442" frameHeight="441"/>
+	<SubTexture name="snap0006" x="433" y="0" width="432" height="416" frameX="-8" frameY="-25" frameWidth="442" frameHeight="441"/>
+	<SubTexture name="snap0007" x="0" y="0" width="433" height="419" frameX="-9" frameY="-22" frameWidth="442" frameHeight="441"/>
+	<SubTexture name="snap0008" x="420" y="835" width="421" height="419" frameX="-9" frameY="-22" frameWidth="442" frameHeight="441"/>
+	<SubTexture name="snap0009" x="865" y="0" width="422" height="420" frameX="-9" frameY="-21" frameWidth="442" frameHeight="441"/>
+	<SubTexture name="snap0010" x="0" y="835" width="420" height="420" frameX="-9" frameY="-21" frameWidth="442" frameHeight="441"/>
+	<SubTexture name="snap0011" x="0" y="835" width="420" height="420" frameX="-9" frameY="-21" frameWidth="442" frameHeight="441"/>
+	<SubTexture name="snap0012" x="1287" y="0" width="372" height="420" frameX="-9" frameY="-21" frameWidth="442" frameHeight="441"/>
+	<SubTexture name="snap0013" x="2375" y="420" width="312" height="420" frameX="-9" frameY="-21" frameWidth="442" frameHeight="441"/>
+	<SubTexture name="snap0014" x="354" y="1675" width="300" height="418" frameX="-11" frameY="-23" frameWidth="442" frameHeight="441"/>
+	<SubTexture name="snap0015" x="354" y="1675" width="300" height="418" frameX="-11" frameY="-23" frameWidth="442" frameHeight="441"/>
+	<SubTexture name="snap0016" x="0" y="2093" width="297" height="422" frameX="-10" frameY="-19" frameWidth="442" frameHeight="441"/>
+	<SubTexture name="snap0017" x="0" y="2093" width="297" height="422" frameX="-10" frameY="-19" frameWidth="442" frameHeight="441"/>
+	<SubTexture name="snap0018" x="594" y="2093" width="297" height="421" frameX="-9" frameY="-20" frameWidth="442" frameHeight="441"/>
+	<SubTexture name="snap0019" x="594" y="2093" width="297" height="421" frameX="-9" frameY="-20" frameWidth="442" frameHeight="441"/>
+	<SubTexture name="snap0020" x="1188" y="2093" width="297" height="420" frameX="-9" frameY="-21" frameWidth="442" frameHeight="441"/>
+	<SubTexture name="snap0021" x="1188" y="2093" width="297" height="420" frameX="-9" frameY="-21" frameWidth="442" frameHeight="441"/>
+	<SubTexture name="thumbs up0000" x="2375" y="0" width="315" height="420" frameX="-6" frameY="-20" frameWidth="367" frameHeight="440"/>
+	<SubTexture name="thumbs up0001" x="0" y="1675" width="354" height="418" frameX="-6" frameY="-22" frameWidth="367" frameHeight="440"/>
+	<SubTexture name="thumbs up0002" x="1438" y="1255" width="355" height="418" frameX="-9" frameY="-22" frameWidth="367" frameHeight="440"/>
+	<SubTexture name="thumbs up0003" x="2020" y="842" width="355" height="418" frameX="-9" frameY="-22" frameWidth="367" frameHeight="440"/>
+	<SubTexture name="thumbs up0004" x="2020" y="421" width="355" height="421" frameX="-8" frameY="-19" frameWidth="367" frameHeight="440"/>
+	<SubTexture name="thumbs up0005" x="2020" y="0" width="355" height="421" frameX="-8" frameY="-19" frameWidth="367" frameHeight="440"/>
+	<SubTexture name="thumbs up0006" x="1079" y="1255" width="359" height="420" frameX="-7" frameY="-20" frameWidth="367" frameHeight="440"/>
+	<SubTexture name="thumbs up0007" x="720" y="1255" width="359" height="420" frameX="-7" frameY="-20" frameWidth="367" frameHeight="440"/>
+	<SubTexture name="thumbs up0008" x="0" y="1255" width="360" height="420" frameX="-7" frameY="-20" frameWidth="367" frameHeight="440"/>
+	<SubTexture name="thumbs up0009" x="360" y="1255" width="360" height="420" frameX="-7" frameY="-20" frameWidth="367" frameHeight="440"/>
+	<SubTexture name="thumbs up0010" x="1659" y="0" width="361" height="420" frameX="-6" frameY="-20" frameWidth="367" frameHeight="440"/>
+	<SubTexture name="thumbs up0011" x="1659" y="0" width="361" height="420" frameX="-6" frameY="-20" frameWidth="367" frameHeight="440"/>
+	<SubTexture name="thumbs up0012" x="1659" y="420" width="361" height="420" frameX="-6" frameY="-20" frameWidth="367" frameHeight="440"/>
+	<SubTexture name="thumbs up0013" x="1659" y="420" width="361" height="420" frameX="-6" frameY="-20" frameWidth="367" frameHeight="440"/>
+	<SubTexture name="thumbs up0014" x="1287" y="420" width="361" height="420" frameX="-6" frameY="-20" frameWidth="367" frameHeight="440"/>
+	<SubTexture name="thumbs up0015" x="1287" y="420" width="361" height="420" frameX="-6" frameY="-20" frameWidth="367" frameHeight="440"/>
+	<SubTexture name="thumbs up0016" x="1287" y="420" width="361" height="420" frameX="-6" frameY="-20" frameWidth="367" frameHeight="440"/>
+	<SubTexture name="thumbs up0017" x="1287" y="420" width="361" height="420" frameX="-6" frameY="-20" frameWidth="367" frameHeight="440"/>
+	<SubTexture name="thumbs up0018" x="1287" y="420" width="361" height="420" frameX="-6" frameY="-20" frameWidth="367" frameHeight="440"/>
+	<SubTexture name="thumbs up0019" x="1287" y="420" width="361" height="420" frameX="-6" frameY="-20" frameWidth="367" frameHeight="440"/>
+	<SubTexture name="thumbs up0020" x="1287" y="420" width="361" height="420" frameX="-6" frameY="-20" frameWidth="367" frameHeight="440"/>
+	<SubTexture name="thumbs up0021" x="1287" y="420" width="361" height="420" frameX="-6" frameY="-20" frameWidth="367" frameHeight="440"/>
+	<SubTexture name="thumbs up0022" x="1287" y="420" width="361" height="420" frameX="-6" frameY="-20" frameWidth="367" frameHeight="440"/>
+	<SubTexture name="thumbs up0023" x="1287" y="420" width="361" height="420" frameX="-6" frameY="-20" frameWidth="367" frameHeight="440"/>
+	<SubTexture name="thumbs up0024" x="1287" y="420" width="361" height="420" frameX="-6" frameY="-20" frameWidth="367" frameHeight="440"/>
+	<SubTexture name="transition0000" x="2690" y="805" width="273" height="345" frameX="-109" frameY="-81" frameWidth="382" frameHeight="437"/>
+	<SubTexture name="transition0001" x="2690" y="420" width="265" height="385" frameX="-94" frameY="-51" frameWidth="382" frameHeight="437"/>
+	<SubTexture name="transition0002" x="2690" y="420" width="265" height="385" frameX="-94" frameY="-51" frameWidth="382" frameHeight="437"/>
+	<SubTexture name="transition0003" x="2375" y="1259" width="305" height="417" frameX="-5" frameY="-19" frameWidth="382" frameHeight="437"/>
+	<SubTexture name="transition0004" x="2375" y="1259" width="305" height="417" frameX="-5" frameY="-19" frameWidth="382" frameHeight="437"/>
+	<SubTexture name="transition0005" x="2375" y="1676" width="302" height="415" frameX="-11" frameY="-21" frameWidth="382" frameHeight="437"/>
+</TextureAtlas>

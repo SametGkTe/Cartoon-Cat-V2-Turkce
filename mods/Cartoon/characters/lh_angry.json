@@ -1,0 +1,89 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				134,
+				-14
+			],
+			"loop": false,
+			"fps": 30,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "left pose"
+		},
+		{
+			"offsets": [
+				33,
+				-9
+			],
+			"loop": false,
+			"fps": 30,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Down pose"
+		},
+		{
+			"offsets": [
+				-2,
+				8
+			],
+			"loop": false,
+			"fps": 30,
+			"anim": "singUP",
+			"indices": [],
+			"name": "up pose"
+		},
+		{
+			"offsets": [
+				-5,
+				-23
+			],
+			"loop": false,
+			"fps": 30,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "right pose"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
+		},
+		{
+			"offsets": [
+				39,
+				28
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "LEAVE ME ALONE anim",
+			"indices": [],
+			"name": "ay que rico"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/angry_luna",
+	"position": [
+		142,
+		277
+	],
+	"healthicon": "lh",
+	"flip_x": false,
+	"healthbar_colors": [
+		78,
+		60,
+		56
+	],
+	"camera_position": [
+		-204,
+		-106
+	],
+	"sing_duration": 3.6,
+	"scale": 2.25
+}

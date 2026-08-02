@@ -1,0 +1,89 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				180,
+				-276
+			],
+			"anim": "singDOWN",
+			"fps": 12,
+			"name": "down pose",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				236,
+				2
+			],
+			"anim": "singUP",
+			"fps": 12,
+			"name": "up pose",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				222,
+				-83
+			],
+			"anim": "singLEFT",
+			"fps": 12,
+			"name": "right pose",
+			"indices": []
+		},
+		{
+			"offsets": [
+				2,
+				-94
+			],
+			"loop": false,
+			"fps": 12,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "left pose"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				-131
+			],
+			"anim": "dialogue",
+			"fps": 24,
+			"name": "I have the body of a pig",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				0,
+				-131
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "idle",
+			"indices": []
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/ghost_pig_v2",
+	"position": [
+		74,
+		115
+	],
+	"healthicon": "ghostpig",
+	"flip_x": true,
+	"healthbar_colors": [
+		129,
+		109,
+		108
+	],
+	"camera_position": [
+		-615,
+		-15
+	],
+	"sing_duration": 4,
+	"scale": 2
+}

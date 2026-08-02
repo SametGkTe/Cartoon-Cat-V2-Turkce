@@ -1,0 +1,45 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": true,
+			"name": "gf idle0"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle-alt",
+			"loop": true,
+			"name": "gf idle mechanic"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/gf_standing_hide_and_seek",
+	"position": [
+		120,
+		152
+	],
+	"healthicon": "gf",
+	"flip_x": false,
+	"healthbar_colors": [
+		165,
+		0,
+		77
+	],
+	"camera_position": [
+		-120,
+		-160
+	],
+	"sing_duration": 4,
+	"scale": 2.52
+}

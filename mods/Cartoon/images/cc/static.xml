@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="static.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="static lol0000" x="558" y="412" width="279" height="206" frameX="-2" frameY="-2" frameWidth="285" frameHeight="212"/>
+	<SubTexture name="static lol0001" x="0" y="412" width="279" height="206" frameX="-2" frameY="-2" frameWidth="285" frameHeight="212"/>
+	<SubTexture name="static lol0002" x="279" y="0" width="279" height="206" frameX="-2" frameY="-2" frameWidth="285" frameHeight="212"/>
+	<SubTexture name="static lol0003" x="0" y="618" width="279" height="206" frameX="-2" frameY="-2" frameWidth="285" frameHeight="212"/>
+	<SubTexture name="static lol0004" x="0" y="0" width="279" height="206" frameX="-2" frameY="-2" frameWidth="285" frameHeight="212"/>
+	<SubTexture name="static lol0005" x="279" y="412" width="279" height="206" frameX="-2" frameY="-2" frameWidth="285" frameHeight="212"/>
+	<SubTexture name="static lol0006" x="0" y="206" width="279" height="206" frameX="-2" frameY="-2" frameWidth="285" frameHeight="212"/>
+	<SubTexture name="static lol0007" x="558" y="206" width="279" height="206" frameX="-2" frameY="-2" frameWidth="285" frameHeight="212"/>
+	<SubTexture name="static lol0008" x="279" y="206" width="279" height="206" frameX="-2" frameY="-2" frameWidth="285" frameHeight="212"/>
+	<SubTexture name="static lol0009" x="558" y="0" width="279" height="206" frameX="-2" frameY="-2" frameWidth="285" frameHeight="212"/>
+</TextureAtlas>

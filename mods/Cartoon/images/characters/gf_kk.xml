@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="gf_kk.png">
+	<SubTexture name="gf kk0000" x="450" y="435" width="143" height="213" frameX="-42" frameY="-63" frameWidth="222" frameHeight="292"/>
+	<SubTexture name="gf kk0001" x="152" y="435" width="149" height="214" frameX="-36" frameY="-63" frameWidth="222" frameHeight="292"/>
+	<SubTexture name="gf kk0002" x="504" y="0" width="161" height="216" frameX="-31" frameY="-62" frameWidth="222" frameHeight="292"/>
+	<SubTexture name="gf kk0003" x="504" y="216" width="161" height="215" frameX="-30" frameY="-62" frameWidth="222" frameHeight="292"/>
+	<SubTexture name="gf kk0004" x="171" y="213" width="163" height="218" frameX="-28" frameY="-60" frameWidth="222" frameHeight="292"/>
+	<SubTexture name="gf kk0005" x="340" y="216" width="163" height="214" frameX="-29" frameY="-61" frameWidth="222" frameHeight="292"/>
+	<SubTexture name="gf kk0006" x="171" y="0" width="169" height="213" frameX="-26" frameY="-64" frameWidth="222" frameHeight="292"/>
+	<SubTexture name="gf kk0007" x="301" y="435" width="149" height="214" frameX="-36" frameY="-63" frameWidth="222" frameHeight="292"/>
+	<SubTexture name="gf kk0008" x="807" y="0" width="143" height="213" frameX="-42" frameY="-63" frameWidth="222" frameHeight="292"/>
+	<SubTexture name="gf kk0009" x="807" y="213" width="121" height="217" frameX="-42" frameY="-58" frameWidth="222" frameHeight="292"/>
+	<SubTexture name="gf kk0010" x="665" y="217" width="141" height="218" frameX="-19" frameY="-54" frameWidth="222" frameHeight="292"/>
+	<SubTexture name="gf kk0011" x="0" y="435" width="152" height="216" frameX="-20" frameY="-56" frameWidth="222" frameHeight="292"/>
+	<SubTexture name="gf kk0012" x="0" y="0" width="171" height="217" frameX="-18" frameY="-56" frameWidth="222" frameHeight="292"/>
+	<SubTexture name="gf kk0013" x="340" y="0" width="164" height="216" frameX="-20" frameY="-56" frameWidth="222" frameHeight="292"/>
+	<SubTexture name="gf kk0014" x="0" y="217" width="169" height="218" frameX="-19" frameY="-54" frameWidth="222" frameHeight="292"/>
+	<SubTexture name="gf kk0015" x="665" y="0" width="142" height="217" frameX="-42" frameY="-58" frameWidth="222" frameHeight="292"/>
+</TextureAtlas>

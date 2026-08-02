@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="leovincible_gf.png">
+	<SubTexture name="dance left blinking0000" x="758" y="0" width="177" height="356" frameX="0" frameY="0" frameWidth="185" frameHeight="356"/>
+	<SubTexture name="dance left blinking0001" x="758" y="0" width="177" height="356" frameX="0" frameY="0" frameWidth="185" frameHeight="356"/>
+	<SubTexture name="dance left blinking0002" x="0" y="682" width="177" height="355" frameX="0" frameY="-1" frameWidth="185" frameHeight="356"/>
+	<SubTexture name="dance left blinking0003" x="0" y="682" width="177" height="355" frameX="0" frameY="-1" frameWidth="185" frameHeight="356"/>
+	<SubTexture name="dance left blinking0004" x="0" y="682" width="177" height="355" frameX="0" frameY="-1" frameWidth="185" frameHeight="356"/>
+	<SubTexture name="dance left blinking0005" x="1470" y="0" width="175" height="353" frameX="-1" frameY="-3" frameWidth="185" frameHeight="356"/>
+	<SubTexture name="dance left blinking0006" x="1470" y="0" width="175" height="353" frameX="-1" frameY="-3" frameWidth="185" frameHeight="356"/>
+	<SubTexture name="dance left blinking0007" x="355" y="1037" width="177" height="349" frameX="-5" frameY="-7" frameWidth="185" frameHeight="356"/>
+	<SubTexture name="dance left blinking0008" x="355" y="1037" width="177" height="349" frameX="-5" frameY="-7" frameWidth="185" frameHeight="356"/>
+	<SubTexture name="dance left blinking0009" x="355" y="1037" width="177" height="349" frameX="-5" frameY="-7" frameWidth="185" frameHeight="356"/>
+	<SubTexture name="dance left blinking0010" x="1292" y="349" width="178" height="349" frameX="-5" frameY="-7" frameWidth="185" frameHeight="356"/>
+	<SubTexture name="dance left blinking0011" x="1292" y="349" width="178" height="349" frameX="-5" frameY="-7" frameWidth="185" frameHeight="356"/>
+	<SubTexture name="dance left blinking0012" x="1292" y="349" width="178" height="349" frameX="-5" frameY="-7" frameWidth="185" frameHeight="356"/>
+	<SubTexture name="dance left blinking0013" x="354" y="682" width="180" height="349" frameX="-5" frameY="-7" frameWidth="185" frameHeight="356"/>
+	<SubTexture name="dance left blinking0014" x="354" y="682" width="180" height="349" frameX="-5" frameY="-7" frameWidth="185" frameHeight="356"/>
+	<SubTexture name="gf dance left0000" x="758" y="0" width="177" height="356" frameX="0" frameY="0" frameWidth="185" frameHeight="356"/>
+	<SubTexture name="gf dance left0001" x="758" y="0" width="177" height="356" frameX="0" frameY="0" frameWidth="185" frameHeight="356"/>
+	<SubTexture name="gf dance left0002" x="0" y="682" width="177" height="355" frameX="0" frameY="-1" frameWidth="185" frameHeight="356"/>
+	<SubTexture name="gf dance left0003" x="0" y="682" width="177" height="355" frameX="0" frameY="-1" frameWidth="185" frameHeight="356"/>
+	<SubTexture name="gf dance left0004" x="0" y="682" width="177" height="355" frameX="0" frameY="-1" frameWidth="185" frameHeight="356"/>
+	<SubTexture name="gf dance left0005" x="1470" y="353" width="175" height="353" frameX="-1" frameY="-3" frameWidth="185" frameHeight="356"/>
+	<SubTexture name="gf dance left0006" x="1470" y="353" width="175" height="353" frameX="-1" frameY="-3" frameWidth="185" frameHeight="356"/>
+	<SubTexture name="gf dance left0007" x="1063" y="1037" width="177" height="349" frameX="-5" frameY="-7" frameWidth="185" frameHeight="356"/>
+	<SubTexture name="gf dance left0008" x="1063" y="1037" width="177" height="349" frameX="-5" frameY="-7" frameWidth="185" frameHeight="356"/>
+	<SubTexture name="gf dance left0009" x="1063" y="1037" width="177" height="349" frameX="-5" frameY="-7" frameWidth="185" frameHeight="356"/>
+	<SubTexture name="gf dance left0010" x="1292" y="0" width="178" height="349" frameX="-5" frameY="-7" frameWidth="185" frameHeight="356"/>
+	<SubTexture name="gf dance left0011" x="1292" y="0" width="178" height="349" frameX="-5" frameY="-7" frameWidth="185" frameHeight="356"/>
+	<SubTexture name="gf dance left0012" x="1292" y="0" width="178" height="349" frameX="-5" frameY="-7" frameWidth="185" frameHeight="356"/>
+	<SubTexture name="gf dance left0013" x="1112" y="349" width="180" height="348" frameX="-5" frameY="-8" frameWidth="185" frameHeight="356"/>
+	<SubTexture name="gf dance left0014" x="1112" y="0" width="180" height="349" frameX="-5" frameY="-7" frameWidth="185" frameHeight="356"/>
+	<SubTexture name="left mirando hacia bf0000" x="935" y="0" width="177" height="356" frameX="0" frameY="0" frameWidth="185" frameHeight="356"/>
+	<SubTexture name="left mirando hacia bf0001" x="935" y="0" width="177" height="356" frameX="0" frameY="0" frameWidth="185" frameHeight="356"/>
+	<SubTexture name="left mirando hacia bf0002" x="177" y="682" width="177" height="355" frameX="0" frameY="-1" frameWidth="185" frameHeight="356"/>
+	<SubTexture name="left mirando hacia bf0003" x="177" y="682" width="177" height="355" frameX="0" frameY="-1" frameWidth="185" frameHeight="356"/>
+	<SubTexture name="left mirando hacia bf0004" x="177" y="682" width="177" height="355" frameX="0" frameY="-1" frameWidth="185" frameHeight="356"/>
+	<SubTexture name="left mirando hacia bf0005" x="1470" y="706" width="175" height="353" frameX="-1" frameY="-3" frameWidth="185" frameHeight="356"/>
+	<SubTexture name="left mirando hacia bf0006" x="1470" y="706" width="175" height="353" frameX="-1" frameY="-3" frameWidth="185" frameHeight="356"/>
+	<SubTexture name="left mirando hacia bf0007" x="709" y="1037" width="177" height="349" frameX="-5" frameY="-7" frameWidth="185" frameHeight="356"/>
+	<SubTexture name="left mirando hacia bf0008" x="709" y="1037" width="177" height="349" frameX="-5" frameY="-7" frameWidth="185" frameHeight="356"/>
+	<SubTexture name="left mirando hacia bf0009" x="709" y="1037" width="177" height="349" frameX="-5" frameY="-7" frameWidth="185" frameHeight="356"/>
+	<SubTexture name="left mirando hacia bf0010" x="0" y="1037" width="178" height="349" frameX="-5" frameY="-7" frameWidth="185" frameHeight="356"/>
+	<SubTexture name="left mirando hacia bf0011" x="0" y="1037" width="178" height="349" frameX="-5" frameY="-7" frameWidth="185" frameHeight="356"/>
+	<SubTexture name="left mirando hacia bf0012" x="0" y="1037" width="178" height="349" frameX="-5" frameY="-7" frameWidth="185" frameHeight="356"/>
+	<SubTexture name="left mirando hacia bf0013" x="354" y="682" width="180" height="349" frameX="-5" frameY="-7" frameWidth="185" frameHeight="356"/>
+	<SubTexture name="left mirando hacia bf0014" x="354" y="682" width="180" height="349" frameX="-5" frameY="-7" frameWidth="185" frameHeight="356"/>
+	<SubTexture name="mirando hacia bf right0000" x="570" y="337" width="188" height="337" frameX="-6" frameY="-12" frameWidth="194" frameHeight="349"/>
+	<SubTexture name="mirando hacia bf right0001" x="570" y="337" width="188" height="337" frameX="-6" frameY="-12" frameWidth="194" frameHeight="349"/>
+	<SubTexture name="mirando hacia bf right0002" x="0" y="0" width="190" height="339" frameX="-3" frameY="-10" frameWidth="194" frameHeight="349"/>
+	<SubTexture name="mirando hacia bf right0003" x="0" y="0" width="190" height="339" frameX="-3" frameY="-10" frameWidth="194" frameHeight="349"/>
+	<SubTexture name="mirando hacia bf right0004" x="0" y="0" width="190" height="339" frameX="-3" frameY="-10" frameWidth="194" frameHeight="349"/>
+	<SubTexture name="mirando hacia bf right0005" x="374" y="339" width="187" height="343" frameX="-1" frameY="-6" frameWidth="194" frameHeight="349"/>
+	<SubTexture name="mirando hacia bf right0006" x="374" y="339" width="187" height="343" frameX="-1" frameY="-6" frameWidth="194" frameHeight="349"/>
+	<SubTexture name="mirando hacia bf right0007" x="894" y="682" width="180" height="349" frameX="0" frameY="0" frameWidth="194" frameHeight="349"/>
+	<SubTexture name="mirando hacia bf right0008" x="894" y="682" width="180" height="349" frameX="0" frameY="0" frameWidth="194" frameHeight="349"/>
+	<SubTexture name="mirando hacia bf right0009" x="894" y="682" width="180" height="349" frameX="0" frameY="0" frameWidth="194" frameHeight="349"/>
+	<SubTexture name="mirando hacia bf right0010" x="178" y="1037" width="177" height="349" frameX="0" frameY="0" frameWidth="194" frameHeight="349"/>
+	<SubTexture name="mirando hacia bf right0011" x="178" y="1037" width="177" height="349" frameX="0" frameY="0" frameWidth="194" frameHeight="349"/>
+	<SubTexture name="mirando hacia bf right0012" x="178" y="1037" width="177" height="349" frameX="0" frameY="0" frameWidth="194" frameHeight="349"/>
+	<SubTexture name="mirando hacia bf right0013" x="1240" y="1037" width="176" height="349" frameX="0" frameY="0" frameWidth="194" frameHeight="349"/>
+	<SubTexture name="mirando hacia bf right0014" x="1240" y="1037" width="176" height="349" frameX="0" frameY="0" frameWidth="194" frameHeight="349"/>
+	<SubTexture name="normal gf dance right0000" x="570" y="0" width="188" height="337" frameX="-6" frameY="-12" frameWidth="194" frameHeight="349"/>
+	<SubTexture name="normal gf dance right0001" x="570" y="0" width="188" height="337" frameX="-6" frameY="-12" frameWidth="194" frameHeight="349"/>
+	<SubTexture name="normal gf dance right0002" x="380" y="0" width="190" height="339" frameX="-3" frameY="-10" frameWidth="194" frameHeight="349"/>
+	<SubTexture name="normal gf dance right0003" x="380" y="0" width="190" height="339" frameX="-3" frameY="-10" frameWidth="194" frameHeight="349"/>
+	<SubTexture name="normal gf dance right0004" x="380" y="0" width="190" height="339" frameX="-3" frameY="-10" frameWidth="194" frameHeight="349"/>
+	<SubTexture name="normal gf dance right0005" x="0" y="339" width="187" height="343" frameX="-1" frameY="-6" frameWidth="194" frameHeight="349"/>
+	<SubTexture name="normal gf dance right0006" x="0" y="339" width="187" height="343" frameX="-1" frameY="-6" frameWidth="194" frameHeight="349"/>
+	<SubTexture name="normal gf dance right0007" x="534" y="682" width="180" height="349" frameX="0" frameY="0" frameWidth="194" frameHeight="349"/>
+	<SubTexture name="normal gf dance right0008" x="534" y="682" width="180" height="349" frameX="0" frameY="0" frameWidth="194" frameHeight="349"/>
+	<SubTexture name="normal gf dance right0009" x="534" y="682" width="180" height="349" frameX="0" frameY="0" frameWidth="194" frameHeight="349"/>
+	<SubTexture name="normal gf dance right0010" x="532" y="1037" width="177" height="349" frameX="0" frameY="0" frameWidth="194" frameHeight="349"/>
+	<SubTexture name="normal gf dance right0011" x="532" y="1037" width="177" height="349" frameX="0" frameY="0" frameWidth="194" frameHeight="349"/>
+	<SubTexture name="normal gf dance right0012" x="532" y="1037" width="177" height="349" frameX="0" frameY="0" frameWidth="194" frameHeight="349"/>
+	<SubTexture name="normal gf dance right0013" x="1645" y="0" width="176" height="349" frameX="0" frameY="0" frameWidth="194" frameHeight="349"/>
+	<SubTexture name="normal gf dance right0014" x="1645" y="0" width="176" height="349" frameX="0" frameY="0" frameWidth="194" frameHeight="349"/>
+	<SubTexture name="right blink0000" x="570" y="337" width="188" height="337" frameX="-6" frameY="-12" frameWidth="194" frameHeight="349"/>
+	<SubTexture name="right blink0001" x="570" y="337" width="188" height="337" frameX="-6" frameY="-12" frameWidth="194" frameHeight="349"/>
+	<SubTexture name="right blink0002" x="190" y="0" width="190" height="339" frameX="-3" frameY="-10" frameWidth="194" frameHeight="349"/>
+	<SubTexture name="right blink0003" x="190" y="0" width="190" height="339" frameX="-3" frameY="-10" frameWidth="194" frameHeight="349"/>
+	<SubTexture name="right blink0004" x="190" y="0" width="190" height="339" frameX="-3" frameY="-10" frameWidth="194" frameHeight="349"/>
+	<SubTexture name="right blink0005" x="187" y="339" width="187" height="343" frameX="-1" frameY="-6" frameWidth="194" frameHeight="349"/>
+	<SubTexture name="right blink0006" x="187" y="339" width="187" height="343" frameX="-1" frameY="-6" frameWidth="194" frameHeight="349"/>
+	<SubTexture name="right blink0007" x="714" y="682" width="180" height="349" frameX="0" frameY="0" frameWidth="194" frameHeight="349"/>
+	<SubTexture name="right blink0008" x="714" y="682" width="180" height="349" frameX="0" frameY="0" frameWidth="194" frameHeight="349"/>
+	<SubTexture name="right blink0009" x="714" y="682" width="180" height="349" frameX="0" frameY="0" frameWidth="194" frameHeight="349"/>
+	<SubTexture name="right blink0010" x="886" y="1037" width="177" height="349" frameX="0" frameY="0" frameWidth="194" frameHeight="349"/>
+	<SubTexture name="right blink0011" x="886" y="1037" width="177" height="349" frameX="0" frameY="0" frameWidth="194" frameHeight="349"/>
+	<SubTexture name="right blink0012" x="886" y="1037" width="177" height="349" frameX="0" frameY="0" frameWidth="194" frameHeight="349"/>
+	<SubTexture name="right blink0013" x="1645" y="0" width="176" height="349" frameX="0" frameY="0" frameWidth="194" frameHeight="349"/>
+	<SubTexture name="right blink0014" x="1645" y="0" width="176" height="349" frameX="0" frameY="0" frameWidth="194" frameHeight="349"/>
+</TextureAtlas>

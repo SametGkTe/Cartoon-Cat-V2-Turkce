@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="cartoon_cat.exe_flying.png">
+	<SubTexture name="cartoon cat.exe flying Down0000" x="1108" y="381" width="189" height="208" frameX="-48" frameY="-80" frameWidth="513" frameHeight="289"/>
+	<SubTexture name="cartoon cat.exe flying Down0001" x="1108" y="174" width="194" height="207" frameX="-48" frameY="-82" frameWidth="513" frameHeight="289"/>
+	<SubTexture name="cartoon cat.exe flying Down0002" x="1341" y="0" width="176" height="208" frameX="-52" frameY="-72" frameWidth="513" frameHeight="289"/>
+	<SubTexture name="cartoon cat.exe flying Down0003" x="1341" y="208" width="173" height="207" frameX="-55" frameY="-69" frameWidth="513" frameHeight="289"/>
+	<SubTexture name="cartoon cat.exe flying Down0004" x="1341" y="415" width="173" height="206" frameX="-56" frameY="-68" frameWidth="513" frameHeight="289"/>
+	<SubTexture name="cartoon cat.exe flying Down0005" x="1341" y="621" width="173" height="206" frameX="-56" frameY="-68" frameWidth="513" frameHeight="289"/>
+	<SubTexture name="cartoon cat.exe flying Down0006" x="1341" y="621" width="173" height="206" frameX="-56" frameY="-68" frameWidth="513" frameHeight="289"/>
+	<SubTexture name="cartoon cat.exe flying Idle0000" x="427" y="972" width="199" height="161" frameX="-45" frameY="-71" frameWidth="513" frameHeight="289"/>
+	<SubTexture name="cartoon cat.exe flying Idle0001" x="213" y="972" width="214" height="170" frameX="-44" frameY="-65" frameWidth="513" frameHeight="289"/>
+	<SubTexture name="cartoon cat.exe flying Idle0002" x="0" y="972" width="213" height="176" frameX="-46" frameY="-59" frameWidth="513" frameHeight="289"/>
+	<SubTexture name="cartoon cat.exe flying Idle0003" x="1108" y="589" width="212" height="181" frameX="-49" frameY="-53" frameWidth="513" frameHeight="289"/>
+	<SubTexture name="cartoon cat.exe flying Idle0004" x="1108" y="770" width="208" height="181" frameX="-52" frameY="-53" frameWidth="513" frameHeight="289"/>
+	<SubTexture name="cartoon cat.exe flying Idle0005" x="1108" y="770" width="208" height="181" frameX="-52" frameY="-53" frameWidth="513" frameHeight="289"/>
+	<SubTexture name="cartoon cat.exe flying Idle0006" x="1108" y="770" width="208" height="181" frameX="-52" frameY="-53" frameWidth="513" frameHeight="289"/>
+	<SubTexture name="cartoon cat.exe flying Laugh0000" x="676" y="251" width="206" height="251" frameX="-48" frameY="-22" frameWidth="513" frameHeight="289"/>
+	<SubTexture name="cartoon cat.exe flying Laugh0001" x="676" y="0" width="211" height="251" frameX="-50" frameY="-28" frameWidth="513" frameHeight="289"/>
+	<SubTexture name="cartoon cat.exe flying Laugh0002" x="412" y="263" width="222" height="241" frameX="-48" frameY="-36" frameWidth="513" frameHeight="289"/>
+	<SubTexture name="cartoon cat.exe flying Laugh0003" x="887" y="456" width="214" height="229" frameX="-41" frameY="-39" frameWidth="513" frameHeight="289"/>
+	<SubTexture name="cartoon cat.exe flying Laugh0004" x="0" y="746" width="215" height="226" frameX="-42" frameY="-39" frameWidth="513" frameHeight="289"/>
+	<SubTexture name="cartoon cat.exe flying Laugh0005" x="0" y="746" width="215" height="226" frameX="-42" frameY="-39" frameWidth="513" frameHeight="289"/>
+	<SubTexture name="cartoon cat.exe flying Left0000" x="205" y="263" width="207" height="259" frameX="-16" frameY="-1" frameWidth="513" frameHeight="289"/>
+	<SubTexture name="cartoon cat.exe flying Left0001" x="0" y="263" width="205" height="265" frameX="-8" frameY="-1" frameWidth="513" frameHeight="289"/>
+	<SubTexture name="cartoon cat.exe flying Left0002" x="461" y="0" width="215" height="263" frameX="-21" frameY="-1" frameWidth="513" frameHeight="289"/>
+	<SubTexture name="cartoon cat.exe flying Left0003" x="0" y="0" width="230" height="263" frameX="-17" frameY="-1" frameWidth="513" frameHeight="289"/>
+	<SubTexture name="cartoon cat.exe flying Left0004" x="230" y="0" width="231" height="259" frameX="-17" frameY="-1" frameWidth="513" frameHeight="289"/>
+	<SubTexture name="cartoon cat.exe flying Left0005" x="230" y="0" width="231" height="259" frameX="-17" frameY="-1" frameWidth="513" frameHeight="289"/>
+	<SubTexture name="cartoon cat.exe flying Left0006" x="230" y="0" width="231" height="259" frameX="-17" frameY="-1" frameWidth="513" frameHeight="289"/>
+	<SubTexture name="cartoon cat.exe flying Right0000" x="464" y="528" width="252" height="167" frameX="-54" frameY="-59" frameWidth="513" frameHeight="289"/>
+	<SubTexture name="cartoon cat.exe flying Right0001" x="215" y="746" width="241" height="174" frameX="-61" frameY="-57" frameWidth="513" frameHeight="289"/>
+	<SubTexture name="cartoon cat.exe flying Right0002" x="689" y="746" width="233" height="174" frameX="-51" frameY="-55" frameWidth="513" frameHeight="289"/>
+	<SubTexture name="cartoon cat.exe flying Right0003" x="1108" y="0" width="233" height="174" frameX="-51" frameY="-55" frameWidth="513" frameHeight="289"/>
+	<SubTexture name="cartoon cat.exe flying Right0004" x="456" y="746" width="233" height="174" frameX="-51" frameY="-55" frameWidth="513" frameHeight="289"/>
+	<SubTexture name="cartoon cat.exe flying Right0005" x="456" y="746" width="233" height="174" frameX="-51" frameY="-55" frameWidth="513" frameHeight="289"/>
+	<SubTexture name="cartoon cat.exe flying Right0006" x="456" y="746" width="233" height="174" frameX="-51" frameY="-55" frameWidth="513" frameHeight="289"/>
+	<SubTexture name="cartoon cat.exe flying Up0000" x="234" y="528" width="230" height="202" frameX="-56" frameY="-10" frameWidth="513" frameHeight="289"/>
+	<SubTexture name="cartoon cat.exe flying Up0001" x="0" y="528" width="234" height="218" frameX="-57" frameY="0" frameWidth="513" frameHeight="289"/>
+	<SubTexture name="cartoon cat.exe flying Up0002" x="887" y="0" width="221" height="225" frameX="-57" frameY="-10" frameWidth="513" frameHeight="289"/>
+	<SubTexture name="cartoon cat.exe flying Up0003" x="887" y="225" width="214" height="231" frameX="-55" frameY="-15" frameWidth="513" frameHeight="289"/>
+	<SubTexture name="cartoon cat.exe flying Up0004" x="887" y="225" width="214" height="231" frameX="-55" frameY="-15" frameWidth="513" frameHeight="289"/>
+	<SubTexture name="cartoon cat.exe flying Up0005" x="887" y="225" width="214" height="231" frameX="-55" frameY="-15" frameWidth="513" frameHeight="289"/>
+	<SubTexture name="cartoon cat.exe flying Up0006" x="887" y="225" width="214" height="231" frameX="-55" frameY="-15" frameWidth="513" frameHeight="289"/>
+</TextureAtlas>

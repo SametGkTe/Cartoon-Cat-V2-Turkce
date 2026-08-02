@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="corneta.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="boombox animation0000" x="0" y="0" width="70" height="50" frameX="0" frameY="0" frameWidth="70" frameHeight="50"/>
+	<SubTexture name="boombox animation0001" x="64" y="50" width="64" height="49" frameX="-1" frameY="0" frameWidth="69" frameHeight="49"/>
+	<SubTexture name="boombox animation0002" x="0" y="50" width="64" height="49" frameX="-1" frameY="0" frameWidth="69" frameHeight="49"/>
+	<SubTexture name="boombox animation0003" x="70" y="0" width="64" height="49" frameX="-1" frameY="0" frameWidth="69" frameHeight="49"/>
+</TextureAtlas>

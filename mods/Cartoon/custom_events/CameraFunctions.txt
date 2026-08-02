@@ -1,0 +1,3 @@
+Value 1: (bf/dad/gf)
+
+Type "off" in value1 for disable the event

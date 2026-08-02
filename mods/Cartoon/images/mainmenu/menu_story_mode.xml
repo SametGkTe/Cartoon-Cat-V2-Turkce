@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="menu_story_mode.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="story_mode basic0000" x="505" y="0" width="449" height="109" frameX="291" frameY="1" frameWidth="617" frameHeight="124"/>
+	<SubTexture name="story_mode basic0001" x="0" y="393" width="449" height="109" frameX="291" frameY="1" frameWidth="617" frameHeight="124"/>
+	<SubTexture name="story_mode white0000" x="0" y="140" width="505" height="129" frameX="291" frameY="1" frameWidth="617" frameHeight="124"/>
+	<SubTexture name="story_mode white0001" x="0" y="269" width="505" height="124" frameX="291" frameY="1" frameWidth="617" frameHeight="124"/>
+	<SubTexture name="story_mode white0002" x="0" y="0" width="505" height="140" frameX="291" frameY="1" frameWidth="617" frameHeight="124"/>
+</TextureAtlas>

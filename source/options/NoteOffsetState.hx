@@ -5,11 +5,8 @@ import objects.Character;
 import objects.Bar;
 import flixel.addons.display.shapes.FlxShapeCircle;
 
-import states.stages.StageWeek1 as BackgroundStage;
-
 class NoteOffsetState extends MusicBeatState
 {
-	var stageDirectory:String = 'week1';
 	var boyfriend:Character;
 	var gf:Character;
 
@@ -57,9 +54,13 @@ class NoteOffsetState extends MusicBeatState
 		persistentUpdate = true;
 		FlxG.sound.pause();
 
-		// Stage
-		Paths.setCurrentLevel(stageDirectory);
-		new BackgroundStage();
+		// ===== CUSTOM BACKGROUND =====
+		var bg:FlxSprite = new FlxSprite(-100, -50).loadGraphic(Paths.image('cc/mallBg', 'shared'));
+		bg.antialiasing = ClientPrefs.data.antialiasing;
+		bg.scrollFactor.set(0.9, 0.9);
+		bg.setGraphicSize(Std.int(bg.width * 1.1));
+		bg.updateHitbox();
+		add(bg);
 
 		// Characters
 		gf = new Character(400, 130, 'gf');
@@ -196,11 +197,9 @@ class NoteOffsetState extends MusicBeatState
 
 		if(controls.controllerMode != _lastControllerMode)
 		{
-			//trace('changed controller mode');
 			FlxG.mouse.visible = !controls.controllerMode;
 			controllerPointer.visible = controls.controllerMode;
 
-			// changed to controller mid state
 			if(controls.controllerMode)
 			{
 				var mousePos = FlxG.mouse.getScreenPosition(camHUD);
@@ -276,7 +275,6 @@ class NoteOffsetState extends MusicBeatState
 				}
 			}
 			
-			// controller things
 			var analogX:Float = 0;
 			var analogY:Float = 0;
 			var analogMoved:Bool = false;
@@ -296,9 +294,7 @@ class NoteOffsetState extends MusicBeatState
 				gamepadPressed = !FlxG.gamepads.anyJustPressed(START) && controls.ACCEPT;
 				gamepadReleased = !FlxG.gamepads.anyJustReleased(START) && controls.justReleased('accept');
 			}
-			//
 
-			// probably there's a better way to do this but, oh well.
 			if (FlxG.mouse.justPressed || gamepadPressed)
 			{
 				holdingObjectType = null;
@@ -313,7 +309,6 @@ class NoteOffsetState extends MusicBeatState
 					holdingObjectType = true;
 					startComboOffset.x = ClientPrefs.data.comboOffset[2];
 					startComboOffset.y = ClientPrefs.data.comboOffset[3];
-					//trace('yo bro');
 				}
 				else if (startMousePos.x - rating.x >= 0 && startMousePos.x - rating.x <= rating.width &&
 						 startMousePos.y - rating.y >= 0 && startMousePos.y - rating.y <= rating.height)
@@ -321,12 +316,10 @@ class NoteOffsetState extends MusicBeatState
 					holdingObjectType = false;
 					startComboOffset.x = ClientPrefs.data.comboOffset[0];
 					startComboOffset.y = ClientPrefs.data.comboOffset[1];
-					//trace('heya');
 				}
 			}
 			if(FlxG.mouse.justReleased || gamepadReleased) {
 				holdingObjectType = null;
-				//trace('dead');
 			}
 
 			if(holdingObjectType != null)
@@ -510,7 +503,7 @@ class NoteOffsetState extends MusicBeatState
 	function updateNoteDelay()
 	{
 		ClientPrefs.data.noteOffset = Math.round(barPercent);
-		timeTxt.text = 'Mevcut Derecelendirme: ' + Math.floor(barPercent) + ' ms';
+		timeTxt.text = 'Mevcut Gecikme: ' + Math.floor(barPercent) + ' ms';
 	}
 
 	function updateMode()
@@ -536,7 +529,7 @@ class NoteOffsetState extends MusicBeatState
 		if(onComboMenu)
 			str = 'Kombo Ayarı';
 		else
-			str = 'Nota Ayarı';
+			str = 'Nota Gecikmesi Ayarı';
 
 		if(!controls.controllerMode)
 			str2 = '(Değiştirmek için Onayla\'ya basın)';

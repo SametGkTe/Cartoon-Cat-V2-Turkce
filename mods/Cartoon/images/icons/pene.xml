@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="pene.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="pene0000" x="148" y="0" width="140" height="101" frameX="-3" frameY="0" frameWidth="146" frameHeight="101"/>
+	<SubTexture name="sexo0000" x="0" y="0" width="148" height="147" frameX="-1" frameY="31" frameWidth="151" frameHeight="150"/>
+</TextureAtlas>
