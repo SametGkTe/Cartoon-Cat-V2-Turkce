@@ -1,15 +1,18 @@
-local videoPlayed = false
-local warningPlayed = false
+local introStep = 0
 
 function onStartCountdown()
-    if isStoryMode and not videoPlayed then
-        videoPlayed = true
+    if seenCutscene then
+        return Function_Continue
+    end
+
+    if isStoryMode and introStep == 0 then
+        introStep = 1
         startVideo('newrerunscutscene')
         return Function_Stop
     end
 
-    if not warningPlayed then
-        warningPlayed = true
+    if introStep < 2 then
+        introStep = 2
 
         makeLuaSprite('warnImage', 'meatnotewarn', 0, 0)
         setObjectCamera('warnImage', 'other')
@@ -38,6 +41,8 @@ end
 function onTweenCompleted(tag)
     if tag == 'byeImage' then
         removeLuaSprite('warnImage', true)
+        setPropertyFromClass('states.PlayState', 'seenCutscene', true)
+
         startCountdown()
     end
 end

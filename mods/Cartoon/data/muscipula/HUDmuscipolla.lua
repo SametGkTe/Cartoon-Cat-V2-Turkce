@@ -42,14 +42,14 @@ function onCreatePost()
         else
             setProperty('timeBar.y',0)
             makeLuaText('songTimeMickey','0:00 - 0:00',160,screenWidth/2 - 80,getProperty('timeBar.y') + 40)
-            makeLuaText('scoreTextMickey','Score: 0',200,25,90)
-            makeLuaText('missesTextMickey','Misses: 0',200,25,120)
-            makeLuaText('acurracyTextMickey','Acurracy: 0',200,25,150)
+            makeLuaText('scoreTextMickey','Skor: 0',200,25,90)
+            makeLuaText('missesTextMickey','Iskalar: 0',200,25,120)
+            makeLuaText('acurracyTextMickey','Doğruluk: 0',200,25,150)
             makeLuaText('songNameTextMickey',songNameMickey,300,15,getProperty('timeBar.y') + 35)
-            makeLuaText('sickTextMickey','Sick: 0',200,screenWidth - 100,60)
-            makeLuaText('goodTextMickey','Good: 0',200,screenWidth - 100,90)
-            makeLuaText('badTextMickey','Bad: 0',200,screenWidth - 100,120)
-            makeLuaText('shitTextMickey','Shit: 0',200,screenWidth - 100,150)
+            makeLuaText('sickTextMickey','müq: 0',200,screenWidth - 100,60)
+            makeLuaText('goodTextMickey','iyi: 0',200,screenWidth - 100,90)
+            makeLuaText('badTextMickey','kötü: 0',200,screenWidth - 100,120)
+            makeLuaText('shitTextMickey','berbat: 0',200,screenWidth - 100,150)
         end
         setTextAlignment('songTimeMickey','center')
         setObjectCamera('songTimeMickey','hud')
@@ -125,20 +125,20 @@ function onCreatePost()
     end
 
 function onUpdateScore()
-    setTextString('scoreTextMickey','Score: '..getProperty('songScore'))
-    setTextString('missesTextMickey','Misses: '..getProperty('songMisses'))
-    setTextString('acurracyTextMickey','Acurracy: '..math.floor(getProperty('ratingPercent') * 10000)/100)
+    setTextString('scoreTextMickey','Skor: '..getProperty('songScore'))
+    setTextString('missesTextMickey','Iskalar: '..getProperty('songMisses'))
+    setTextString('acurracyTextMickey','Doğruluk: '..math.floor(getProperty('ratingPercent') * 10000)/100)
 
     if version >= '0.7' then
-        setTextString('sickTextMickey','Sick: '..getProperty('ratingsData[0].hits'))
-        setTextString('goodTextMickey','Good: '..getProperty('ratingsData[1].hits'))
-        setTextString('badTextMickey','Bad: '..getProperty('ratingsData[2].hits'))
-        setTextString('shitTextMickey','Shit: '..getProperty('ratingsData[3].hits'))
+        setTextString('sickTextMickey','müq: '..getProperty('ratingsData[0].hits'))
+        setTextString('goodTextMickey','iyi: '..getProperty('ratingsData[1].hits'))
+        setTextString('badTextMickey','kötü: '..getProperty('ratingsData[2].hits'))
+        setTextString('shitTextMickey','berbat: '..getProperty('ratingsData[3].hits'))
     else
-        setTextString('sickTextMickey','Sick: '..getProperty('sicks'))
-        setTextString('goodTextMickey','Good: '..getProperty('goods'))
-        setTextString('badTextMickey','Bad: '..getProperty('bads'))
-        setTextString('shitTextMickey','Shit: '..getProperty('shits'))
+        setTextString('sickTextMickey','müq: '..getProperty('sicks'))
+        setTextString('goodTextMickey','iyi: '..getProperty('goods'))
+        setTextString('badTextMickey','kötü: '..getProperty('bads'))
+        setTextString('shitTextMickey','berbat: '..getProperty('shits'))
     end
 
 end

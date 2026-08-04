@@ -4,72 +4,118 @@ import flixel.FlxG;
 import openfl.text.TextField;
 import openfl.text.TextFormat;
 import openfl.system.System;
+import openfl.utils.Assets;
+import openfl.text.Font;
 
-/**
-	The FPS class provides an easy-to-use monitor to display
-	the current frame rate of an OpenFL project
-**/
 class FPSCounter extends TextField
 {
-	/**
-		The current frame rate, expressed using frames-per-second
-	**/
-	public var currentFPS(default, null):Int;
-
-	/**
-		The current memory usage (WARNING: this is NOT your total program memory usage, rather it shows the garbage collector memory)
-	**/
+	public var currentFPS(default, null):Int = 0;
 	public var memoryMegas(get, never):Float;
+	public var memoryPeak:Float = 0;
 
 	@:noCompletion private var times:Array<Float>;
+	private var fontName:String = "_sans";
 
-	public function new(x:Float = 10, y:Float = 10, color:Int = 0x000000)
+	public function new(x:Float = 5, y:Float = 5, color:Int = 0xFFFFFF)
 	{
 		super();
 
 		this.x = x;
 		this.y = y;
 
-		currentFPS = 0;
 		selectable = false;
 		mouseEnabled = false;
-		defaultTextFormat = new TextFormat("_sans", 14, color);
+		multiline = false;
+		wordWrap = false;
 		autoSize = LEFT;
-		multiline = true;
-		text = "FPS: ";
+
+		try
+		{
+			var font:Font = Assets.getFont("assets/fonts/text.ttf");
+			if (font != null)
+			{
+				fontName = font.fontName;
+				embedFonts = true;
+			}
+		}
+		catch (e:Dynamic)
+		{
+			fontName = "_sans";
+			embedFonts = false;
+		}
+
+		defaultTextFormat = new TextFormat(fontName, 4, color);
+		textColor = 0xFFFFFFFF;
+		text = "FPS: 0 - Bellek: 0 MB (0 MB En Yüksek)";
+		setTextFormat(defaultTextFormat);
 
 		times = [];
 	}
 
-	var deltaTimeout:Float = 0.0;
-
-	// Event Handlers
 	private override function __enterFrame(deltaTime:Float):Void
 	{
-		// prevents the overlay from updating every frame, why would you need to anyways
-		if (deltaTimeout > 1000) {
-			deltaTimeout = 0.0;
-			return;
-		}
-
 		final now:Float = haxe.Timer.stamp() * 1000;
 		times.push(now);
-		while (times[0] < now - 1000) times.shift();
 
-		currentFPS = times.length < FlxG.updateFramerate ? times.length : FlxG.updateFramerate;		
+		while (times.length > 0 && times[0] < now - 1000)
+			times.shift();
+
+		currentFPS = (times.length < FlxG.updateFramerate) ? times.length : FlxG.updateFramerate;
+
+		var currentMemory:Float = System.totalMemory / 1000000;
+		if (currentMemory > memoryPeak)
+			memoryPeak = currentMemory;
+
 		updateText();
-		deltaTimeout += deltaTime;
 	}
 
-	public dynamic function updateText():Void { // so people can override it in hscript
-		text = 'FPS: ${currentFPS}'
-		+ '\nBellek: ${flixel.util.FlxStringUtil.formatBytes(memoryMegas)}';
+	public dynamic function updateText():Void
+	{
+		var memoryText:String = formatMemory(System.totalMemory / 1000000);
+		var peakText:String = formatMemory(memoryPeak);
 
-		textColor = 0xFFFFFFFF;
-		if (currentFPS < FlxG.drawFramerate * 0.5)
+		text = 'FPS: ' + currentFPS + ' - Bellek: ' + memoryText + ' (' + peakText + ' En Yüksek)';
+
+		if (currentFPS <= 30)
 			textColor = 0xFFFF0000;
+		else
+			textColor = 0xFFFFFFFF;
+
+		setTextFormat(new TextFormat(fontName, 10, textColor));
+	}
+
+	private function formatMemory(m:Float):String
+	{
+		var value:Float = 0;
+		var measure:String = "MB";
+
+		if (m > 1024)
+		{
+			value = round(m / 1024, 2);
+			measure = "GB";
+		}
+		else
+		{
+			value = round(m, 1);
+			measure = "MB";
+		}
+
+		return Std.string(value) + " " + measure;
+	}
+
+	private function round(x:Float, n:Int = 0):Float
+	{
+		var p:Float = Math.pow(10, n);
+		x *= p;
+		if (x >= 0)
+			x = Math.floor(x + 0.5);
+		else
+			x = Math.ceil(x - 0.5);
+		return x / p;
 	}
 
 	inline function get_memoryMegas():Float
+	{
 		return cast(System.totalMemory, UInt);
+	}
 }

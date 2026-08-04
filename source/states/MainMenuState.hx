@@ -40,7 +40,6 @@ class MainMenuState extends MusicBeatState
 	];
 
 	var menuLabels:Array<{text:String, color:FlxColor}> = [
-		// MENÜ YAZILARI
 		{text: 'HİKAYE MODU', color: FlxColor.fromRGB(255, 100, 100)},
 		{text: 'SERBEST OYUN', color: FlxColor.fromRGB(255, 255, 150)},
 		{text: 'GALERİ', color: FlxColor.fromRGB(100, 255, 150)},
@@ -66,9 +65,7 @@ class MainMenuState extends MusicBeatState
 	var playingSecretVideo:Bool = false;
 
 	var aboutButton:FlxSprite;
-	/* var freeplayLocked:Bool = true; */
-	/* var lockWarningText:FlxText; */
-	/* var lockWarningTimer:FlxTimer; */
+	var githubButton:FlxSprite;
 
 	static var secretCodes:Array<{code:String, song:String, diff:Int}> = [
 		{code: '0504', song: 'secr', diff: 1},
@@ -152,17 +149,15 @@ class MainMenuState extends MusicBeatState
 		aboutButton.x = FlxG.width - aboutButton.width - 10;
 		aboutButton.y = 10;
 		add(aboutButton);
-
-		/* freeplayLocked = !StoryMenuState.weekCompleted.exists('3LunaWeek') || !StoryMenuState.weekCompleted.get('3LunaWeek'); */
-		/*
-		lockWarningText = new FlxText(0, FlxG.height - 60, FlxG.width, '', 24);
-		lockWarningText.setFormat(Paths.font("vcr.ttf"), 24, FlxColor.RED, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-		lockWarningText.borderSize = 2;
-		lockWarningText.scrollFactor.set();
-		lockWarningText.alpha = 0;
-		lockWarningText.visible = false;
-		add(lockWarningText);
-		*/
+		
+		githubButton = new FlxSprite().loadGraphic(Paths.image('other/github', 'shared'));
+		githubButton.antialiasing = ClientPrefs.data.antialiasing;
+		githubButton.scrollFactor.set();
+		githubButton.setGraphicSize(100, 100);
+		githubButton.updateHitbox();
+		githubButton.x = FlxG.width - githubButton.width - 10;
+		githubButton.y = FlxG.height - githubButton.height - 10;
+		add(githubButton);
 
 		changeItem();
 
@@ -567,7 +562,7 @@ class MainMenuState extends MusicBeatState
 
 	function loadRandomTheme():Void
 	{
-		var themes:Array<String> = ['cc', 'cd', 'fetid_king', 'long_horse', 'luna', 'siren_head', 'tmwtudf'];
+		var themes:Array<String> = ['cc', 'cd', 'fetid_king', 'long_horse', 'luna', 'tmwtudf'];
 		currentTheme = themes[FlxG.random.int(0, themes.length - 1)];
 
 		trace('Ana Menu Temasi: ' + currentTheme);
@@ -584,8 +579,6 @@ class MainMenuState extends MusicBeatState
 				loadTheme_LongHorse();
 			case 'luna':
 				loadTheme_Luna();
-			case 'siren_head':
-				loadTheme_SirenHead();
 			case 'tmwtudf':
 				loadTheme_TMWTUDF();
 		}
@@ -696,32 +689,6 @@ class MainMenuState extends MusicBeatState
 		luna.y = 150;
 	}
 
-	function loadTheme_SirenHead():Void
-	{
-		var bg = addStaticLayer('mainmenu/custom/siren head/bg');
-		bg.screenCenter();
-
-		var siren = addAnimLayer('mainmenu/custom/siren head/Siren_Head_-1', 'Bg Siren Head Idle', 24);
-		scaleSprite(siren, 0.28);
-		siren.x = 640;
-		siren.y = 110;
-
-		var trees = addStaticLayer('mainmenu/custom/siren head/trees');
-		scaleSprite(trees, 0.25);
-		trees.x = 500;
-		trees.y = 200;
-
-		var trees2 = addStaticLayer('mainmenu/custom/siren head/trees2');
-		scaleSprite(trees2, 0.28);
-		trees2.x = 500;
-		trees2.y = 200;
-
-		var front = addStaticLayer('mainmenu/custom/siren head/front');
-		setSpriteHeight(front, FlxG.height + 80);
-		front.x = -40;
-		front.y = -10;
-	}
-
 	function loadTheme_TMWTUDF():Void
 	{
 		var baseBG = addStaticLayer('mainmenu/custom/luna/bg');
@@ -779,15 +746,6 @@ class MainMenuState extends MusicBeatState
 				if (selectedSomethin)
 					return;
 
-				/*
-				if (optionShit[curSelected] == 'freeplay' && freeplayLocked)
-				{
-					FlxG.sound.play(Paths.sound('locked'));
-					showLockWarning();
-					return;
-				}
-				*/
-
 				selectedSomethin = true;
 				FlxG.sound.play(Paths.sound('confirmMenu'));
 
@@ -818,21 +776,6 @@ class MainMenuState extends MusicBeatState
 							}
 					}
 				});
-
-				/*
-				for (i in 0...menuItems.members.length)
-				{
-					if (optionShit[i] == 'freeplay' && freeplayLocked && i != curSelected)
-					{
-						menuItems.members[i].alpha = 0.3;
-					}
-				}
-
-				if (optionShit[curSelected] == 'freeplay' && freeplayLocked)
-				{
-					menuItems.members[curSelected].alpha = 0.5;
-				}
-				*/
 			}
 
 			#if desktop
@@ -846,32 +789,6 @@ class MainMenuState extends MusicBeatState
 
 		super.update(elapsed);
 	}
-
-	/*
-	function showLockWarning():Void
-	{
-		lockWarningText.text = "İLK ÖNCE 1. HAFTAYI BİTİRMEN GEREKİYOR";
-		lockWarningText.visible = true;
-		lockWarningText.alpha = 1;
-
-		if (lockWarningTimer != null)
-		{
-			lockWarningTimer.cancel();
-			lockWarningTimer = null;
-		}
-
-		lockWarningTimer = new FlxTimer().start(3, function(tmr:FlxTimer)
-		{
-			FlxTween.tween(lockWarningText, {alpha: 0}, 0.5, {
-				ease: FlxEase.quadOut,
-				onComplete: function(twn:FlxTween)
-				{
-					lockWarningText.visible = false;
-				}
-			});
-		});
-	}
-	*/
 
 	function handleAboutButton():Void
 	{
@@ -891,6 +808,17 @@ class MainMenuState extends MusicBeatState
 				selectedSomethin = true;
 				FlxG.sound.play(Paths.sound('confirmMenu'));
 				MusicBeatState.switchState(new AboutState());
+				return;
+			}
+
+			if (mouseX >= githubButton.x
+				&& mouseX <= githubButton.x + githubButton.width
+				&& mouseY >= githubButton.y
+				&& mouseY <= githubButton.y + githubButton.height)
+			{
+				FlxG.sound.play(Paths.sound('confirmMenu'));
+				CoolUtil.browserLoad("https://github.com/SametGkTe/Cartoon-Cat-V2-Turkce");
+				return;
 			}
 		}
 	}

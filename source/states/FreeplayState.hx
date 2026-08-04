@@ -104,12 +104,17 @@ class FreeplayState extends MusicBeatState
 		add(overlay);
 
 		songText = new FlxText(0, 0, FlxG.width, "", 52);
-		songText.setFormat(Paths.font("vcr.ttf"), 65, FlxColor.BLACK, CENTER);
+		songText.setFormat(Paths.font("text.ttf"), 48, FlxColor.BLACK, CENTER);
 		songText.screenCenter();
 		add(songText);
+		
+		var songFormat = songText.textField.defaultTextFormat;
+		songFormat.letterSpacing = -2; // -1 hafif, -2 iyi, -3 daha sıkı
+		songText.textField.defaultTextFormat = songFormat;
+		songText.textField.setTextFormat(songFormat);
 
 		infoText = new FlxText(120, 80, FlxG.width * 0.5, "", 28);
-		infoText.setFormat(Paths.font("vcr.ttf"), 28, FlxColor.BLACK, LEFT);
+		infoText.setFormat(Paths.font("text.ttf"), 28, FlxColor.BLACK, LEFT);
 		add(infoText);
 
 		missingTextBG = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
@@ -118,7 +123,7 @@ class FreeplayState extends MusicBeatState
 		add(missingTextBG);
 
 		missingText = new FlxText(50, 0, FlxG.width - 100, '', 24);
-		missingText.setFormat(Paths.font("vcr.ttf"), 24, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		missingText.setFormat(Paths.font("text.ttf"), 24, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		missingText.scrollFactor.set();
 		missingText.visible = false;
 		add(missingText);
@@ -130,7 +135,7 @@ class FreeplayState extends MusicBeatState
 		var leText:String = "SPACE: Dinle  |  CTRL: Oynanış Ayarları  |  RESET: Skoru Sıfırla";
 		bottomString = leText;
 		bottomText = new FlxText(bottomBG.x, bottomBG.y + 4, FlxG.width, leText, 16);
-		bottomText.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, CENTER);
+		bottomText.setFormat(Paths.font("text.ttf"), 16, FlxColor.WHITE, CENTER);
 		bottomText.scrollFactor.set();
 		add(bottomText);
 
@@ -452,6 +457,7 @@ class FreeplayState extends MusicBeatState
 
 		songText.text = '< ' + songs[curSelected].songName.toUpperCase() + ' >';
 		songText.screenCenter();
+		songText.x -= 200;
 
 		updateBackground();
 

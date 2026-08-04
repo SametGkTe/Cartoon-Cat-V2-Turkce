@@ -81,16 +81,16 @@ class PlayState extends MusicBeatState
 	public static var STRUM_X_MIDDLESCROLL = -278;
 
 	public static var ratingStuff:Array<Dynamic> = [
-		['Berbat!', 0.2], //From 0% to 19%
-		['Çok Kötü', 0.4], //From 20% to 39%
-		['Kötü', 0.5], //From 40% to 49%
-		['Bruh', 0.6], //From 50% to 59%
-		['Eh İşte', 0.69], //From 60% to 68%
-		['Fena Değil', 0.7], //69%
-		['İyi', 0.8], //From 70% to 79%
-		['Harika', 0.9], //From 80% to 89%
-		['Muhteşem!', 1], //From 90% to 99%
-		['Mükemmel!!', 1] //The value on this one isn't used actually, since Perfect is always "1"
+		['Berbat!', 0.2],
+		['Çok Kötü', 0.4],
+		['Kötü', 0.5],
+		['Bruh', 0.6],
+		['Eh İşte', 0.69],
+		['Fena Değil', 0.7],
+		['İyi', 0.8],
+		['Harika', 0.9],
+		['Muhteşem!', 1],
+		['Mükemmel!!', 1]
 	];
 
 	//event variables
@@ -266,6 +266,7 @@ class PlayState extends MusicBeatState
 
 	override public function create()
 	{
+		Main.hideCustomCursor(); // Hide Fucking CustomCursor
 		//trace('Playback Rate: ' + playbackRate);
 		Paths.clearStoredMemory();
 
@@ -558,7 +559,7 @@ class PlayState extends MusicBeatState
 		updateScore(false);
 		uiGroup.add(scoreTxt);
 
-		botplayTxt = new FlxText(400, timeBar.y + 55, FlxG.width - 800, "BOT OYNAYIŞI", 32);
+		botplayTxt = new FlxText(400, timeBar.y + 55, FlxG.width - 800, "BOTPLAY", 32);
 		botplayTxt.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		botplayTxt.scrollFactor.set();
 		botplayTxt.borderSize = 1.25;
@@ -833,52 +834,38 @@ class PlayState extends MusicBeatState
 		inCutscene = true;
 
 		var filepath:String = Paths.video(name);
-		trace("START VIDEO NAME => " + name);
-		trace("START VIDEO PATH => " + filepath);
-
 		#if sys
 		if(!FileSystem.exists(filepath))
 		#else
 		if(!OpenFlAssets.exists(filepath))
 		#end
 		{
-			FlxG.log.warn('Couldnt find video file: ' + filepath);
-			inCutscene = false;
+			FlxG.log.warn('Couldnt find video file: ' + name);
 			startAndEnd();
 			return;
 		}
 
 		var video:VideoHandler = new VideoHandler();
-
-		try
-		{
 			#if (hxCodec >= "3.0.0")
+			// Recent versions
+			video.play(filepath);
 			video.onEndReached.add(function()
 			{
-				inCutscene = false;
 				video.dispose();
 				startAndEnd();
+				return;
 			}, true);
-
-			video.play(filepath);
 			#else
+			// Older versions
+			video.playVideo(filepath);
 			video.finishCallback = function()
 			{
-				inCutscene = false;
 				startAndEnd();
+				return;
 			}
-			video.playVideo(filepath);
 			#end
-		}
-		catch(e:Dynamic)
-		{
-			trace("VIDEO EXCEPTION => " + e);
-			inCutscene = false;
-			startAndEnd();
-		}
 		#else
 		FlxG.log.warn('Platform not supported!');
-		inCutscene = false;
 		startAndEnd();
 		return;
 		#end
@@ -1640,6 +1627,7 @@ class PlayState extends MusicBeatState
 
 	override public function update(elapsed:Float)
 	{
+		FlxG.mouse.visible = false;
 		if(!inCutscene && !paused && !freezeCamera) {
 			FlxG.camera.followLerp = 2.4 * cameraSpeed * playbackRate;
 			if(!startingSong && !endingSong && boyfriend.getAnimationName().startsWith('idle')) {

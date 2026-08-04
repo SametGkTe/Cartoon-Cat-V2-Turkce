@@ -482,6 +482,16 @@ class FunkinLua {
 				spr.loadGraphic(Paths.image(image), animated, gridX, gridY);
 			}
 		});
+		// Shitass CustomCursor System
+		Lua_helper.add_callback(lua, "showMouse", function()
+		{
+			Main.showCustomCursor();
+		});
+
+		Lua_helper.add_callback(lua, "hideMouse", function()
+		{
+			Main.hideCustomCursor();
+		});
 		Lua_helper.add_callback(lua, "loadFrames", function(variable:String, image:String, spriteType:String = "sparrow") {
 			var split:Array<String> = variable.split('.');
 			var spr:FlxSprite = LuaUtils.getObjectDirectly(split[0]);

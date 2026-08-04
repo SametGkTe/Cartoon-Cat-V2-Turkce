@@ -57,7 +57,7 @@ class Main extends Sprite
 
 	public static var fpsVar:FPSCounter;
 	var gameInstance:FlxGame;
-	var customCursor:CustomCursor;
+	public static var customCursor:CustomCursor = null;
 	var staticOverlay:StaticOverlay;
 
 	// You can pretty much ignore everything from here on - your code should go in your states.
@@ -86,6 +86,39 @@ class Main extends Sprite
 		{
 			addEventListener(Event.ADDED_TO_STAGE, init);
 		}
+	}
+	
+	// Fuckass Cursor System
+	public static function showCustomCursor():Void
+	{
+		if (customCursor != null)
+		{
+			if (FlxG.state != null)
+				FlxG.state.remove(customCursor, true);
+
+			customCursor.destroy();
+			customCursor = null;
+		}
+
+		if (FlxG.state == null)
+			return;
+
+		customCursor = new CustomCursor();
+		FlxG.state.add(customCursor);
+	}
+
+	public static function hideCustomCursor():Void
+	{
+		if (customCursor != null)
+		{
+			if (FlxG.state != null)
+				FlxG.state.remove(customCursor, true);
+
+			customCursor.destroy();
+			customCursor = null;
+		}
+
+		FlxG.mouse.visible = false;
 	}
 
 	private function init(?E:Event):Void
@@ -213,32 +246,26 @@ class Main extends Sprite
 
 	function addCustomCursor()
 	{
-		if (customCursor != null)
+		if (Std.isOfType(FlxG.state, states.PlayState))
 		{
-			FlxG.state.remove(customCursor);
-			customCursor.destroy();
+			Main.hideCustomCursor();
+			return;
 		}
 
-		customCursor = new CustomCursor();
-		FlxG.state.add(customCursor);
+		Main.showCustomCursor();
 	}
 
 	function onStateChange()
 	{
-		if (customCursor != null)
-		{
-			FlxG.state.remove(customCursor);
-			customCursor.destroy();
-		}
+		Main.hideCustomCursor();
 
-		if (Std.isOfType(FlxG.state, states.PlayState)) // except playstate
+		if (Std.isOfType(FlxG.state, states.PlayState))
 		{
-			customCursor = null;
+			FlxG.mouse.visible = false;
 			return;
 		}
 
-		customCursor = new CustomCursor();
-		FlxG.state.add(customCursor);
+		Main.showCustomCursor();
 	}
 
 	// Code was entirely made by sqirra-rng for their fnf engine named "Izzy Engine", big props to them!!!

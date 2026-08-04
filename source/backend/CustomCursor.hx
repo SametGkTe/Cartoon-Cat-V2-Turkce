@@ -4,23 +4,25 @@ import flixel.FlxG;
 import flixel.FlxCamera;
 import flixel.FlxSprite;
 import flixel.group.FlxGroup.FlxTypedGroup;
+import flixel.math.FlxPoint;
 
 class CustomCursor extends FlxTypedGroup<FlxSprite>
 {
     public var cursorDefault:FlxSprite;
     public var cursorPressed:FlxSprite;
     public var cursorCamera:FlxCamera;
+    var mousePos:FlxPoint;
 
     public function new()
     {
         super();
 
-        // Cursor için özel kamera oluştur (scroll etmesin)
+        mousePos = new FlxPoint();
+
         cursorCamera = new FlxCamera();
-        cursorCamera.bgColor = 0x00000000; // Transparan arka plan
+        cursorCamera.bgColor = 0x00000000;
         FlxG.cameras.add(cursorCamera, false);
 
-        // Default cursor
         cursorDefault = new FlxSprite();
         cursorDefault.loadGraphic(Paths.image('cursor/cursor-default'));
         cursorDefault.antialiasing = ClientPrefs.data.antialiasing;
@@ -29,7 +31,6 @@ class CustomCursor extends FlxTypedGroup<FlxSprite>
         cursorDefault.cameras = [cursorCamera];
         add(cursorDefault);
 
-        // Pressed cursor
         cursorPressed = new FlxSprite();
         cursorPressed.loadGraphic(Paths.image('cursor/cursor-pressed'));
         cursorPressed.antialiasing = ClientPrefs.data.antialiasing;
@@ -39,7 +40,6 @@ class CustomCursor extends FlxTypedGroup<FlxSprite>
         cursorPressed.cameras = [cursorCamera];
         add(cursorPressed);
 
-        // Sistem imlecini gizle
         FlxG.mouse.visible = false;
     }
 
@@ -47,14 +47,15 @@ class CustomCursor extends FlxTypedGroup<FlxSprite>
     {
         super.update(elapsed);
 
-        // Ekran koordinatlarını kullan (kamera scroll'undan etkilenmez)
-        var mouseX = FlxG.mouse.screenX;
-        var mouseY = FlxG.mouse.screenY;
+        // PlayState içinde biri normal mouse'u açsa bile tekrar kapat
+        FlxG.mouse.visible = false;
 
-        cursorDefault.setPosition(mouseX, mouseY);
-        cursorPressed.setPosition(mouseX, mouseY);
+        // PlayState kameralarında doğru pozisyon
+        FlxG.mouse.getScreenPosition(cursorCamera, mousePos);
 
-        // Tıklama kontrolü
+        cursorDefault.setPosition(mousePos.x, mousePos.y);
+        cursorPressed.setPosition(mousePos.x, mousePos.y);
+
         if (FlxG.mouse.pressed)
         {
             cursorDefault.visible = false;
@@ -69,13 +70,14 @@ class CustomCursor extends FlxTypedGroup<FlxSprite>
 
     public function showCursor()
     {
+        FlxG.mouse.visible = false;
         cursorDefault.visible = true;
         cursorPressed.visible = false;
-        FlxG.mouse.visible = false;
     }
 
     public function hideCursor()
     {
+        FlxG.mouse.visible = false;
         cursorDefault.visible = false;
         cursorPressed.visible = false;
     }
@@ -84,9 +86,17 @@ class CustomCursor extends FlxTypedGroup<FlxSprite>
     {
         if (cursorCamera != null)
         {
-            FlxG.cameras.remove(cursorCamera);
+            FlxG.cameras.remove(cursorCamera, true);
+            cursorCamera.destroy();
+            cursorCamera = null;
         }
-        FlxG.mouse.visible = true;
+
+        if (mousePos != null)
+        {
+            mousePos.put();
+            mousePos = null;
+        }
+
         super.destroy();
     }
 }
