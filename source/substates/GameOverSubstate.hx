@@ -16,6 +16,7 @@ import flixel.tweens.FlxTween;
 import flixel.tweens.FlxEase;
 import flixel.util.FlxTimer;
 import flixel.util.FlxColor;
+import flixel.sound.FlxSound;
 
 using StringTools;
 
@@ -33,14 +34,16 @@ class GameOverSubstate extends MusicBeatSubstate
 	public static var loopSoundName:String = 'gameOver';
 	public static var endSoundName:String = 'gameOverEnd';
 
-	// Lua ile değişecek mode
-	public static var songGameOverMode:String = 'meatbf';
+	public static var songGameOverMode:String = 'default';
 
 	public static var instance:GameOverSubstate;
 
-	// Extra sprite'lar
 	var extraGameOverSprites:Array<FlxSprite> = [];
 	var customGameOverSprite:FlxSprite = null;
+
+	var sirenGameOverSound:FlxSound = null;
+	var sirenStartTimer:FlxTimer = null;
+	var sirenStarted:Bool = false;
 
 	public static function resetVariables()
 	{
@@ -73,15 +76,18 @@ class GameOverSubstate extends MusicBeatSubstate
 		boyfriend.y += boyfriend.positionArray[1] - PlayState.instance.boyfriend.positionArray[1];
 		add(boyfriend);
 
-		// Song'a özel game over sistemi
 		setupSongSpecificGameOver();
 
-		if(songGameOverMode.toLowerCase() != 'turnaround')
+		var mode:String = songGameOverMode != null ? songGameOverMode.toLowerCase() : 'default';
+
+		// Siren ve turnaround için normal fnf_loss_sfx çalma
+		if(mode != 'turnaround' && mode != 'siren')
 			FlxG.sound.play(Paths.sound(deathSoundName));
+
 		FlxG.camera.scroll.set();
 		FlxG.camera.target = null;
 
-		if(songGameOverMode.toLowerCase() != 'turnaround')
+		if(mode != 'turnaround' && mode != 'siren')
 			boyfriend.playAnim('firstDeath');
 
 		camFollow = new FlxObject(0, 0, 1, 1);
@@ -121,9 +127,41 @@ class GameOverSubstate extends MusicBeatSubstate
 		addBehindBoyfriend(spr);
 	}
 
+	function stopSirenSound():Void
+	{
+		if(sirenGameOverSound != null)
+		{
+			sirenGameOverSound.stop();
+			FlxG.sound.list.remove(sirenGameOverSound);
+			sirenGameOverSound.destroy();
+			sirenGameOverSound = null;
+		}
+	}
+
+	function playSirenSound(?volume:Float = 1):Void
+	{
+		stopSirenSound();
+
+		sirenGameOverSound = new FlxSound();
+		sirenGameOverSound.loadEmbedded(Paths.sound('gameOver/music/siren-head'), false, false);
+		sirenGameOverSound.volume = volume;
+		FlxG.sound.list.add(sirenGameOverSound);
+		sirenGameOverSound.play();
+	}
+
+	function cancelSirenTimer():Void
+	{
+		if(sirenStartTimer != null)
+		{
+			sirenStartTimer.cancel();
+			sirenStartTimer.destroy();
+			sirenStartTimer = null;
+		}
+	}
+
 	function setupSongSpecificGameOver()
 	{
-		var mode:String = 'meatbf';
+		var mode:String = 'default';
 		if(songGameOverMode != null && songGameOverMode.trim().length > 0)
 			mode = songGameOverMode.toLowerCase();
 
@@ -152,49 +190,78 @@ class GameOverSubstate extends MusicBeatSubstate
 				FlxTween.tween(turn, {alpha: 1}, 0.5, {ease: FlxEase.quadOut});
 
 			case 'spooky':
-				// sol 3 (soldan sağa doğru)
 				makeSpookyClone(-760, 0, true);
 				makeSpookyClone(-520, 0, true);
 				makeSpookyClone(-300, 0, true);
 
-				// sağ 3 (soldan sağa doğru)
 				makeSpookyClone(260, 0, false);
 				makeSpookyClone(500, 0, false);
 				makeSpookyClone(740, 0, false);
 
-			case 'siren':
-				boyfriend.visible = false;
+		case 'siren':
+			boyfriend.visible = false;
 
-				var siren = new FlxSprite(boyfriend.x - 100, boyfriend.y - 200);
-				siren.frames = Paths.getSparrowAtlas('gameOver/sh_kills_bf');
-				siren.animation.addByPrefix('start', 'start 1', 24, false);
-				siren.animation.addByPrefix('loop', 'loop 2', 24, true);
-				siren.animation.addByPrefix('end', 'end 2', 24, false);
+			var siren = new FlxSprite(boyfriend.x - 100, boyfriend.y - 200);
+			siren.frames = Paths.getSparrowAtlas('gameOver/sh_kills_bf');
 
-				siren.animation.finishCallback = function(animName:String)
+			var startIndices:Array<Int> = [];
+			for(i in 10000...10120) startIndices.push(i);
+			for(i in 10147...10157) startIndices.push(i);
+
+			var loopIndices:Array<Int> = [20000];
+			var endIndices:Array<Int> = [20000, 20001, 20002, 20003, 20004];
+
+			siren.animation.addByIndices('start', 'start ', startIndices, '', 24, false);
+			siren.animation.addByIndices('loop', 'loop ', loopIndices, '', 24, true);
+			siren.animation.addByIndices('end', 'end ', endIndices, '', 24, false);
+
+			siren.animation.finishCallback = function(animName:String)
+			{
+				if(animName == 'start')
+					siren.animation.play('loop', true);
+			};
+
+			siren.scale.set(0.6, 0.6);
+			siren.updateHitbox();
+			siren.offset.y += 180; // sprite'ı yukarı çeker
+			addReplacementSprite(siren);
+
+			// Sprite hemen görünsün ama ilk frame'de dursun
+			siren.visible = true;
+			siren.animation.play('start', true);
+			if(siren.animation.curAnim != null)
+			{
+				siren.animation.curAnim.curFrame = 0;
+				siren.animation.curAnim.paused = true;
+			}
+
+			// Ses hemen başlasın, loop yapmasın
+			playSirenSound();
+
+			// 3 saniye sonra animasyon devam etsin
+			sirenStartTimer = new FlxTimer().start(3, function(tmr:FlxTimer)
+			{
+				if(customGameOverSprite != null && customGameOverSprite.animation.curAnim != null)
 				{
-					if(animName == 'start')
-						siren.animation.play('loop', true);
-				};
+					customGameOverSprite.animation.curAnim.paused = false;
+				}
 
-				siren.animation.play('start', true);
-				siren.scale.set(0.65, 0.65);
-				siren.updateHitbox();
-				addReplacementSprite(siren);
+				if(!moveCamera)
+				{
+					FlxG.camera.follow(camFollow, FlxCameraFollowStyle.LOCKON, 0.6);
+					moveCamera = true;
+				}
+
+				sirenStarted = true;
+			});
 
 			default:
-				// meatBF = diğer tüm şarkılar
-				boyfriend.visible = false;
-
-				var meat = new FlxSprite(boyfriend.x, boyfriend.y); // gerekirse offset ver
-				meat.frames = Paths.getSparrowAtlas('gameOver/meatBF');
-				meat.animation.addByPrefix('death', 'bf dies meat note', 24, false);
-				meat.animation.play('death', true);
-				addReplacementSprite(meat);
+				// default = normal psych engine gameover
 		}
 	}
 
 	public var startedDeath:Bool = false;
+
 	override function update(elapsed:Float)
 	{
 		super.update(elapsed);
@@ -209,6 +276,10 @@ class GameOverSubstate extends MusicBeatSubstate
 		if (controls.BACK)
 		{
 			#if DISCORD_ALLOWED DiscordClient.resetClientID(); #end
+
+			cancelSirenTimer();
+			stopSirenSound();
+
 			FlxG.sound.music.stop();
 			PlayState.deathCounter = 0;
 			PlayState.seenCutscene = false;
@@ -224,7 +295,9 @@ class GameOverSubstate extends MusicBeatSubstate
 			PlayState.instance.callOnScripts('onGameOverConfirm', [false]);
 		}
 		
-		if (boyfriend.animation.curAnim != null)
+		var mode:String = songGameOverMode != null ? songGameOverMode.toLowerCase() : 'default';
+
+		if(mode != 'siren' && boyfriend.animation.curAnim != null)
 		{
 			if (boyfriend.animation.curAnim.name == 'firstDeath' && boyfriend.animation.curAnim.finished && startedDeath)
 				boyfriend.playAnim('deathLoop');
@@ -246,7 +319,6 @@ class GameOverSubstate extends MusicBeatSubstate
 						coolStartDeath(0.2);
 						
 						var exclude:Array<Int> = [];
-						//if(!ClientPrefs.cursing) exclude = [1, 3, 8, 13, 17, 21];
 
 						FlxG.sound.play(Paths.sound('jeffGameover/jeffGameover-' + FlxG.random.int(1, 25, exclude)), 1, false, null, true, function() {
 							if(!isEnding)
@@ -260,10 +332,11 @@ class GameOverSubstate extends MusicBeatSubstate
 			}
 		}
 		
-		if (FlxG.sound.music.playing)
+		if (FlxG.sound.music != null && FlxG.sound.music.playing)
 		{
 			Conductor.songPosition = FlxG.sound.music.time;
 		}
+
 		PlayState.instance.callOnScripts('onUpdatePost', [elapsed]);
 	}
 
@@ -271,15 +344,12 @@ class GameOverSubstate extends MusicBeatSubstate
 
 	function coolStartDeath(?volume:Float = 1):Void
 	{
-		var mode:String = songGameOverMode != null ? songGameOverMode.toLowerCase() : 'meatbf';
+		var mode:String = songGameOverMode != null ? songGameOverMode.toLowerCase() : 'default';
 
-		if(mode == 'turnaround')
+		if(mode == 'turnaround' || mode == 'siren')
 			return;
 
-		if(mode == 'siren')
-			FlxG.sound.playMusic(Paths.sound('gameOver/music/siren-head'), volume);
-		else
-			FlxG.sound.playMusic(Paths.music(loopSoundName), volume);
+		FlxG.sound.playMusic(Paths.music(loopSoundName), volume);
 	}
 
 	function endBullshit():Void
@@ -288,16 +358,33 @@ class GameOverSubstate extends MusicBeatSubstate
 		{
 			isEnding = true;
 
-			var mode:String = songGameOverMode != null ? songGameOverMode.toLowerCase() : 'meatbf';
+			var mode:String = songGameOverMode != null ? songGameOverMode.toLowerCase() : 'default';
 
-			if(mode == 'siren' && customGameOverSprite != null)
+			cancelSirenTimer();
+			stopSirenSound();
+
+			if(mode == 'siren')
 			{
-				customGameOverSprite.animation.play('end', true);
+				// Siren modunda boyfriend deathConfirm oynatma, crash çıkarabiliyor
+				if(customGameOverSprite != null && customGameOverSprite.visible)
+				{
+					customGameOverSprite.animation.play('end', true);
+				}
+
+				new FlxTimer().start(0.3, function(tmr:FlxTimer)
+				{
+					FlxG.camera.fade(FlxColor.BLACK, 1.2, false, function()
+					{
+						MusicBeatState.resetState();
+					});
+				});
+
+				PlayState.instance.callOnScripts('onGameOverConfirm', [true]);
+				return;
 			}
 
 			if(mode == 'turnaround')
 			{
-				// Ses yok, sadece fade-out
 				if(FlxG.sound.music != null)
 					FlxG.sound.music.stop();
 
@@ -341,10 +428,13 @@ class GameOverSubstate extends MusicBeatSubstate
 	{
 		instance = null;
 
-		// güvenlik için defaulta dön
-		songGameOverMode = 'meatbf';
+		cancelSirenTimer();
+		stopSirenSound();
+
+		songGameOverMode = 'default';
 		customGameOverSprite = null;
 		extraGameOverSprites = [];
+		sirenStarted = false;
 
 		super.destroy();
 	}

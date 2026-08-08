@@ -74,7 +74,6 @@ class PauseSubState extends MusicBeatSubstate
 
 		FlxG.sound.list.add(pauseMusic);
 
-		// Arka plan karartma
 		var bg:FlxSprite = new FlxSprite().makeGraphic(1, 1, FlxColor.BLACK);
 		bg.scale.set(FlxG.width, FlxG.height);
 		bg.updateHitbox();
@@ -82,26 +81,13 @@ class PauseSubState extends MusicBeatSubstate
 		bg.scrollFactor.set();
 		add(bg);
 
-		// ===== SAĞ ÜST: İkon + Şarkı İsmi + Zorluk + Ölüm Sayısı =====
-
-		// Şarkı ikonu (sabit pozisyon)
-		var songIcon:HealthIcon = new HealthIcon(PlayState.instance.iconP2.getCharacter(), false);
-		songIcon.scrollFactor.set();
-		songIcon.setGraphicSize(50, 50);
-		songIcon.updateHitbox();
-		songIcon.x = FlxG.width - 400;
-		songIcon.y = 100;
-		songIcon.alpha = 0;
-		add(songIcon);
-
-		// Şarkı ismi (sabit pozisyon, ikondan bağımsız)
-		var levelInfo:FlxText = new FlxText(20, 20, 0, PlayState.SONG.song, 32);
-		levelInfo.scrollFactor.set();
-		levelInfo.setFormat(Paths.font("vcr.ttf"), 32);
-		levelInfo.updateHitbox();
-		levelInfo.x = FlxG.width - levelInfo.width - 80;
-		levelInfo.alpha = 0;
-		add(levelInfo);
+		var Sarkiismi:FlxText = new FlxText(20, 20, 0, PlayState.SONG.song, 32);
+		Sarkiismi.scrollFactor.set();
+		Sarkiismi.setFormat(Paths.font("vcr.ttf"), 32);
+		Sarkiismi.updateHitbox();
+		Sarkiismi.x = FlxG.width - Sarkiismi.width - 35;
+		Sarkiismi.alpha = 0;
+		add(Sarkiismi);
 
 		// Zorluk (ikonun altında, sağa yaslı)
 		var levelDifficulty:FlxText = new FlxText(0, 70, 0, Difficulty.getString().toUpperCase(), 32);
@@ -139,8 +125,7 @@ class PauseSubState extends MusicBeatSubstate
 		add(chartingText);
 
 		FlxTween.tween(bg, {alpha: 0.6}, 0.4, {ease: FlxEase.quartInOut});
-		FlxTween.tween(songIcon, {alpha: 1}, 0.4, {ease: FlxEase.quartInOut, startDelay: 0.3});
-		FlxTween.tween(levelInfo, {alpha: 1}, 0.4, {ease: FlxEase.quartInOut, startDelay: 0.3});
+		FlxTween.tween(Sarkiismi, {alpha: 1}, 0.4, {ease: FlxEase.quartInOut, startDelay: 0.3});
 		FlxTween.tween(levelDifficulty, {alpha: 1}, 0.4, {ease: FlxEase.quartInOut, startDelay: 0.5});
 		FlxTween.tween(blueballedTxt, {alpha: 1}, 0.4, {ease: FlxEase.quartInOut, startDelay: 0.7});
 

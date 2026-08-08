@@ -76,6 +76,8 @@ local exitQueued = false
 local mouseWasDown = false
 local mouseIsClicked = false
 
+local mouseShown = false
+
 local soundDurations = {
     ['1']  = 4.8,  ['2']  = 4.5,  ['3']  = 5.0,
     ['4']  = 5.0,  ['5']  = 4.0,  ['6']  = 6.5,
@@ -85,6 +87,25 @@ local soundDurations = {
     ['16'] = 1.5,  ['17'] = 1.8,  ['18'] = 4.5,
     ['19'] = 2.0,  ['01'] = 3.0,  ['02'] = 3.0,
 }
+
+local function safeShowMouse()
+    local ok, err = pcall(function()
+        showMouse()
+    end)
+    if ok then
+        mouseShown = true
+    end
+end
+
+local function safeHideMouse()
+    if not mouseShown then return end
+    local ok, err = pcall(function()
+        hideMouse()
+    end)
+    if ok then
+        mouseShown = false
+    end
+end
 
 local function cleanupDialogueStuff()
     cancelTimer('dialogueStartDelay')
@@ -160,7 +181,6 @@ function canAdvance()
     return soundFinished and (not typewriterActive)
 end
 
--- Ses shit
 function playSoundFile(filename)
     cancelTimer('soundCheckTimer')
 
@@ -185,7 +205,6 @@ function playSoundFile(filename)
     runTimer('soundCheckTimer', duration)
 end
 
--- Fare shit
 function mouseClicked(button)
     return mouseIsClicked
 end
@@ -240,7 +259,6 @@ function initDialogueSystem()
     createDialogueUI()
 end
 
--- UI
 function createDialogueUI()
     makeLuaText('dialogueText', '', DIALOGUE_TEXT_WIDTH, DIALOGUE_TEXT_X, DIALOGUE_TEXT_Y)
     setTextFont('dialogueText', FONT_NAME)
@@ -339,7 +357,6 @@ function advanceDialogue()
     playSoundFile(currentDialogue .. '.ogg')
 end
 
--- Seçim ekranı
 function showChoiceScreen()
     phase = 'choice'
     choiceActive = true
@@ -358,6 +375,8 @@ function showChoiceScreen()
 
     setTextColor('choiceBtn1', 'FFFFFF')
     setTextColor('choiceBtn2', 'FFFFFF')
+
+    safeShowMouse()
 
     inputLocked = true
     runTimer('choiceInputDelay', 0.3)
@@ -378,6 +397,8 @@ function confirmChoice()
     hideChoiceScreen()
     inputLocked = true
 
+    safeHideMouse()
+
     if selectedChoice == 2 then
         startDeathSequence()
     else
@@ -385,7 +406,6 @@ function confirmChoice()
     end
 end
 
--- Seçenek 1
 function startPostGoodSequence()
     phase = 'post_good'
     postGoodIndex = 1
@@ -407,9 +427,9 @@ function advancePostGood()
     end
 end
 
--- Bitir & Video
 function finishDialogueAndPlayVideo()
     cleanupDialogueStuff()
+    safeHideMouse()
 
     phase = 'done'
     setPropertyFromClass('states.PlayState', 'seenCutscene', true)
@@ -431,7 +451,7 @@ function finishDialogueAndPlayVideo()
     setVar('tafDialogueActive', false)
     setVar('tafDialogueDone', true)
 
-    if getPropertyFromClass('states.PlayState', 'isStoryMode') then -- Hikaye Modu değilse videoyu başlatma
+    if getPropertyFromClass('states.PlayState', 'isStoryMode') then
         startVideo('vimuyj')
     else
         startCountdown()
@@ -536,10 +556,10 @@ function onUpdate(elapsed)
     if not systemActive then return end
     if not uiReady then return end
 
-    -- DEBUG: J tuşu ile direkt post_good'a atla
     if debugModeJ and keyboardJustPressed('J') then
         if choiceActive then
             hideChoiceScreen()
+            safeHideMouse()
         end
 
         cleanupDialogueStuff()
@@ -570,7 +590,6 @@ function onUpdate(elapsed)
         end
     end
 
-    -- Devam ipucu
     if canAdvance() and not inputLocked and not choiceActive then
         setProperty('continueHint.alpha', 1)
     end
@@ -683,10 +702,12 @@ end
 
 function onDestroy()
     cleanupDialogueStuff()
+    safeHideMouse()
     systemActive = false
     choiceActive = false
     typewriterActive = false
     inputLocked = true
     exitQueued = false
+    mouseShown = false
     setVar('tafDialogueActive', false)
 end
